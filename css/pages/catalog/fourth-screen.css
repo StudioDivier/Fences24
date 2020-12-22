@@ -1,0 +1,77 @@
+.catalog__fourth-screen .second-type-block {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: white;
+  padding: 22.5px 30px;
+  position: relative;
+}
+.catalog__fourth-screen .second-type-block .inner-wrapper {
+  padding-bottom: 115px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 2000px) {
+  .catalog__fourth-screen .second-type-block .inner-wrapper {
+    padding-bottom: 239px;
+  }
+}
+.catalog__fourth-screen .second-type-block .inner-wrapper .subHeader {
+  font-size: 22px;
+  font-weight: 400;
+}
+@media (min-width: 2000px) {
+  .catalog__fourth-screen .second-type-block .inner-wrapper .subHeader {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .catalog__fourth-screen .second-type-block .inner-wrapper .subHeader {
+    font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .catalog__fourth-screen .second-type-block .inner-wrapper .subHeader {
+    font-size: 14px;
+  }
+}
+.catalog__fourth-screen .second-type-block .inner-wrapper .strong-inline {
+  font-weight: 700;
+  font-size: 28px;
+}
+@media (min-width: 2000px) {
+  .catalog__fourth-screen .second-type-block .inner-wrapper .strong-inline {
+    font-size: 34px;
+  }
+}
+@media (max-width: 768px) {
+  .catalog__fourth-screen .second-type-block .inner-wrapper .strong-inline {
+    font-size: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .catalog__fourth-screen .second-type-block .inner-wrapper .strong-inline {
+    font-size: 16px;
+  }
+}
+.catalog__fourth-screen .second-type-block .inner-wrapper .thin-inner-text {
+  font-weight: 200;
+  font-size: 15px;
+  padding-top: 10px;
+}
+@media (min-width: 2000px) {
+  .catalog__fourth-screen .second-type-block .inner-wrapper .thin-inner-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .catalog__fourth-screen .second-type-block .inner-wrapper .thin-inner-text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  .catalog__fourth-screen .second-type-block .inner-wrapper .thin-inner-text {
+    font-size: 12px;
+  }
+}

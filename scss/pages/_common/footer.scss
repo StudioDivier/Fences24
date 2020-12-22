@@ -1,0 +1,171 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+footer {
+  background-color: #242424;
+  color: #dadada;
+
+  .main-footer {
+    padding: 70px 0;
+    @include md-max {
+      padding: 35px 0;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  h5 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 15px;
+    @include min-w(2000) {
+      font-size: 20px;
+    }
+  }
+
+  span {
+    font-weight: 200;
+    padding-bottom: 5px;
+    font-size: 14px;
+    @include min-w(2000) {
+      font-size: 18px;
+    }
+  }
+
+  .col-md-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .custom-col {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+
+    .calc {
+      @include md-max {
+        margin-top: 15px !important;
+      }
+    }
+
+    span {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //text-align: center;
+    @include xl-max {
+      margin-bottom: 25px;
+    }
+
+    .header-text {
+      //padding-left: 32.5px;
+      padding-top: 10px;
+      font-size: 13px;
+      letter-spacing: 1.24px;
+      line-height: 12px;
+    }
+  }
+
+  .contacts-info {
+    @include lg-min {
+      padding-left: 30px;
+    }
+    @include xl-min {
+      border-left: 2px solid rgba(255, 255, 255, 0.12);
+    }
+    @media screen and (min-width: 996px) and (max-width: 1200px) {
+      text-align: center;
+      padding-top: 25px;
+    }
+    @include min-w(1700) {
+      padding-left: 50px;
+    }
+
+    .phone {
+      font-weight: 700;
+      font-size: 18px;
+      @include min-w(2000) {
+        font-size: 22px;
+      }
+    }
+
+    .email {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      span {
+        @include min-w(2000) {
+          font-size: 18px;
+        }
+        font-size: 16px;
+      }
+    }
+
+    .media-wrapper {
+      padding-top: 30px;
+      @include md-max {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .divier-footer {
+    padding: 40px 0;
+    @include lg-max {
+      padding: 30px 0;
+    }
+    border-top: 1px solid rgba(243, 243, 243, 0.12);
+
+    .col {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        &:first-child {
+          font-size: 12px;
+          @include min-w(2000) {
+            font-size: 16px;
+          }
+          font-weight: 200;
+        }
+
+        &:last-child {
+          font-size: 12px;
+          @include min-w(2000) {
+            font-size: 16px;
+          }
+
+          a {
+            border-bottom: 1px solid rgba(243, 243, 243, 0.12);
+
+            &:hover {
+              border-bottom: 1px solid #f3f3f3;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

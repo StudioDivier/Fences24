@@ -1,0 +1,16 @@
+.catalog__fifth-screen {
+  background-color: #f5f6f6;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.catalog__fifth-screen h1 {
+  padding-bottom: 30px;
+}
+.catalog__fifth-screen .header-wrapper img {
+  width: 100%;
+}
+.catalog__fifth-screen .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}

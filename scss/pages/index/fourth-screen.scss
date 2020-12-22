@@ -1,0 +1,160 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.fourth-screen {
+  padding: 65px 0;
+  background-color: #e7e8e8;
+
+  .header-wrapper {
+    span {
+      color: #cdcdcd;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 62px;
+      @include xl-max {
+        font-size: 58px;
+      }
+      @include lg-max {
+        font-size: 40px;
+      }
+      @include md-max {
+        font-size: 30px;
+      }
+      @include sm-max {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .content-wrapper {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    //justify-content: space-between;
+    @include xxl-max {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .single-advantage {
+      margin-bottom: 25px;
+      @include md-min {
+        width: calc(50% - 50px);
+        margin-right: 50px;
+        margin-bottom: 50px;
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+      @include lg-min {
+        width: calc(33% - 40px);
+        margin-right: 40px;
+        margin-bottom: 25px;
+        &:nth-child(n) {
+          margin-right: 0;
+        }
+      }
+      @include xxl-min {
+        @include grid(5, 40);
+      }
+      padding: 25px;
+      background-color: white;
+
+
+      .img-container {
+        padding-bottom: 35px;
+        border-bottom: 2px solid #f5f6f6;
+        @include md-max {
+          display: flex;
+          justify-content: center;
+          img {
+            width: 115px;
+          }
+        }
+        @include sm-max {
+          img {
+            width: 100px;
+          }
+        }
+      }
+
+      .adv-header {
+        display: block;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.81px;
+        padding-top: 35px;
+        @include min-w(2000) {
+          font-size: 20px;
+        }
+      }
+
+      .adv-features {
+        padding-top: 25px;
+        padding-bottom: 15px;
+
+        .another-wrapper {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .inner-wrapper {
+          font-size: 13px;
+          letter-spacing: 0.58px;
+          font-weight: 500;
+
+          .feature-header, img {
+            cursor: pointer;
+            display: block;
+            margin-bottom: 10px;
+          }
+
+          span {
+            margin-left: 10px;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-underline-position: under;
+            -webkit-text-underline-position: under;
+            -ms-text-underline-position: below;
+            //border-bottom: 2px dotted $green-color;
+            @include min-w(2000) {
+              font-size: 18px;
+            }
+          }
+        }
+
+      }
+
+      /* The Magic */
+      .adv-features:hover {
+        .inner-wrapper:hover {
+          .inner-wrapper-content {
+            height: auto;
+            margin-bottom: 15px;
+            transition: height 1s;
+          }
+        }
+      }
+
+      .adv-features {
+        .inner-wrapper {
+          .inner-wrapper-content {
+            height: 0;
+            transition: height 1s;
+            overflow: hidden;
+            padding-left: 27px;
+            font-size: 14px;
+            @include min-w(2000) {
+              font-size: 19px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

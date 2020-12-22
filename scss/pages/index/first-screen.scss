@@ -1,0 +1,508 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.first_screen {
+  background-color: $background-color;
+  padding-top: 75px;
+  @include lg-max {
+    padding-top: 65px;
+  }
+  @include md-max {
+    padding-top: 40px;
+  }
+  @include sm-max {
+    padding-top: 35px;
+  }
+
+  h1 {
+    padding-bottom: 65px;
+    @include lg-max {
+      padding-bottom: 55px;
+    }
+    @include md-max {
+      padding-bottom: 35px;
+    }
+    @include sm-max {
+      padding-bottom: 25px;
+    }
+  }
+
+  .development {
+    h5 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 5px;
+      @include min-w(2000) {
+        font-size: 30px;
+      }
+      @include md-max {
+        font-size: 18px;
+      }
+      @include sm-max {
+        font-size: 16px;
+      }
+    }
+
+    .col-lg-4 {
+      margin-bottom: 15px;
+      padding-right: 0;
+      @include lg-max {
+        padding-right: 15px;
+      }
+    }
+
+    .col-lg-8 {
+      .col-md-6 {
+        margin-bottom: 15px;
+        padding-right: 0;
+        @include lg-max {
+          padding-right: 15px;
+        }
+      }
+    }
+
+    .first-type-block, .second-type-block {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 100%;
+      color: white;
+      padding: 22.5px 30px;
+      position: relative;
+
+      .inner-wrapper {
+        padding-bottom: 115px;
+        @include min-w(2000) {
+          padding-bottom: 239px;
+        }
+        display: flex;
+        flex-direction: column;
+
+        .subHeader {
+          font-size: 22px;
+          font-weight: 400;
+          @include min-w(2000) {
+            font-size: 28px;
+          }
+          @include md-max {
+            font-size: 18px;
+          }
+          @include sm-max {
+            font-size: 14px;
+          }
+        }
+
+        .strong-inline {
+          font-weight: 700;
+          font-size: 28px;
+          @include min-w(2000) {
+            font-size: 34px;
+          }
+          @include md-max {
+            font-size: 22px;
+          }
+          @include sm-max {
+            font-size: 16px;
+          }
+        }
+
+        .thin-inner-text {
+          font-weight: 200;
+          font-size: 15px;
+          padding-top: 10px;
+          @include min-w(2000) {
+            font-size: 20px;
+          }
+          @include md-max {
+            font-size: 13px;
+          }
+          @include sm-max {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .first-type-block {
+      @include min-w(2000) {
+        height: 885px;
+      }
+      @include lg-max {
+        position: relative;
+      }
+      display: block;
+      padding: 50px 40px;
+      position: absolute;
+      z-index: 999;
+
+      .inner-wrapper {
+
+        h5 {
+          font-size: 26px;
+          margin-bottom: 35px;
+          @include min-w(2000) {
+            font-size: 30px;
+          }
+          @include lg-max {
+            font-size: 24px;
+          }
+          @include md-max {
+            font-size: 22px;
+          }
+          @include sm-max {
+            font-size: 20px;
+          }
+        }
+
+        .subHeader {
+          font-size: 26px;
+          font-weight: 400;
+          @include min-w(2000) {
+            font-size: 30px;
+          }
+          @include lg-max {
+            font-size: 22px;
+          }
+          @include md-max {
+            font-size: 18px;
+          }
+          @include sm-max {
+            font-size: 14px;
+          }
+        }
+
+        .strong-inline {
+          font-weight: 700;
+          font-size: 38px;
+          @include min-w(2000) {
+            font-size: 42px;
+          }
+          @include lg-max {
+            font-size: 30px;
+          }
+          @include md-max {
+            font-size: 24px;
+          }
+          @include sm-max {
+            font-size: 16px;
+          }
+        }
+
+        .thin-inner-text {
+          font-weight: 200;
+          font-size: 16px;
+          padding-top: 40px;
+          @include min-w(2000) {
+            font-size: 20px;
+          }
+          @include md-max {
+            font-size: 14px;
+          }
+          @include sm-max {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .tooltip {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        //justify-content: center;
+        //align-items: flex-start;
+        padding: 20px 27.5px;
+        border-top-right-radius: 23px;
+        opacity: 0.8;
+        font-size: 12px;
+        @include min-w(2000) {
+          font-size: 18px;
+          padding: 25px 30px;
+        }
+
+        .inner-header {
+          padding-bottom: 5px;
+
+          img {
+            margin-left: -2.5px;
+          }
+
+          .tooltip-text {
+            padding-left: 5px;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            @include min-w(2000) {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .inner-text {
+          padding-left: 7.5px;
+        }
+      }
+    }
+
+    .first-type-block-hover {
+      @include lg-max {
+        display: none;
+      }
+      height: 100%;
+      position: absolute;
+      width: 97%;
+      //position: relative;
+      top: 0;
+      left: 15px;
+      background-color: white;
+      color: black;
+      z-index: 99;
+      padding: 50px 0;
+
+      h5 {
+        padding: 0 40px;
+      }
+
+      .image-container {
+        top: -50px;
+        position: relative;
+        padding: 0 65px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        //top: -25px;
+        @include min-w(2000) {
+          top: 25px;
+        }
+
+        .single-line {
+          span:first-child {
+            padding-left: 30px;
+          }
+
+          span:last-child {
+            padding-right: 30px;
+          }
+
+          span {
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-left: 4px;
+            }
+          }
+
+          display: flex;
+          padding: 6px 0;
+          border-bottom: 1px solid rgba(167, 167, 167, 0.3);
+          justify-content: space-between;
+          font-size: 15px;
+          font-weight: 500;
+          letter-spacing: 0.68px;
+          @include min-w(2000) {
+            font-size: 18px;
+            padding: 10px 0;
+          }
+
+          &:last-child {
+            border-bottom: 0;
+          }
+
+          .colors {
+            img {
+              margin-right: 10px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .second-type-block {
+      @include min-w(993) {
+        height: 307px;
+      }
+      @include min-w(2000) {
+        height: 435px;
+      }
+      @include lg-max {
+        position: relative;
+      }
+      display: block;
+      //position: absolute;
+      z-index: 999;
+
+      .tooltip {
+        position: absolute;
+        left: 0;
+        bottom: 26px;
+        border-top-right-radius: 23px;
+        border-bottom-right-radius: 23px;
+        opacity: 0.8;
+        display: flex;
+        padding: 6px 20px 6px 30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        @include min-w(2000) {
+          bottom: 36px;
+        }
+
+        .tooltip-text {
+          color: black;
+          font-weight: 500;
+          padding-left: 12.5px;
+          @include min-w(2000) {
+            font-size: 20px;
+            padding: 5px 15px;
+          }
+          @include lg-max {
+            font-size: 14px;
+          }
+          @include md-max {
+            font-size: 12px;
+          }
+          @include sm-max {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+
+    .second-type-block-hover {
+      @include lg-max {
+        display: none;
+      }
+      //height: 100%;
+      @include min-w(993) {
+        height: 307px;
+      }
+      @include min-w(2000) {
+        height: 435px;
+        width: 98%;
+      }
+      position: absolute;
+      width: 97%;
+      //position: relative;
+      top: 0;
+      left: 15px;
+      background-color: white;
+      color: black;
+      z-index: 99;
+
+      .image-container {
+        top: -50px;
+        position: relative;
+        padding: 0 65px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .inner-wrapper {
+        padding: 22.5px 0 !important;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -40px;
+        @include min-w(2000) {
+          top: 0;
+        }
+
+        .single-line {
+          span:first-child {
+            padding-left: 30px;
+          }
+
+          span:last-child {
+            padding-right: 30px;
+          }
+
+          span {
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-left: 4px;
+            }
+          }
+
+          display: flex;
+          border-bottom: 1px solid rgba(167, 167, 167, 0.3);
+          justify-content: space-between;
+          font-weight: 500;
+          letter-spacing: 0.68px;
+          @include min-w(2000) {
+            font-size: 18px;
+            padding: 10px 0;
+          }
+
+          &:last-child {
+            border-bottom: 0;
+          }
+
+          .colors {
+            img {
+              margin-right: 10px;
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+
+      padding: 0 !important;
+
+      h5 {
+        padding: 0 30px !important;
+      }
+
+      .single-line {
+        font-size: 13px !important;
+        padding: 3px 0 !important;
+        @include min-w(2000) {
+          font-size: 16px !important;
+        }
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+
+        img {
+          @include min-w(2000) {
+            width: 225px !important;
+          }
+          width: 160px !important;
+        }
+      }
+    }
+
+    .hide {
+      display: none !important;
+    }
+
+  }
+}

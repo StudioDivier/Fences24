@@ -1,0 +1,148 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.catalog__fourth-screen {
+  background-color: $background-color;
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  h1 {
+    padding-bottom: 30px;
+  }
+
+  .more-products {
+    width: 100%;
+    display: flex;
+    //flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+
+    .slick-slide {
+      height: 100%;
+    }
+
+    .slick-arrow {
+      width: 42px;
+
+      &:first-child {
+        &:hover {
+          content: url("../../../img/third-screen/left-green-hover.svg");
+        }
+      }
+
+      &:last-child {
+        &:hover {
+          content: url("../../../img/third-screen/right-green-hover.svg");
+        }
+      }
+
+      @include max-w(1800) {
+        display: none !important;
+      }
+      top: 45%;
+    }
+  }
+
+  .second-type-block {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    color: white;
+    padding: 22.5px 50px 22.5px 30px;
+    @include min-w(2000) {
+      padding: 30px 90px 30px 30px;
+    }
+    position: relative;
+
+    .inner-wrapper {
+      padding-bottom: 115px;
+      @include min-w(2000) {
+        padding-bottom: 239px;
+      }
+      display: flex;
+      flex-direction: column;
+
+      .subHeader {
+        font-size: 22px;
+        font-weight: 400;
+        @include min-w(2000) {
+          font-size: 28px;
+        }
+        @include md-max {
+          font-size: 18px;
+        }
+        @include sm-max {
+          font-size: 14px;
+        }
+      }
+
+      .strong-inline {
+        font-weight: 700;
+        font-size: 28px;
+        @include min-w(2000) {
+          font-size: 34px;
+        }
+        @include md-max {
+          font-size: 22px;
+        }
+        @include sm-max {
+          font-size: 16px;
+        }
+      }
+
+      .thin-inner-text {
+        font-weight: 200;
+        font-size: 15px;
+        padding-top: 10px;
+        @include min-w(2000) {
+          font-size: 20px;
+        }
+        @include md-max {
+          font-size: 13px;
+        }
+        @include sm-max {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .tooltip {
+      position: absolute;
+      left: 0;
+      bottom: 26px;
+      border-top-right-radius: 23px;
+      border-bottom-right-radius: 23px;
+      opacity: 0.8;
+      display: flex;
+      padding: 6px 20px 6px 30px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      @include min-w(2000) {
+        bottom: 36px;
+      }
+
+      .tooltip-text {
+        color: black;
+        font-weight: 500;
+        padding-left: 12.5px;
+        @include min-w(2000) {
+          font-size: 20px;
+          padding: 5px 15px;
+        }
+        @include lg-max {
+          font-size: 14px;
+        }
+        @include md-max {
+          font-size: 12px;
+        }
+        @include sm-max {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

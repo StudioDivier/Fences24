@@ -1,0 +1,107 @@
+@import "common/colors";
+@import "common/screen";
+@import "common/variables";
+@import "common/mixins";
+
+// Fonts
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input, button {
+  &:focus {
+    outline: 0;
+  }
+}
+
+// Bootstrap Container
+@include min-w(1400) {
+  .container {
+    max-width: 1650px
+  }
+}
+
+@include min-w(2000) {
+  .container {
+    max-width: 2200px !important;
+  }
+}
+
+.container4k {
+  @include lg-min {
+    max-width: 1200px;
+  }
+}
+
+.green-colored {
+  color: $green-color;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: $h1FontSize;
+  font-weight: $h1FontWeight;
+  @include lg-max {
+    font-size: $h1FontSizeLG;
+  }
+  @include md-max {
+    font-size: $h1FontSizeMD;
+  }
+  @include sm-max {
+    font-size: $h1FontSizeSM;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '-'
+}
+
+.breadcrumb {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.55px;
+
+  a {
+    text-decoration: underline;
+    color: black;
+
+    &:hover {
+      color: $green-color;
+      text-decoration: none;
+    }
+  }
+
+  .active {
+    color: $green-color;
+  }
+}
+
+.slick-slide {
+  &:focus {
+    outline: 0;
+  }
+}
+
+.green-button {
+  background-color: $green-color;
+  padding: 8.5px 17.5px 7.5px 17.5px;
+  color: white;
+  border: 0;
+  font-size: 10px;
+  font-weight: 700;
+  float: right;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #00844a;
+  }
+
+  @include min-w(2000) {
+    padding: 11px 20px 10px 20px;
+  }
+}
+
+// Import pages & components
+@import "pages/_common/components";
+@import "pages/index/_index.scss";
+@import "pages/catalog/_catalog.scss";

@@ -1,0 +1,153 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.third-screen {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  //@include bgImgCover('../../../img/third-screen/green-bg.svg');
+  background-image: url("../../../img/third-screen/green-bg.svg");
+  @include lg-max {
+    background-image: none;
+    background-color: $green-color;
+  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+
+  h1 {
+    padding-bottom: 30px;
+    @include sm-max {
+      padding-bottom: 15px;
+    }
+  }
+
+  .what-is {
+    color: white;
+    padding-right: 50px;
+    @include lg-max {
+      padding-right: 0;
+    }
+
+    .section-content-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      font-weight: 200;
+      font-size: 16px;
+      letter-spacing: 0.72px;
+      @include lg-max {
+        font-size: 14px;
+      }
+      @include min-w(2000) {
+        font-size: 18px;
+      }
+
+      .first-row {
+        display: flex;
+        flex-direction: row;
+        @include sm-max {
+          flex-direction: column;
+          img {
+            margin-bottom: 15px;
+          }
+        }
+        align-items: center;
+        padding-bottom: 25px;
+
+        span {
+          @include sm-max {
+            padding-left: 0;
+          }
+          padding-left: 25px;
+          font-weight: 200;
+          //font-size: 16px;
+          letter-spacing: 0.72px;
+        }
+      }
+
+      p {
+        margin-bottom: 25px;
+      }
+
+      .secondParagraph {
+        font-weight: 700;
+        font-style: italic;
+      }
+    }
+  }
+
+  .how-to-use {
+    z-index: 2;
+    color: black;
+    padding-left: 25px;
+    @include lg-max {
+      padding-left: 0;
+      color: white;
+    }
+
+    .how-to-slider {
+      padding-bottom: 40px;
+      height: 480px;
+      @include md-max {
+        height: 350px;
+      }
+    }
+
+    .how-to-slider2 {
+      position: relative;
+      padding: 0 60px;
+
+      @include md-max {
+        padding: 0 0 0 20px;
+        //padding-right: 20px;
+      }
+
+      .slick-track {
+        img {
+          margin-right: 20px;
+          height: 86px;
+        }
+      }
+    }
+
+    .slick-arrow {
+      &:first-child {
+        &:hover {
+          content: url("../../../img/third-screen/left-green-hover.svg");
+        }
+      }
+
+      &:last-child {
+        &:hover {
+          content: url("../../../img/third-screen/right-green-hover.svg");
+        }
+      }
+
+      @include lg-max {
+        display: none;
+      }
+      top: 27.5%;
+      width: 35px;
+    }
+
+    .slick-list {
+      height: 100%;
+
+      .slick-track {
+        height: 100%;
+
+        .slick-slide {
+          &:focus {
+            outline: 0;
+          }
+        }
+
+      }
+    }
+  }
+}

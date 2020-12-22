@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <!--    <script src="https://code.jquery.com/jquery-3.5.1.min.js"-->
+    <!--            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="-->
+    <!--            crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Fences24</title>
+</head>
+<body>
+
+<header>
+
+    <div class="top-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar">
+                        <div class="level-one">
+                            <div class="city-select">
+                                <span>г. Москва</span>
+                                <span>другой город</span>
+                            </div>
+                            <div class="sm-menu-wrapper">
+                                <span>О компании</span>
+                                <span>Производство</span>
+                                <span>Акции</span>
+                                <span>Доставка и оплата</span>
+                                <span>Контакты</span>
+                            </div>
+                            <div class="auth-wrapper">
+                                <span>Личный кабинет</span>
+                                <form action="">
+                                    <input type="text" placeholder="Логин">
+                                    <input type="text" placeholder="Пароль">
+                                    <div class="green-outline">Вход</div>
+                                </form>
+                            </div>
+                            <div class="password-actions">
+                                <span>Запомнить</span>
+                                <span>Забыли пароль?</span>
+                            </div>
+                            <div class="mobile-auth">
+                                <img src="img/icons/user-icon.svg" alt="User icon" data-toggle="modal"
+                                     data-target="#exampleModalCenter">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="level-two">
+                        <div class="logo-wrapper">
+                            <a href="/"><img src="img/icons/header/logo.svg" alt="Logo F24"></a>
+                            <span>Современные системы ограждения</span>
+                        </div>
+                        <div class="contacts-wrapper">
+                            <span class="phone">+7 (499) 288-7260</span>
+                            <div class="other-contacts">
+                                <img src="img/icons/header/telegram.svg" alt="Telegram">
+                                <img src="img/icons/header/whatsapp.svg" alt="Whatsapp">
+                                <span>Обратный звонок</span>
+                            </div>
+                        </div>
+                        <div class="basket-wrapper">
+                            <img src="img/icons/header/basket.svg" alt="Basket">
+                            <div class="basket__text-wrapper">
+                                <span>Корзина</span>
+                                <span>Наименований 123 на сумму <span class="green-colored">123 453 р.</span></span>
+                                <span>Текущая скидка <span class="green-colored">5%</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container container4k">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent3"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="level-three collapse navbar-collapse" id="navbarSupportedContent3">
+                        <a href="/catalog.html"><span>Каталог продукции</span></a>
+                        <a href=""><span>Готовые решения</span></a>
+                        <a href=""><span>Калькулятор</span></a>
+                        <a href=""><span>Установка и монтаж</span></a>
+                        <a href=""><span>Лайфхаки</span></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Авторизация</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="auth-wrapper">
+                        <span>Войдите в личный кабинет</span>
+                        <form action="">
+                            <input type="text" placeholder="Логин">
+                            <input type="text" placeholder="Пароль">
+                            <div class="green-outline">Вход</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <section class="catalog__first-screen">
+        <div class="container pb-4">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-transparent p-0">
+                            <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">3D Панели</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>3D панели для ограждения</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-4 col-xl-3">
+                    <div class="catalog-sidebar">
+                        <ul id="catalog-accordion" class="catalog-accordion">
+                            <li class="parent-li">
+                                <div class="link"><img src="img/catalog/icons/li-marker.png" alt="Custom marker">
+                                    3D панели
+                                </div>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Forest”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Combi”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Country”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Town”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “City”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Fort”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent-li">
+                                <div class="link"><img src="img/catalog/icons/li-marker.png" alt="Custom marker">
+                                    2D панели
+                                </div>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Forest”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Combi”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Country”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Town”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “City”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Fort”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent-li">
+                                <div class="link"><img src="img/catalog/icons/li-marker.png" alt="Custom marker">
+                                    Техограда
+                                </div>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Forest”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Combi”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Country”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Town”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “City”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Fort”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent-li">
+                                <div class="link"><img src="img/catalog/icons/li-marker.png" alt="Custom marker">
+                                    Столбы и сваи
+                                </div>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Forest”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Combi”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Country”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Town”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “City”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Fort”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent-li">
+                                <div class="link"><img src="img/catalog/icons/li-marker.png" alt="Custom marker">
+                                    Крепежные элементы
+                                </div>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Forest”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Combi”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Country”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Town”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “City”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Fort”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent-li">
+                                <div class="link"><img src="img/catalog/icons/li-marker.png" alt="Custom marker">
+                                    Калитки
+                                </div>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Forest”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Combi”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Country”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Town”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “City”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Fort”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="parent-li">
+                                <div class="link"><img src="img/catalog/icons/li-marker.png" alt="Custom marker">
+                                    Ворота
+                                </div>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Forest”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Combi”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Country”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Town”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “City”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="img/catalog/icons/small-arrow-list.png" alt="Marker">
+                                            <span class="outer-wrapper">
+                                            <span class="inner-wrapper">
+                                                Панель “Fort”
+                                            </span>
+                                            <span class="inner-wrapper-sm">
+                                                <img src="img/catalog/icons/radius-icon.png" alt="Radius">
+                                                прутка (мм) - 3
+                                            </span>
+                                        </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-8 col-xl-9">
+                    <div class="row">
+                        <div class="catalog-content">
+<!--                            <div class="col-md-12 col-lg-4">-->
+<!--                                <div class="single-item">-->
+<!--                                    <div class="upper-part">-->
+<!--                                        <img src="img/catalog/first-screen/img1.png" alt="Illustration">-->
+<!--                                    </div>-->
+<!--                                    <div class="lower-part">-->
+<!--                                        <h5>3D панель forest</h5>-->
+<!--                                        <span class="description">Ограждение 3D обладает высокими-->
+<!--                                            эксплуатационными характеристиками.-->
+<!--                                            Заборы из панелей 3D стали доступны</span>-->
+<!--                                        <div class="diameter">-->
+<!--                                            <div class="inner-text-wrapper">-->
+<!--                                                <img src="img/catalog/icons/green-diameter.png" alt="Diameter">-->
+<!--                                                <span>Диаметр</span>-->
+<!--                                            </div>-->
+<!--                                            <span>5 мм.</span>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <div class="col-md-12">
+                                <div class="button-container">
+                                    <button class="expand-button blue-button">Смотреть еще</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="third-screen catalog__third-screen">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 custom-col">
+                    <div class="what-is">
+                        <h1>Из чего состоит 3Д панель?</h1>
+                        <div class="section-content-wrapper">
+                            <div class="first-row">
+                                <img src="img/catalog/third-screen/img1.png" alt="Illustration">
+                                <span>Забор играет не последнюю
+                                    роль в оформлении участка.
+                                    Строительный рынок изобилует
+                                    разнообразными заборами, как
+                                    из искусственных, так и
+                                    натуральных материалов.
+                                    Ценовая политика ограждений
+                                    также отличается</span>
+                            </div>
+                            <div class="attention-block">
+                                <img src="img/catalog/third-screen/icon.png" alt="Exclamation mark">
+                                <span>Производители предлагают элитные и дорогостоящие
+                                    модели, другие выпускают модели, доступные по цене.
+                                    Большой популярностью пользуются 3D заборы, которые
+                                    можно приобрести за вполне реальную сумму.</span>
+                            </div>
+                            <p class="firstParagraph">«Обычную модель забора делают из сварной сетки. Доступная цена
+                                такого ограждения не говорит о плохом качестве, у модели имеются
+                                преимущества, благодаря которым такой забор популярен. 3D заборы
+                                занимают особую позицию на строительном рынке. Не только
+                                профессионалы в сфере строительства, но и обычные владельцы
+                                участков отмечают, что такой забор – отличное решение.</p>
+                            <div class="first-row">
+                                <img src="img/catalog/third-screen/img2.png" alt="Illustration">
+                                <span>Стандартную модель 3D забора
+                                делают из металлических прутьев,
+                                которые покрывают составом,
+                                препятствующим появлению
+                                ржавчины. Эффект объёма в таких
+                                моделях достигается путём
+                                сооружения V-образных выступов,
+                                поэтому у ограждения появляется</span>
+                            </div>
+                            <p class="thirdParagraph">рельефный и подвижный вид. 3D забор не только красивый на вид, но
+                                и
+                                обладает очень хорошими техническими качествами. Мы предлагаетм
+                                полный спектр услуг в сфере установки систем ограждения 3d:
+                                проектирование ограждений с учетом требований безопасности на
+                                объекте, производство секций и других комплектующих на заказ.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 custom-col">
+                    <div class="how-to-use">
+                        <h1>Что влияет на стоимость 3Д панели?</h1>
+                        <p class="subheader">
+                            За много лет мы реализовали очень много проектов, и вывели для вас
+                            наиболее частые готовые решения по разным сферам
+                        </p>
+                        <div class="step-wrapper">
+                            <div class="upper-block">
+                                <div class="green-number-wrapper"><span>01.</span></div>
+                                <div class="header-text-wrapper">
+                                    <span class="inner-header">Диаметр прутка</span>
+                                    <span class="description">Предлагаем панельные ограждения 3Д от производителя. Полный ассортимент
+                                        3D ограждений-более 200 вариантов типов и размеров. В данном разделе для
+                                        Вас представлены стандартные варианты секций ограждений.</span>
+                                </div>
+                            </div>
+                            <div class="lower-block">
+                                <img src="img/catalog/third-screen/illustration1.png" alt="Illustration">
+                                <div class="header-text-wrapper">
+                                    <span class="inner-header">Стоимость 3Д панели</span>
+                                    <span class="description">Панельные ограждения 3d представляют собой сварные секции из
+                                        горизонтальных и вертикальных металлических прутков. Секции
+                                        изготовлены из оцинкованной стали с полимерным покрытием, по
+                                        умолчанию окрашены в зеленый цвет.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-wrapper">
+                            <div class="upper-block">
+                                <div class="blue-number-wrapper"><span>02.</span></div>
+                                <div class="header-text-wrapper">
+                                    <span class="inner-header">Высота панели</span>
+                                    <span class="description">Сетчатые ограждения 3d имеют конструктивную особенность, которая отличает
+                                        их от стандартных 2d панелей. В верхней части каждой секции прутки имеют
+                                        V-образный изгиб. Такое профилирование придает конструкции жесткость.</span>
+                                </div>
+                            </div>
+                            <div class="lower-block">
+                                <div class="lower-block__slider">
+                                    <img src="img/catalog/third-screen/sm-slide1.png" alt="Slide">
+                                    <img src="img/catalog/third-screen/sm-slide2.png" alt="Slide">
+                                    <img src="img/catalog/third-screen/sm-slide3.png" alt="Slide">
+                                    <img src="img/catalog/third-screen/sm-slide4.png" alt="Slide">
+                                    <img src="img/catalog/third-screen/sm-slide5.png" alt="Slide">
+                                    <img src="img/catalog/third-screen/sm-slide1.png" alt="Slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-wrapper">
+                            <div class="upper-block">
+                                <div class="green-number-wrapper"><span>03.</span></div>
+                                <div class="header-text-wrapper">
+                                    <span class="inner-header">Стандартные величины</span>
+                                    <span class="description">Предлагаем полный спектр услуг в сфере установки систем ограждения 3d:
+                                        проектирование ограждений с учетом требований безопасности на объекте,
+                                        производство секций и других комплектующих на заказ или поставка со склада.</span>
+                                </div>
+                            </div>
+                            <div class="lower-block">
+                                <div class="content-wrapper">
+                                    <span class="subheader">Материалы производства и используемые технологии:</span>
+                                    <ul>
+                                        <li>Прочность и жесткость конструкции. Сварная сетка из металлического прутка
+                                            надежно защищает территорию от несанкционированного проникновения;
+                                        </li>
+                                        <li>3d панельные ограждения быстро и легко собираются на участке, т.к.
+                                            доставляются в
+                                            готовом виде. Все, что нужно для начала процесса монтажа – установить
+                                            опорные столбы;
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-wrapper">
+                            <div class="upper-block">
+                                <div class="blue-number-wrapper"><span>04.</span></div>
+                                <div class="header-text-wrapper">
+                                    <span class="inner-header">Высота панели</span>
+                                    <span class="description">Сетчатые ограждения 3d имеют конструктивную особенность, которая отличает
+                                        их от стандартных 2d панелей. В верхней части каждой секции прутки имеют
+                                        V-образный изгиб. Такое профилирование придает конструкции жесткость.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog__fourth-screen">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Что еще вам может понадобиться?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="more-products">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="second-type-block" style="background-image: url(img/first-screen/img6.png)">
+                            <div class="inner-wrapper">
+                                <h5>Дополнительное оборудование</h5>
+                                <span class="subHeader">от <span class="strong-inline">990</span> р/шт.</span>
+                                <span class="thin-inner-text">Элементы усиления ограды, для оснащения
+                                    защищенных объектов и нежелательного
+                                    проникновения посторонних</span>
+                                <div class="tooltip" style="background-color: white">
+                                    <img src="img/first-screen/dev-icon1.png" alt="Illustration icon">
+                                    <span class="tooltip-text">Собственное производство</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="second-type-block" style="background-image: url(img/first-screen/img7.png)">
+                            <div class="inner-wrapper">
+                                <h5>Калитки</h5>
+                                <span class="subHeader">от <span class="strong-inline">990</span> р/шт.</span>
+                                <span class="thin-inner-text">Калитки - элемент входной группы устанавливаемого
+                                    ограждения. Могут производиться как с сетчатым так
+                                    и трубчатым заполнением</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="second-type-block" style="background-image: url(img/first-screen/img8.png)">
+                            <div class="inner-wrapper">
+                                <h5>Ворота</h5>
+                                <span class="subHeader">от <span class="strong-inline">990</span> р/шт.</span>
+                                <span class="thin-inner-text">Ворота - элемент входной группы устанавливаемого
+                                    ограждения, служат для проезда автомобильной
+                                    техники</span>
+                                <div class="tooltip" style="background-color: #004426">
+                                    <img src="img/first-screen/dev-icon3.png" alt="Illustration icon">
+                                    <span class="tooltip-text" style="color: white">Стойкость к коррозии</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="second-type-block" style="background-image: url(img/first-screen/img6.png)">
+                            <div class="inner-wrapper">
+                                <h5>Дополнительное оборудование</h5>
+                                <span class="subHeader">от <span class="strong-inline">990</span> р/шт.</span>
+                                <span class="thin-inner-text">Элементы усиления ограды, для оснащения
+                                    защищенных объектов и нежелательного
+                                    проникновения посторонних</span>
+                                <div class="tooltip" style="background-color: white">
+                                    <img src="img/first-screen/dev-icon1.png" alt="Illustration icon">
+                                    <span class="tooltip-text">Собственное производство</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="second-type-block" style="background-image: url(img/first-screen/img7.png)">
+                            <div class="inner-wrapper">
+                                <h5>Калитки</h5>
+                                <span class="subHeader">от <span class="strong-inline">990</span> р/шт.</span>
+                                <span class="thin-inner-text">Калитки - элемент входной группы устанавливаемого
+                                    ограждения. Могут производиться как с сетчатым так
+                                    и трубчатым заполнением</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="second-type-block" style="background-image: url(img/first-screen/img8.png)">
+                            <div class="inner-wrapper">
+                                <h5>Ворота</h5>
+                                <span class="subHeader">от <span class="strong-inline">990</span> р/шт.</span>
+                                <span class="thin-inner-text">Ворота - элемент входной группы устанавливаемого
+                                    ограждения, служат для проезда автомобильной
+                                    техники</span>
+                                <div class="tooltip" style="background-color: #004426">
+                                    <img src="img/first-screen/dev-icon3.png" alt="Illustration icon">
+                                    <span class="tooltip-text" style="color: white">Стойкость к коррозии</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog__fifth-screen">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Полезные материалы по 3Д панелям?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="useful-materials">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="custom-col">
+                            <div class="header-wrapper">
+                                <img src="img/catalog/fifth-screen/slide1.png" alt="Slide">
+                            </div>
+                            <div class="content-wrapper">
+                                <h5>Монтаж 3Д панели</h5>
+                                <span class="article-marker">(статьи по монтажу)</span>
+                                <p>Место проведения работ (линия ограждения) должно
+                                    быть очищено от посторонних предметов, деревьев,
+                                    растений, мусора и т.д. Если стоит задача сделать
+                                    ограждение в один уровень, то перед началом работ
+                                    необходимо осуществить планировку линии ограждения</p>
+                                <button class="green-button">
+                                    Перейти
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="custom-col">
+                            <div class="header-wrapper">
+                                <img src="img/catalog/fifth-screen/slide2.png" alt="Slide">
+                            </div>
+                            <div class="content-wrapper">
+                                <h5>Подготовка к монтажу</h5>
+                                <span class="article-marker">(советы бывалых)</span>
+                                <p>Перед монтажом ограждения необходимо осуществить
+                                    разметку территории, отметить вешками углы поворота
+                                    забора и места установки столбов распашных или
+                                    откатных ворот и калиток. Лицевые стороны столбов
+                                    ограждения должны находится в одной плоскости</p>
+                                <button class="green-button">
+                                    Перейти
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="custom-col">
+                            <div class="header-wrapper">
+                                <img src="img/catalog/fifth-screen/slide3.png" alt="Slide">
+                            </div>
+                            <div class="content-wrapper">
+                                <h5>Разметка места установки</h5>
+                                <span class="article-marker">(лайфхаки)</span>
+                                <p>Разметка осуществляется при помощи рулетки и
+                                    указательных вешек всегда строго по осям (центрам)
+                                    столбов. По углам площадки установить разметочные
+                                    столбы. По нижней границе ограждения натянуть
+                                    веревку по уровню (нивелиру).</p>
+                                <button class="green-button">
+                                    Перейти
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="custom-col">
+                            <div class="header-wrapper">
+                                <img src="img/catalog/fifth-screen/slide1.png" alt="Slide">
+                            </div>
+                            <div class="content-wrapper">
+                                <h5>Монтаж 3Д панели</h5>
+                                <span class="article-marker">(статьи по монтажу)</span>
+                                <p>Место проведения работ (линия ограждения) должно
+                                    быть очищено от посторонних предметов, деревьев,
+                                    растений, мусора и т.д. Если стоит задача сделать
+                                    ограждение в один уровень, то перед началом работ
+                                    необходимо осуществить планировку линии ограждения</p>
+                                <button class="green-button">
+                                    Перейти
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xl-2">
+                    <div class="logo-wrapper">
+                        <a href="/"><img src="img/icons/footer/logo.svg" alt="Logo"></a>
+                        <span class="header-text">Современные системы ограждения</span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-xl-2">
+                    <div class="custom-col">
+                        <h5>Продукция</h5>
+                        <a href="/#"><span>3D ограждение</span></a>
+                        <a href="/#"><span>2D ограждение</span></a>
+                        <a href="/#"><span>Элементы ограждений</span></a>
+                        <a href="/#"><span>Распашные ворота</span></a>
+                        <a href="/#"><span>Раздвижные ворота</span></a>
+                        <a href="/#"><span>Калитки</span></a>
+                        <a href="/#"><span>Забивные сваи</span></a>
+                        <a href="/#"><span>Винтовые опоры и столбы</span></a>
+                        <a href="/#"><span>Дополнительные средства защиты</span></a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-xl-2">
+                    <div class="custom-col">
+                        <h5>Готовые решения</h5>
+                        <a href="/#"><span>Готовые решения</span></a>
+                        <a href="/#"><span>Спорт площадки</span></a>
+                        <a href="/#"><span>Частные владения</span></a>
+                        <a href="/#"><span>Агрокомплекс и фермерские хозяйства</span></a>
+                        <a href="/#"><span>Детские сады и школы</span></a>
+                        <a href="/#"><span>Городские объекты</span></a>
+                        <a href="/#"><span>Промышленность и склады</span></a>
+                        <h5 class="calc" style="margin-top: 25px">Калькулятор стоимости</h5>
+                        <a href="/#"><span>Расчет ограждения</span></a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4 col-xl-2">
+                    <div class="custom-col">
+                        <h5>Монтаж</h5>
+                        <a href="/#"><span>Монтаж</span></a>
+                        <a href="/#"><span>Общий этап подготовки</span></a>
+                        <a href="/#"><span>Этап 1: Установка столбов</span></a>
+                        <a href="/#"><span>Этап 2: Крепление сетки к столбу</span></a>
+                        <a href="/#"><span>Этап 3: Установка калитки</span></a>
+                        <a href="/#"><span>Лайфхаки по установке</span></a>
+                        <a href="/#"><span>Чертежи и документация</span></a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12 col-xl-4">
+                    <div class="custom-col contacts-info">
+                        <h5>Контактная информация</h5>
+                        <a href="tel:+74992887260"><span class="phone">+7 (499) 288-72-60</span></a>
+                        <a href="mailto:sales@fensys.ru" class="email"><span>sales@fensys.ru</span></a>
+                        <a target="_blank"
+                           href="https://www.google.com/maps/place/%D0%92%D1%8B%D0%B1%D0%BE%D1%80%D0%B3%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+16+%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5+4,+Moskva,+125212/@55.8339852,37.4932796,17z/data=!3m1!4b1!4m5!3m4!1s0x46b5481e85c585db:0x94e3ebc9a389d216!8m2!3d55.8339822!4d37.4954682"><span>г. Москва, Выборгская улица дом 16 строение 4</span></a>
+                        <h5 style="margin-top: 25px">Адрес производства:</h5>
+                        <a target="_blank"
+                           href="https://www.google.com/maps/place/Moskovskoye+Shosse,+1,+Dedenevo,+Moskovskaya+oblast',+141850/@56.2305045,37.525462,17z/data=!3m1!4b1!4m5!3m4!1s0x46b51e17591d4329:0x1f56c985853f3ae4!8m2!3d56.2305015!4d37.5276507"><span>141850, МО, Дмитровский район, рп. Деденево, Московское ш., д.1</span></a>
+                        <div class="media-wrapper">
+                            <a href="/#"><img src="img/icons/footer/Facebook.svg" alt="Facebook"></a>
+                            <a href="/#"><img src="img/icons/footer/Google+.svg" alt="Google+"></a>
+                            <a href="/#"><img src="img/icons/footer/Youtube.svg" alt="Youtube"></a>
+                            <a href="/#"><img src="img/icons/footer/Telegram.svg" alt="Telegram"></a>
+                            <a href="/#"><img src="img/icons/footer/Twitter.svg" alt="Twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divier-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <span>2020 F24. Все права защищены.</span>
+                    <span><a href="https://www.divier.ru/">Создание сайта</a> ДиВиЕР</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

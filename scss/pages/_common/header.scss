@@ -1,0 +1,407 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+header {
+  .navbar {
+    @include xl-max {
+      justify-content: flex-end;
+    }
+
+    .navbar-toggler {
+      font-size: 16px;
+    }
+  }
+
+  // First navbar
+
+  .top-nav {
+    background-color: #fafafa;
+
+    .level-one {
+      width: 100%;
+      font-size: 12px;
+      @include min-w(2000) {
+        font-size: 18px;
+      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include xl-max {
+        flex-wrap: wrap;
+      }
+
+      .city-select {
+        span {
+          font-weight: 500;
+
+          &:last-child {
+            @include min-w(2000) {
+              font-size: 16px;
+            }
+            margin-left: 10px;
+            font-size: 10px;
+            text-decoration: underline;
+            cursor: pointer;
+
+            &:hover {
+              text-decoration: none;
+              color: $green-color;
+            }
+          }
+        }
+      }
+
+      .sm-menu-wrapper {
+
+        @include max-w(1590) {
+          display: none;
+        }
+        padding-left: 50px;
+
+        span {
+          margin: 0 15px;
+          font-weight: 500;
+        }
+      }
+
+      .auth-wrapper {
+
+        @include md-max {
+          display: none;
+        }
+        @include xl-max {
+          //width: 100%;
+          border-right: 0;
+          margin-bottom: 10px;
+          padding-left: 0;
+          flex-wrap: wrap;
+        }
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+
+        span {
+          @include min-w(2000) {
+            font-size: 16px;
+          }
+          @include lg-max {
+            display: none;
+          }
+          padding-right: 15px;
+          text-transform: uppercase;
+          font-size: 10px;
+        }
+
+        form {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          @include xl-max {
+            flex-wrap: wrap;
+          }
+
+          input {
+            border: 1px solid #dadada;
+            padding: 6px 0 6px 10px;
+            margin-right: 10px;
+            background-color: transparent;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box; /* Firefox, other Gecko */
+            box-sizing: border-box;
+          }
+
+          .green-outline {
+            cursor: pointer;
+            border: 1px solid $green-color;
+            color: $green-color;
+            padding: 5.5px 20px;
+            font-weight: 600;
+
+            &:hover {
+              color: white;
+              background-color: $green-color;
+            }
+          }
+        }
+      }
+
+      .password-actions {
+
+
+        @include xl-max {
+          display: none;
+        }
+        padding-left: 50px;
+
+        span {
+          font-weight: 500;
+          margin-right: 15px;
+          font-size: 10px;
+          text-decoration: underline;
+          cursor: pointer;
+          @include min-w(2000) {
+            font-size: 14px;
+          }
+
+          &:hover {
+            text-decoration: none;
+            color: $green-color;
+          }
+        }
+      }
+
+      .mobile-auth {
+        img {
+          width: 25px;
+        }
+
+        @include md-min {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Second navbar
+
+  .middle-nav {
+    border-bottom: 1px solid #f5f6f6;
+
+    .level-two {
+      padding: 17.5px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .logo-wrapper {
+        font-size: 13px;
+        @include lg-max {
+          width: 100%;
+          justify-content: center;
+          margin-bottom: 25px;
+        }
+        @include sm-max {
+          img {
+            width: 150px;
+          }
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        span {
+          @include min-w(2000) {
+            font-size: 18px;
+            width: 222px;
+          }
+          @media screen and (min-width: 1200px) and (max-width: 1400px) {
+            display: none;
+          }
+          display: block;
+          margin-left: 20px;
+          font-weight: 500;
+          width: 160px;
+        }
+      }
+
+      .contacts-wrapper {
+        display: flex;
+        flex-direction: row;
+        @include min-w(1500) {
+          padding-left: 200px;
+        }
+        @include min-w(1600) {
+          padding-left: 300px;
+        }
+        align-items: center;
+
+        @include min-w(2000) {
+          .phone, span {
+            font-size: 20px !important;
+          }
+          img {
+            width: 35px;
+          }
+        }
+        @include lg-max {
+          width: 100%;
+          padding-left: 0;
+          justify-content: center;
+          margin-bottom: 25px;
+          .phone, span {
+            font-size: 14px !important;
+          }
+        }
+
+        .phone {
+          font-weight: 700;
+          font-size: 19px;
+          @include min-w(2000) {
+            font-size: 22px !important;
+          }
+        }
+
+        .other-contacts {
+          padding-left: 75px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          img {
+            margin-right: 15px;
+          }
+
+          span {
+            @include sm-max {
+              display: none;
+            }
+            margin-left: 10px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .basket-wrapper {
+        display: flex;
+        flex-direction: row;
+        @media screen and (min-width: 996px) and (max-width: 1200px) {
+          width: 100%;
+          justify-content: center;
+        }
+        @include lg-max {
+          width: 100%;
+          justify-content: center;
+          .basket__text-wrapper {
+            font-size: 12px !important;
+          }
+        }
+
+        .basket__text-wrapper {
+          @include min-w(2000) {
+            font-size: 18px;
+          }
+          font-size: 13px;
+          font-weight: 500;
+          margin-left: 15px;
+          display: flex;
+          flex-direction: column;
+
+          .green-colored {
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+
+  // Third navbar
+
+  .level-three {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    text-transform: uppercase;
+
+    a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      width: 20%;
+      line-height: 15px;
+      @include md-max {
+        width: 100%;
+        border-right: 0;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+      border-right: 1px solid #d0d0d0;
+      text-align: center;
+
+      span {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        @include min-w(2000) {
+          font-size: 18px;
+        }
+        &:hover {
+          color: $green-color;
+          font-weight: 700;
+        }
+      }
+
+      //padding-right: 50px;
+
+      &:last-child {
+        border-right: 0;
+      }
+    }
+  }
+
+  .modal {
+    .modal-header {
+      position: relative;
+
+      h5 {
+        position: absolute;
+        width: 100%;
+        margin: 0 -1rem;
+        text-align: center;
+      }
+    }
+
+    .modal-body {
+      .auth-wrapper {
+        text-align: center;
+        padding: 25px 10px;
+
+        span {
+          display: block;
+          margin-bottom: 20px;
+        }
+
+        form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          flex-wrap: wrap;
+
+          input {
+            width: 100%;
+            border: 1px solid #dadada;
+            padding: 6px;
+            background-color: transparent;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box; /* Firefox, other Gecko */
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            text-align: center;
+          }
+
+          .green-outline {
+            margin-top: 10px;
+            width: 100%;
+            cursor: pointer;
+            border: 1px solid $green-color;
+            color: $green-color;
+            padding: 5.5px 20px;
+            font-weight: 600;
+
+            &:hover {
+              color: white;
+              background-color: $green-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
