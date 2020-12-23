@@ -7,6 +7,7 @@ $('.promo-slider').slick({
     prevArrow: `<img src="../img/second-screen/left-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; left: 25px; z-index: 999999999"/>`,
     nextArrow: `<img src="../img/second-screen/right-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; right: 25px; z-index: 999999999"/>`,
 });
+
 $('.how-to-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -14,6 +15,7 @@ $('.how-to-slider').slick({
     fade: true,
     asNavFor: '.how-to-slider2'
 });
+
 $('.how-to-slider2').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -71,6 +73,7 @@ $('.more-products').slick({
         }
     ]
 })
+
 $('.useful-materials').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -102,6 +105,7 @@ $('.useful-materials').slick({
         }
     ]
 })
+
 $('.lower-block__slider').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -158,52 +162,57 @@ for (let i = 0; i < hoverBlockSM.length; i++) {
 
 // Catalog accordion -----------------------------------------------------------
 
-$(function () {
-    var Accordion = function (el, multiple) {
-        this.el = el || {};
-        this.multiple = multiple || false;
+if (document.getElementById('catalog-accordion')) {
 
-        // Variables privadas
-        var links = this.el.find('.link');
-        // Evento
-        links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
-    }
+    $(function () {
+        var Accordion = function (el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
 
-
-    Accordion.prototype.dropdown = function (e) {
-        var $el = e.data.el;
-        $this = $(this),
-            $next = $this.next();
-
-        $next.slideToggle();
-        $this.parent().toggleClass('open');
-        setTimeout(() => {
-            $this.parent().toggleClass('click');
-        }, 100)
-
-        if (!e.data.multiple) {
-            $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-            $el.find('.submenu').not($next).slideUp().parent().removeClass('click');
+            // Variables privadas
+            var links = this.el.find('.link');
+            // Evento
+            links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
         }
-    }
-
-    var accordion = new Accordion($('#catalog-accordion'), false);
-});
-
-// Fetch local json\
 
 
-let parentEl = document.querySelector('.catalog-content')
+        Accordion.prototype.dropdown = function (e) {
+            var $el = e.data.el;
+            $this = $(this),
+                $next = $this.next();
 
-$(function () {
-    let data;
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+            setTimeout(() => {
+                $this.parent().toggleClass('click');
+            }, 100)
 
-    fetch("test.json")
-        .then(response => response.json())
-        .then(json =>
-            (
-                json.map(value => {
-                    $('.catalog-content').prepend(`<div class="col-md-6 col-lg-6 col-xl-4 single-item-wrapper">
+            if (!e.data.multiple) {
+                $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+                $el.find('.submenu').not($next).slideUp().parent().removeClass('click');
+            }
+        }
+
+        var accordion = new Accordion($('#catalog-accordion'), false);
+    });
+
+}
+
+// Fetch local json
+
+if (document.getElementById('catalog-content')) {
+
+    let parentEl = document.querySelector('.catalog-content')
+
+    $(function () {
+        let data;
+
+        fetch("test.json")
+            .then(response => response.json())
+            .then(json =>
+                (
+                    json.map(value => {
+                        $('.catalog-content').prepend(`<div class="col-md-6 col-lg-6 col-xl-4 single-item-wrapper">
                                         <div class="single-item">
                                             <div class="upper-part">
                                                 <img src=${value.image} alt="Illustration">
@@ -221,46 +230,171 @@ $(function () {
                                             </div>
                                         </div>
                                     </div>`)
+                    })
+
+                )
+            )
+            .then(() => {
+                let cards = document.querySelectorAll('.single-item-wrapper')
+                let index = 6;
+                let zIndex = 1000;
+
+                function showCards(n, visible) {
+                    if (!visible) {
+                        for (let i = 0; i < n; i++) {
+                            // cards[i].style.display = "flex"
+                            cards[i].classList.add("show-me")
+                        }
+                    } else {
+                        for (let i = 6; i < n; i++) {
+                            // cards[i].style.display = "flex"
+                            cards[i].classList.add("dropdown-single-item")
+                            cards[i].style.zIndex = zIndex - 1;
+                            zIndex -= 1;
+                        }
+                    }
+
+                }
+
+
+                let expand = document.querySelector('.expand-button')
+                expand.addEventListener('click', () => {
+                    if (index < cards.length) {
+                        index += 6
+                        showCards(index, true)
+                    } else {
+                        expand.style.display = 'none'
+                    }
                 })
 
-            )
-        )
-        .then(() => {
-            let cards = document.querySelectorAll('.single-item-wrapper')
-            let index = 6;
-            let zIndex = 1000;
 
-            function showCards(n, visible) {
-                if (!visible) {
-                    for (let i = 0; i < n; i++) {
-                        // cards[i].style.display = "flex"
-                        cards[i].classList.add("show-me")
-                    }
-                } else {
-                    for (let i = 6; i < n; i++) {
-                        // cards[i].style.display = "flex"
-                        cards[i].classList.add("dropdown-single-item")
-                        cards[i].style.zIndex = zIndex - 1;
-                        zIndex -= 1;
-                    }
-                }
-
-            }
-
-
-            let expand = document.querySelector('.expand-button')
-            expand.addEventListener('click', () => {
-                if (index < cards.length) {
-                    index += 6
-                    showCards(index, true)
-                } else {
-                    expand.style.display = 'none'
-                }
+                showCards(index, false)
             })
+    })
+
+}
+
+if (document.getElementById('ready-to-use-content')) {
+
+    let parentEl = document.querySelector('.ready-to-use-content')
+
+    $(function () {
+        let data;
+
+        fetch("ready-to-use.json")
+            .then(response => response.json())
+            .then(json =>
+                (
+                    json.map(value => {
+                        $('.ready-to-use-content').prepend(
+                            // `<div class="col-md-6 col-lg-6 col-xl-4 single-item-wrapper">
+                            //             <div class="single-item">
+                            //                 <div class="upper-part">
+                            //                     <img src=${value.image} alt="Illustration">
+                            //                 </div>
+                            //                 <div class="lower-part">
+                            //                     <h5>${value.header}</h5>
+                            //                     <span class="description">${value.description}</span>
+                            //                     <div class="diameter">
+                            //                         <div class="inner-text-wrapper">
+                            //                             <img src="img/catalog/icons/green-diameter.png" alt="Diameter">
+                            //                             <span>Диаметр</span>
+                            //                         </div>
+                            //                         <span>${value.diameter}</span>
+                            //                     </div>
+                            //                 </div>
+                            //             </div>
+                            //         </div>`
+                        )
+                    })
+
+                )
+            )
+            .then(() => {
+                let cards = document.querySelectorAll('.single-item-wrapper')
+                let index = 6;
+                let zIndex = 1000;
+
+                function showCards(n, visible) {
+                    if (!visible) {
+                        for (let i = 0; i < n; i++) {
+                            // cards[i].style.display = "flex"
+                            cards[i].classList.add("show-me")
+                        }
+                    } else {
+                        for (let i = 6; i < n; i++) {
+                            // cards[i].style.display = "flex"
+                            cards[i].classList.add("dropdown-single-item")
+                            cards[i].style.zIndex = zIndex - 1;
+                            zIndex -= 1;
+                        }
+                    }
+
+                }
 
 
-            showCards(index, false)
-        })
+                let expand = document.querySelector('.expand-button')
+                expand.addEventListener('click', () => {
+                    if (index < cards.length) {
+                        index += 6
+                        showCards(index, true)
+                    } else {
+                        expand.style.display = 'none'
+                    }
+                })
+
+
+                showCards(index, false)
+            })
+    })
+
+}
+
+// Contacts tabs
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (document.getElementById('contacts-page')) {
+
+        let tab = document.querySelectorAll('.btn-wrapper'),
+            info = document.querySelector('.tab-buttons'),
+            tabContent = document.querySelectorAll('.info-tabcontent');
+
+        function hideTabContent(a) {
+            for (let i = a; i < tabContent.length; i++) {
+                tabContent[i].classList.remove('show');
+                tabContent[i].classList.add('hide');
+                tab[i].classList.remove('active-tab');
+            }
+        }
+
+        hideTabContent(1);
+        tab[0].classList.add('active-tab');
+
+
+        function showTabContent(b) {
+            if (tabContent[b].classList.contains('hide')) {
+                tabContent[b].classList.remove('hide');
+                tabContent[b].classList.add('show');
+                tab[b].classList.add('active-tab');
+            }
+        }
+
+        info.addEventListener('click', function (event) {
+            let target = event.target;
+            if (target && target.classList.contains('btn-wrapper')) {
+                for (let i = 0; i < tab.length; i++) {
+                    if (target == tab[i]) {
+                        hideTabContent(0);
+                        showTabContent(i);
+                        break;
+                    }
+                }
+            }
+        });
+
+    } else if (document.getElementById('direction1')) {
+
+    }
 })
 
 

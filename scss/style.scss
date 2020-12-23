@@ -8,7 +8,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-input, button {
+input, button, textarea {
   &:focus {
     outline: 0;
   }
@@ -101,7 +101,24 @@ h1 {
   }
 }
 
+// For tabs
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: flex !important;
+}
+
+.active-tab {
+  background-color: $green-color !important;
+  color: white !important;
+}
+
 // Import pages & components
 @import "pages/_common/components";
 @import "pages/index/_index.scss";
 @import "pages/catalog/_catalog.scss";
+@import "pages/contacts/_contacts.scss";
+@import "pages/ready-to-use/_ready-to-use.scss";

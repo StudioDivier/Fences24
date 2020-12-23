@@ -4,26 +4,28 @@
 @import "../../common/mixins";
 
 .catalog__first-screen {
-  background-color: $background-color;
-  padding-top: 45px;
-  padding-bottom: 60px;
-  @include lg-max {
-    padding-top: 65px;
-  }
-  @include md-max {
-    padding-top: 40px;
-  }
-  @include sm-max {
-    padding-top: 35px;
-  }
+  //background-color: $background-color;
+  //padding-top: 45px;
+  //padding-bottom: 60px;
+  //@include lg-max {
+  //  padding-top: 65px;
+  //}
+  //@include md-max {
+  //  padding-top: 40px;
+  //}
+  //@include sm-max {
+  //  padding-top: 35px;
+  //}
+  //
+  //h1 {
+  //  padding-bottom: 35px;
+  //
+  //  @include sm-max {
+  //    padding-bottom: 25px;
+  //  }
+  //}
 
-  h1 {
-    padding-bottom: 35px;
-
-    @include sm-max {
-      padding-bottom: 25px;
-    }
-  }
+  @include pageHeader;
 
   .catalog-sidebar {
     //padding-right: 50px;

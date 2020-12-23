@@ -1,0 +1,158 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.contacts__first-screen {
+  @include pageHeader;
+  background-color: $background-color;
+
+  .pc {
+    display: block;
+    @include lg-max {
+      display: none;
+    }
+  }
+
+  #accordion {
+    display: none;
+    @include lg-max {
+      display: block;
+    }
+  }
+
+  .tabs-wrapper, .mobile-tabs-wrapper {
+    background-color: white;
+    padding: 25px 58px 56px 65px;
+    @include md-max {
+      padding: 15px;
+    }
+
+    .tab-buttons, .mobile-tab-buttons {
+      display: flex;
+      flex-direction: row;
+      @include lg-max {
+        flex-wrap: wrap;
+      }
+
+      .btn-wrapper, .mobile-btn-wrapper {
+        margin-right: 4px;
+        color: black;
+        background-color: $background-color;
+        font-weight: 600;
+        padding: 30px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        @include min-w(2000) {
+          font-size: 18px;
+        }
+
+        @include md-max {
+          font-size: 16px;
+        }
+
+        @include sm-max {
+          font-size: 14px;
+        }
+
+        &:hover {
+          @include tabHover;
+        }
+
+        @include lg-max {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+
+    .info-tabcontent, .info-tabcontent1 {
+      border: 3px solid $green-color;
+      padding: 35px 35px 40px;
+      flex-direction: row;
+      justify-content: space-between;
+      @include lg-min {
+        display: flex;
+      }
+      @include lg-max {
+        flex-wrap: wrap;
+      }
+
+      @include min-w(2000) {
+        font-size: 18px;
+      }
+
+      @include md-max {
+        font-size: 16px;
+        padding: 15px;
+      }
+
+      @include sm-max {
+        font-size: 14px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      iframe {
+        @include min-w(2000) {
+          width: 1200px;
+          height: 360px;
+        }
+        @include xxl-max {
+          width: 600px;
+        }
+        @include xl-min {
+          padding-left: 25px;
+        }
+        @include lg-max {
+          width: 100%;
+          height: 250px;
+        }
+      }
+
+      .tab-inner-content {
+        padding-top: 30px;
+        @include lg-max {
+          width: 100%;
+          padding-top: 0;
+        }
+
+        .custom-row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding-bottom: 40px;
+
+          .img-wrapper {
+            margin-right: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include md-max {
+              img {
+                width: 25px;
+              }
+            }
+          }
+
+          .text-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .row-header {
+              font-weight: 600;
+              display: block;
+              padding-bottom: 7px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

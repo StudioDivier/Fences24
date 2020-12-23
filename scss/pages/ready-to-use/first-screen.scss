@@ -1,0 +1,9 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.ready-to-use__first-screen {
+  @include pageHeader;
+  background-color: $background-color;
+}

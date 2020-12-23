@@ -60,9 +60,13 @@ header {
         }
         padding-left: 50px;
 
-        span {
-          margin: 0 15px;
-          font-weight: 500;
+        a {
+          text-decoration: none;
+          color: inherit;
+          span {
+            margin: 0 15px;
+            font-weight: 500;
+          }
         }
       }
 

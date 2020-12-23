@@ -1,0 +1,13 @@
+.contacts__second-screen {
+  background-color: #f5f6f6;
+}
+.contacts__second-screen .callback-form {
+  margin-top: 60px;
+  margin-bottom: 120px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../../../img/contacts/bck.png");
+  padding: 60px;
+}

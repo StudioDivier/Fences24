@@ -1,0 +1,95 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.contacts__second-screen {
+  background-color: $background-color;
+  color: white;
+
+  .callback-form {
+    @include my(60px, 120px);
+    @include md-max {
+      padding: 30px 40px 40px;
+    }
+    width: 100%;
+    @include bgImgCover;
+    background-image: url("../../../img/contacts/bck.png");
+    padding: 60px;
+
+    .header-text-block {
+      text-align: center;
+      padding-bottom: 20px;
+
+      @include min-w(2000) {
+        font-size: 18px;
+      }
+
+      @include md-max {
+        font-size: 16px;
+        padding: 15px;
+      }
+
+      @include sm-max {
+        font-size: 14px;
+      }
+
+      h4 {
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        font-size: $h4FontSize;
+        @include md-max {
+          font-size: $h2FontSize375;
+        }
+      }
+
+      @include md-max {
+        .firstP {
+          display: none;
+        }
+      }
+    }
+
+    .inputs-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      @include lg-max {
+        flex-wrap: wrap;
+      }
+
+      input, textarea {
+        background-color: #daeae3;
+        padding: 9px 20px;
+        border: 0;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+      }
+
+      .left-block {
+        width: calc(50% - 17px);
+        @include lg-max {
+          width: 100%;
+          margin: 0;
+        }
+        margin-right: 17px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .right-block {
+        width: calc(50% - 17px);
+        @include lg-max {
+          width: 100%;
+          margin: 0;
+        }
+        margin-left: 17px;
+        height: 111px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

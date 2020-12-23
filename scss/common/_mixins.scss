@@ -55,18 +55,48 @@
   margin-bottom: $var;
 }
 
-@mixin bgImgCover($path) {
-  background-image: url('../img/#{$path}.png');
+@mixin bgImgCover {
+  //background-image: url('../img/#{$path}.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-@mixin bgImgContain($path) {
-  background-image: url('../img/#{$path}.png');
+@mixin bgImgContain {
+  //background-image: url('../img/#{$path}.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
 }
 
 // FOR PROJECT
+
+@mixin pageHeader {
+  padding-top: 45px;
+  padding-bottom: 60px;
+  background-color: $background-color;
+  @include lg-max {
+    padding-top: 65px;
+  }
+  @include md-max {
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+  @include sm-max {
+    padding-top: 35px;
+  }
+
+  h1 {
+    padding-bottom: 35px;
+
+    @include sm-max {
+      padding-bottom: 25px;
+    }
+  }
+}
+
+@mixin tabHover {
+  background-color: $green-color;
+  color: white;
+  cursor: pointer;
+}
