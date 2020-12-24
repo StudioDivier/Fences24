@@ -42,6 +42,40 @@ $('.how-to-slider2').slick({
     ]
 });
 
+$('.how-to-slider3').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.how-to-slider4'
+});
+
+$('.how-to-slider4').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.how-to-slider3',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    prevArrow: `<img src="../img/third-screen/left-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; left: 10px; z-index: 999999999"/>`,
+    nextArrow: `<img src="../img/third-screen/right-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; right: 10px; z-index: 999999999"/>`,
+    responsive: [
+        {
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                arrows: false
+            }
+        }
+    ]
+});
+
 $('.more-products').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -198,7 +232,7 @@ if (document.getElementById('catalog-accordion')) {
 
 }
 
-// Fetch local json
+// Fetch local json for CATALOG
 
 if (document.getElementById('catalog-content')) {
 
@@ -274,6 +308,8 @@ if (document.getElementById('catalog-content')) {
 
 }
 
+// Ready-to-use page
+
 if (document.getElementById('ready-to-use-content')) {
 
     let parentEl = document.querySelector('.ready-to-use-content')
@@ -287,24 +323,99 @@ if (document.getElementById('ready-to-use-content')) {
                 (
                     json.map(value => {
                         $('.ready-to-use-content').prepend(
-                            // `<div class="col-md-6 col-lg-6 col-xl-4 single-item-wrapper">
-                            //             <div class="single-item">
-                            //                 <div class="upper-part">
-                            //                     <img src=${value.image} alt="Illustration">
-                            //                 </div>
-                            //                 <div class="lower-part">
-                            //                     <h5>${value.header}</h5>
-                            //                     <span class="description">${value.description}</span>
-                            //                     <div class="diameter">
-                            //                         <div class="inner-text-wrapper">
-                            //                             <img src="img/catalog/icons/green-diameter.png" alt="Diameter">
-                            //                             <span>Диаметр</span>
-                            //                         </div>
-                            //                         <span>${value.diameter}</span>
-                            //                     </div>
-                            //                 </div>
-                            //             </div>
-                            //         </div>`
+                            `<div class="col-md-12 col-lg-6 col-xl-4 single-item-wrapper">
+                                <div class="single-item">
+                                    <div class="upper-part">
+                                        <img src="${value.image}" alt="Illustration">
+                                    </div>
+                                    <div class="lower-part">
+                                        <h5>${value.header}</h5>
+                                        <div class="custom-block__property">
+                                            <div class="inner-text-wrapper">
+                                                <span>Длина периметра</span>
+                                            </div>
+                                            <span class="custom-block__property-value">${value.length}</span>
+                                        </div>
+                                        <div class="custom-block__property">
+                                            <div class="inner-text-wrapper">
+                                                <span>Цвет</span>
+                                            </div>
+                                            <span class="custom-block__property-value">
+                                                <span class="color"
+                                                      style="background-color: ${value.color}">&nbsp;</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="prices-block">
+                                            <div class="custom-block__property">
+                                                <div class="inner-text-wrapper">
+                                                    <span>Общая стоимость</span>
+                                                </div>
+                                                <span class="custom-block__property-value">${value.totalValue + ' ' + value.currency}</span>
+                                            </div>
+                                            <div class="custom-block__property">
+                                                <div class="inner-text-wrapper">
+                                                    <span>Стоимость погонного метра</span>
+                                                </div>
+                                                <span class="custom-block__property-value">${value.meterCost + ' ' + value.currency}</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Dropdown part -->
+                                        <div class="bottom-wrapper">
+                                            <div class="another-wrapper">
+                                                <div class="dropdown-block-part">
+                                                    <div class="custom-block__property">
+                                                        <div class="inner-text-wrapper">
+                                                            <span>Количество ворот</span>
+                                                        </div>
+                                                        <span class="custom-block__property-value">${value.gatesNum} шт.</span>
+                                                    </div>
+                                                    <div class="custom-block__property">
+                                                        <div class="inner-text-wrapper">
+                                                            <span>Количество калиток</span>
+                                                        </div>
+                                                        <span class="custom-block__property-value">${value.wicketsNum} шт.</span>
+                                                    </div>
+                                                    <div class="custom-block__property">
+                                                        <div class="inner-text-wrapper">
+                                                            <span>Высота</span>
+                                                        </div>
+                                                        <span class="custom-block__property-value">${value.height} мм.</span>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="hover__more-block">
+                                                    <div class="inner-wrapper">
+                                                        <div class="custom-block__property">
+                                                            <div class="inner-text-wrapper">
+                                                                <span>Общая стоимость:</span>
+                                                            </div>
+                                                            <div class="nameless-inner-wrapper">
+                                                                <span class="custom-block__property-value">${value.totalValue + ' ' + value.currency}</span>
+                                                                <span class="custom-block__property-unit">штука</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="custom-block__property">
+                                                            <div class="inner-text-wrapper">
+                                                                <span>Стоимость погонного метра:</span>
+                                                            </div>
+                                                            <div class="nameless-inner-wrapper">
+                                                                <span class="custom-block__property-value">${value.meterCost + ' ' + value.currency}</span>
+                                                                <span class="custom-block__property-unit">штука</span>
+                                                            </div>
+                                                        </div>
+                                                        <a href="${value.link}" class="green-button">Подробнее <img
+                                                                src="img/icons/ready-to-use/sm-arrow.png" alt="arrow"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!---->
+
+                                    </div>
+                                </div>
+                            </div>`
                         )
                     })
 
@@ -315,26 +426,36 @@ if (document.getElementById('ready-to-use-content')) {
                 let index = 6;
                 let zIndex = 1000;
 
+                //
                 function showCards(n, visible) {
-                    if (!visible) {
-                        for (let i = 0; i < n; i++) {
-                            // cards[i].style.display = "flex"
-                            cards[i].classList.add("show-me")
+                    $('.ready-to-use-content').prepend(`
+                            <div id="overlay">
+                                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            </div>
+                        `)
+                    setTimeout(() => {
+                        parentEl.removeChild(document.getElementById('overlay'))
+                        if (!visible) {
+                            for (let i = 0; i < n; i++) {
+                                cards[i].style.display = "flex"
+                                cards[i].classList.add("show-me")
+                            }
+                        } else {
+                            for (let i = 6; i < n; i++) {
+                                cards[i].style.display = "flex"
+                                cards[i].classList.add("dropdown-single-item")
+                                // cards[i].style.zIndex = zIndex - 1;
+                                // zIndex -= 1;
+                            }
                         }
-                    } else {
-                        for (let i = 6; i < n; i++) {
-                            // cards[i].style.display = "flex"
-                            cards[i].classList.add("dropdown-single-item")
-                            cards[i].style.zIndex = zIndex - 1;
-                            zIndex -= 1;
-                        }
-                    }
+                    }, 500)
 
                 }
 
 
                 let expand = document.querySelector('.expand-button')
                 expand.addEventListener('click', () => {
+                    // parentEl.style.backgroundColor = "#000000";
                     if (index < cards.length) {
                         index += 6
                         showCards(index, true)
@@ -396,6 +517,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 })
-
-
-

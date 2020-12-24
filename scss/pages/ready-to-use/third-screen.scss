@@ -18,11 +18,27 @@
     }
   }
 
+  #overlay {
+    position: absolute;
+    height: calc(100% - 70px);
+    width: calc(100% - 30px);
+    //display: none;
+    opacity: 0.2;
+    background-color: grey;
+    z-index: 999999999999999999;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 15px;
+    padding-bottom: 75px;
+  }
+
   .ready-to-use-content {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
 
     .button-container {
       width: 100%;
@@ -46,29 +62,25 @@
 
     .single-item-wrapper {
       display: none;
-      //visibility: hidden;
-      //-webkit-transition: all 0.3s ease;
-      //-o-transition: all 0.3s ease;
-      //transition: all 0.3s ease;
     }
 
     .dropdown-single-item {
-      animation-name: slideDown;
-      -webkit-animation-name: slideDown;
-
-      animation-duration: 0.85s;
-      -webkit-animation-duration: 0.85s;
-
-      animation-timing-function: ease;
-      -webkit-animation-timing-function: ease;
+      //animation-name: slideDown;
+      //-webkit-animation-name: slideDown;
+      //
+      //animation-duration: 0.85s;
+      //-webkit-animation-duration: 0.85s;
+      //
+      //animation-timing-function: ease;
+      //-webkit-animation-timing-function: ease;
 
       display: flex;
       position: relative;
     }
 
     .show-me {
-      display: block;
-      z-index: 1001;
+      display: initial;
+      //z-index: 1001;
       position: relative;
     }
 
@@ -89,6 +101,30 @@
       flex-direction: column;
       margin-bottom: 30px;
 
+      @include lg-min {
+        &:hover {
+          box-shadow: 0 1px 7px rgba(0, 0, 0, 0.11);
+
+          .lower-part {
+            .bottom-wrapper {
+              box-shadow: 0 7px 7px rgba(0, 0, 0, 0.11);
+
+              .another-wrapper {
+                box-shadow: inherit;
+                display: initial;
+                width: 100%;
+                background-color: inherit;
+                padding-bottom: 40px;
+              }
+            }
+
+            .prices-block {
+              display: none;
+            }
+          }
+        }
+      }
+
       .upper-part, .lower-part {
         width: 100%;
       }
@@ -104,6 +140,7 @@
         flex-direction: column;
         padding: 20px;
         background-color: white;
+        @include responsiveText;
 
         h5 {
           font-size: 20px;
@@ -112,12 +149,42 @@
           margin-bottom: 0;
         }
 
-        .description {
-          font-size: 14px;
-          font-weight: 400;
-          letter-spacing: 0.63px;
-          color: #3d3d3d;
-          padding-top: 14px;
+        .prices-block {
+          color: $green-color;
+          font-weight: 800;
+          background-color: inherit;
+          padding-top: 5px;
+          @include md-max {
+            display: none;
+          }
+
+          .custom-block__property {
+            .inner-text-wrapper, .custom-block__property-value {
+              color: inherit;
+              font-weight: inherit;
+            }
+          }
+        }
+
+        .bottom-wrapper {
+          background-color: inherit;
+          position: relative;
+          @include mx(-20px, -20px);
+          z-index: 999;
+          .another-wrapper {
+            background-color: inherit;
+          }
+          @include lg-min {
+            .another-wrapper {
+              position: absolute;
+              display: none;
+            }
+          }
+        }
+
+        .dropdown-block-part {
+          background-color: inherit;
+          padding: 0 20px;
         }
 
         .custom-block__property {
@@ -125,6 +192,7 @@
           flex-direction: row;
           justify-content: space-between;
           //align-items: center;
+          font-size: inherit;
           padding-top: 14px;
           position: relative;
           background-color: inherit;
@@ -146,7 +214,7 @@
             z-index: 1;
             padding-right: .4rem;
             font-weight: 600;
-            font-size: 15px;
+            font-size: inherit;
 
             span {
               background-color: inherit;
@@ -171,22 +239,8 @@
           }
         }
 
-        .prices-block {
-          color: $green-color;
-          font-weight: 800;
-          background-color: inherit;
-          padding-top: 5px;
-
-          .custom-block__property {
-            .inner-text-wrapper, .custom-block__property-value {
-              color: inherit;
-              font-weight: inherit;
-            }
-          }
-        }
-
         .hover__more-block {
-          @include mx(-20px, -20px);
+          //@include mx(-20px, -20px);
           margin-top: 30px;
           padding-top: 25px;
           padding-bottom: 20px;
@@ -199,9 +253,18 @@
               justify-content: flex-start;
               padding-top: 0;
               line-height: 30px;
+              @include max-w(1480) {
+                flex-wrap: wrap;
+                flex-direction: column;
+              }
 
               &:before {
                 border-bottom: 0;
+              }
+
+              .nameless-inner-wrapper {
+                display: flex;
+                flex-direction: row;
               }
 
               .custom-block__property-value {
@@ -227,9 +290,18 @@
             .green-button {
               float: left;
               margin-top: 20px;
-              padding: 20px 40px;
+              padding: 16px 40px;
               font-weight: 600;
               letter-spacing: 0.71px;
+              text-decoration: none;
+              color: white;
+              display: flex;
+              align-items: center;
+
+              img {
+                height: 8px;
+                margin-left: 10px;
+              }
             }
           }
         }

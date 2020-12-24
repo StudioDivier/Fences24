@@ -100,3 +100,15 @@
   color: white;
   cursor: pointer;
 }
+
+@mixin responsiveText {
+  @include min-w(2000) {
+    font-size: 18px;
+  }
+  @include md-max {
+    font-size: 16px;
+  }
+  @include sm-max {
+    font-size: 14px;
+  }
+}

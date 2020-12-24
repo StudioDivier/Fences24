@@ -191,6 +191,9 @@
       .lower-block__slider {
         width: 100%;
         padding: 0 50px;
+        .slide-img {
+          height: 70px;
+        }
         @include md-max {
           display: none;
         }
