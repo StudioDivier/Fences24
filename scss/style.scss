@@ -168,9 +168,26 @@ h1 {
   }
 }
 
+#overlay {
+  position: absolute;
+  height: calc(100% - 70px);
+  width: calc(100% - 30px);
+  //display: none;
+  opacity: 0.2;
+  background-color: grey;
+  z-index: 999999999999999999;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-left: 15px;
+  padding-bottom: 75px;
+}
+
 // Import pages & components
 @import "pages/_common/components";
 @import "pages/index/_index.scss";
 @import "pages/catalog/_catalog.scss";
 @import "pages/contacts/_contacts.scss";
+@import "pages/about/_about.scss";
+@import "pages/delivery/_delivery.scss";
 @import "pages/ready-to-use/_ready-to-use.scss";

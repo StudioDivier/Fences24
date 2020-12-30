@@ -43,10 +43,10 @@
                                 <span>другой город</span>
                             </div>
                             <div class="sm-menu-wrapper">
-                                <a href="/about"><span>О компании</span></a>
+                                <a href="/about.html"><span>О компании</span></a>
                                 <a href="/"><span>Производство</span></a>
                                 <a href="/promo"><span>Акции</span></a>
-                                <a href="/delivery"><span>Доставка и оплата</span></a>
+                                <a href="/delivery.html"><span>Доставка и оплата</span></a>
                                 <a href="/contacts.html"><span>Контакты</span></a>
                             </div>
                             <div class="auth-wrapper">
@@ -185,32 +185,51 @@
                                             <div class="img-container"
                                                  style="background-image: url(img/third-screen/slider1.png)">
                                                 <!--<img src="img/third-screen/slider1.png" alt="Illustration">-->
-                                                <img class="zoom-btn" src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа">
+                                                <img class="zoom-btn"
+                                                     onclick="openFullView('img/third-screen/slider1.png')"
+                                                     src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа"
+                                                     data-toggle="modal" data-target="#fullViewModal">
                                             </div>
                                             <div class="img-container"
                                                  style="background-image: url(img/third-screen/slider2.png)">
                                                 <!--<img src="img/third-screen/slider2.png" alt="Illustration">-->
-                                                <img class="zoom-btn" src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа">
+                                                <img class="zoom-btn"
+                                                     onclick="openFullView('img/third-screen/slider2.png')"
+                                                     src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа"
+                                                     data-toggle="modal" data-target="#fullViewModal"
+                                                >
                                             </div>
                                             <div class="img-container"
                                                  style="background-image: url(img/third-screen/slider3.png)">
                                                 <!--<img src="img/third-screen/slider3.png" alt="Illustration">-->
-                                                <img class="zoom-btn" src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа">
+                                                <img class="zoom-btn"
+                                                     onclick="openFullView('img/third-screen/slider3.png')"
+                                                     src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа"
+                                                     data-toggle="modal" data-target="#fullViewModal">
                                             </div>
                                             <div class="img-container"
                                                  style="background-image: url(img/third-screen/slider2.png)">
                                                 <!--<img src="img/third-screen/slider2.png" alt="Illustration">-->
-                                                <img class="zoom-btn" src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа">
+                                                <img class="zoom-btn"
+                                                     onclick="openFullView('img/third-screen/slider2.png')"
+                                                     src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа"
+                                                     data-toggle="modal" data-target="#fullViewModal">
                                             </div>
                                             <div class="img-container"
                                                  style="background-image: url(img/third-screen/slider4.png)">
                                                 <!--<img src="img/third-screen/slider4.png" alt="Illustration">-->
-                                                <img class="zoom-btn" src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа">
+                                                <img class="zoom-btn"
+                                                     onclick="openFullView('img/third-screen/slider4.png')"
+                                                     src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа"
+                                                     data-toggle="modal" data-target="#fullViewModal">
                                             </div>
                                             <div class="img-container"
                                                  style="background-image: url(img/third-screen/slider1.png)">
                                                 <!--<img src="img/third-screen/slider1.png" alt="Illustration">-->
-                                                <img class="zoom-btn" src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа">
+                                                <img class="zoom-btn"
+                                                     onclick="openFullView('img/third-screen/slider1.png')"
+                                                     src="img/icons/ready-to-use/first-screen/icon.svg" alt="Лупа"
+                                                     data-toggle="modal" data-target="#fullViewModal">
                                             </div>
                                         </div>
                                         <div class="content-wrapper how-to-slider4">
@@ -266,10 +285,10 @@
                                     </div>
                                     <div class="attention-block">
                                         <img src="img/icons/ready-to-use/first-screen/icon.png" alt="Exclamation mark">
-                                        <span>На ограждение территории цена зависит от многих факторов: протяженность и
+                                        <p>На ограждение территории цена зависит от <strong>многих факторов</strong>: протяженность и
                                             высота конструкции, форма панелей, ширины секций, расстояния между столбами,
                                             размера ячеек и пр. Мы предлагаем недорогие конструкции по ценам от производителя.
-                                            У нас гибкая система ценообразования. О ценах более подробно вы можете узнать.</span>
+                                            У нас гибкая система ценообразования. О ценах более подробно вы можете узнать.</p>
                                     </div>
                                 </div>
                             </div>
@@ -673,6 +692,21 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="fullViewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <img class="close-icon" src="img/icons/ready-to-use/first-screen/close.svg" data-dismiss="modal" aria-label="Close" alt="Close btn">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body" id="modal-hook">
+                    <!--                    <img src="img/third-screen/slider1.png" alt="Slider image" style="width: 100%">-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </main>
 
 <footer>

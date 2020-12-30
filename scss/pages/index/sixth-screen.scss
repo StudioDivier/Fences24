@@ -27,6 +27,12 @@
   }
 
   .header-wrapper {
+    @include lg-max {
+      margin-bottom: 20px;
+    }
+    @include md-max {
+      margin-bottom: 10px;
+    }
     span {
       color: #cdcdcd;
       letter-spacing: 4px;

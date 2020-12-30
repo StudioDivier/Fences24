@@ -1,0 +1,277 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.about__third-screen {
+  padding-top: 45px;
+  padding-bottom: 0;
+  background-color: $background-color;
+  @include lg-max {
+    padding-top: 65px;
+  }
+  @include md-max {
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+  @include sm-max {
+    padding-top: 35px;
+  }
+
+  h1 {
+    padding-bottom: 15px;
+  }
+
+  .mini-header {
+    padding-bottom: 35px;
+
+    @include sm-max {
+      padding-bottom: 25px;
+    }
+  }
+
+  .third-block__content-wrapper {
+    background-color: white;
+    width: 100%;
+
+    .third-block__content {
+      padding: 50px 40px;
+      padding-bottom: 10px;
+      @include md-max {
+        padding: 30px 20px;
+        padding-bottom: 0;
+      }
+
+      .first-content-row {
+        .outer-wrapper {
+          height: 100%;
+          padding-bottom: 30px;
+        }
+
+        .step-wrapper {
+          height: 100%;
+          color: black;
+          display: flex;
+          flex-direction: column;
+          padding: 20px 35px 20px 20px;
+          background-color: $background-color;
+          @include md-max {
+            padding: 20px;
+          }
+
+          .upper-block {
+            display: flex;
+            flex-direction: row;
+            @include md-max {
+              flex-wrap: wrap;
+            }
+            margin-bottom: 25px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .green-number-wrapper, .blue-number-wrapper {
+              font-size: 45px;
+              font-weight: 700;
+              letter-spacing: 0.26px;
+              color: #ffffff;
+              padding: 15px 20px;
+              display: flex;
+              margin-right: 25px;
+              @include min-w(2000) {
+                font-size: 50px;
+              }
+              @include md-max {
+                font-size: 16px;
+                margin-right: 0;
+                text-align: center;
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 15px;
+              }
+            }
+
+            .green-number-wrapper {
+              background-color: $green-color;
+            }
+
+            .blue-number-wrapper {
+              background-color: $blue-color;
+            }
+
+          }
+
+          .header-text-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .inner-header {
+              font-weight: 700;
+              letter-spacing: 0.77px;
+              font-size: 16px;
+              text-transform: uppercase;
+              @include min-w(2000) {
+                font-size: 20px;
+              }
+              @include md-max {
+                font-size: 18px;
+              }
+              @include sm-max {
+                font-size: 14px;
+              }
+            }
+
+            .description {
+              font-size: 14px;
+              @include min-w(2000) {
+                font-size: 18px;
+              }
+              @include md-max {
+                font-size: 16px;
+              }
+              @include sm-max {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .lower-block {
+            display: flex;
+            flex-direction: row;
+
+            img {
+              margin-right: 25px;
+            }
+
+            @include md-max {
+              flex-wrap: wrap;
+              justify-content: center;
+              img {
+                margin-right: 0;
+                margin-bottom: 15px;
+              }
+            }
+
+            .lower-block__slider {
+              width: 100%;
+              padding: 0 50px;
+
+              .slide-img {
+                height: 70px;
+              }
+
+              @include md-max {
+                display: none;
+              }
+            }
+
+            .content-wrapper {
+              .subheader {
+                font-size: 14px;
+                font-weight: 700;
+                letter-spacing: 0.67px;
+                display: block;
+                padding-bottom: 10px;
+              }
+
+              ul {
+                padding-left: 20px;
+                margin-bottom: 0;
+
+                li {
+                  padding-bottom: 5px;
+                  font-size: 14px;
+                  letter-spacing: 0.67px;
+                }
+              }
+            }
+          }
+        }
+
+        .show-me {
+          display: initial;
+          position: relative;
+        }
+
+        .dropdown-single-item {
+          display: flex;
+          position: relative;
+        }
+
+        .cards-wrapper {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          #overlay {
+            margin-left: 0;
+            height: 100%;
+            padding-bottom: 25px;
+          }
+
+          .protocol-card {
+            display: none;
+            width: 20%;
+            @include xl-max {
+              width: 33%;
+            }
+            @include lg-max {
+              width: 50%;
+            }
+            @include md-max {
+              width: 100%;
+            }
+            padding: 0 15px;
+            margin: 0 -15px;
+            text-align: center;
+            margin-bottom: 30px;
+
+            .img-wrapper {
+              border: 3px solid #aaaaaa;
+
+              .image-div {
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+                width: 100%;
+                height: 350px;
+              }
+
+            }
+
+            span {
+              display: block;
+              padding-top: 20px;
+              font-size: 13px;
+              @include responsiveText;
+            }
+          }
+        }
+
+        .button-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding-top: 25px;
+
+          .blue-button {
+            background-color: transparent;
+            padding: 10px 35px;
+            border: 1px solid $blue-color;
+            font-size: 12px;
+            font-weight: 700;
+            color: $blue-color;
+
+            &:hover {
+              background-color: $blue-color;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}

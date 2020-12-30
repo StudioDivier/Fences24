@@ -57,8 +57,42 @@ $('.how-to-slider4').slick({
     dots: false,
     centerMode: false,
     focusOnSelect: true,
-    prevArrow: `<img src="../img/third-screen/left-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; left: 10px; z-index: 999999999"/>`,
-    nextArrow: `<img src="../img/third-screen/right-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; right: 10px; z-index: 999999999"/>`,
+    prevArrow: `<img src="../img/third-screen/left-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; left: 10px; z-index: 999"/>`,
+    nextArrow: `<img src="../img/third-screen/right-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; right: 10px; z-index: 999"/>`,
+    responsive: [
+        {
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                arrows: false
+            }
+        }
+    ]
+});
+
+$('.how-to-slider5').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.how-to-slider6'
+});
+
+$('.how-to-slider6').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.how-to-slider5',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    prevArrow: `<img src="../img/third-screen/left-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; left: 10px; z-index: 999"/>`,
+    nextArrow: `<img src="../img/third-screen/right-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; right: 10px; z-index: 999"/>`,
     responsive: [
         {
             breakpoint: 1400,
@@ -173,25 +207,29 @@ $(function () {
 
 // First screen hover effect ---------------------------------------------------
 
-let absoluteBlock = document.querySelectorAll('.first-type-block');
-let absoluteBlockSM = document.querySelectorAll('.second-type-block');
-let hoverBlock = document.querySelectorAll('.first-type-block-hover');
-let hoverBlockSM = document.querySelectorAll('.second-type-block-hover');
-for (let i = 0; i < hoverBlock.length; i++) {
-    absoluteBlock[i].addEventListener('mouseenter', function () {
-        absoluteBlock[i].classList.add("hide");
-    })
-    hoverBlock[i].addEventListener('mouseleave', function () {
-        absoluteBlock[i].classList.remove("hide");
-    })
-}
-for (let i = 0; i < hoverBlockSM.length; i++) {
-    absoluteBlockSM[i].addEventListener('mouseenter', function () {
-        absoluteBlockSM[i].classList.add("hide");
-    })
-    hoverBlockSM[i].addEventListener('mouseleave', function () {
-        absoluteBlockSM[i].classList.remove("hide");
-    })
+if (window.screen.width >= 1200) {
+
+    let absoluteBlock = document.querySelectorAll('.first-type-block');
+    let absoluteBlockSM = document.querySelectorAll('.second-type-block');
+    let hoverBlock = document.querySelectorAll('.first-type-block-hover');
+    let hoverBlockSM = document.querySelectorAll('.second-type-block-hover');
+    for (let i = 0; i < hoverBlock.length; i++) {
+        absoluteBlock[i].addEventListener('mouseenter', function () {
+            absoluteBlock[i].classList.add("hide");
+        })
+        hoverBlock[i].addEventListener('mouseleave', function () {
+            absoluteBlock[i].classList.remove("hide");
+        })
+    }
+    for (let i = 0; i < hoverBlockSM.length; i++) {
+        absoluteBlockSM[i].addEventListener('mouseenter', function () {
+            absoluteBlockSM[i].classList.add("hide");
+        })
+        hoverBlockSM[i].addEventListener('mouseleave', function () {
+            absoluteBlockSM[i].classList.remove("hide");
+        })
+    }
+
 }
 
 // Catalog accordion -----------------------------------------------------------
@@ -310,7 +348,7 @@ if (document.getElementById('catalog-content')) {
 
 // Ready-to-use page
 
-if (document.getElementById('ready-to-use-content')) {
+if (document.getElementById('ready-to-use')) {
 
     let parentEl = document.querySelector('.ready-to-use-content')
 
@@ -471,6 +509,91 @@ if (document.getElementById('ready-to-use-content')) {
 
 }
 
+// About page
+
+if (document.getElementById('about-page')) {
+
+    let parentEl = document.querySelector('.protocols-content')
+
+    $(function () {
+        let data;
+
+        fetch("protocols.json")
+            .then(response => response.json())
+            .then(json =>
+                (
+                    json.map(value => {
+                        $('.protocols-content').prepend(
+                            `<div class="protocol-card">
+                                        <div class="img-wrapper">
+                                            <div class="image-div"
+                                                 style="background-image: url(${value.image})" onclick="openFullView(${value.image})"></div>
+                                        </div>
+                                        <span>${value.description}</span>
+                                    </div>`
+                        )
+                    })
+
+                )
+            )
+            .then(() => {
+                let cards = document.querySelectorAll('.protocol-card')
+                let index = 10;
+                let zIndex = 1000;
+
+                //
+                function showCards(n, visible) {
+                    $('.protocols-content').prepend(`
+                            <div id="overlay">
+                                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            </div>
+                        `)
+                    setTimeout(() => {
+                        parentEl.removeChild(document.getElementById('overlay'))
+                        if (!visible) {
+                            for (let i = 0; i < n; i++) {
+                                cards[i].style.display = "block"
+                                cards[i].classList.add("show-me")
+                            }
+                        } else {
+                            for (let i = 10; i < n; i++) {
+                                cards[i].style.display = "block"
+                                cards[i].classList.add("dropdown-single-item")
+                                // cards[i].style.zIndex = zIndex - 1;
+                                // zIndex -= 1;
+                            }
+                        }
+                    }, 500)
+
+                }
+
+
+                let expand = document.querySelector('.expand-button')
+                expand.addEventListener('click', () => {
+                    // parentEl.style.backgroundColor = "#000000";
+                    if (index < cards.length) {
+                        index += 10
+                        showCards(index, true)
+                    } else {
+                        expand.style.display = 'none'
+                    }
+                })
+
+
+                showCards(index, false)
+            })
+    })
+
+}
+
+// Summon modal
+
+function openFullView(value) {
+    console.log(value)
+    document.getElementById('modal-hook').innerHTML = `<img src="${value}" alt="Slider image" style="width: 100%">`
+    // <img src="${value}" alt="Slider image" style="width: 100%">
+}
+
 // Contacts tabs
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -517,3 +640,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 })
+

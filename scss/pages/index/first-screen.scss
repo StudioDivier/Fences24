@@ -248,7 +248,7 @@
     }
 
     .first-type-block-hover {
-      @include lg-max {
+      @include xl-max {
         display: none;
       }
       height: 100%;
@@ -384,7 +384,7 @@
     }
 
     .second-type-block-hover {
-      @include lg-max {
+      @include xl-max {
         display: none;
       }
       //height: 100%;

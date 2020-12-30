@@ -3,6 +3,27 @@
 @import "../../common/variables";
 @import "../../common/mixins";
 
+#ready-to-use, #about-page {
+  .modal {
+    .close-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      @include xl-min {
+        top: 30px;
+        right: 30px;
+      }
+      z-index: 50;
+    }
+
+    .modal-dialog {
+      @include xl-min {
+        max-width: max-content;
+      }
+    }
+  }
+}
+
 .ready-to-use__first-screen {
   @include pageHeader;
   background-color: $background-color;
@@ -44,13 +65,10 @@
 
         .how-to-slider3 {
           padding-bottom: 20px;
-          @include xxl-min {
-            padding-bottom: 40px;
-          }
           //height: 500px;
 
           .img-container {
-            height: 421px;
+            height: 440px;
             @include min-w(2000) {
               height: 461px;
             }
@@ -64,6 +82,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             position: relative;
+
             .zoom-btn {
               cursor: pointer;
               position: absolute;
@@ -227,20 +246,31 @@
         align-items: center;
         justify-content: space-evenly;
         background-color: $background-color;
-        padding: 25px 30px;
+        padding: 15px 30px;
         border: 3px solid rgba(255, 255, 255, 0.36);
         font-size: 16px;
-        font-weight: 200;
+        //font-weight: 200;
         letter-spacing: 0.72px;
         //margin-bottom: 25px;
         @include min-w(2000) {
           font-size: 18px;
+          padding: 40px 30px;
+          p {
+            line-height: 24px !important;
+          }
         }
         @include md-max {
           font-size: 16px;
         }
         @include sm-max {
           font-size: 14px;
+        }
+
+        p {
+          margin-bottom: 0;
+          font-size: 15px;
+          line-height: 22px;
+          @include responsiveText;
         }
 
         img {

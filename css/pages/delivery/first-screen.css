@@ -1,0 +1,30 @@
+.contacts__first-screen {
+  padding-top: 45px;
+  padding-bottom: 60px;
+  background-color: #f5f6f6;
+  background-color: #f5f6f6;
+}
+@media (max-width: 992px) {
+  .contacts__first-screen {
+    padding-top: 65px;
+  }
+}
+@media (max-width: 768px) {
+  .contacts__first-screen {
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .contacts__first-screen {
+    padding-top: 35px;
+  }
+}
+.contacts__first-screen h1 {
+  padding-bottom: 35px;
+}
+@media (max-width: 576px) {
+  .contacts__first-screen h1 {
+    padding-bottom: 25px;
+  }
+}

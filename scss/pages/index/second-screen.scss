@@ -227,6 +227,9 @@
           @include min-w(2000) {
             font-size: 18px;
           }
+          @include max-w(415) {
+            display: none;
+          }
         }
       }
 
