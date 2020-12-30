@@ -3,9 +3,15 @@
 @import "../../common/variables";
 @import "../../common/mixins";
 
+#about-page {
+  .callback-form {
+    margin-bottom: 20px;
+  }
+}
+
 .about__third-screen {
   padding-top: 45px;
-  padding-bottom: 0;
+  padding-bottom: 60px;
   background-color: $background-color;
   @include lg-max {
     padding-top: 65px;
@@ -24,6 +30,7 @@
 
   .mini-header {
     padding-bottom: 35px;
+    @include responsiveText;
 
     @include sm-max {
       padding-bottom: 25px;
@@ -36,7 +43,7 @@
 
     .third-block__content {
       padding: 50px 40px;
-      padding-bottom: 10px;
+      padding-bottom: 70px;
       @include md-max {
         padding: 30px 20px;
         padding-bottom: 0;
@@ -174,6 +181,7 @@
                 letter-spacing: 0.67px;
                 display: block;
                 padding-bottom: 10px;
+                @include responsiveText;
               }
 
               ul {
@@ -184,6 +192,7 @@
                   padding-bottom: 5px;
                   font-size: 14px;
                   letter-spacing: 0.67px;
+                  @include responsiveText;
                 }
               }
             }
@@ -215,6 +224,13 @@
           .protocol-card {
             display: none;
             width: 20%;
+            padding: 0 15px;
+            margin: 0 -15px;
+            text-align: center;
+            margin-bottom: 30px;
+            @include xxl-max {
+              width: 25%;
+            }
             @include xl-max {
               width: 33%;
             }
@@ -223,11 +239,9 @@
             }
             @include md-max {
               width: 100%;
+              margin-left: 0;
+              margin-right: 0;
             }
-            padding: 0 15px;
-            margin: 0 -15px;
-            text-align: center;
-            margin-bottom: 30px;
 
             .img-wrapper {
               border: 3px solid #aaaaaa;
@@ -264,6 +278,9 @@
             font-size: 12px;
             font-weight: 700;
             color: $blue-color;
+            @include min-w(2000) {
+              font-size: 16px;
+            }
 
             &:hover {
               background-color: $blue-color;

@@ -37,6 +37,9 @@
         font-size: 12px;
         font-weight: 700;
         color: $blue-color;
+        @include min-w(2000) {
+          font-size: 16px;
+        }
 
         &:hover {
           background-color: $blue-color;
@@ -156,9 +159,11 @@
           position: relative;
           @include mx(-20px, -20px);
           z-index: 999;
+
           .another-wrapper {
             background-color: inherit;
           }
+
           @include lg-min {
             .another-wrapper {
               position: absolute;
