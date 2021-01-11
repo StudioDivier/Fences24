@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a91a4a-07ed-48c0-b01a-baad41426843" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scss/pages/about/fourth-screen.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/sliders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/about/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/about/_about.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ready-to-use(installation).html" beforeDir="false" afterPath="$PROJECT_DIR$/ready-to-use(installation).html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ready-to-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/ready-to-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/common/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/about/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/about/first-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/about/fourth-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/about/fourth-screen.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/pages/about/third-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/about/third-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/catalog/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/catalog/first-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/ready-to-use/third-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/ready-to-use/third-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +28,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -159,7 +167,8 @@
       <workItem from="1608881240219" duration="27189000" />
       <workItem from="1609140895189" duration="15785000" />
       <workItem from="1609227994836" duration="14000000" />
-      <workItem from="1609313334829" duration="13466000" />
+      <workItem from="1609313334829" duration="14086000" />
+      <workItem from="1610350068814" duration="26923000" />
     </task>
     <servers />
   </component>
@@ -195,10 +204,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="540" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608652068926" />
-    <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1609254613991">
+    <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1610378931988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="237" width="583" height="566" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609254613991" />
+    <state x="668" y="237" width="583" height="566" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610378931988" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1609235845073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

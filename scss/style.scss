@@ -183,6 +183,43 @@ h1 {
   padding-bottom: 75px;
 }
 
+// Project slick settings
+
+.slick-arrow {
+  &:first-child {
+    &:hover {
+      content: url("../../img/third-screen/left-green-hover.svg");
+    }
+  }
+
+  &:last-child {
+    &:hover {
+      content: url("../../img/third-screen/right-green-hover.svg");
+    }
+  }
+
+  @include min-w(2000) {
+    width: 45px;
+  }
+
+  @include lg-max {
+    display: none;
+  }
+  top: 27.5%;
+  width: 35px;
+}
+
+.slick-list {
+  .slick-track {
+    .slick-slide {
+      &:focus {
+        outline: 0;
+      }
+    }
+
+  }
+}
+
 // Import pages & components
 @import "pages/_common/components";
 @import "pages/index/_index.scss";

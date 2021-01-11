@@ -31,6 +31,9 @@
   .mini-header {
     padding-bottom: 35px;
     @include responsiveText;
+    @include min-w(2000) {
+      font-size: 20px;
+    }
 
     @include sm-max {
       padding-bottom: 25px;
@@ -46,7 +49,7 @@
       padding-bottom: 70px;
       @include md-max {
         padding: 30px 20px;
-        padding-bottom: 0;
+        padding-bottom: 40px;
       }
 
       .first-content-row {
@@ -72,22 +75,29 @@
             @include md-max {
               flex-wrap: wrap;
             }
-            margin-bottom: 25px;
+            border-bottom: 1px solid white;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
 
-            &:last-child {
-              margin-bottom: 0;
-            }
+            //&:last-child {
+            //  margin-bottom: 0;
+            //}
 
             .green-number-wrapper, .blue-number-wrapper {
               font-size: 45px;
               font-weight: 700;
               letter-spacing: 0.26px;
               color: #ffffff;
-              padding: 15px 20px;
+              padding: 15px 0;
               display: flex;
               margin-right: 25px;
+              min-width: 97px;
+              max-height: 97px;
+              justify-content: center;
               @include min-w(2000) {
                 font-size: 50px;
+                min-width: 110px;
+                max-height: 110px;
               }
               @include md-max {
                 font-size: 16px;
@@ -116,10 +126,11 @@
 
             .inner-header {
               font-weight: 700;
-              letter-spacing: 0.77px;
+              letter-spacing: 0.4px;
               font-size: 16px;
               text-transform: uppercase;
               @include min-w(2000) {
+                letter-spacing: 0.77px;
                 font-size: 20px;
               }
               @include md-max {

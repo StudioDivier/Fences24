@@ -184,6 +184,9 @@
                     position: absolute;
                     bottom: 15px;
                     right: 15px;
+                    @include min-w(2000) {
+                      width: 50px;
+                    }
                   }
                 }
 
@@ -235,6 +238,10 @@
                   &:hover {
                     content: url("../../../img/third-screen/right-green-hover.svg");
                   }
+                }
+
+                @include min-w(2000) {
+                  width: 45px;
                 }
 
                 @include lg-max {
