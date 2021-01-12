@@ -80,6 +80,9 @@
     font-size: 16px;
     letter-spacing: 0.72px;
     font-weight: 500;
+    @include min-w(2000) {
+      font-size: 18px;
+    }
   }
 
   .step-wrapper {

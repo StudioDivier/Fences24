@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a91a4a-07ed-48c0-b01a-baad41426843" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/sliders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/news.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/news-detail/_news-detail.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/news-detail/first-screen.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
@@ -13,11 +17,12 @@
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ready-to-use(installation).html" beforeDir="false" afterPath="$PROJECT_DIR$/ready-to-use(installation).html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ready-to-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/ready-to-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/common/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/about/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/about/first-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/about/fourth-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/about/fourth-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/about/third-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/about/third-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/_common/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/_common/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/catalog/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/catalog/first-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/catalog/third-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/catalog/third-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/index/second-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/index/second-screen.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +33,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="package.json" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -80,7 +85,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Exprome/My-Star-front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -93,12 +98,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Divier\Fences24\img\icons\contacts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Divier\Fences24" />
       <recent name="D:\Divier\Fences\scss" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Divier\Fences24\img\icons\contacts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
@@ -169,6 +174,7 @@
       <workItem from="1609227994836" duration="14000000" />
       <workItem from="1609313334829" duration="14086000" />
       <workItem from="1610350068814" duration="26923000" />
+      <workItem from="1610436456771" duration="22052000" />
     </task>
     <servers />
   </component>
@@ -204,10 +210,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="540" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608652068926" />
-    <state x="668" y="237" width="583" height="566" key="find.popup" timestamp="1610378931988">
+    <state x="668" y="237" width="583" height="620" key="find.popup" timestamp="1610449512470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="237" width="583" height="566" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610378931988" />
+    <state x="668" y="237" width="583" height="620" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610449512470" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1609235845073">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

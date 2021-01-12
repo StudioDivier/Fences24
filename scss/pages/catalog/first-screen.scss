@@ -118,6 +118,9 @@
         .inner-wrapper {
           font-weight: 400;
           font-size: 15px;
+          @include min-w(2000) {
+            font-size: 18px;
+          }
           @include sm-max {
             font-size: 13px;
           }
@@ -129,6 +132,9 @@
 
         .inner-wrapper-sm {
           font-weight: 200;
+          @include min-w(2000) {
+            font-size: 17px;
+          }
           @include sm-max {
             font-size: 12px;
           }
@@ -154,7 +160,7 @@
     box-shadow: 0 8px 14px rgba(0, 0, 0, 0.28);
     background-color: #eceff1;
     @include min-w(2000) {
-      font-size: 18px;
+      font-size: 20px;
     }
 
     ul {
@@ -295,6 +301,9 @@
       }
 
       .upper-part {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
         img {
           width: 100%;
         }
@@ -305,12 +314,18 @@
         flex-direction: column;
         padding: 20px;
         background-color: white;
+        @include min-w(2000) {
+          padding: 25px;
+        }
 
         h5 {
           font-size: 20px;
           font-weight: 700;
           text-transform: uppercase;
           margin-bottom: 0;
+          @include min-w(2000) {
+            font-size: 24px;
+          }
         }
 
         .description {
@@ -319,6 +334,7 @@
           letter-spacing: 0.63px;
           color: #3d3d3d;
           padding-top: 14px;
+          @include responsiveText;
         }
 
         .diameter {
@@ -338,8 +354,22 @@
 
             font-weight: 700;
             font-size: 15px;
+            @include responsiveText;
           }
 
+          @include responsiveText;
+        }
+
+        .learn-more {
+          text-align: right;
+          display: block;
+          padding-top: 20px;
+          font-size: 14px;
+          text-decoration: underline;
+          color: $green-color;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }

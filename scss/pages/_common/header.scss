@@ -36,12 +36,35 @@ header {
         span {
           font-weight: 500;
 
-          &:last-child {
+          //&:last-child {
+          //  @include min-w(2000) {
+          //    font-size: 16px;
+          //  }
+          //  margin-left: 10px;
+          //  font-size: 10px;
+          //  font-weight: 500;
+          //  text-decoration: underline;
+          //  cursor: pointer;
+          //
+          //  &:hover {
+          //    text-decoration: none;
+          //    color: $green-color;
+          //  }
+          //}
+        }
+
+        .show {
+          display: inline-block !important;
+        }
+
+        .dropdown {
+          .dropdown-toggle {
             @include min-w(2000) {
               font-size: 16px;
             }
             margin-left: 10px;
             font-size: 10px;
+            font-weight: 500;
             text-decoration: underline;
             cursor: pointer;
 
@@ -49,7 +72,32 @@ header {
               text-decoration: none;
               color: $green-color;
             }
+
+            &::after {
+              border: 0;
+            }
           }
+
+          .dropdown-menu {
+            padding: 7px 0;
+            font-size: 12px;
+            letter-spacing: 0.54px;
+            @include min-w(2000) {
+              font-size: 16px;
+            }
+            a {
+              padding: 10px 15px;
+              &:active {
+                background-color: $green-color;
+                color: white;
+              }
+            }
+          }
+
+          .show {
+            display: block !important;
+          }
+
         }
       }
 
@@ -58,11 +106,15 @@ header {
         @include max-w(1590) {
           display: none;
         }
+        @media screen and (min-width: 1590px) and (max-width: 1610px) {
+          padding-left: 39px;
+        }
         padding-left: 50px;
 
         a {
           text-decoration: none;
           color: inherit;
+
           span {
             margin: 0 15px;
             font-weight: 500;
@@ -78,7 +130,7 @@ header {
         @include xl-max {
           //width: 100%;
           border-right: 0;
-          margin-bottom: 10px;
+          //margin-bottom: 10px;
           padding-left: 0;
           flex-wrap: wrap;
         }
@@ -264,8 +316,16 @@ header {
             @include sm-max {
               display: none;
             }
-            margin-left: 10px;
+            border-bottom: 1px solid black;
+            color: black;
+            margin-left: 20px;
             font-weight: 700;
+            cursor: pointer;
+            line-height: 16px;
+
+            &:hover {
+              border-bottom: 0;
+            }
           }
         }
       }
@@ -276,6 +336,8 @@ header {
         @media screen and (min-width: 996px) and (max-width: 1200px) {
           width: 100%;
           justify-content: center;
+          margin-top: 20px;
+          margin-bottom: 5px;
         }
         @include lg-max {
           width: 100%;
@@ -313,6 +375,22 @@ header {
     width: 100%;
     text-transform: uppercase;
 
+    .sm-screen-extension-links {
+      @include md-min {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        padding-top: 25px;
+      }
+      @include lg-min {
+        padding-top: 35px;
+      }
+      @include min-w(1590) {
+        display: none;
+      }
+    }
+
     a {
       color: black;
       text-decoration: none;
@@ -335,6 +413,7 @@ header {
         @include min-w(2000) {
           font-size: 18px;
         }
+
         &:hover {
           color: $green-color;
           font-weight: 700;
@@ -343,13 +422,18 @@ header {
 
       //padding-right: 50px;
 
-      &:last-child {
+      &:nth-child(5n+5) {
         border-right: 0;
       }
     }
   }
 
   .modal {
+
+    .modal-dialog {
+      width: 500px;
+    }
+
     .modal-header {
       position: relative;
 
@@ -365,6 +449,8 @@ header {
       .auth-wrapper {
         text-align: center;
         padding: 25px 10px;
+        padding-top: 15px;
+        @include responsiveText;
 
         span {
           display: block;
@@ -398,6 +484,7 @@ header {
             color: $green-color;
             padding: 5.5px 20px;
             font-weight: 600;
+            background-color: transparent;
 
             &:hover {
               color: white;

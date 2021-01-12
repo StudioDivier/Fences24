@@ -40,7 +40,18 @@
                         <div class="level-one">
                             <div class="city-select">
                                 <span>г. Москва</span>
-                                <span>другой город</span>
+                                <div class="dropdown" style="display: inline-block"><span class="dropdown-toggle"
+                                                                                          data-toggle="dropdown">другой город</span>
+                                    <div class="dropdown-menu">
+                                        <span><a class="dropdown-item" href="#">Москва</a></span>
+                                        <span><a class="dropdown-item" href="#">Санкт-Петербург</a></span>
+                                        <span><a class="dropdown-item" href="#">Краснодар</a></span>
+                                        <span><a class="dropdown-item" href="#">Екатеринбург</a></span>
+                                        <span><a class="dropdown-item" href="#">Тюмень</a></span>
+                                        <span><a class="dropdown-item" href="#">Омск</a></span>
+                                        <span><a class="dropdown-item" href="#">Иркутстк</a></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="sm-menu-wrapper">
                                 <a href="/about.html"><span>О компании</span></a>
@@ -86,7 +97,8 @@
                             <div class="other-contacts">
                                 <img src="img/icons/header/telegram.svg" alt="Telegram">
                                 <img src="img/icons/header/whatsapp.svg" alt="Whatsapp">
-                                <span>Обратный звонок</span>
+                                <span data-toggle="modal"
+                                     data-target="#callbackModal">Обратный звонок</span>
                             </div>
                         </div>
                         <div class="basket-wrapper">
@@ -114,10 +126,17 @@
                     </button>
                     <div class="level-three collapse navbar-collapse" id="navbarSupportedContent3">
                         <a href="/catalog.html"><span>Каталог продукции</span></a>
-                        <a href=""><span>Готовые решения</span></a>
+                        <a href="/ready-to-use.html"><span>Готовые решения</span></a>
                         <a href=""><span>Калькулятор</span></a>
                         <a href=""><span>Установка и монтаж</span></a>
                         <a href=""><span>Лайфхаки</span></a>
+                        <div class="sm-screen-extension-links">
+                            <a href="/about.html"><span>О компании</span></a>
+                            <a href="/about.html#production"><span>Производство</span></a>
+                            <a href="/promo"><span>Акции</span></a>
+                            <a href="/delivery.html"><span>Доставка и оплата</span></a>
+                            <a href="/contacts.html"><span>Контакты</span></a>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -148,6 +167,30 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="callbackModal" tabindex="-1" role="dialog"
+         aria-labelledby="callbackModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="callbackModalTitle">Обратный звонок</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="auth-wrapper">
+                        <span>Оставьте ваш номер телефона <br> и мы вам перезвоним</span>
+                        <form action="">
+                            <input type="text" placeholder="Телефон">
+                            <button class="green-outline">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </header>
 
 <main id="contacts-page">
@@ -270,7 +313,7 @@
                         <div class="tabs-wrapper">
                             <div class="mobile-tab-buttons" id="headingOne">
                                 <div class="mobile-btn-wrapper" data-toggle="collapse" data-target="#collapseOne"
-                                        aria-expanded="true" aria-controls="collapseOne">
+                                     aria-expanded="true" aria-controls="collapseOne">
                                     Производство и склад
                                 </div>
                             </div>
@@ -317,8 +360,8 @@
                         <div class="tabs-wrapper">
                             <div class="mobile-tab-buttons" id="headingTwo">
                                 <div class="mobile-btn-wrapper collapsed" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
+                                     data-target="#collapseTwo" aria-expanded="false"
+                                     aria-controls="collapseTwo">
                                     Офис в Москве
                                 </div>
                             </div>
@@ -334,8 +377,8 @@
                         <div class="tabs-wrapper">
                             <div class="mobile-tab-buttons" id="headingThree">
                                 <div class="mobile-btn-wrapper collapsed" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                                     data-target="#collapseThree" aria-expanded="false"
+                                     aria-controls="collapseThree">
                                     Самовывоз
                                 </div>
                             </div>
@@ -363,8 +406,8 @@
                         <div class="tabs-wrapper">
                             <div class="mobile-tab-buttons" id="headingFour">
                                 <div class="mobile-btn-wrapper collapsed" data-toggle="collapse"
-                                        data-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
+                                     data-target="#collapseFour" aria-expanded="false"
+                                     aria-controls="collapseFour">
                                     Пункт выдачи заказов
                                 </div>
                             </div>
@@ -428,7 +471,8 @@
                             </div>
                             <div class="submit-button-wrapper">
                                 <span class="required-fields">* Обязательные поля для заполнения</span>
-                                <button type="submit" class="green-button">Отправить заявку <img src="img/icons/contacts/second-screen/sm-arrow-black.png" alt=""></button>
+                                <button type="submit" class="green-button">Отправить заявку <img
+                                        src="img/icons/contacts/second-screen/sm-arrow-black.png" alt=""></button>
                             </div>
                         </form>
                     </div>

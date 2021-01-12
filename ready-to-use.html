@@ -40,7 +40,18 @@
                         <div class="level-one">
                             <div class="city-select">
                                 <span>г. Москва</span>
-                                <span>другой город</span>
+                                <div class="dropdown" style="display: inline-block"><span class="dropdown-toggle"
+                                                                                          data-toggle="dropdown">другой город</span>
+                                    <div class="dropdown-menu">
+                                        <span><a class="dropdown-item" href="#">Москва</a></span>
+                                        <span><a class="dropdown-item" href="#">Санкт-Петербург</a></span>
+                                        <span><a class="dropdown-item" href="#">Краснодар</a></span>
+                                        <span><a class="dropdown-item" href="#">Екатеринбург</a></span>
+                                        <span><a class="dropdown-item" href="#">Тюмень</a></span>
+                                        <span><a class="dropdown-item" href="#">Омск</a></span>
+                                        <span><a class="dropdown-item" href="#">Иркутстк</a></span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="sm-menu-wrapper">
                                 <a href="/about.html"><span>О компании</span></a>
@@ -86,7 +97,8 @@
                             <div class="other-contacts">
                                 <img src="img/icons/header/telegram.svg" alt="Telegram">
                                 <img src="img/icons/header/whatsapp.svg" alt="Whatsapp">
-                                <span>Обратный звонок</span>
+                                <span data-toggle="modal"
+                                     data-target="#callbackModal">Обратный звонок</span>
                             </div>
                         </div>
                         <div class="basket-wrapper">
@@ -118,6 +130,13 @@
                         <a href=""><span>Калькулятор</span></a>
                         <a href=""><span>Установка и монтаж</span></a>
                         <a href=""><span>Лайфхаки</span></a>
+                        <div class="sm-screen-extension-links">
+                            <a href="/about.html"><span>О компании</span></a>
+                            <a href="/about.html#production"><span>Производство</span></a>
+                            <a href="/promo"><span>Акции</span></a>
+                            <a href="/delivery.html"><span>Доставка и оплата</span></a>
+                            <a href="/contacts.html"><span>Контакты</span></a>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -148,6 +167,30 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="callbackModal" tabindex="-1" role="dialog"
+         aria-labelledby="callbackModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="callbackModalTitle">Обратный звонок</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="auth-wrapper">
+                        <span>Оставьте ваш номер телефона <br> и мы вам перезвоним</span>
+                        <form action="">
+                            <input type="text" placeholder="Телефон">
+                            <button class="green-outline">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </header>
 
 <main id="ready-to-use">
@@ -285,10 +328,13 @@
                                     </div>
                                     <div class="attention-block">
                                         <img src="img/icons/ready-to-use/first-screen/icon.png" alt="Exclamation mark">
-                                        <p>На ограждение территории цена зависит от <strong>многих факторов</strong>: протяженность и
+                                        <p>На ограждение территории цена зависит от <strong>многих факторов</strong>:
+                                            протяженность и
                                             высота конструкции, форма панелей, ширины секций, расстояния между столбами,
-                                            размера ячеек и пр. Мы предлагаем недорогие конструкции по ценам от производителя.
-                                            У нас гибкая система ценообразования. О ценах более подробно вы можете узнать.</p>
+                                            размера ячеек и пр. Мы предлагаем недорогие конструкции по ценам от
+                                            производителя.
+                                            У нас гибкая система ценообразования. О ценах более подробно вы можете
+                                            узнать.</p>
                                     </div>
                                 </div>
                             </div>
@@ -695,7 +741,8 @@
 
     <!-- Modal -->
     <div class="modal fade" id="fullViewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <img class="close-icon" src="img/icons/ready-to-use/first-screen/close.svg" data-dismiss="modal" aria-label="Close" alt="Close btn">
+        <img class="close-icon" src="img/icons/ready-to-use/first-screen/close.svg" data-dismiss="modal"
+             aria-label="Close" alt="Close btn">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
 

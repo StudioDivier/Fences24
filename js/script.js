@@ -78,15 +78,15 @@ if (document.getElementById('catalog-content')) {
     $(function () {
         let data;
 
-        fetch("test.json")
+        fetch("catalog.json")
             .then(response => response.json())
             .then(json =>
                 (
                     json.map(value => {
                         $('.catalog-content').prepend(`<div class="col-md-6 col-lg-6 col-xl-4 single-item-wrapper">
                                         <div class="single-item">
-                                            <div class="upper-part">
-                                                <img src=${value.image} alt="Illustration">
+                                            <div class="upper-part" style="background-image: url('${value.image}'); height: 260px">
+<!--                                                <img src=${value.image} alt="Illustration">-->
                                             </div>
                                             <div class="lower-part">
                                                 <h5>${value.header}</h5>
@@ -98,6 +98,76 @@ if (document.getElementById('catalog-content')) {
                                                     </div>
                                                     <span>${value.diameter}</span>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>`)
+                    })
+
+                )
+            )
+            .then(() => {
+                let cards = document.querySelectorAll('.single-item-wrapper')
+                let index = 6;
+                let zIndex = 1000;
+
+                function showCards(n, visible) {
+                    if (!visible) {
+                        for (let i = 0; i < n; i++) {
+                            // cards[i].style.display = "flex"
+                            cards[i].classList.add("show-me")
+                        }
+                    } else {
+                        for (let i = 6; i < n; i++) {
+                            // cards[i].style.display = "flex"
+                            cards[i].classList.add("dropdown-single-item")
+                            cards[i].style.zIndex = zIndex - 1;
+                            zIndex -= 1;
+                        }
+                    }
+
+                }
+
+
+                let expand = document.querySelector('.expand-button')
+                expand.addEventListener('click', () => {
+                    if (index < cards.length) {
+                        index += 6
+                        showCards(index, true)
+                    } else {
+                        expand.style.display = 'none'
+                    }
+                })
+
+
+                showCards(index, false)
+            })
+    })
+
+}
+
+// Fetch local json for NEWS
+
+if (document.getElementById('news-content')) {
+
+    let parentEl = document.querySelector('.news-content')
+
+    $(function () {
+        let data;
+
+        fetch("news.json")
+            .then(response => response.json())
+            .then(json =>
+                (
+                    json.map(value => {
+                        $('.catalog-content').prepend(`<div class="col-md-12 col-lg-6 col-xl-4 single-item-wrapper">
+                                        <div class="single-item">
+                                            <div class="upper-part" style="background-image: url('${value.image}'); height: 350px">
+<!--                                                <img src=${value.image} alt="Illustration">-->
+                                            </div>
+                                            <div class="lower-part">
+                                                <h5>${value.header}</h5>
+                                                <span class="description">${value.description}</span>
+                                                <a class="learn-more" href="#">Подробнее</a>
                                             </div>
                                         </div>
                                     </div>`)
