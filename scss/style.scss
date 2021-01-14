@@ -104,6 +104,19 @@ h1 {
   }
 }
 
+.green-outline {
+  cursor: pointer;
+  border: 1px solid $green-color;
+  color: $green-color;
+  padding: 5.5px 20px;
+  font-weight: 600;
+
+  &:hover {
+    color: white;
+    background-color: $green-color;
+  }
+}
+
 // For tabs
 
 .hide {
@@ -232,3 +245,5 @@ h1 {
 @import "pages/delivery/_delivery.scss";
 @import "pages/ready-to-use/_ready-to-use.scss";
 @import "pages/news-detail/_news-detail.scss";
+@import "pages/ready-to-use(detail)/_ready-to-use(detail).scss";
+@import "pages/installation/_installation.scss";

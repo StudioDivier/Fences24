@@ -105,8 +105,11 @@
   @include min-w(2000) {
     font-size: 18px;
   }
+  @include lg-max {
+    font-size: 15px;
+  }
   @include md-max {
-    font-size: 16px;
+    font-size: 14px;
   }
   @include sm-max {
     font-size: 13px;
