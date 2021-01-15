@@ -100,6 +100,9 @@ h1 {
   }
 
   @include min-w(2000) {
+    font-size: 12px;
+    min-width: 100px;
+    min-height: 40px;
     padding: 11px 20px 10px 20px;
   }
 }
@@ -245,5 +248,7 @@ h1 {
 @import "pages/delivery/_delivery.scss";
 @import "pages/ready-to-use/_ready-to-use.scss";
 @import "pages/news-detail/_news-detail.scss";
-@import "pages/ready-to-use(detail)/_ready-to-use(detail).scss";
+@import "pages/ready-to-use(category)/ready-to-use(category)";
+@import "pages/ready-to-use(detail)/ready-to-use(detail)";
 @import "pages/installation/_installation.scss";
+@import "pages/installation-detail/_installation-detail.scss";

@@ -23,7 +23,7 @@
       padding: 50px 40px;
       padding-bottom: 30px;
       @include md-max {
-        padding: 30px 20px;
+        padding: 25px 15px;
         padding-bottom: 0;
       }
 
@@ -31,7 +31,7 @@
         margin-bottom: 35px;
         padding: 30px;
         @include md-max {
-          padding: 20px;
+          padding: 15px;
         }
         background-color: $background-color;
 
@@ -43,6 +43,9 @@
           flex-wrap: wrap;
           padding-bottom: 20px;
           text-transform: uppercase;
+          @include md-max {
+            padding-bottom: 10px;
+          }
 
           .green-number-wrapper, .blue-number-wrapper {
             font-size: 45px;
@@ -124,6 +127,7 @@
               @include md-max {
                 justify-content: initial;
                 min-height: 220px;
+                padding: 15px;
               }
 
               .first-line {
@@ -137,11 +141,14 @@
                   padding-bottom: 30px;
                 }
                 @include sm-max {
-                  padding-bottom: 20px;
+                  padding-bottom: 15px;
                 }
 
                 img {
                   margin-right: 20px;
+                  @include md-max {
+                    display: none;
+                  }
                 }
 
                 .info-block__header {
@@ -162,12 +169,25 @@
                 flex-direction: row;
                 align-items: center;
                 padding-top: 20px;
+                @include md-max {
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  padding-top: 15px;
+                }
 
                 .img-block {
                   @include bgImgCover;
                   margin-right: 20px;
                   height: 92px;
                   min-width: 118px;
+                  @include min-w(2000) {
+                    height: 112px;
+                    min-width: 138px;
+                  }
+                  @include md-max {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                  }
                 }
 
                 .text-block {

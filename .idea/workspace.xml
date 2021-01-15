@@ -2,28 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a91a4a-07ed-48c0-b01a-baad41426843" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/installation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/installation/_installation.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/installation/first-screen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/installation/second-screen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/news-detail/second-screen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/ready-to-use(detail)/_ready-to-use(detail).scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/ready-to-use(detail)/first-screen.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/installation-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ready-to-use(category).html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/installation-detail/_installation-detail.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/installation-detail/first-screen.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/ready-to-use(category)/_ready-to-use(category).scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/ready-to-use(category)/first-screen.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/delivery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/news-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ready-to-use(installation).html" beforeDir="false" afterPath="$PROJECT_DIR$/ready-to-use(detail).html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ready-to-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/ready-to-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/common/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/news-detail/_news-detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/news-detail/_news-detail.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/news-detail/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/news-detail/first-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/ready-to-use/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/ready-to-use/first-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/installation.html" beforeDir="false" afterPath="$PROJECT_DIR$/installation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sliders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ready-to-use(detail).html" beforeDir="false" afterPath="$PROJECT_DIR$/ready-to-use(detail).html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/catalog/fourth-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/catalog/fourth-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/installation/second-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/installation/second-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/ready-to-use(detail)/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/ready-to-use(detail)/first-screen.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,6 +171,7 @@
       <workItem from="1610436456771" duration="22052000" />
       <workItem from="1610522694352" duration="3376000" />
       <workItem from="1610609718677" duration="27335000" />
+      <workItem from="1610696290333" duration="25809000" />
     </task>
     <servers />
   </component>
@@ -222,9 +215,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609235845073" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606314462242">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610701481782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606314462242" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610701481782" />
   </component>
 </project>
