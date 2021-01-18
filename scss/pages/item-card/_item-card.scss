@@ -1,0 +1,110 @@
+@import "first-screen";
+
+#item-card, #ready-to-use__detail {
+  .catalog__fourth-screen {
+    padding-bottom: 75px;
+    @include md-max {
+      padding-bottom: 15px;
+    }
+
+    .customH1 {
+      padding-bottom: 50px;
+      @include md-max {
+        padding-bottom: 60px;
+      }
+    }
+
+    .custom-row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+    .custom-next, .custom-prev {
+      img {
+        width: 42px;
+      }
+    }
+
+    @media screen and (min-width: 1400px) and (max-width: 1800px) {
+      .custom-prev, .custom-next {
+        top: -55px !important;
+        display: block !important;
+      }
+
+      .custom-prev {
+        @include xxl-min {
+          left: 92% !important;
+        }
+        @include min-w(2000) {
+          left: 95% !important;
+        }
+      }
+
+      .custom-next {
+        right: 15px !important;
+      }
+    }
+
+    @media screen and (min-width: 2000px) and (max-width: 2200px) {
+      .custom-prev, .custom-next {
+        top: -55px !important;
+        display: block !important;
+      }
+
+      .custom-prev {
+        @include xxl-min {
+          left: 92% !important;
+        }
+        @include min-w(2000) {
+          left: 95% !important;
+        }
+      }
+
+      .custom-next {
+        right: 15px !important;
+      }
+    }
+
+    @include xl-max {
+      .custom-prev, .custom-next {
+        top: -55px !important;
+        display: block !important;
+      }
+
+      .custom-prev {
+        @include xl-max {
+          left: 88% !important;
+        }
+        @include lg-max {
+          left: 85% !important;
+        }
+        @include md-max {
+          left: 80% !important;
+        }
+        @include sm-max {
+          left: 70% !important;
+        }
+      }
+
+      .custom-next {
+        right: 15px !important;
+      }
+    }
+  }
+
+  .catalog__fifth-screen {
+    @include md-max {
+      padding-bottom: 65px;
+    }
+    padding-bottom: 125px;
+
+    .slick-arrow {
+      @media screen and (min-width: 2000px) and (max-width: 2400px) {
+        display: none !important;
+      }
+    }
+  }
+}

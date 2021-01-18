@@ -155,8 +155,7 @@ $('.about__production__step4-slider').slick({
     responsive: [
         {
             breakpoint: 1400,
-            settings: {
-            }
+            settings: {}
         },
         {
             breakpoint: 992,
@@ -184,8 +183,7 @@ $('.about__production__step5-slider').slick({
     responsive: [
         {
             breakpoint: 1400,
-            settings: {
-            }
+            settings: {}
         },
         {
             breakpoint: 992,
@@ -302,37 +300,6 @@ $('.more-products1').slick({
     ]
 })
 
-$('.more-products2').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    infinite: true,
-    autoplay: false,
-    dots: false,
-    prevArrow: `<img src="../img/third-screen/left-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; left: -50px; z-index: 999999999"/>`,
-    nextArrow: `<img src="../img/third-screen/right-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; right: -50px; z-index: 999999999"/>`,
-    responsive: [
-        {
-            breakpoint: 1400,
-            settings: {
-            }
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-                arrows: false
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1,
-                arrows: false
-            }
-        }
-    ]
-})
-
 $('.useful-materials').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -384,6 +351,31 @@ $('.lower-block__slider').slick({
             breakpoint: 768,
             settings: {
                 slidesToShow: 3,
+                arrows: false
+            }
+        }
+    ]
+});
+
+$('.schemes-and-drawings__slider-wrapper').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true,
+    prevArrow: `<img src="../img/third-screen/left-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; left: 12px; z-index: 999999999"/>`,
+    nextArrow: `<img src="../img/third-screen/right-arrow.svg" alt="arrow" style="cursor: pointer; position: absolute; right: 12px; z-index: 999999999"/>`,
+    responsive: [
+        {
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
                 arrows: false
             }
         }

@@ -3,10 +3,14 @@
 @import "../../common/variables";
 @import "../../common/mixins";
 
-#ready-to-use__detail {
+#ready-to-use__detail, #item-card {
   .catalog__fourth-screen {
     padding-top: 0;
-    padding-bottom: 120px;
+    padding-bottom: 75px;
+    &:last-child {
+      padding-bottom: 120px;
+    }
+
     @include md-max {
       padding-bottom: 60px;
     }
@@ -15,15 +19,14 @@
       width: 100%;
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       position: relative;
 
-      .single-item-wrapper {
-        display: none;
-      }
-
-      .dropdown-single-item {
+      .custom-slider-item {
+        width: 100%;
         display: flex;
-        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
       }
 
       .show-me {
@@ -349,8 +352,4 @@
       }
     }
   }
-}
-
-.ready-to-use__detail {
-
 }

@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a91a4a-07ed-48c0-b01a-baad41426843" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/installation-detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ready-to-use(category).html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/installation-detail/_installation-detail.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/installation-detail/first-screen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/ready-to-use(category)/_ready-to-use(category).scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/ready-to-use(category)/first-screen.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/item-card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/item-card/_item-card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/item-card/first-screen.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/installation.html" beforeDir="false" afterPath="$PROJECT_DIR$/installation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sliders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ready-to-use(detail).html" beforeDir="false" afterPath="$PROJECT_DIR$/ready-to-use(detail).html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/catalog/fourth-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/catalog/fourth-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/installation/second-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/installation/second-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/catalog/fifth-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/catalog/fifth-screen.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/pages/ready-to-use(detail)/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/ready-to-use(detail)/first-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/ready-to-use/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/ready-to-use/first-screen.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,6 +170,7 @@
       <workItem from="1610522694352" duration="3376000" />
       <workItem from="1610609718677" duration="27335000" />
       <workItem from="1610696290333" duration="25809000" />
+      <workItem from="1610954607543" duration="25557000" />
     </task>
     <servers />
   </component>
@@ -207,14 +206,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="540" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608652068926" />
-    <state x="668" y="237" width="583" height="620" key="find.popup" timestamp="1610635052565">
+    <state x="668" y="237" width="583" height="620" key="find.popup" timestamp="1610977678678">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="237" width="583" height="620" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610635052565" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1609235845073">
+    <state x="668" y="237" width="583" height="620" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610977678678" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1610974595791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1609235845073" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610974595791" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610701481782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
