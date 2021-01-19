@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a91a4a-07ed-48c0-b01a-baad41426843" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/account/_account.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/account/first-screen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/cart/_cart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/cart/first-screen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/item-card/second-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/item-card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/common/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/contacts/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/contacts/first-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/item-card/_item-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/item-card/_item-card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Fences.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prepros.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +168,7 @@
       <workItem from="1610696290333" duration="25809000" />
       <workItem from="1610954607543" duration="25871000" />
       <workItem from="1611041587448" duration="29290000" />
+      <workItem from="1611080674106" duration="142000" />
     </task>
     <servers />
   </component>
