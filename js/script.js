@@ -470,7 +470,7 @@ function openFullView(value) {
 // Contacts tabs
 
 document.addEventListener("DOMContentLoaded", () => {
-    if (document.getElementById('contacts-page')) {
+    if (document.getElementById('contacts-page') || document.getElementById('account-page')) {
 
         let tab = document.querySelectorAll('.btn-wrapper'),
             info = document.querySelector('.tab-buttons'),
@@ -508,8 +508,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
         });
-
-    } else if (document.getElementById('direction1')) {
 
     }
 })
@@ -551,6 +549,27 @@ if (document.getElementById('item-card') || document.getElementById('ready-to-us
 
     next.addEventListener('click', function () {
         plusSlides(1);
+    });
+}
+
+if (document.getElementsByClassName('inc-and-dec-input')) {
+    $(".input-btn").on("click", function () {
+        var $button = $(this);
+        var oldValue = $button.parents('.input-btns').prev().val();
+
+        if ($button.text() == "+") {
+            var newVal = parseFloat(oldValue) + 1;
+        } else {
+            // Don't allow decrementing below zero
+            if (oldValue > 1) {
+                var newVal = parseFloat(oldValue) - 1;
+            } else {
+                newVal = 1;
+            }
+        }
+
+        $button.parents('.input-btns').prev().val(newVal);
+
     });
 }
 

@@ -115,3 +115,18 @@
     font-size: 13px;
   }
 }
+
+@mixin adjustableText($smScreen, $mdScreen, $lgScreen, $fourKScreen) {
+  @include min-w(2000) {
+    font-size: $fourKScreen;
+  }
+  @include lg-max {
+    font-size: $lgScreen;
+  }
+  @include md-max {
+    font-size: $mdScreen;
+  }
+  @include sm-max {
+    font-size: $smScreen;
+  }
+}

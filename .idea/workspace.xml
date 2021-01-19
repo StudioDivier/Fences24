@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a91a4a-07ed-48c0-b01a-baad41426843" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/item-card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/item-card/_item-card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/item-card/first-screen.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/account/_account.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/account/first-screen.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/cart/_cart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/cart/first-screen.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/pages/item-card/second-screen.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/item-card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sliders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/sliders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ready-to-use(detail).html" beforeDir="false" afterPath="$PROJECT_DIR$/ready-to-use(detail).html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/catalog/fifth-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/catalog/fifth-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/ready-to-use(detail)/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/ready-to-use(detail)/first-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/ready-to-use/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/ready-to-use/first-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/common/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/contacts/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/contacts/first-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/item-card/_item-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/item-card/_item-card.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +79,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/scss/pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -90,12 +92,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Divier\Fences24\scss\pages\cart" />
+      <recent name="D:\Divier\Fences24\img\icons\contacts" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Divier\Fences24\scss\pages" />
       <recent name="D:\Divier\Fences24" />
       <recent name="D:\Divier\Fences\scss" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Divier\Fences24\img\icons\contacts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
@@ -170,7 +174,8 @@
       <workItem from="1610522694352" duration="3376000" />
       <workItem from="1610609718677" duration="27335000" />
       <workItem from="1610696290333" duration="25809000" />
-      <workItem from="1610954607543" duration="25557000" />
+      <workItem from="1610954607543" duration="25871000" />
+      <workItem from="1611041587448" duration="29290000" />
     </task>
     <servers />
   </component>
@@ -182,10 +187,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="845" y="383" key="#Notifications/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608901877086" />
-    <state x="708" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610631216361">
+    <state x="708" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611041747233">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="708" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610631216361" />
+    <state x="708" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611041747233" />
     <state x="714" y="389" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1606381523276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -214,9 +219,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610974595791" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610701481782">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611045124437">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610701481782" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611045124437" />
   </component>
 </project>
