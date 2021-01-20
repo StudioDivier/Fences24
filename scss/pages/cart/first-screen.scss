@@ -1,0 +1,42 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.сart-page__page-content {
+  @include pageHeader;
+
+  .cart-page__content-wrapper {
+    background-color: white;
+    width: 100%;
+    .cart-page__first-screen {
+      padding: 40px;
+      .green-outline {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 10px;
+        padding: 15px 40px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.65px;
+        &:hover {
+          background-color: $green-color;
+          color: white;
+          img {
+            content: url("../img/icons/account/sm-arrow.png");
+            transform: rotate(90deg);
+            width: 9px;
+            height: 6px;
+          }
+        }
+        img {
+          margin-right: 10px;
+          position: relative;
+          top: -1px;
+        }
+      }
+    }
+  }
+}

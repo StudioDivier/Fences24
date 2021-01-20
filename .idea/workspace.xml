@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a91a4a-07ed-48c0-b01a-baad41426843" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/account/_account.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/account/first-screen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/cart/_cart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/cart/first-screen.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/pages/item-card/second-screen.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/account/down-count(white).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icons/account/up-count(white).svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/item-card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/common/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/contacts/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/contacts/first-screen.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/pages/item-card/_item-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/item-card/_item-card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/account/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/account/first-screen.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/pages/cart/first-screen.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/cart/first-screen.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/scss/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img/icons/account" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -92,14 +86,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Divier\Fences24\scss\pages\cart" />
-      <recent name="D:\Divier\Fences24\img\icons\contacts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Divier\Fences24\img\icons\account" />
       <recent name="D:\Divier\Fences24\scss\pages" />
       <recent name="D:\Divier\Fences24" />
       <recent name="D:\Divier\Fences\scss" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Divier\Fences24\scss\pages\cart" />
+      <recent name="D:\Divier\Fences24\img\icons\contacts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
@@ -176,6 +171,7 @@
       <workItem from="1610696290333" duration="25809000" />
       <workItem from="1610954607543" duration="25871000" />
       <workItem from="1611041587448" duration="29290000" />
+      <workItem from="1611127836806" duration="29276000" />
     </task>
     <servers />
   </component>
@@ -211,10 +207,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="540" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608652068926" />
-    <state x="668" y="237" width="583" height="620" key="find.popup" timestamp="1610977678678">
+    <state x="668" y="237" width="583" height="620" key="find.popup" timestamp="1611130458697">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="237" width="583" height="620" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1610977678678" />
+    <state x="668" y="237" width="583" height="620" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1611130458697" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1610974595791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

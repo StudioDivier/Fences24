@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -11030,14 +11031,135 @@ footer .divier-footer .col span:last-child a:hover {
   }
 }
 
+.сart-page__page-content {
+  padding-top: 45px;
+  padding-bottom: 60px;
+  background-color: #f5f6f6;
+}
+@media (max-width: 992px) {
+  .сart-page__page-content {
+    padding-top: 65px;
+  }
+}
+@media (max-width: 768px) {
+  .сart-page__page-content {
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .сart-page__page-content {
+    padding-top: 35px;
+  }
+}
+.сart-page__page-content h1 {
+  padding-bottom: 35px;
+}
+@media (max-width: 576px) {
+  .сart-page__page-content h1 {
+    padding-bottom: 25px;
+  }
+}
+.сart-page__page-content .cart-page__content-wrapper {
+  background-color: white;
+  width: 100%;
+}
+.сart-page__page-content .cart-page__content-wrapper .cart-page__first-screen {
+  padding: 40px;
+}
+.сart-page__page-content .cart-page__content-wrapper .cart-page__first-screen .green-outline {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 10px;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.65px;
+}
+.сart-page__page-content .cart-page__content-wrapper .cart-page__first-screen .green-outline:hover {
+  background-color: #006f3e;
+  color: white;
+}
+.сart-page__page-content .cart-page__content-wrapper .cart-page__first-screen .green-outline:hover img {
+  content: url("../img/icons/account/sm-arrow.png");
+  transform: rotate(90deg);
+  width: 9px;
+  height: 6px;
+}
+.сart-page__page-content .cart-page__content-wrapper .cart-page__first-screen .green-outline img {
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+}
+
+#account-page .contacts__first-screen #accordion .tabs-wrapper:not(:last-child) {
+  padding-bottom: 0;
+}
+#account-page .contacts__first-screen .btn-wrapper {
+  position: relative;
+}
+#account-page .contacts__first-screen .btn-wrapper:last-child {
+  margin-right: 0;
+}
+#account-page .contacts__first-screen .btn-wrapper .custom-tooltip {
+  border-radius: 15px;
+  background-color: #0b2842;
+  color: white;
+  width: 29px;
+  height: 29px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  top: -13px;
+  right: 15px;
+}
+@media (max-width: 1400px) {
+  #account-page .contacts__first-screen .tabs-wrapper {
+    padding: 35px;
+  }
+}
+@media (max-width: 1200px) {
+  #account-page .contacts__first-screen .tabs-wrapper {
+    padding: 25px;
+  }
+}
+@media (max-width: 768px) {
+  #account-page .contacts__first-screen .tabs-wrapper {
+    padding: 15px;
+  }
+}
 #account-page .contacts__first-screen .first-tab {
   padding: 0;
+}
+#account-page .contacts__first-screen .first-tab .blue-button {
+  background-color: #0b2842;
+  color: white;
+  border: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 15px 40px;
+  float: right;
+  margin-top: 15px;
+}
+#account-page .contacts__first-screen .first-tab .blue-button:hover {
+  background-color: #0b375e;
 }
 #account-page .contacts__first-screen .first-tab .tab-inner-content {
   width: 100%;
   display: flex;
   flex-direction: row;
   padding-top: 0;
+}
+@media (max-width: 1200px) {
+  #account-page .contacts__first-screen .first-tab .tab-inner-content {
+    flex-wrap: wrap;
+  }
 }
 #account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col {
   background-color: white;
@@ -11047,6 +11169,20 @@ footer .divier-footer .col span:last-child a:hover {
   padding-left: 30px;
   padding-right: 30px;
 }
+@media (max-width: 1200px) {
+  #account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col {
+    width: 50%;
+  }
+  #account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col:last-child {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  #account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col {
+    width: 100%;
+    padding: 30px;
+  }
+}
 #account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col:nth-of-type(even) {
   background-color: #f5f6f6;
 }
@@ -11054,6 +11190,48 @@ footer .divier-footer .col span:last-child a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 576px) {
+  #account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .outer-wrapper {
+    flex-direction: column;
+  }
+  #account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .outer-wrapper .custom-switch {
+    top: 0 !important;
+    right: 5px !important;
+  }
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .outer-wrapper .custom-switch {
+  position: relative;
+  top: -3px;
+  right: 45px;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .outer-wrapper .custom-switch .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #b1d0c2;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .outer-wrapper .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #006f3e;
+  transform: translateX(1.45rem);
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .outer-wrapper .custom-switch .custom-control-label:before {
+  box-shadow: 0 0 0 0 !important;
+  width: 2.8rem;
+  height: 19px;
+  top: 9px;
+  border-radius: 1rem;
+  left: -2rem;
+  border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.38);
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .outer-wrapper .custom-switch .custom-control-label:after {
+  width: 25px;
+  height: 25px;
+  border-radius: 1rem;
+  background-color: #f1f1f1;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .outer-wrapper .custom-switch .custom-control-label:active:before {
+  box-shadow: 0 0 0 0;
+  background-color: transparent;
+  border-color: #b1d0c2;
 }
 #account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col h3 {
   font-size: 24px;
@@ -11095,7 +11273,7 @@ footer .divier-footer .col span:last-child a:hover {
 #account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .form-group input {
   border: 1px solid #dedede;
   display: inline-block;
-  padding: 15px 20px;
+  padding: 10px 20px;
   font-size: 16px;
 }
 @media (min-width: 2000px) {
@@ -11113,11 +11291,519 @@ footer .divier-footer .col span:last-child a:hover {
     font-size: 12px;
   }
 }
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .form-group .input-group input {
+  border-radius: 0;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .form-group .input-group .input-group-prepend .show {
+  display: block !important;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .form-group .input-group .input-group-prepend .show a {
+  cursor: pointer;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .form-group .input-group .input-group-prepend .show a:active {
+  background-color: #006f3e;
+  color: white;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .form-group .input-group .btn-outline-secondary {
+  border: 1px solid #dedede;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .form-group .input-group .dropdown-toggle {
+  background-color: #d0d0d0;
+  border: 0;
+  width: 46px;
+  height: 47px;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .form-group .input-group .form-control {
+  height: 47px;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .upload-block {
+  margin-top: 15px;
+  border: 2px dotted #006f3e;
+  padding: 20px 15px 15px;
+  background-color: #f5f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .upload-block .header-block {
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .upload-block .custom-file-label {
+  margin-bottom: 0;
+  height: 41px;
+  background-color: #f5f6f6;
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+}
+#account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .upload-block .custom-file-label:after {
+  height: auto;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  content: "Обзор";
+  background-color: #006f3e;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 #account-page .contacts__first-screen .first-tab .tab-inner-content .custom-col .green-button {
   padding: 15px 40px;
   float: left;
   margin-top: 20px;
   letter-spacing: 0.65px;
+}
+#account-page .contacts__first-screen .second-tab {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+}
+#account-page .contacts__first-screen .second-tab p {
+  padding: 0 30px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper:last-child {
+  padding-bottom: 0;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .local-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .green-button {
+  padding: 15px 45px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  float: initial;
+  margin: 0 auto;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .green-button img {
+  margin-left: 10px;
+  transform: rotate(-90deg);
+}
+@media (max-width: 1200px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col {
+    width: 50% !important;
+    margin-bottom: 25px;
+  }
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col:last-child {
+    width: 100% !important;
+  }
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col:not(:last-child) .col-content {
+    min-height: 320px !important;
+  }
+}
+@media (max-width: 992px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col {
+    width: 100% !important;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col .col-header h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #f5f6f6;
+  padding: 20px 30px;
+  margin-bottom: 0;
+}
+@media (min-width: 2000px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col .col-header h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1600px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col .col-header h4 {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 1200px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col .col-header h4 {
+    font-size: 16px;
+    min-height: 72px;
+  }
+}
+@media (max-width: 992px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col .col-header h4 {
+    font-size: 15px;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col .col-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 35px;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col .col-content {
+    min-height: 320px;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .custom-col .col-content .inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .first-col {
+  width: 30%;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .first-col .col-content .local-header {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.81px;
+  padding-bottom: 5px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .first-col .col-content .was-created {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.63px;
+  padding-bottom: 15px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .first-col .col-content button {
+  margin-bottom: 10px;
+  width: 100%;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .first-col .col-content .green-button {
+  padding: 15px 0;
+  justify-content: center;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .first-col .col-content .blue-button {
+  background-color: #0b2842;
+  color: white;
+  border: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 15px 0;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .first-col .col-content .blue-button:hover {
+  background-color: #0b375e;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .first-col .col-content .grey-button {
+  background-color: #f5f6f6;
+  padding: 15px 0;
+  font-weight: 700;
+  color: black;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .first-col .col-content .grey-button img {
+  margin-right: 15px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col {
+  width: 35%;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content {
+  border: 1px solid #f5f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .color-line {
+  display: none !important;
+}
+@media (max-width: 1600px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .color-line {
+    display: flex !important;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line:last-child {
+  margin-bottom: 0;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line:before {
+  border-bottom: 2px dotted #ddd;
+  content: "";
+  position: absolute;
+  bottom: 0.4rem;
+  width: 100%;
+  height: 0;
+  line-height: 0;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .left-part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  padding-right: 5px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .left-part .img-container {
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+@media (max-width: 1600px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .left-part .img-container {
+    display: none;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .left-part span {
+  font-size: 15px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .left-part span {
+    font-size: 14px;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part {
+  background-color: white;
+  z-index: 1;
+  padding-left: 5px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part span {
+  font-size: 15px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part span {
+    font-size: 14px;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .color-ball {
+  height: 29px;
+  background-color: #006f3e;
+  width: 29px;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper input {
+  border: 1px solid #d0d0d0;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper input {
+    width: 75px;
+    height: 37px;
+  }
+}
+@media (min-width: 2000px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper input {
+    width: 80px;
+    height: 42px;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 4px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .inc-btn, #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .dec-btn {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #006f3e;
+  background-color: transparent;
+  color: #006f3e;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .inc-btn span, #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .dec-btn span {
+  display: none;
+}
+@media (min-width: 992px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .inc-btn, #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .dec-btn {
+    width: 18px;
+    height: 17px;
+  }
+}
+@media (min-width: 2000px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .inc-btn, #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .dec-btn {
+    width: 23px;
+    height: 22px;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .inc-btn:hover, #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .dec-btn:hover {
+  color: white;
+  background-color: #006f3e;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .inc-btn {
+  margin-bottom: 1px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .inc-btn:hover img {
+  content: url("../img/icons/account/up-count(white).svg");
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .dec-btn {
+  margin-top: 1px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .right-part .amount-wrapper .input-btns .dec-btn:hover img {
+  content: url("../img/icons/account/down-count(white).svg");
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .length-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 1600px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .length-line {
+    justify-content: flex-end;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .length-line .amount-wrapper {
+  margin-right: 15px;
+}
+@media (max-width: 1600px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .length-line .amount-wrapper {
+    margin-right: 0;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .length-line .color {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media (max-width: 1600px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .length-line .color {
+    display: none;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .length-line .color span {
+  font-size: 14px;
+  font-weight: 400;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .second-col .col-content .char-line .length-line .color .color-ball {
+  height: 29px;
+  background-color: #006f3e;
+  width: 29px;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col {
+  width: 35%;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content {
+  background-color: #f0f4f7;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .local-header {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.81px;
+  padding-bottom: 15px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content hr {
+  border-top: 2px solid white;
+  width: 100%;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .lg-price, #account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .sm-price {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .lg-price:before, #account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .sm-price:before {
+  border-bottom: 2px dotted #ddd;
+  content: "";
+  position: absolute;
+  bottom: 0.4rem;
+  width: 100%;
+  height: 0;
+  line-height: 0;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .lg-price .right-part, #account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .sm-price .right-part {
+  background-color: #f0f4f7;
+  z-index: 1;
+  padding-left: 5px;
+  font-weight: 700;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .lg-price .left-part, #account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .sm-price .left-part {
+  background-color: #f0f4f7;
+  z-index: 1;
+  padding-right: 5px;
+  font-weight: 600;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .lg-price {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .lg-price .left-part {
+  font-weight: 600;
+}
+@media (max-width: 1400px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .lg-price .left-part {
+    font-size: 15px;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .lg-price .right-part {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+}
+@media (max-width: 1600px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .lg-price .right-part {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1400px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .lg-price .right-part {
+    font-size: 15px;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .sm-price {
+  font-size: 16px;
+  font-weight: 600;
+}
+@media (max-width: 1400px) {
+  #account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .sm-price {
+    font-size: 15px;
+  }
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .col-footer {
+  background-color: #f0f4f7;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 25px;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .col-footer .form-check {
+  display: flex;
+  align-items: center;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .col-footer .form-check input {
+  border: 1px solid #d0d0d0;
+  margin-top: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #f5f6f6;
+}
+#account-page .contacts__first-screen .second-tab .inner-wrapper .third-col .col-content .col-footer .form-check label {
+  margin-left: 15px;
+  font-size: 13px;
+  font-weight: 400;
 }
 #account-page .contacts__first-screen .third-tab {
   padding: 0;
@@ -11128,6 +11814,11 @@ footer .divier-footer .col span:last-child a:hover {
 #account-page .contacts__first-screen .third-tab .order-history {
   padding-bottom: 45px;
 }
+@media (max-width: 768px) {
+  #account-page .contacts__first-screen .third-tab .order-history {
+    width: 100%;
+  }
+}
 #account-page .contacts__first-screen .third-tab .order-history .first-table {
   height: 110px;
   display: flex;
@@ -11135,12 +11826,40 @@ footer .divier-footer .col span:last-child a:hover {
   width: 100%;
   align-items: center;
 }
+@media (max-width: 992px) {
+  #account-page .contacts__first-screen .third-tab .order-history .first-table {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  #account-page .contacts__first-screen .third-tab .order-history .first-table {
+    margin-bottom: 25px;
+  }
+}
 #account-page .contacts__first-screen .third-tab .order-history .first-table .cell {
   border: 1px solid #f5f6f6;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 992px) {
+  #account-page .contacts__first-screen .third-tab .order-history .first-table .cell {
+    width: 50% !important;
+    height: auto;
+    padding: 15px 10px !important;
+    text-align: center;
+    min-height: 80px;
+  }
+  #account-page .contacts__first-screen .third-tab .order-history .first-table .cell:last-child {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  #account-page .contacts__first-screen .third-tab .order-history .first-table .cell {
+    width: 100% !important;
+  }
 }
 #account-page .contacts__first-screen .third-tab .order-history .first-table .first-cell {
   width: 10%;
@@ -11176,6 +11895,12 @@ footer .divier-footer .col span:last-child a:hover {
 }
 #account-page .contacts__first-screen .third-tab .order-detail {
   padding: 0 25px;
+}
+@media (max-width: 768px) {
+  #account-page .contacts__first-screen .third-tab .order-detail {
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 #account-page .contacts__first-screen .third-tab .order-detail .order-header h5 {
   font-size: 21px;
@@ -11236,16 +11961,34 @@ footer .divier-footer .col span:last-child a:hover {
   justify-content: flex-end;
   padding: 0 25px;
 }
+@media (max-width: 768px) {
+  #account-page .contacts__first-screen .third-tab .tab-footer {
+    width: 100%;
+    padding: 0 15px;
+    justify-content: center;
+  }
+}
 #account-page .contacts__first-screen .third-tab .tab-footer .outer-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+@media (max-width: 768px) {
+  #account-page .contacts__first-screen .third-tab .tab-footer .outer-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 #account-page .contacts__first-screen .third-tab .tab-footer .outer-wrapper p {
   text-transform: uppercase;
   font-size: 26px;
   font-weight: 700;
-  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  #account-page .contacts__first-screen .third-tab .tab-footer .outer-wrapper p {
+    margin-bottom: 0;
+  }
 }
 #account-page .contacts__first-screen .third-tab .tab-footer .outer-wrapper p span {
   color: #006f3e;
@@ -11276,10 +12019,22 @@ footer .divier-footer .col span:last-child a:hover {
   font-size: 11px;
   margin-left: 60px;
 }
+@media (max-width: 768px) {
+  #account-page .contacts__first-screen .third-tab .tab-footer .outer-wrapper .green-button {
+    margin: 0 auto !important;
+    padding: 15px 35px !important;
+  }
+}
 #account-page .contacts__first-screen .third-tab .certain-price {
   margin-bottom: 0;
   font-size: 13px;
   padding-right: 25px;
   padding-top: 15px;
   text-align: right;
+}
+@media (max-width: 768px) {
+  #account-page .contacts__first-screen .third-tab .certain-price {
+    text-align: center;
+    padding-right: 0;
+  }
 }

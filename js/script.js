@@ -573,4 +573,10 @@ if (document.getElementsByClassName('inc-and-dec-input')) {
     });
 }
 
+if (document.getElementById('city-swap-hook')) {
+    $(".dropdown-hook").on("click", function () {
+        document.getElementById('city-swap-hook').innerText = this.innerText
+    })
+}
+
 
