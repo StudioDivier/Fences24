@@ -103,7 +103,7 @@ header {
 
       .sm-menu-wrapper {
 
-        @include max-w(1590) {
+        @include max-w(1595) {
           display: none;
         }
         @media screen and (min-width: 1590px) and (max-width: 1610px) {
@@ -123,6 +123,11 @@ header {
       }
 
       .auth-wrapper {
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
 
         @include md-max {
           display: none;

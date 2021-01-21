@@ -3,7 +3,7 @@
 @import "../../common/variables";
 @import "../../common/mixins";
 
-.item-card__second-screen, #account-page {
+.item-card__second-screen, #account-page, .сart-page__page-content {
   background-color: $background-color;
   padding-bottom: 85px;
   @include md-max {

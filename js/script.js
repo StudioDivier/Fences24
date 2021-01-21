@@ -579,4 +579,16 @@ if (document.getElementById('city-swap-hook')) {
     })
 }
 
+if (document.getElementById('customUploadInput')) {
+    let target = document.getElementById('customUploadInput');
+    target.addEventListener('change', event => {
+      document.getElementById('hook-for-loaded').innerText = 'Файл загружен'
+    });
+    // if (document.getElementById('customUploadInput').files.length === 0) {
+    //     console.log(document.getElementById('customUploadInput').files.length)
+    // } else {
+    //     console.log('not loaded')
+    // }
+}
+
 
