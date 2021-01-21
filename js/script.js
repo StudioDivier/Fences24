@@ -241,7 +241,7 @@ if (document.getElementById('ready-to-use')) {
                                             <div class="inner-text-wrapper">
                                                 <span>Длина периметра</span>
                                             </div>
-                                            <span class="custom-block__property-value">${value.length}</span>
+                                            <span class="custom-block__property-value">300</span>
                                         </div>
                                         <div class="custom-block__property">
                                             <div class="inner-text-wrapper">
