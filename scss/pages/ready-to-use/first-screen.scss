@@ -3,7 +3,7 @@
 @import "../../common/variables";
 @import "../../common/mixins";
 
-#ready-to-use, #about-page, #installation, #item-card {
+#ready-to-use, #about-page, #installation, #item-card, #ready-to-use__detail {
   .modal {
     .close-icon {
       position: fixed;

@@ -7,6 +7,7 @@
   .catalog__fourth-screen {
     padding-top: 0;
     padding-bottom: 75px;
+
     &:last-child {
       padding-bottom: 120px;
     }
@@ -347,6 +348,219 @@
 
           &:hover {
             text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .ready-to-use__detail__first-screen {
+    .main-block__inner-wrapper {
+      padding: 30px 50px;
+      @include md-max {
+        padding: 15px;
+      }
+
+      .catalog-sidebar {
+        @include max-w(1600) {
+          //margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .right-block {
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    @include xxl-max {
+      flex-wrap: wrap;
+    }
+
+    .how-to-use {
+      z-index: 2;
+      color: black;
+      border: 2px solid $green-color;
+      margin-right: 15px;
+      padding: 13px;
+      width: 50%;
+      max-height: 520px;
+      @include min-w(2000) {
+        padding: 23px;
+        max-height: initial;
+      }
+      @include xxl-max {
+        width: 100%;
+        color: white;
+      }
+
+      .how-to-slider3 {
+        padding-bottom: 15px;
+        //height: 500px;
+
+        .img-container {
+          height: 400px;
+          @include min-w(2000) {
+            height: 461px;
+          }
+          @include xxl-max {
+            height: 350px;
+          }
+          @include md-max {
+            height: 221px;
+          }
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+
+          .zoom-btn {
+            cursor: pointer;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+          }
+        }
+
+      }
+
+      .how-to-slider4 {
+        position: relative;
+        padding: 0 60px;
+
+        .img-container {
+          background-position: center center;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        @include md-max {
+          //padding: 0 0 0 20px;
+          padding: 0 20px;
+          //padding-right: 20px;
+        }
+
+        .slick-track {
+          .img-container {
+            margin-left: 5px;
+            margin-right: 5px;
+            height: 65px;
+            @include min-w(2000) {
+              height: 92px;
+            }
+            @include xxl-max {
+              height: 75px;
+            }
+            @include lg-max {
+              height: 76px;
+            }
+            @include md-max {
+              height: 46px;
+            }
+          }
+        }
+      }
+
+      .slick-arrow {
+        &:first-child {
+          &:hover {
+            content: url("../../../img/third-screen/left-green-hover.svg");
+          }
+        }
+
+        &:last-child {
+          &:hover {
+            content: url("../../../img/third-screen/right-green-hover.svg");
+          }
+        }
+
+        @include lg-max {
+          display: none;
+        }
+        top: 27.5%;
+        width: 35px;
+      }
+
+      .slick-list {
+        //height: 100%;
+
+        .slick-track {
+          //height: 100%;
+
+          .slick-slide {
+            &:focus {
+              outline: 0;
+            }
+          }
+
+        }
+      }
+    }
+
+    .right-part {
+      margin-left: 15px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include xxl-max {
+        padding-top: 25px;
+        margin-left: 0;
+        width: 100%;
+      }
+
+      .text-block {
+        font-size: 15px;
+        @include adjustableText(12px, 14px, 15px, 17px);
+
+        .first-line {
+          font-size: 20px;
+          @include xl-max {
+            font-size: 18px;
+          }
+          @include adjustableText(14px, 16px, 17px, 24px);
+        }
+      }
+
+      .border-block {
+        border: 4px solid #eceff1;
+        padding: 25px;
+        font-size: 15px;
+        @include adjustableText(12px, 14px, 15px, 17px);
+        @include md-max {
+          padding: 15px;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+
+        .first-line {
+          font-weight: 700;
+          font-size: 16px;
+          margin-bottom: 10px;
+          @include xl-max {
+            font-size: 18px;
+          }
+          @include adjustableText(14px, 16px, 17px, 24px);
+        }
+      }
+
+      .btn-wrapper {
+        margin-top: 20px;
+
+        .blue-button {
+          background-color: $blue-color;
+          color: white;
+          border: 0;
+          font-weight: 700;
+          text-transform: uppercase;
+          font-size: 10px;
+          padding: 15px 40px;
+          margin-top: 15px;
+
+          &:hover {
+            background-color: #0b375e;
           }
         }
       }

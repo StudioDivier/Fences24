@@ -1,0 +1,32 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.calculator-page__page-content {
+  @include pageHeader;
+
+  .calculator-page__content-wrapper {
+    background-color: white;
+    width: 100%;
+
+    .calculator-page__first-screen {
+      padding: 60px 40px;
+      @include lg-max {
+        padding: 30px;
+      }
+      @include md-max {
+        padding: 20px;
+      }
+
+      .main-banner-wrapper {
+        width: 100%;
+        margin-bottom: 50px;
+        img {
+          width: 100%;
+        }
+      }
+
+    }
+  }
+}
