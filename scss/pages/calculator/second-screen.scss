@@ -1,0 +1,323 @@
+@import "../../common/colors";
+@import "../../common/screen";
+@import "../../common/variables";
+@import "../../common/mixins";
+
+.calculator-page__second-screen {
+  padding: 40px;
+  @include lg-max {
+    padding: 30px;
+  }
+  @include md-max {
+    padding: 20px;
+  }
+  @include sm-max {
+    padding: 15px;
+  }
+
+  .pc-table {
+    tr {
+      th, td {
+        width: 51% !important;
+        padding: 25px;
+        height: auto;
+
+        &:not(:first-child) {
+          width: 17% !important;
+          text-align: center !important;
+        }
+      }
+
+      th {
+        .cell-content {
+          justify-content: flex-start !important;
+
+        }
+
+        &:not(:first-child) {
+          .cell-content {
+            justify-content: center !important;
+          }
+        }
+      }
+
+      td {
+        text-align: left !important;
+
+        &:not(:first-child) {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+
+  .pc-table__bottom-part {
+    width: 100%;
+    background-color: #f0f4f7;
+    padding: 25px;
+    padding-bottom: 50px;
+    @include lg-max {
+      display: none;
+      padding: 15px;
+    }
+
+    .local-header {
+      font-size: 18px;
+      font-weight: 700;
+      @include adjustableText(14px, 15px, 16px, 20px);
+    }
+
+    .local-row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding-top: 10px;
+      @include min-w(2000) {
+        padding-top: 20px;
+      }
+      @include xl-max {
+        flex-wrap: wrap;
+      }
+      @include lg-max {
+        flex-direction: column;
+      }
+
+      .local-col {
+        width: 33%;
+
+        &:first-child {
+          padding-right: 30px;
+        }
+
+        &:nth-child(2) {
+          padding: 0 30px;
+          border-left: 3px solid white;
+          border-right: 3px solid white;
+        }
+
+        &:last-child {
+          padding-left: 30px;
+        }
+
+        @include xl-max {
+          width: 50%;
+          &:first-child {
+            padding-right: 25px;
+          }
+          &:nth-child(2) {
+            padding-left: 25px;
+            padding-right: 0;
+            border-left: 3px solid white;
+            border-right: 0;
+          }
+          &:last-child {
+            padding-left: 0;
+            width: 100%;
+          }
+        }
+        font-size: 14px;
+        font-weight: 700;
+        @include responsiveText;
+
+        .inner-wrapper {
+          position: relative;
+          margin-bottom: 10px;
+          @include min-w(2000) {
+            margin-bottom: 15px;
+          }
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          &:nth-of-type(:first-child) {
+
+          }
+
+          &:before {
+            border-bottom: 2px dotted #ddd;
+            content: '';
+            position: absolute;
+            bottom: .4rem;
+            width: 100%;
+            height: 0;
+            line-height: 0;
+          }
+
+          .left-part, .right-part {
+            z-index: 1;
+            background-color: #f0f4f7;
+          }
+
+          .left-part {
+            padding-right: 5px;
+            display: flex;
+            flex-direction: row;
+
+            .icon-wrapper {
+              width: 25px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 5px;
+            }
+          }
+
+          .right-part {
+            padding-left: 5px;
+          }
+        }
+
+
+      }
+    }
+  }
+
+  .mobile-table {
+    display: none;
+    width: 100%;
+    background-color: $background-color;
+    padding: 15px;
+    padding-bottom: 0;
+    margin-bottom: 15px;
+    @include lg-max {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .spec-line {
+      padding: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      color: black;
+      background-color: white;
+      width: calc(100% / 2 - 10px);
+
+      &:first-child {
+        width: 100% !important;
+        align-items: flex-start !important;
+        flex-direction: column !important;
+
+        span {
+          &:first-child {
+            font-weight: 700;
+          }
+        }
+      }
+
+      &:last-child {
+        width: 100% !important;
+      }
+
+      @include md-max {
+        width: 100%;
+        padding: 10px;
+      }
+
+      input {
+        border: 1px solid #d0d0d0;
+        text-align: center;
+        @include lg-max {
+          min-height: 35px;
+          width: 62px;
+        }
+        @include md-max {
+          min-height: 30px;
+          width: 52px;
+        }
+      }
+
+      @include responsiveText;
+    }
+
+    .bottom-part {
+      width: 100%;
+      background-color: #f0f4f7;
+      padding: 30px;
+      @include lg-max {
+        padding: 15px;
+      }
+      @include sm-max {
+        padding: 0;
+        padding-top: 15px;
+      }
+
+      .local-header {
+        font-size: 18px;
+        font-weight: 700;
+        @include adjustableText(14px, 15px, 16px, 20px);
+      }
+
+      .local-row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 10px;
+        @include lg-max {
+          flex-direction: column;
+        }
+
+        .local-col {
+          width: 33%;
+          @include lg-max {
+            width: 100%;
+          }
+          font-size: 14px;
+          @include responsiveText;
+
+          .inner-wrapper {
+            position: relative;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &:nth-of-type(:first-child) {
+
+            }
+
+            &:before {
+              border-bottom: 2px dotted #ddd;
+              content: '';
+              position: absolute;
+              bottom: .4rem;
+              width: 100%;
+              height: 0;
+              line-height: 0;
+            }
+
+            .left-part, .right-part {
+              z-index: 1;
+              background-color: #f0f4f7;
+            }
+
+            .left-part {
+              padding-right: 5px;
+              display: flex;
+              flex-direction: row;
+
+              .icon-wrapper {
+                width: 25px;
+                height: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 5px;
+              }
+            }
+
+            .right-part {
+              padding-left: 5px;
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+}

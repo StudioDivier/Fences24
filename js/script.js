@@ -470,7 +470,7 @@ function openFullView(value) {
 // Contacts tabs
 
 document.addEventListener("DOMContentLoaded", () => {
-    if (document.getElementById('contacts-page') || document.getElementById('account-page')) {
+    if (document.getElementById('contacts-page') || document.getElementById('account-page') || document.getElementById('calculator-page')) {
 
         let tab = document.querySelectorAll('.btn-wrapper'),
             info = document.querySelector('.tab-buttons'),
@@ -582,7 +582,7 @@ if (document.getElementById('city-swap-hook')) {
 if (document.getElementById('customUploadInput')) {
     let target = document.getElementById('customUploadInput');
     target.addEventListener('change', event => {
-      document.getElementById('hook-for-loaded').innerText = 'Файл загружен'
+        document.getElementById('hook-for-loaded').innerText = 'Файл загружен'
     });
     // if (document.getElementById('customUploadInput').files.length === 0) {
     //     console.log(document.getElementById('customUploadInput').files.length)
@@ -590,5 +590,29 @@ if (document.getElementById('customUploadInput')) {
     //     console.log('not loaded')
     // }
 }
+
+if (document.getElementById('calculator-page')) {
+
+    let installationCheck = document.getElementById('installation-check-hook')
+    let deliveryCheck = document.getElementById('delivery-check-hook')
+
+    document.querySelectorAll('.label-container')[0].addEventListener('click', () => {
+        installationCheck.checked = !installationCheck.checked;
+        if (installationCheck.checked) {
+            document.getElementById('installation-hook').style.opacity = 1;
+        } else {
+            document.getElementById('installation-hook').style.opacity = 0.3;
+        }
+    })
+    document.querySelectorAll('.label-container')[1].addEventListener('click', () => {
+        deliveryCheck.checked = !deliveryCheck.checked;
+        if (deliveryCheck.checked) {
+            document.getElementById('delivery-hook').style.opacity = 1;
+        } else {
+            document.getElementById('delivery-hook').style.opacity = 0.3;
+        }
+    })
+}
+
 
 

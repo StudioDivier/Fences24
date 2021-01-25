@@ -10717,95 +10717,95 @@ footer .divier-footer .col span:last-child a:hover {
   }
 }
 
-.item-card__second-screen, #account-page, .сart-page__page-content {
+.item-card__second-screen, #account-page, .сart-page__page-content, #calculator-page {
   background-color: #f5f6f6;
   padding-bottom: 85px;
 }
 @media (max-width: 768px) {
-  .item-card__second-screen, #account-page, .сart-page__page-content {
+  .item-card__second-screen, #account-page, .сart-page__page-content, #calculator-page {
     padding-bottom: 45px;
   }
 }
-.item-card__second-screen .tech-specs, .item-card__second-screen .order-detail__info, #account-page .tech-specs, #account-page .order-detail__info, .сart-page__page-content .tech-specs, .сart-page__page-content .order-detail__info {
+.item-card__second-screen .tech-specs, .item-card__second-screen .order-detail__info, .item-card__second-screen .calculator-page__second-screen, #account-page .tech-specs, #account-page .order-detail__info, #account-page .calculator-page__second-screen, .сart-page__page-content .tech-specs, .сart-page__page-content .order-detail__info, .сart-page__page-content .calculator-page__second-screen, #calculator-page .tech-specs, #calculator-page .order-detail__info, #calculator-page .calculator-page__second-screen {
   background-color: white;
   padding: 50px 40px 40px;
 }
 @media (max-width: 1400px) {
-  .item-card__second-screen .tech-specs, .item-card__second-screen .order-detail__info, #account-page .tech-specs, #account-page .order-detail__info, .сart-page__page-content .tech-specs, .сart-page__page-content .order-detail__info {
+  .item-card__second-screen .tech-specs, .item-card__second-screen .order-detail__info, .item-card__second-screen .calculator-page__second-screen, #account-page .tech-specs, #account-page .order-detail__info, #account-page .calculator-page__second-screen, .сart-page__page-content .tech-specs, .сart-page__page-content .order-detail__info, .сart-page__page-content .calculator-page__second-screen, #calculator-page .tech-specs, #calculator-page .order-detail__info, #calculator-page .calculator-page__second-screen {
     padding: 30px;
   }
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs, .item-card__second-screen .order-detail__info, #account-page .tech-specs, #account-page .order-detail__info, .сart-page__page-content .tech-specs, .сart-page__page-content .order-detail__info {
+  .item-card__second-screen .tech-specs, .item-card__second-screen .order-detail__info, .item-card__second-screen .calculator-page__second-screen, #account-page .tech-specs, #account-page .order-detail__info, #account-page .calculator-page__second-screen, .сart-page__page-content .tech-specs, .сart-page__page-content .order-detail__info, .сart-page__page-content .calculator-page__second-screen, #calculator-page .tech-specs, #calculator-page .order-detail__info, #calculator-page .calculator-page__second-screen {
     padding: 20px;
   }
 }
-.item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1 {
+.item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, .item-card__second-screen .calculator-page__second-screen h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, #account-page .calculator-page__second-screen h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1, .сart-page__page-content .calculator-page__second-screen h1, #calculator-page .tech-specs h1, #calculator-page .order-detail__info h1, #calculator-page .calculator-page__second-screen h1 {
   font-size: 21px;
   letter-spacing: 0.99px;
   padding-bottom: 30px;
   margin-bottom: 0;
 }
 @media (min-width: 2000px) {
-  .item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1 {
+  .item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, .item-card__second-screen .calculator-page__second-screen h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, #account-page .calculator-page__second-screen h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1, .сart-page__page-content .calculator-page__second-screen h1, #calculator-page .tech-specs h1, #calculator-page .order-detail__info h1, #calculator-page .calculator-page__second-screen h1 {
     font-size: 23px;
   }
 }
 @media (max-width: 992px) {
-  .item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1 {
+  .item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, .item-card__second-screen .calculator-page__second-screen h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, #account-page .calculator-page__second-screen h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1, .сart-page__page-content .calculator-page__second-screen h1, #calculator-page .tech-specs h1, #calculator-page .order-detail__info h1, #calculator-page .calculator-page__second-screen h1 {
     font-size: 19px;
   }
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1 {
+  .item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, .item-card__second-screen .calculator-page__second-screen h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, #account-page .calculator-page__second-screen h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1, .сart-page__page-content .calculator-page__second-screen h1, #calculator-page .tech-specs h1, #calculator-page .order-detail__info h1, #calculator-page .calculator-page__second-screen h1 {
     font-size: 17px;
   }
 }
 @media (max-width: 576px) {
-  .item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1 {
+  .item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, .item-card__second-screen .calculator-page__second-screen h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, #account-page .calculator-page__second-screen h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1, .сart-page__page-content .calculator-page__second-screen h1, #calculator-page .tech-specs h1, #calculator-page .order-detail__info h1, #calculator-page .calculator-page__second-screen h1 {
     font-size: 15px;
   }
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1 {
+  .item-card__second-screen .tech-specs h1, .item-card__second-screen .order-detail__info h1, .item-card__second-screen .calculator-page__second-screen h1, #account-page .tech-specs h1, #account-page .order-detail__info h1, #account-page .calculator-page__second-screen h1, .сart-page__page-content .tech-specs h1, .сart-page__page-content .order-detail__info h1, .сart-page__page-content .calculator-page__second-screen h1, #calculator-page .tech-specs h1, #calculator-page .order-detail__info h1, #calculator-page .calculator-page__second-screen h1 {
     letter-spacing: initial;
   }
 }
-.item-card__second-screen .tech-specs h1 span, .item-card__second-screen .order-detail__info h1 span, #account-page .tech-specs h1 span, #account-page .order-detail__info h1 span, .сart-page__page-content .tech-specs h1 span, .сart-page__page-content .order-detail__info h1 span {
+.item-card__second-screen .tech-specs h1 span, .item-card__second-screen .order-detail__info h1 span, .item-card__second-screen .calculator-page__second-screen h1 span, #account-page .tech-specs h1 span, #account-page .order-detail__info h1 span, #account-page .calculator-page__second-screen h1 span, .сart-page__page-content .tech-specs h1 span, .сart-page__page-content .order-detail__info h1 span, .сart-page__page-content .calculator-page__second-screen h1 span, #calculator-page .tech-specs h1 span, #calculator-page .order-detail__info h1 span, #calculator-page .calculator-page__second-screen h1 span {
   font-weight: 400;
 }
-.item-card__second-screen .tech-specs .pc-table, .item-card__second-screen .order-detail__info .pc-table, #account-page .tech-specs .pc-table, #account-page .order-detail__info .pc-table, .сart-page__page-content .tech-specs .pc-table, .сart-page__page-content .order-detail__info .pc-table {
+.item-card__second-screen .tech-specs .pc-table, .item-card__second-screen .order-detail__info .pc-table, .item-card__second-screen .calculator-page__second-screen .pc-table, #account-page .tech-specs .pc-table, #account-page .order-detail__info .pc-table, #account-page .calculator-page__second-screen .pc-table, .сart-page__page-content .tech-specs .pc-table, .сart-page__page-content .order-detail__info .pc-table, .сart-page__page-content .calculator-page__second-screen .pc-table, #calculator-page .tech-specs .pc-table, #calculator-page .order-detail__info .pc-table, #calculator-page .calculator-page__second-screen .pc-table {
   display: none;
   width: 100%;
 }
 @media (min-width: 992px) {
-  .item-card__second-screen .tech-specs .pc-table, .item-card__second-screen .order-detail__info .pc-table, #account-page .tech-specs .pc-table, #account-page .order-detail__info .pc-table, .сart-page__page-content .tech-specs .pc-table, .сart-page__page-content .order-detail__info .pc-table {
+  .item-card__second-screen .tech-specs .pc-table, .item-card__second-screen .order-detail__info .pc-table, .item-card__second-screen .calculator-page__second-screen .pc-table, #account-page .tech-specs .pc-table, #account-page .order-detail__info .pc-table, #account-page .calculator-page__second-screen .pc-table, .сart-page__page-content .tech-specs .pc-table, .сart-page__page-content .order-detail__info .pc-table, .сart-page__page-content .calculator-page__second-screen .pc-table, #calculator-page .tech-specs .pc-table, #calculator-page .order-detail__info .pc-table, #calculator-page .calculator-page__second-screen .pc-table {
     display: table;
   }
 }
-.item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .tech-specs .pc-table tr td, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr td, #account-page .tech-specs .pc-table tr th, #account-page .tech-specs .pc-table tr td, #account-page .order-detail__info .pc-table tr th, #account-page .order-detail__info .pc-table tr td, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr td, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr td {
+.item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .tech-specs .pc-table tr td, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr td, .item-card__second-screen .calculator-page__second-screen .pc-table tr th, .item-card__second-screen .calculator-page__second-screen .pc-table tr td, #account-page .tech-specs .pc-table tr th, #account-page .tech-specs .pc-table tr td, #account-page .order-detail__info .pc-table tr th, #account-page .order-detail__info .pc-table tr td, #account-page .calculator-page__second-screen .pc-table tr th, #account-page .calculator-page__second-screen .pc-table tr td, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr td, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr td, .сart-page__page-content .calculator-page__second-screen .pc-table tr th, .сart-page__page-content .calculator-page__second-screen .pc-table tr td, #calculator-page .tech-specs .pc-table tr th, #calculator-page .tech-specs .pc-table tr td, #calculator-page .order-detail__info .pc-table tr th, #calculator-page .order-detail__info .pc-table tr td, #calculator-page .calculator-page__second-screen .pc-table tr th, #calculator-page .calculator-page__second-screen .pc-table tr td {
   height: 65px;
   width: calc(100% / 9);
   vertical-align: middle;
   font-weight: 500;
 }
 @media (min-width: 992px) {
-  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .tech-specs .pc-table tr td, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr td, #account-page .tech-specs .pc-table tr th, #account-page .tech-specs .pc-table tr td, #account-page .order-detail__info .pc-table tr th, #account-page .order-detail__info .pc-table tr td, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr td, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr td {
+  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .tech-specs .pc-table tr td, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr td, .item-card__second-screen .calculator-page__second-screen .pc-table tr th, .item-card__second-screen .calculator-page__second-screen .pc-table tr td, #account-page .tech-specs .pc-table tr th, #account-page .tech-specs .pc-table tr td, #account-page .order-detail__info .pc-table tr th, #account-page .order-detail__info .pc-table tr td, #account-page .calculator-page__second-screen .pc-table tr th, #account-page .calculator-page__second-screen .pc-table tr td, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr td, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr td, .сart-page__page-content .calculator-page__second-screen .pc-table tr th, .сart-page__page-content .calculator-page__second-screen .pc-table tr td, #calculator-page .tech-specs .pc-table tr th, #calculator-page .tech-specs .pc-table tr td, #calculator-page .order-detail__info .pc-table tr th, #calculator-page .order-detail__info .pc-table tr td, #calculator-page .calculator-page__second-screen .pc-table tr th, #calculator-page .calculator-page__second-screen .pc-table tr td {
     font-size: 13px;
   }
 }
 @media (min-width: 1200px) {
-  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .tech-specs .pc-table tr td, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr td, #account-page .tech-specs .pc-table tr th, #account-page .tech-specs .pc-table tr td, #account-page .order-detail__info .pc-table tr th, #account-page .order-detail__info .pc-table tr td, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr td, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr td {
+  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .tech-specs .pc-table tr td, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr td, .item-card__second-screen .calculator-page__second-screen .pc-table tr th, .item-card__second-screen .calculator-page__second-screen .pc-table tr td, #account-page .tech-specs .pc-table tr th, #account-page .tech-specs .pc-table tr td, #account-page .order-detail__info .pc-table tr th, #account-page .order-detail__info .pc-table tr td, #account-page .calculator-page__second-screen .pc-table tr th, #account-page .calculator-page__second-screen .pc-table tr td, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr td, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr td, .сart-page__page-content .calculator-page__second-screen .pc-table tr th, .сart-page__page-content .calculator-page__second-screen .pc-table tr td, #calculator-page .tech-specs .pc-table tr th, #calculator-page .tech-specs .pc-table tr td, #calculator-page .order-detail__info .pc-table tr th, #calculator-page .order-detail__info .pc-table tr td, #calculator-page .calculator-page__second-screen .pc-table tr th, #calculator-page .calculator-page__second-screen .pc-table tr td {
     font-size: 15px;
   }
 }
 @media (min-width: 2000px) {
-  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .tech-specs .pc-table tr td, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr td, #account-page .tech-specs .pc-table tr th, #account-page .tech-specs .pc-table tr td, #account-page .order-detail__info .pc-table tr th, #account-page .order-detail__info .pc-table tr td, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr td, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr td {
+  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .tech-specs .pc-table tr td, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr td, .item-card__second-screen .calculator-page__second-screen .pc-table tr th, .item-card__second-screen .calculator-page__second-screen .pc-table tr td, #account-page .tech-specs .pc-table tr th, #account-page .tech-specs .pc-table tr td, #account-page .order-detail__info .pc-table tr th, #account-page .order-detail__info .pc-table tr td, #account-page .calculator-page__second-screen .pc-table tr th, #account-page .calculator-page__second-screen .pc-table tr td, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr td, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr td, .сart-page__page-content .calculator-page__second-screen .pc-table tr th, .сart-page__page-content .calculator-page__second-screen .pc-table tr td, #calculator-page .tech-specs .pc-table tr th, #calculator-page .tech-specs .pc-table tr td, #calculator-page .order-detail__info .pc-table tr th, #calculator-page .order-detail__info .pc-table tr td, #calculator-page .calculator-page__second-screen .pc-table tr th, #calculator-page .calculator-page__second-screen .pc-table tr td {
     font-size: 18px;
     height: 75px;
   }
 }
-.item-card__second-screen .tech-specs .pc-table tr th .cell-content, .item-card__second-screen .tech-specs .pc-table tr td .cell-content, .item-card__second-screen .order-detail__info .pc-table tr th .cell-content, .item-card__second-screen .order-detail__info .pc-table tr td .cell-content, #account-page .tech-specs .pc-table tr th .cell-content, #account-page .tech-specs .pc-table tr td .cell-content, #account-page .order-detail__info .pc-table tr th .cell-content, #account-page .order-detail__info .pc-table tr td .cell-content, .сart-page__page-content .tech-specs .pc-table tr th .cell-content, .сart-page__page-content .tech-specs .pc-table tr td .cell-content, .сart-page__page-content .order-detail__info .pc-table tr th .cell-content, .сart-page__page-content .order-detail__info .pc-table tr td .cell-content {
+.item-card__second-screen .tech-specs .pc-table tr th .cell-content, .item-card__second-screen .tech-specs .pc-table tr td .cell-content, .item-card__second-screen .order-detail__info .pc-table tr th .cell-content, .item-card__second-screen .order-detail__info .pc-table tr td .cell-content, .item-card__second-screen .calculator-page__second-screen .pc-table tr th .cell-content, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .cell-content, #account-page .tech-specs .pc-table tr th .cell-content, #account-page .tech-specs .pc-table tr td .cell-content, #account-page .order-detail__info .pc-table tr th .cell-content, #account-page .order-detail__info .pc-table tr td .cell-content, #account-page .calculator-page__second-screen .pc-table tr th .cell-content, #account-page .calculator-page__second-screen .pc-table tr td .cell-content, .сart-page__page-content .tech-specs .pc-table tr th .cell-content, .сart-page__page-content .tech-specs .pc-table tr td .cell-content, .сart-page__page-content .order-detail__info .pc-table tr th .cell-content, .сart-page__page-content .order-detail__info .pc-table tr td .cell-content, .сart-page__page-content .calculator-page__second-screen .pc-table tr th .cell-content, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .cell-content, #calculator-page .tech-specs .pc-table tr th .cell-content, #calculator-page .tech-specs .pc-table tr td .cell-content, #calculator-page .order-detail__info .pc-table tr th .cell-content, #calculator-page .order-detail__info .pc-table tr td .cell-content, #calculator-page .calculator-page__second-screen .pc-table tr th .cell-content, #calculator-page .calculator-page__second-screen .pc-table tr td .cell-content {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -10813,124 +10813,124 @@ footer .divier-footer .col span:last-child a:hover {
   justify-content: center;
   padding: 0 10px;
 }
-.item-card__second-screen .tech-specs .pc-table tr th .cell-content img, .item-card__second-screen .tech-specs .pc-table tr td .cell-content img, .item-card__second-screen .order-detail__info .pc-table tr th .cell-content img, .item-card__second-screen .order-detail__info .pc-table tr td .cell-content img, #account-page .tech-specs .pc-table tr th .cell-content img, #account-page .tech-specs .pc-table tr td .cell-content img, #account-page .order-detail__info .pc-table tr th .cell-content img, #account-page .order-detail__info .pc-table tr td .cell-content img, .сart-page__page-content .tech-specs .pc-table tr th .cell-content img, .сart-page__page-content .tech-specs .pc-table tr td .cell-content img, .сart-page__page-content .order-detail__info .pc-table tr th .cell-content img, .сart-page__page-content .order-detail__info .pc-table tr td .cell-content img {
+.item-card__second-screen .tech-specs .pc-table tr th .cell-content img, .item-card__second-screen .tech-specs .pc-table tr td .cell-content img, .item-card__second-screen .order-detail__info .pc-table tr th .cell-content img, .item-card__second-screen .order-detail__info .pc-table tr td .cell-content img, .item-card__second-screen .calculator-page__second-screen .pc-table tr th .cell-content img, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .cell-content img, #account-page .tech-specs .pc-table tr th .cell-content img, #account-page .tech-specs .pc-table tr td .cell-content img, #account-page .order-detail__info .pc-table tr th .cell-content img, #account-page .order-detail__info .pc-table tr td .cell-content img, #account-page .calculator-page__second-screen .pc-table tr th .cell-content img, #account-page .calculator-page__second-screen .pc-table tr td .cell-content img, .сart-page__page-content .tech-specs .pc-table tr th .cell-content img, .сart-page__page-content .tech-specs .pc-table tr td .cell-content img, .сart-page__page-content .order-detail__info .pc-table tr th .cell-content img, .сart-page__page-content .order-detail__info .pc-table tr td .cell-content img, .сart-page__page-content .calculator-page__second-screen .pc-table tr th .cell-content img, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .cell-content img, #calculator-page .tech-specs .pc-table tr th .cell-content img, #calculator-page .tech-specs .pc-table tr td .cell-content img, #calculator-page .order-detail__info .pc-table tr th .cell-content img, #calculator-page .order-detail__info .pc-table tr td .cell-content img, #calculator-page .calculator-page__second-screen .pc-table tr th .cell-content img, #calculator-page .calculator-page__second-screen .pc-table tr td .cell-content img {
   margin-right: 10px;
   display: none;
 }
 @media (min-width: 1400px) {
-  .item-card__second-screen .tech-specs .pc-table tr th .cell-content img, .item-card__second-screen .tech-specs .pc-table tr td .cell-content img, .item-card__second-screen .order-detail__info .pc-table tr th .cell-content img, .item-card__second-screen .order-detail__info .pc-table tr td .cell-content img, #account-page .tech-specs .pc-table tr th .cell-content img, #account-page .tech-specs .pc-table tr td .cell-content img, #account-page .order-detail__info .pc-table tr th .cell-content img, #account-page .order-detail__info .pc-table tr td .cell-content img, .сart-page__page-content .tech-specs .pc-table tr th .cell-content img, .сart-page__page-content .tech-specs .pc-table tr td .cell-content img, .сart-page__page-content .order-detail__info .pc-table tr th .cell-content img, .сart-page__page-content .order-detail__info .pc-table tr td .cell-content img {
+  .item-card__second-screen .tech-specs .pc-table tr th .cell-content img, .item-card__second-screen .tech-specs .pc-table tr td .cell-content img, .item-card__second-screen .order-detail__info .pc-table tr th .cell-content img, .item-card__second-screen .order-detail__info .pc-table tr td .cell-content img, .item-card__second-screen .calculator-page__second-screen .pc-table tr th .cell-content img, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .cell-content img, #account-page .tech-specs .pc-table tr th .cell-content img, #account-page .tech-specs .pc-table tr td .cell-content img, #account-page .order-detail__info .pc-table tr th .cell-content img, #account-page .order-detail__info .pc-table tr td .cell-content img, #account-page .calculator-page__second-screen .pc-table tr th .cell-content img, #account-page .calculator-page__second-screen .pc-table tr td .cell-content img, .сart-page__page-content .tech-specs .pc-table tr th .cell-content img, .сart-page__page-content .tech-specs .pc-table tr td .cell-content img, .сart-page__page-content .order-detail__info .pc-table tr th .cell-content img, .сart-page__page-content .order-detail__info .pc-table tr td .cell-content img, .сart-page__page-content .calculator-page__second-screen .pc-table tr th .cell-content img, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .cell-content img, #calculator-page .tech-specs .pc-table tr th .cell-content img, #calculator-page .tech-specs .pc-table tr td .cell-content img, #calculator-page .order-detail__info .pc-table tr th .cell-content img, #calculator-page .order-detail__info .pc-table tr td .cell-content img, #calculator-page .calculator-page__second-screen .pc-table tr th .cell-content img, #calculator-page .calculator-page__second-screen .pc-table tr td .cell-content img {
     display: block;
   }
 }
-.item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr th, #account-page .tech-specs .pc-table tr th, #account-page .order-detail__info .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr th {
+.item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .calculator-page__second-screen .pc-table tr th, #account-page .tech-specs .pc-table tr th, #account-page .order-detail__info .pc-table tr th, #account-page .calculator-page__second-screen .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .calculator-page__second-screen .pc-table tr th, #calculator-page .tech-specs .pc-table tr th, #calculator-page .order-detail__info .pc-table tr th, #calculator-page .calculator-page__second-screen .pc-table tr th {
   color: white;
 }
 @media (min-width: 2000px) {
-  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr th, #account-page .tech-specs .pc-table tr th, #account-page .order-detail__info .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr th {
+  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .calculator-page__second-screen .pc-table tr th, #account-page .tech-specs .pc-table tr th, #account-page .order-detail__info .pc-table tr th, #account-page .calculator-page__second-screen .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .calculator-page__second-screen .pc-table tr th, #calculator-page .tech-specs .pc-table tr th, #calculator-page .order-detail__info .pc-table tr th, #calculator-page .calculator-page__second-screen .pc-table tr th {
     padding: 15px 0;
   }
 }
 @media (max-width: 1400px) {
-  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr th, #account-page .tech-specs .pc-table tr th, #account-page .order-detail__info .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr th {
+  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .calculator-page__second-screen .pc-table tr th, #account-page .tech-specs .pc-table tr th, #account-page .order-detail__info .pc-table tr th, #account-page .calculator-page__second-screen .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .calculator-page__second-screen .pc-table tr th, #calculator-page .tech-specs .pc-table tr th, #calculator-page .order-detail__info .pc-table tr th, #calculator-page .calculator-page__second-screen .pc-table tr th {
     padding: 10px 0;
   }
 }
 @media (max-width: 1200px) {
-  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr th, #account-page .tech-specs .pc-table tr th, #account-page .order-detail__info .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr th {
+  .item-card__second-screen .tech-specs .pc-table tr th, .item-card__second-screen .order-detail__info .pc-table tr th, .item-card__second-screen .calculator-page__second-screen .pc-table tr th, #account-page .tech-specs .pc-table tr th, #account-page .order-detail__info .pc-table tr th, #account-page .calculator-page__second-screen .pc-table tr th, .сart-page__page-content .tech-specs .pc-table tr th, .сart-page__page-content .order-detail__info .pc-table tr th, .сart-page__page-content .calculator-page__second-screen .pc-table tr th, #calculator-page .tech-specs .pc-table tr th, #calculator-page .order-detail__info .pc-table tr th, #calculator-page .calculator-page__second-screen .pc-table tr th {
     padding: 10px 0;
     text-align: center;
   }
 }
-.item-card__second-screen .tech-specs .pc-table tr .item-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price, #account-page .tech-specs .pc-table tr .item-price, #account-page .order-detail__info .pc-table tr .item-price, .сart-page__page-content .tech-specs .pc-table tr .item-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price {
+.item-card__second-screen .tech-specs .pc-table tr .item-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price, .item-card__second-screen .calculator-page__second-screen .pc-table tr .item-price, #account-page .tech-specs .pc-table tr .item-price, #account-page .order-detail__info .pc-table tr .item-price, #account-page .calculator-page__second-screen .pc-table tr .item-price, .сart-page__page-content .tech-specs .pc-table tr .item-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price, .сart-page__page-content .calculator-page__second-screen .pc-table tr .item-price, #calculator-page .tech-specs .pc-table tr .item-price, #calculator-page .order-detail__info .pc-table tr .item-price, #calculator-page .calculator-page__second-screen .pc-table tr .item-price {
   font-weight: 700;
   font-size: 18px;
   text-align: left;
   padding: 0 30px;
 }
 @media (min-width: 2000px) {
-  .item-card__second-screen .tech-specs .pc-table tr .item-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price, #account-page .tech-specs .pc-table tr .item-price, #account-page .order-detail__info .pc-table tr .item-price, .сart-page__page-content .tech-specs .pc-table tr .item-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price {
+  .item-card__second-screen .tech-specs .pc-table tr .item-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price, .item-card__second-screen .calculator-page__second-screen .pc-table tr .item-price, #account-page .tech-specs .pc-table tr .item-price, #account-page .order-detail__info .pc-table tr .item-price, #account-page .calculator-page__second-screen .pc-table tr .item-price, .сart-page__page-content .tech-specs .pc-table tr .item-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price, .сart-page__page-content .calculator-page__second-screen .pc-table tr .item-price, #calculator-page .tech-specs .pc-table tr .item-price, #calculator-page .order-detail__info .pc-table tr .item-price, #calculator-page .calculator-page__second-screen .pc-table tr .item-price {
     font-size: 20px;
   }
 }
 @media (min-width: 1600px) {
-  .item-card__second-screen .tech-specs .pc-table tr .item-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price, #account-page .tech-specs .pc-table tr .item-price, #account-page .order-detail__info .pc-table tr .item-price, .сart-page__page-content .tech-specs .pc-table tr .item-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price {
+  .item-card__second-screen .tech-specs .pc-table tr .item-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price, .item-card__second-screen .calculator-page__second-screen .pc-table tr .item-price, #account-page .tech-specs .pc-table tr .item-price, #account-page .order-detail__info .pc-table tr .item-price, #account-page .calculator-page__second-screen .pc-table tr .item-price, .сart-page__page-content .tech-specs .pc-table tr .item-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price, .сart-page__page-content .calculator-page__second-screen .pc-table tr .item-price, #calculator-page .tech-specs .pc-table tr .item-price, #calculator-page .order-detail__info .pc-table tr .item-price, #calculator-page .calculator-page__second-screen .pc-table tr .item-price {
     padding: 0 40px;
   }
 }
 @media (max-width: 1400px) {
-  .item-card__second-screen .tech-specs .pc-table tr .item-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price, #account-page .tech-specs .pc-table tr .item-price, #account-page .order-detail__info .pc-table tr .item-price, .сart-page__page-content .tech-specs .pc-table tr .item-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price {
+  .item-card__second-screen .tech-specs .pc-table tr .item-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price, .item-card__second-screen .calculator-page__second-screen .pc-table tr .item-price, #account-page .tech-specs .pc-table tr .item-price, #account-page .order-detail__info .pc-table tr .item-price, #account-page .calculator-page__second-screen .pc-table tr .item-price, .сart-page__page-content .tech-specs .pc-table tr .item-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price, .сart-page__page-content .calculator-page__second-screen .pc-table tr .item-price, #calculator-page .tech-specs .pc-table tr .item-price, #calculator-page .order-detail__info .pc-table tr .item-price, #calculator-page .calculator-page__second-screen .pc-table tr .item-price {
     padding: 0;
     text-align: center;
   }
 }
 @media (max-width: 1200px) {
-  .item-card__second-screen .tech-specs .pc-table tr .item-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price, #account-page .tech-specs .pc-table tr .item-price, #account-page .order-detail__info .pc-table tr .item-price, .сart-page__page-content .tech-specs .pc-table tr .item-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price {
+  .item-card__second-screen .tech-specs .pc-table tr .item-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price, .item-card__second-screen .calculator-page__second-screen .pc-table tr .item-price, #account-page .tech-specs .pc-table tr .item-price, #account-page .order-detail__info .pc-table tr .item-price, #account-page .calculator-page__second-screen .pc-table tr .item-price, .сart-page__page-content .tech-specs .pc-table tr .item-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price, .сart-page__page-content .calculator-page__second-screen .pc-table tr .item-price, #calculator-page .tech-specs .pc-table tr .item-price, #calculator-page .order-detail__info .pc-table tr .item-price, #calculator-page .calculator-page__second-screen .pc-table tr .item-price {
     font-size: 16px;
   }
 }
-.item-card__second-screen .tech-specs .pc-table tr .item-price .sale-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price .sale-price, #account-page .tech-specs .pc-table tr .item-price .sale-price, #account-page .order-detail__info .pc-table tr .item-price .sale-price, .сart-page__page-content .tech-specs .pc-table tr .item-price .sale-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price .sale-price {
+.item-card__second-screen .tech-specs .pc-table tr .item-price .sale-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price .sale-price, .item-card__second-screen .calculator-page__second-screen .pc-table tr .item-price .sale-price, #account-page .tech-specs .pc-table tr .item-price .sale-price, #account-page .order-detail__info .pc-table tr .item-price .sale-price, #account-page .calculator-page__second-screen .pc-table tr .item-price .sale-price, .сart-page__page-content .tech-specs .pc-table tr .item-price .sale-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price .sale-price, .сart-page__page-content .calculator-page__second-screen .pc-table tr .item-price .sale-price, #calculator-page .tech-specs .pc-table tr .item-price .sale-price, #calculator-page .order-detail__info .pc-table tr .item-price .sale-price, #calculator-page .calculator-page__second-screen .pc-table tr .item-price .sale-price {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 1400px) {
-  .item-card__second-screen .tech-specs .pc-table tr .item-price .sale-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price .sale-price, #account-page .tech-specs .pc-table tr .item-price .sale-price, #account-page .order-detail__info .pc-table tr .item-price .sale-price, .сart-page__page-content .tech-specs .pc-table tr .item-price .sale-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price .sale-price {
+  .item-card__second-screen .tech-specs .pc-table tr .item-price .sale-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price .sale-price, .item-card__second-screen .calculator-page__second-screen .pc-table tr .item-price .sale-price, #account-page .tech-specs .pc-table tr .item-price .sale-price, #account-page .order-detail__info .pc-table tr .item-price .sale-price, #account-page .calculator-page__second-screen .pc-table tr .item-price .sale-price, .сart-page__page-content .tech-specs .pc-table tr .item-price .sale-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price .sale-price, .сart-page__page-content .calculator-page__second-screen .pc-table tr .item-price .sale-price, #calculator-page .tech-specs .pc-table tr .item-price .sale-price, #calculator-page .order-detail__info .pc-table tr .item-price .sale-price, #calculator-page .calculator-page__second-screen .pc-table tr .item-price .sale-price {
     flex-direction: column;
   }
 }
-.item-card__second-screen .tech-specs .pc-table tr .item-price .sale-price .old-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price .sale-price .old-price, #account-page .tech-specs .pc-table tr .item-price .sale-price .old-price, #account-page .order-detail__info .pc-table tr .item-price .sale-price .old-price, .сart-page__page-content .tech-specs .pc-table tr .item-price .sale-price .old-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price .sale-price .old-price {
+.item-card__second-screen .tech-specs .pc-table tr .item-price .sale-price .old-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price .sale-price .old-price, .item-card__second-screen .calculator-page__second-screen .pc-table tr .item-price .sale-price .old-price, #account-page .tech-specs .pc-table tr .item-price .sale-price .old-price, #account-page .order-detail__info .pc-table tr .item-price .sale-price .old-price, #account-page .calculator-page__second-screen .pc-table tr .item-price .sale-price .old-price, .сart-page__page-content .tech-specs .pc-table tr .item-price .sale-price .old-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price .sale-price .old-price, .сart-page__page-content .calculator-page__second-screen .pc-table tr .item-price .sale-price .old-price, #calculator-page .tech-specs .pc-table tr .item-price .sale-price .old-price, #calculator-page .order-detail__info .pc-table tr .item-price .sale-price .old-price, #calculator-page .calculator-page__second-screen .pc-table tr .item-price .sale-price .old-price {
   text-decoration: line-through;
   color: #767676;
 }
-.item-card__second-screen .tech-specs .pc-table tr .item-price .sale-price .new-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price .sale-price .new-price, #account-page .tech-specs .pc-table tr .item-price .sale-price .new-price, #account-page .order-detail__info .pc-table tr .item-price .sale-price .new-price, .сart-page__page-content .tech-specs .pc-table tr .item-price .sale-price .new-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price .sale-price .new-price {
+.item-card__second-screen .tech-specs .pc-table tr .item-price .sale-price .new-price, .item-card__second-screen .order-detail__info .pc-table tr .item-price .sale-price .new-price, .item-card__second-screen .calculator-page__second-screen .pc-table tr .item-price .sale-price .new-price, #account-page .tech-specs .pc-table tr .item-price .sale-price .new-price, #account-page .order-detail__info .pc-table tr .item-price .sale-price .new-price, #account-page .calculator-page__second-screen .pc-table tr .item-price .sale-price .new-price, .сart-page__page-content .tech-specs .pc-table tr .item-price .sale-price .new-price, .сart-page__page-content .order-detail__info .pc-table tr .item-price .sale-price .new-price, .сart-page__page-content .calculator-page__second-screen .pc-table tr .item-price .sale-price .new-price, #calculator-page .tech-specs .pc-table tr .item-price .sale-price .new-price, #calculator-page .order-detail__info .pc-table tr .item-price .sale-price .new-price, #calculator-page .calculator-page__second-screen .pc-table tr .item-price .sale-price .new-price {
   color: #006f3e;
 }
-.item-card__second-screen .tech-specs .pc-table tr td, .item-card__second-screen .order-detail__info .pc-table tr td, #account-page .tech-specs .pc-table tr td, #account-page .order-detail__info .pc-table tr td, .сart-page__page-content .tech-specs .pc-table tr td, .сart-page__page-content .order-detail__info .pc-table tr td {
+.item-card__second-screen .tech-specs .pc-table tr td, .item-card__second-screen .order-detail__info .pc-table tr td, .item-card__second-screen .calculator-page__second-screen .pc-table tr td, #account-page .tech-specs .pc-table tr td, #account-page .order-detail__info .pc-table tr td, #account-page .calculator-page__second-screen .pc-table tr td, .сart-page__page-content .tech-specs .pc-table tr td, .сart-page__page-content .order-detail__info .pc-table tr td, .сart-page__page-content .calculator-page__second-screen .pc-table tr td, #calculator-page .tech-specs .pc-table tr td, #calculator-page .order-detail__info .pc-table tr td, #calculator-page .calculator-page__second-screen .pc-table tr td {
   border: 1px solid #eaeaea;
   text-align: center;
 }
-.item-card__second-screen .tech-specs .pc-table tr td .color-circle, .item-card__second-screen .order-detail__info .pc-table tr td .color-circle, #account-page .tech-specs .pc-table tr td .color-circle, #account-page .order-detail__info .pc-table tr td .color-circle, .сart-page__page-content .tech-specs .pc-table tr td .color-circle, .сart-page__page-content .order-detail__info .pc-table tr td .color-circle {
+.item-card__second-screen .tech-specs .pc-table tr td .color-circle, .item-card__second-screen .order-detail__info .pc-table tr td .color-circle, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .color-circle, #account-page .tech-specs .pc-table tr td .color-circle, #account-page .order-detail__info .pc-table tr td .color-circle, #account-page .calculator-page__second-screen .pc-table tr td .color-circle, .сart-page__page-content .tech-specs .pc-table tr td .color-circle, .сart-page__page-content .order-detail__info .pc-table tr td .color-circle, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .color-circle, #calculator-page .tech-specs .pc-table tr td .color-circle, #calculator-page .order-detail__info .pc-table tr td .color-circle, #calculator-page .calculator-page__second-screen .pc-table tr td .color-circle {
   width: 29px;
   height: 29px;
   background-color: #989898;
   border-radius: 15px;
   margin: 0 auto;
 }
-.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper, #account-page .tech-specs .pc-table tr td .amount-wrapper, #account-page .order-detail__info .pc-table tr td .amount-wrapper, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper {
+.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper, #account-page .tech-specs .pc-table tr td .amount-wrapper, #account-page .order-detail__info .pc-table tr td .amount-wrapper, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper, #calculator-page .tech-specs .pc-table tr td .amount-wrapper, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper input, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper input, #account-page .tech-specs .pc-table tr td .amount-wrapper input, #account-page .order-detail__info .pc-table tr td .amount-wrapper input, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper input, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper input {
+.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper input, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper input, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper input, #account-page .tech-specs .pc-table tr td .amount-wrapper input, #account-page .order-detail__info .pc-table tr td .amount-wrapper input, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper input, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper input, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper input, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper input, #calculator-page .tech-specs .pc-table tr td .amount-wrapper input, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper input, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper input {
   border: 1px solid #d0d0d0;
   text-align: center;
 }
 @media (min-width: 992px) {
-  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper input, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper input, #account-page .tech-specs .pc-table tr td .amount-wrapper input, #account-page .order-detail__info .pc-table tr td .amount-wrapper input, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper input, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper input {
+  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper input, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper input, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper input, #account-page .tech-specs .pc-table tr td .amount-wrapper input, #account-page .order-detail__info .pc-table tr td .amount-wrapper input, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper input, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper input, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper input, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper input, #calculator-page .tech-specs .pc-table tr td .amount-wrapper input, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper input, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper input {
     width: 43px;
     height: 40px;
   }
 }
 @media (min-width: 1200px) {
-  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper input, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper input, #account-page .tech-specs .pc-table tr td .amount-wrapper input, #account-page .order-detail__info .pc-table tr td .amount-wrapper input, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper input, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper input {
+  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper input, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper input, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper input, #account-page .tech-specs .pc-table tr td .amount-wrapper input, #account-page .order-detail__info .pc-table tr td .amount-wrapper input, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper input, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper input, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper input, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper input, #calculator-page .tech-specs .pc-table tr td .amount-wrapper input, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper input, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper input {
     width: 53px;
     height: 50px;
   }
 }
 @media (min-width: 2000px) {
-  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper input, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper input, #account-page .tech-specs .pc-table tr td .amount-wrapper input, #account-page .order-detail__info .pc-table tr td .amount-wrapper input, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper input, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper input {
+  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper input, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper input, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper input, #account-page .tech-specs .pc-table tr td .amount-wrapper input, #account-page .order-detail__info .pc-table tr td .amount-wrapper input, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper input, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper input, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper input, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper input, #calculator-page .tech-specs .pc-table tr td .amount-wrapper input, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper input, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper input {
     width: 63px;
     height: 60px;
   }
 }
-.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns {
+.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-left: 4px;
 }
-.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn {
+.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn {
   text-align: center;
   display: flex;
   align-items: center;
@@ -10940,72 +10940,72 @@ footer .divier-footer .col span:last-child a:hover {
   color: #006f3e;
 }
 @media (min-width: 992px) {
-  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn {
+  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn {
     width: 21px;
     height: 19px;
   }
 }
 @media (min-width: 1200px) {
-  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn {
+  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn {
     width: 26px;
     height: 24px;
   }
 }
 @media (min-width: 2000px) {
-  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn {
+  .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn {
     width: 31px;
     height: 29px;
   }
 }
-.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover {
+.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, .item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn:hover, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn:hover {
   color: white;
   background-color: #006f3e;
 }
-.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn {
+.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .inc-btn, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .inc-btn {
   margin-bottom: 1px;
 }
-.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn {
+.item-card__second-screen .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #account-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .tech-specs .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .order-detail__info .pc-table tr td .amount-wrapper .input-btns .dec-btn, #calculator-page .calculator-page__second-screen .pc-table tr td .amount-wrapper .input-btns .dec-btn {
   margin-top: 1px;
 }
-.item-card__second-screen .tech-specs .pc-table tr td .green-button, .item-card__second-screen .order-detail__info .pc-table tr td .green-button, #account-page .tech-specs .pc-table tr td .green-button, #account-page .order-detail__info .pc-table tr td .green-button, .сart-page__page-content .tech-specs .pc-table tr td .green-button, .сart-page__page-content .order-detail__info .pc-table tr td .green-button {
+.item-card__second-screen .tech-specs .pc-table tr td .green-button, .item-card__second-screen .order-detail__info .pc-table tr td .green-button, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .green-button, #account-page .tech-specs .pc-table tr td .green-button, #account-page .order-detail__info .pc-table tr td .green-button, #account-page .calculator-page__second-screen .pc-table tr td .green-button, .сart-page__page-content .tech-specs .pc-table tr td .green-button, .сart-page__page-content .order-detail__info .pc-table tr td .green-button, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .green-button, #calculator-page .tech-specs .pc-table tr td .green-button, #calculator-page .order-detail__info .pc-table tr td .green-button, #calculator-page .calculator-page__second-screen .pc-table tr td .green-button {
   float: initial;
 }
 @media (min-width: 2000px) {
-  .item-card__second-screen .tech-specs .pc-table tr td .green-button, .item-card__second-screen .order-detail__info .pc-table tr td .green-button, #account-page .tech-specs .pc-table tr td .green-button, #account-page .order-detail__info .pc-table tr td .green-button, .сart-page__page-content .tech-specs .pc-table tr td .green-button, .сart-page__page-content .order-detail__info .pc-table tr td .green-button {
+  .item-card__second-screen .tech-specs .pc-table tr td .green-button, .item-card__second-screen .order-detail__info .pc-table tr td .green-button, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .green-button, #account-page .tech-specs .pc-table tr td .green-button, #account-page .order-detail__info .pc-table tr td .green-button, #account-page .calculator-page__second-screen .pc-table tr td .green-button, .сart-page__page-content .tech-specs .pc-table tr td .green-button, .сart-page__page-content .order-detail__info .pc-table tr td .green-button, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .green-button, #calculator-page .tech-specs .pc-table tr td .green-button, #calculator-page .order-detail__info .pc-table tr td .green-button, #calculator-page .calculator-page__second-screen .pc-table tr td .green-button {
     font-size: 13px;
   }
 }
 @media (max-width: 1200px) {
-  .item-card__second-screen .tech-specs .pc-table tr td .green-button, .item-card__second-screen .order-detail__info .pc-table tr td .green-button, #account-page .tech-specs .pc-table tr td .green-button, #account-page .order-detail__info .pc-table tr td .green-button, .сart-page__page-content .tech-specs .pc-table tr td .green-button, .сart-page__page-content .order-detail__info .pc-table tr td .green-button {
+  .item-card__second-screen .tech-specs .pc-table tr td .green-button, .item-card__second-screen .order-detail__info .pc-table tr td .green-button, .item-card__second-screen .calculator-page__second-screen .pc-table tr td .green-button, #account-page .tech-specs .pc-table tr td .green-button, #account-page .order-detail__info .pc-table tr td .green-button, #account-page .calculator-page__second-screen .pc-table tr td .green-button, .сart-page__page-content .tech-specs .pc-table tr td .green-button, .сart-page__page-content .order-detail__info .pc-table tr td .green-button, .сart-page__page-content .calculator-page__second-screen .pc-table tr td .green-button, #calculator-page .tech-specs .pc-table tr td .green-button, #calculator-page .order-detail__info .pc-table tr td .green-button, #calculator-page .calculator-page__second-screen .pc-table tr td .green-button {
     margin: 0 5px;
     padding: 8.5px 9.5px 7.5px 9.5px;
   }
 }
-.item-card__second-screen .tech-specs .pc-table tr .fifth-cell, .item-card__second-screen .order-detail__info .pc-table tr .fifth-cell, #account-page .tech-specs .pc-table tr .fifth-cell, #account-page .order-detail__info .pc-table tr .fifth-cell, .сart-page__page-content .tech-specs .pc-table tr .fifth-cell, .сart-page__page-content .order-detail__info .pc-table tr .fifth-cell {
+.item-card__second-screen .tech-specs .pc-table tr .fifth-cell, .item-card__second-screen .order-detail__info .pc-table tr .fifth-cell, .item-card__second-screen .calculator-page__second-screen .pc-table tr .fifth-cell, #account-page .tech-specs .pc-table tr .fifth-cell, #account-page .order-detail__info .pc-table tr .fifth-cell, #account-page .calculator-page__second-screen .pc-table tr .fifth-cell, .сart-page__page-content .tech-specs .pc-table tr .fifth-cell, .сart-page__page-content .order-detail__info .pc-table tr .fifth-cell, .сart-page__page-content .calculator-page__second-screen .pc-table tr .fifth-cell, #calculator-page .tech-specs .pc-table tr .fifth-cell, #calculator-page .order-detail__info .pc-table tr .fifth-cell, #calculator-page .calculator-page__second-screen .pc-table tr .fifth-cell {
   font-size: 12px;
 }
 @media (min-width: 2000px) {
-  .item-card__second-screen .tech-specs .pc-table tr .fifth-cell, .item-card__second-screen .order-detail__info .pc-table tr .fifth-cell, #account-page .tech-specs .pc-table tr .fifth-cell, #account-page .order-detail__info .pc-table tr .fifth-cell, .сart-page__page-content .tech-specs .pc-table tr .fifth-cell, .сart-page__page-content .order-detail__info .pc-table tr .fifth-cell {
+  .item-card__second-screen .tech-specs .pc-table tr .fifth-cell, .item-card__second-screen .order-detail__info .pc-table tr .fifth-cell, .item-card__second-screen .calculator-page__second-screen .pc-table tr .fifth-cell, #account-page .tech-specs .pc-table tr .fifth-cell, #account-page .order-detail__info .pc-table tr .fifth-cell, #account-page .calculator-page__second-screen .pc-table tr .fifth-cell, .сart-page__page-content .tech-specs .pc-table tr .fifth-cell, .сart-page__page-content .order-detail__info .pc-table tr .fifth-cell, .сart-page__page-content .calculator-page__second-screen .pc-table tr .fifth-cell, #calculator-page .tech-specs .pc-table tr .fifth-cell, #calculator-page .order-detail__info .pc-table tr .fifth-cell, #calculator-page .calculator-page__second-screen .pc-table tr .fifth-cell {
     font-size: 14px;
   }
 }
-.item-card__second-screen .tech-specs .pc-table tr .fifth-cell a, .item-card__second-screen .order-detail__info .pc-table tr .fifth-cell a, #account-page .tech-specs .pc-table tr .fifth-cell a, #account-page .order-detail__info .pc-table tr .fifth-cell a, .сart-page__page-content .tech-specs .pc-table tr .fifth-cell a, .сart-page__page-content .order-detail__info .pc-table tr .fifth-cell a {
+.item-card__second-screen .tech-specs .pc-table tr .fifth-cell a, .item-card__second-screen .order-detail__info .pc-table tr .fifth-cell a, .item-card__second-screen .calculator-page__second-screen .pc-table tr .fifth-cell a, #account-page .tech-specs .pc-table tr .fifth-cell a, #account-page .order-detail__info .pc-table tr .fifth-cell a, #account-page .calculator-page__second-screen .pc-table tr .fifth-cell a, .сart-page__page-content .tech-specs .pc-table tr .fifth-cell a, .сart-page__page-content .order-detail__info .pc-table tr .fifth-cell a, .сart-page__page-content .calculator-page__second-screen .pc-table tr .fifth-cell a, #calculator-page .tech-specs .pc-table tr .fifth-cell a, #calculator-page .order-detail__info .pc-table tr .fifth-cell a, #calculator-page .calculator-page__second-screen .pc-table tr .fifth-cell a {
   text-decoration: underline !important;
 }
-.item-card__second-screen .tech-specs .pc-table tr .fifth-cell a img, .item-card__second-screen .order-detail__info .pc-table tr .fifth-cell a img, #account-page .tech-specs .pc-table tr .fifth-cell a img, #account-page .order-detail__info .pc-table tr .fifth-cell a img, .сart-page__page-content .tech-specs .pc-table tr .fifth-cell a img, .сart-page__page-content .order-detail__info .pc-table tr .fifth-cell a img {
+.item-card__second-screen .tech-specs .pc-table tr .fifth-cell a img, .item-card__second-screen .order-detail__info .pc-table tr .fifth-cell a img, .item-card__second-screen .calculator-page__second-screen .pc-table tr .fifth-cell a img, #account-page .tech-specs .pc-table tr .fifth-cell a img, #account-page .order-detail__info .pc-table tr .fifth-cell a img, #account-page .calculator-page__second-screen .pc-table tr .fifth-cell a img, .сart-page__page-content .tech-specs .pc-table tr .fifth-cell a img, .сart-page__page-content .order-detail__info .pc-table tr .fifth-cell a img, .сart-page__page-content .calculator-page__second-screen .pc-table tr .fifth-cell a img, #calculator-page .tech-specs .pc-table tr .fifth-cell a img, #calculator-page .order-detail__info .pc-table tr .fifth-cell a img, #calculator-page .calculator-page__second-screen .pc-table tr .fifth-cell a img {
   margin-right: 10px;
 }
-.item-card__second-screen .tech-specs .pc-table tr .fifth-cell a:hover, .item-card__second-screen .order-detail__info .pc-table tr .fifth-cell a:hover, #account-page .tech-specs .pc-table tr .fifth-cell a:hover, #account-page .order-detail__info .pc-table tr .fifth-cell a:hover, .сart-page__page-content .tech-specs .pc-table tr .fifth-cell a:hover, .сart-page__page-content .order-detail__info .pc-table tr .fifth-cell a:hover {
+.item-card__second-screen .tech-specs .pc-table tr .fifth-cell a:hover, .item-card__second-screen .order-detail__info .pc-table tr .fifth-cell a:hover, .item-card__second-screen .calculator-page__second-screen .pc-table tr .fifth-cell a:hover, #account-page .tech-specs .pc-table tr .fifth-cell a:hover, #account-page .order-detail__info .pc-table tr .fifth-cell a:hover, #account-page .calculator-page__second-screen .pc-table tr .fifth-cell a:hover, .сart-page__page-content .tech-specs .pc-table tr .fifth-cell a:hover, .сart-page__page-content .order-detail__info .pc-table tr .fifth-cell a:hover, .сart-page__page-content .calculator-page__second-screen .pc-table tr .fifth-cell a:hover, #calculator-page .tech-specs .pc-table tr .fifth-cell a:hover, #calculator-page .order-detail__info .pc-table tr .fifth-cell a:hover, #calculator-page .calculator-page__second-screen .pc-table tr .fifth-cell a:hover {
   color: #006f3e;
   text-decoration: none !important;
 }
-.item-card__second-screen .tech-specs .pc-table tr .dark-blue, .item-card__second-screen .order-detail__info .pc-table tr .dark-blue, #account-page .tech-specs .pc-table tr .dark-blue, #account-page .order-detail__info .pc-table tr .dark-blue, .сart-page__page-content .tech-specs .pc-table tr .dark-blue, .сart-page__page-content .order-detail__info .pc-table tr .dark-blue {
+.item-card__second-screen .tech-specs .pc-table tr .dark-blue, .item-card__second-screen .order-detail__info .pc-table tr .dark-blue, .item-card__second-screen .calculator-page__second-screen .pc-table tr .dark-blue, #account-page .tech-specs .pc-table tr .dark-blue, #account-page .order-detail__info .pc-table tr .dark-blue, #account-page .calculator-page__second-screen .pc-table tr .dark-blue, .сart-page__page-content .tech-specs .pc-table tr .dark-blue, .сart-page__page-content .order-detail__info .pc-table tr .dark-blue, .сart-page__page-content .calculator-page__second-screen .pc-table tr .dark-blue, #calculator-page .tech-specs .pc-table tr .dark-blue, #calculator-page .order-detail__info .pc-table tr .dark-blue, #calculator-page .calculator-page__second-screen .pc-table tr .dark-blue {
   background-color: #0b2842;
 }
-.item-card__second-screen .tech-specs .pc-table tr .light-blue, .item-card__second-screen .order-detail__info .pc-table tr .light-blue, #account-page .tech-specs .pc-table tr .light-blue, #account-page .order-detail__info .pc-table tr .light-blue, .сart-page__page-content .tech-specs .pc-table tr .light-blue, .сart-page__page-content .order-detail__info .pc-table tr .light-blue {
+.item-card__second-screen .tech-specs .pc-table tr .light-blue, .item-card__second-screen .order-detail__info .pc-table tr .light-blue, .item-card__second-screen .calculator-page__second-screen .pc-table tr .light-blue, #account-page .tech-specs .pc-table tr .light-blue, #account-page .order-detail__info .pc-table tr .light-blue, #account-page .calculator-page__second-screen .pc-table tr .light-blue, .сart-page__page-content .tech-specs .pc-table tr .light-blue, .сart-page__page-content .order-detail__info .pc-table tr .light-blue, .сart-page__page-content .calculator-page__second-screen .pc-table tr .light-blue, #calculator-page .tech-specs .pc-table tr .light-blue, #calculator-page .order-detail__info .pc-table tr .light-blue, #calculator-page .calculator-page__second-screen .pc-table tr .light-blue {
   background-color: #0b375e;
 }
-.item-card__second-screen .tech-specs .mobile-table, .item-card__second-screen .order-detail__info .mobile-table, #account-page .tech-specs .mobile-table, #account-page .order-detail__info .mobile-table, .сart-page__page-content .tech-specs .mobile-table, .сart-page__page-content .order-detail__info .mobile-table {
+.item-card__second-screen .tech-specs .mobile-table, .item-card__second-screen .order-detail__info .mobile-table, .item-card__second-screen .calculator-page__second-screen .mobile-table, #account-page .tech-specs .mobile-table, #account-page .order-detail__info .mobile-table, #account-page .calculator-page__second-screen .mobile-table, .сart-page__page-content .tech-specs .mobile-table, .сart-page__page-content .order-detail__info .mobile-table, .сart-page__page-content .calculator-page__second-screen .mobile-table, #calculator-page .tech-specs .mobile-table, #calculator-page .order-detail__info .mobile-table, #calculator-page .calculator-page__second-screen .mobile-table {
   display: none;
   width: 100%;
   background-color: #f5f6f6;
@@ -11014,14 +11014,14 @@ footer .divier-footer .col span:last-child a:hover {
   margin-bottom: 15px;
 }
 @media (max-width: 992px) {
-  .item-card__second-screen .tech-specs .mobile-table, .item-card__second-screen .order-detail__info .mobile-table, #account-page .tech-specs .mobile-table, #account-page .order-detail__info .mobile-table, .сart-page__page-content .tech-specs .mobile-table, .сart-page__page-content .order-detail__info .mobile-table {
+  .item-card__second-screen .tech-specs .mobile-table, .item-card__second-screen .order-detail__info .mobile-table, .item-card__second-screen .calculator-page__second-screen .mobile-table, #account-page .tech-specs .mobile-table, #account-page .order-detail__info .mobile-table, #account-page .calculator-page__second-screen .mobile-table, .сart-page__page-content .tech-specs .mobile-table, .сart-page__page-content .order-detail__info .mobile-table, .сart-page__page-content .calculator-page__second-screen .mobile-table, #calculator-page .tech-specs .mobile-table, #calculator-page .order-detail__info .mobile-table, #calculator-page .calculator-page__second-screen .mobile-table {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 }
-.item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line {
+.item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, .item-card__second-screen .calculator-page__second-screen .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, #account-page .calculator-page__second-screen .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line, .сart-page__page-content .calculator-page__second-screen .mobile-table .spec-line, #calculator-page .tech-specs .mobile-table .spec-line, #calculator-page .order-detail__info .mobile-table .spec-line, #calculator-page .calculator-page__second-screen .mobile-table .spec-line {
   padding: 15px;
   margin-bottom: 15px;
   display: flex;
@@ -11032,39 +11032,39 @@ footer .divier-footer .col span:last-child a:hover {
   background-color: white;
   width: calc(100% / 2 - 10px);
 }
-.item-card__second-screen .tech-specs .mobile-table .spec-line .color-circle, .item-card__second-screen .order-detail__info .mobile-table .spec-line .color-circle, #account-page .tech-specs .mobile-table .spec-line .color-circle, #account-page .order-detail__info .mobile-table .spec-line .color-circle, .сart-page__page-content .tech-specs .mobile-table .spec-line .color-circle, .сart-page__page-content .order-detail__info .mobile-table .spec-line .color-circle {
+.item-card__second-screen .tech-specs .mobile-table .spec-line .color-circle, .item-card__second-screen .order-detail__info .mobile-table .spec-line .color-circle, .item-card__second-screen .calculator-page__second-screen .mobile-table .spec-line .color-circle, #account-page .tech-specs .mobile-table .spec-line .color-circle, #account-page .order-detail__info .mobile-table .spec-line .color-circle, #account-page .calculator-page__second-screen .mobile-table .spec-line .color-circle, .сart-page__page-content .tech-specs .mobile-table .spec-line .color-circle, .сart-page__page-content .order-detail__info .mobile-table .spec-line .color-circle, .сart-page__page-content .calculator-page__second-screen .mobile-table .spec-line .color-circle, #calculator-page .tech-specs .mobile-table .spec-line .color-circle, #calculator-page .order-detail__info .mobile-table .spec-line .color-circle, #calculator-page .calculator-page__second-screen .mobile-table .spec-line .color-circle {
   width: 29px;
   height: 29px;
   background-color: #989898;
   border-radius: 15px;
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line {
+  .item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, .item-card__second-screen .calculator-page__second-screen .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, #account-page .calculator-page__second-screen .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line, .сart-page__page-content .calculator-page__second-screen .mobile-table .spec-line, #calculator-page .tech-specs .mobile-table .spec-line, #calculator-page .order-detail__info .mobile-table .spec-line, #calculator-page .calculator-page__second-screen .mobile-table .spec-line {
     width: 100%;
     padding: 10px;
   }
 }
 @media (min-width: 2000px) {
-  .item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line {
+  .item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, .item-card__second-screen .calculator-page__second-screen .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, #account-page .calculator-page__second-screen .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line, .сart-page__page-content .calculator-page__second-screen .mobile-table .spec-line, #calculator-page .tech-specs .mobile-table .spec-line, #calculator-page .order-detail__info .mobile-table .spec-line, #calculator-page .calculator-page__second-screen .mobile-table .spec-line {
     font-size: 18px;
   }
 }
 @media (max-width: 992px) {
-  .item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line {
+  .item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, .item-card__second-screen .calculator-page__second-screen .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, #account-page .calculator-page__second-screen .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line, .сart-page__page-content .calculator-page__second-screen .mobile-table .spec-line, #calculator-page .tech-specs .mobile-table .spec-line, #calculator-page .order-detail__info .mobile-table .spec-line, #calculator-page .calculator-page__second-screen .mobile-table .spec-line {
     font-size: 15px;
   }
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line {
+  .item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, .item-card__second-screen .calculator-page__second-screen .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, #account-page .calculator-page__second-screen .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line, .сart-page__page-content .calculator-page__second-screen .mobile-table .spec-line, #calculator-page .tech-specs .mobile-table .spec-line, #calculator-page .order-detail__info .mobile-table .spec-line, #calculator-page .calculator-page__second-screen .mobile-table .spec-line {
     font-size: 14px;
   }
 }
 @media (max-width: 576px) {
-  .item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line {
+  .item-card__second-screen .tech-specs .mobile-table .spec-line, .item-card__second-screen .order-detail__info .mobile-table .spec-line, .item-card__second-screen .calculator-page__second-screen .mobile-table .spec-line, #account-page .tech-specs .mobile-table .spec-line, #account-page .order-detail__info .mobile-table .spec-line, #account-page .calculator-page__second-screen .mobile-table .spec-line, .сart-page__page-content .tech-specs .mobile-table .spec-line, .сart-page__page-content .order-detail__info .mobile-table .spec-line, .сart-page__page-content .calculator-page__second-screen .mobile-table .spec-line, #calculator-page .tech-specs .mobile-table .spec-line, #calculator-page .order-detail__info .mobile-table .spec-line, #calculator-page .calculator-page__second-screen .mobile-table .spec-line {
     font-size: 13px;
   }
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part, .item-card__second-screen .order-detail__info .mobile-table .bottom-part, #account-page .tech-specs .mobile-table .bottom-part, #account-page .order-detail__info .mobile-table .bottom-part, .сart-page__page-content .tech-specs .mobile-table .bottom-part, .сart-page__page-content .order-detail__info .mobile-table .bottom-part {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part, .item-card__second-screen .order-detail__info .mobile-table .bottom-part, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part, #account-page .tech-specs .mobile-table .bottom-part, #account-page .order-detail__info .mobile-table .bottom-part, #account-page .calculator-page__second-screen .mobile-table .bottom-part, .сart-page__page-content .tech-specs .mobile-table .bottom-part, .сart-page__page-content .order-detail__info .mobile-table .bottom-part, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part, #calculator-page .tech-specs .mobile-table .bottom-part, #calculator-page .order-detail__info .mobile-table .bottom-part, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -11073,11 +11073,11 @@ footer .divier-footer .col span:last-child a:hover {
   justify-content: space-between;
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs .mobile-table .bottom-part, .item-card__second-screen .order-detail__info .mobile-table .bottom-part, #account-page .tech-specs .mobile-table .bottom-part, #account-page .order-detail__info .mobile-table .bottom-part, .сart-page__page-content .tech-specs .mobile-table .bottom-part, .сart-page__page-content .order-detail__info .mobile-table .bottom-part {
+  .item-card__second-screen .tech-specs .mobile-table .bottom-part, .item-card__second-screen .order-detail__info .mobile-table .bottom-part, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part, #account-page .tech-specs .mobile-table .bottom-part, #account-page .order-detail__info .mobile-table .bottom-part, #account-page .calculator-page__second-screen .mobile-table .bottom-part, .сart-page__page-content .tech-specs .mobile-table .bottom-part, .сart-page__page-content .order-detail__info .mobile-table .bottom-part, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part, #calculator-page .tech-specs .mobile-table .bottom-part, #calculator-page .order-detail__info .mobile-table .bottom-part, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part {
     padding-bottom: 15px;
   }
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11085,33 +11085,33 @@ footer .divier-footer .col span:last-child a:hover {
   width: calc(100% / 3 - 10px);
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper {
+  .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper {
     width: 100%;
   }
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper input, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper input, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper input, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper input {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper input, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper input, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper input, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper input, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper input, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper input, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input {
   border: 1px solid #d0d0d0;
   text-align: center;
 }
 @media (max-width: 992px) {
-  .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper input, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper input, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper input, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper input {
+  .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper input, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper input, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper input, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper input, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper input, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper input, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input {
     width: 62px;
     height: 62px;
   }
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper input, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper input, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper input, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper input {
+  .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper input, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper input, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper input, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper input, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper input, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper input, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper input, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper input {
     width: 52px;
     height: 52px;
   }
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-left: 4px;
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn {
   text-align: center;
   display: flex;
   align-items: center;
@@ -11121,28 +11121,28 @@ footer .divier-footer .col span:last-child a:hover {
   color: #006f3e;
 }
 @media (max-width: 992px) {
-  .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn {
+  .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn {
     width: 30px;
     height: 30px;
   }
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn {
+  .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn {
     width: 25px;
     height: 25px;
   }
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, .item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn:hover, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn:hover {
   color: white;
   background-color: #006f3e;
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .inc-btn {
   margin-bottom: 1px;
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #account-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .tech-specs .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .order-detail__info .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .amount-wrapper .input-btns .dec-btn {
   margin-top: 1px;
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper, #account-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper, #calculator-page .tech-specs .mobile-table .bottom-part .some-wrapper, #calculator-page .order-detail__info .mobile-table .bottom-part .some-wrapper, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11150,43 +11150,43 @@ footer .divier-footer .col span:last-child a:hover {
   width: calc(100% / 3 - 10px);
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper {
+  .item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper, #account-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper, #calculator-page .tech-specs .mobile-table .bottom-part .some-wrapper, #calculator-page .order-detail__info .mobile-table .bottom-part .some-wrapper, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper {
     width: 100%;
   }
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper .item-price, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper .item-price, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper .item-price, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price, #account-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper .item-price, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price, #calculator-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price, #calculator-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price {
   font-weight: 700;
   padding-bottom: 15px;
   padding-left: 15px;
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #account-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #calculator-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #calculator-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 1400px) {
-  .item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price {
+  .item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #account-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #calculator-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #calculator-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price {
     flex-direction: column;
   }
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, #account-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, #calculator-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, #calculator-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price .old-price {
   text-decoration: line-through;
   color: #767676;
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, #account-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, #account-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, #account-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, .сart-page__page-content .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, #calculator-page .tech-specs .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, #calculator-page .order-detail__info .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .some-wrapper .item-price .sale-price .new-price {
   color: #006f3e;
 }
-.item-card__second-screen .tech-specs .mobile-table .bottom-part .green-button, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .green-button, #account-page .tech-specs .mobile-table .bottom-part .green-button, #account-page .order-detail__info .mobile-table .bottom-part .green-button, .сart-page__page-content .tech-specs .mobile-table .bottom-part .green-button, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .green-button {
+.item-card__second-screen .tech-specs .mobile-table .bottom-part .green-button, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .green-button, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .green-button, #account-page .tech-specs .mobile-table .bottom-part .green-button, #account-page .order-detail__info .mobile-table .bottom-part .green-button, #account-page .calculator-page__second-screen .mobile-table .bottom-part .green-button, .сart-page__page-content .tech-specs .mobile-table .bottom-part .green-button, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .green-button, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .green-button, #calculator-page .tech-specs .mobile-table .bottom-part .green-button, #calculator-page .order-detail__info .mobile-table .bottom-part .green-button, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .green-button {
   width: calc(100% / 3 - 10px);
 }
 @media (max-width: 992px) {
-  .item-card__second-screen .tech-specs .mobile-table .bottom-part .green-button, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .green-button, #account-page .tech-specs .mobile-table .bottom-part .green-button, #account-page .order-detail__info .mobile-table .bottom-part .green-button, .сart-page__page-content .tech-specs .mobile-table .bottom-part .green-button, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .green-button {
+  .item-card__second-screen .tech-specs .mobile-table .bottom-part .green-button, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .green-button, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .green-button, #account-page .tech-specs .mobile-table .bottom-part .green-button, #account-page .order-detail__info .mobile-table .bottom-part .green-button, #account-page .calculator-page__second-screen .mobile-table .bottom-part .green-button, .сart-page__page-content .tech-specs .mobile-table .bottom-part .green-button, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .green-button, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .green-button, #calculator-page .tech-specs .mobile-table .bottom-part .green-button, #calculator-page .order-detail__info .mobile-table .bottom-part .green-button, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .green-button {
     padding: 10px 20px;
   }
 }
 @media (max-width: 768px) {
-  .item-card__second-screen .tech-specs .mobile-table .bottom-part .green-button, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .green-button, #account-page .tech-specs .mobile-table .bottom-part .green-button, #account-page .order-detail__info .mobile-table .bottom-part .green-button, .сart-page__page-content .tech-specs .mobile-table .bottom-part .green-button, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .green-button {
+  .item-card__second-screen .tech-specs .mobile-table .bottom-part .green-button, .item-card__second-screen .order-detail__info .mobile-table .bottom-part .green-button, .item-card__second-screen .calculator-page__second-screen .mobile-table .bottom-part .green-button, #account-page .tech-specs .mobile-table .bottom-part .green-button, #account-page .order-detail__info .mobile-table .bottom-part .green-button, #account-page .calculator-page__second-screen .mobile-table .bottom-part .green-button, .сart-page__page-content .tech-specs .mobile-table .bottom-part .green-button, .сart-page__page-content .order-detail__info .mobile-table .bottom-part .green-button, .сart-page__page-content .calculator-page__second-screen .mobile-table .bottom-part .green-button, #calculator-page .tech-specs .mobile-table .bottom-part .green-button, #calculator-page .order-detail__info .mobile-table .bottom-part .green-button, #calculator-page .calculator-page__second-screen .mobile-table .bottom-part .green-button {
     width: 100%;
     font-size: 12px;
     padding: 10px 20px;
@@ -13568,10 +13568,985 @@ footer .divier-footer .col span:last-child a:hover {
     padding: 20px;
   }
 }
+@media (max-width: 576px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen {
+    padding: 15px;
+  }
+}
 .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .main-banner-wrapper {
   width: 100%;
   margin-bottom: 50px;
 }
 .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .main-banner-wrapper img {
   width: 100%;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .pc {
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .pc {
+    display: none !important;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen #accordion {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen #accordion {
+    display: block !important;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen #accordion .tabs-wrapper {
+  flex-direction: column !important;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen #accordion .tabs-wrapper .mobile-tab-buttons {
+  width: 100% !important;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper {
+    padding: 15px;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+@media (max-width: 992px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons {
+    flex-wrap: wrap;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .mobile-btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .mobile-btn-wrapper {
+  color: black;
+  background-color: #f5f6f6;
+  font-weight: 600;
+  padding: 23px 40px;
+  display: flex;
+}
+@media (min-width: 2000px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .mobile-btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .mobile-btn-wrapper {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .mobile-btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .mobile-btn-wrapper {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .mobile-btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .mobile-btn-wrapper {
+    font-size: 14px;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .btn-wrapper:hover, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .mobile-btn-wrapper:hover, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .btn-wrapper:hover, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .mobile-btn-wrapper:hover {
+  background-color: #006f3e;
+  color: white;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .tab-buttons .mobile-btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .btn-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .mobile-tab-buttons .mobile-btn-wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 {
+  border: 3px solid #006f3e;
+  padding: 35px 35px 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 {
+    display: flex;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 2000px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 {
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 {
+    font-size: 14px;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent a, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 2000px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent iframe, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 iframe {
+    width: 1200px;
+    height: 360px;
+  }
+}
+@media (max-width: 1400px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent iframe, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 iframe {
+    width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent iframe, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 iframe {
+    padding-left: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent iframe, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .tab-inner-content, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .tab-inner-content {
+  padding-top: 30px;
+}
+@media (max-width: 992px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .tab-inner-content, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .tab-inner-content {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .tab-inner-content .custom-row, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .tab-inner-content .custom-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 40px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .tab-inner-content .custom-row .img-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .tab-inner-content .custom-row .img-wrapper {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .tab-inner-content .custom-row .img-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .tab-inner-content .custom-row .img-wrapper img {
+    width: 25px;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .tab-inner-content .custom-row .text-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .tab-inner-content .custom-row .text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .tab-inner-content .custom-row .text-wrapper .row-header, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .tab-inner-content .custom-row .text-wrapper .row-header {
+  font-weight: 600;
+  display: block;
+  padding-bottom: 7px;
+}
+
+.calculator-page__second-screen {
+  padding: 40px;
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen {
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__second-screen {
+    padding: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__second-screen {
+    padding: 15px;
+  }
+}
+.calculator-page__second-screen .pc-table tr th, .calculator-page__second-screen .pc-table tr td {
+  width: 51% !important;
+  padding: 25px;
+  height: auto;
+}
+.calculator-page__second-screen .pc-table tr th:not(:first-child), .calculator-page__second-screen .pc-table tr td:not(:first-child) {
+  width: 17% !important;
+  text-align: center !important;
+}
+.calculator-page__second-screen .pc-table tr th .cell-content {
+  justify-content: flex-start !important;
+}
+.calculator-page__second-screen .pc-table tr th:not(:first-child) .cell-content {
+  justify-content: center !important;
+}
+.calculator-page__second-screen .pc-table tr td {
+  text-align: left !important;
+}
+.calculator-page__second-screen .pc-table tr td:not(:first-child) {
+  text-align: center !important;
+}
+.calculator-page__second-screen .pc-table__bottom-part {
+  width: 100%;
+  background-color: #f0f4f7;
+  padding: 25px;
+  padding-bottom: 50px;
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .pc-table__bottom-part {
+    display: none;
+    padding: 15px;
+  }
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-header {
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (min-width: 2000px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-header {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-header {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-header {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-header {
+    font-size: 14px;
+  }
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+@media (min-width: 2000px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-row {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-row {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-row {
+    flex-direction: column;
+  }
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row .local-col {
+  width: 33%;
+  font-size: 14px;
+  font-weight: 700;
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row .local-col:first-child {
+  padding-right: 30px;
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row .local-col:nth-child(2) {
+  padding: 0 30px;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row .local-col:last-child {
+  padding-left: 30px;
+}
+@media (max-width: 1200px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-row .local-col {
+    width: 50%;
+  }
+  .calculator-page__second-screen .pc-table__bottom-part .local-row .local-col:first-child {
+    padding-right: 25px;
+  }
+  .calculator-page__second-screen .pc-table__bottom-part .local-row .local-col:nth-child(2) {
+    padding-left: 25px;
+    padding-right: 0;
+    border-left: 3px solid white;
+    border-right: 0;
+  }
+  .calculator-page__second-screen .pc-table__bottom-part .local-row .local-col:last-child {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 2000px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-row .local-col {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-row .local-col {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-row .local-col {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-row .local-col {
+    font-size: 13px;
+  }
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row .local-col .inner-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (min-width: 2000px) {
+  .calculator-page__second-screen .pc-table__bottom-part .local-row .local-col .inner-wrapper {
+    margin-bottom: 15px;
+  }
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row .local-col .inner-wrapper:before {
+  border-bottom: 2px dotted #ddd;
+  content: "";
+  position: absolute;
+  bottom: 0.4rem;
+  width: 100%;
+  height: 0;
+  line-height: 0;
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row .local-col .inner-wrapper .left-part, .calculator-page__second-screen .pc-table__bottom-part .local-row .local-col .inner-wrapper .right-part {
+  z-index: 1;
+  background-color: #f0f4f7;
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row .local-col .inner-wrapper .left-part {
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row .local-col .inner-wrapper .left-part .icon-wrapper {
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.calculator-page__second-screen .pc-table__bottom-part .local-row .local-col .inner-wrapper .right-part {
+  padding-left: 5px;
+}
+.calculator-page__second-screen .mobile-table {
+  display: none;
+  width: 100%;
+  background-color: #f5f6f6;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-bottom: 15px;
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .mobile-table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.calculator-page__second-screen .mobile-table .spec-line {
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+  background-color: white;
+  width: calc(100% / 2 - 10px);
+}
+.calculator-page__second-screen .mobile-table .spec-line:first-child {
+  width: 100% !important;
+  align-items: flex-start !important;
+  flex-direction: column !important;
+}
+.calculator-page__second-screen .mobile-table .spec-line:first-child span:first-child {
+  font-weight: 700;
+}
+.calculator-page__second-screen .mobile-table .spec-line:last-child {
+  width: 100% !important;
+}
+@media (max-width: 768px) {
+  .calculator-page__second-screen .mobile-table .spec-line {
+    width: 100%;
+    padding: 10px;
+  }
+}
+.calculator-page__second-screen .mobile-table .spec-line input {
+  border: 1px solid #d0d0d0;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .mobile-table .spec-line input {
+    min-height: 35px;
+    width: 62px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__second-screen .mobile-table .spec-line input {
+    min-height: 30px;
+    width: 52px;
+  }
+}
+@media (min-width: 2000px) {
+  .calculator-page__second-screen .mobile-table .spec-line {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .mobile-table .spec-line {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__second-screen .mobile-table .spec-line {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__second-screen .mobile-table .spec-line {
+    font-size: 13px;
+  }
+}
+.calculator-page__second-screen .mobile-table .bottom-part {
+  width: 100%;
+  background-color: #f0f4f7;
+  padding: 30px;
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .mobile-table .bottom-part {
+    padding: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__second-screen .mobile-table .bottom-part {
+    padding: 0;
+    padding-top: 15px;
+  }
+}
+.calculator-page__second-screen .mobile-table .bottom-part .local-header {
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (min-width: 2000px) {
+  .calculator-page__second-screen .mobile-table .bottom-part .local-header {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .mobile-table .bottom-part .local-header {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__second-screen .mobile-table .bottom-part .local-header {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__second-screen .mobile-table .bottom-part .local-header {
+    font-size: 14px;
+  }
+}
+.calculator-page__second-screen .mobile-table .bottom-part .local-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .mobile-table .bottom-part .local-row {
+    flex-direction: column;
+  }
+}
+.calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col {
+  width: 33%;
+  font-size: 14px;
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col {
+    width: 100%;
+  }
+}
+@media (min-width: 2000px) {
+  .calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col {
+    font-size: 13px;
+  }
+}
+.calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col .inner-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col .inner-wrapper:before {
+  border-bottom: 2px dotted #ddd;
+  content: "";
+  position: absolute;
+  bottom: 0.4rem;
+  width: 100%;
+  height: 0;
+  line-height: 0;
+}
+.calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col .inner-wrapper .left-part, .calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col .inner-wrapper .right-part {
+  z-index: 1;
+  background-color: #f0f4f7;
+}
+.calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col .inner-wrapper .left-part {
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col .inner-wrapper .left-part .icon-wrapper {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.calculator-page__second-screen .mobile-table .bottom-part .local-row .local-col .inner-wrapper .right-part {
+  padding-left: 5px;
+}
+
+.calculator-page__third-screen {
+  padding: 40px;
+  padding-top: 20px;
+}
+@media (max-width: 992px) {
+  .calculator-page__third-screen {
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__third-screen {
+    padding: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__third-screen {
+    padding: 15px;
+  }
+}
+.calculator-page__third-screen .final-table {
+  background-color: #f0f4f7;
+  padding: 35px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .calculator-page__third-screen .final-table {
+    padding: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__third-screen .final-table {
+    padding: 15px;
+  }
+}
+.calculator-page__third-screen .final-table .left-part, .calculator-page__third-screen .final-table .right-part {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 992px) {
+  .calculator-page__third-screen .final-table .left-part, .calculator-page__third-screen .final-table .right-part {
+    width: 100%;
+  }
+}
+.calculator-page__third-screen .final-table .left-part #installation-hook, .calculator-page__third-screen .final-table .right-part #installation-hook {
+  margin-top: 30px;
+  opacity: 0.3;
+}
+.calculator-page__third-screen .final-table .left-part #delivery-hook, .calculator-page__third-screen .final-table .right-part #delivery-hook {
+  opacity: 0.3;
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper, .calculator-page__third-screen .final-table .right-part .outer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line, .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line {
+  position: relative;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line .installation-tooltip-hook, .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line .installation-tooltip-hook, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line .installation-tooltip-hook, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line .installation-tooltip-hook {
+  position: relative;
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line .installation-tooltip-hook img, .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line .installation-tooltip-hook img, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line .installation-tooltip-hook img, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line .installation-tooltip-hook img {
+  position: absolute;
+  top: -10px;
+  right: -20px;
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line span, .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line span, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line span, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line span {
+  z-index: 1;
+  background-color: #f0f4f7;
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line span:first-child, .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line span:first-child, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line span:first-child, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line span:first-child {
+  padding-right: 5px;
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line span:last-child, .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line span:last-child, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line span:last-child, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line span:last-child {
+  padding-left: 5px;
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line:before, .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line:before, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line:before, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line:before {
+  border-bottom: 2px dotted black;
+  content: "";
+  position: absolute;
+  bottom: 0.4rem;
+  width: 100%;
+  height: 0;
+  line-height: 0;
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+@media (min-width: 2000px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line {
+    font-size: 14px;
+  }
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line span:last-child, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line span:last-child {
+  font-size: 22px;
+}
+@media (min-width: 2000px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line span:last-child, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line span:last-child {
+    font-size: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line span:last-child, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line span:last-child {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line span:last-child, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line span:last-child {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .big-line span:last-child, .calculator-page__third-screen .final-table .right-part .outer-wrapper .big-line span:last-child {
+    font-size: 14px;
+  }
+}
+.calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line {
+  font-size: 14px;
+}
+@media (min-width: 2000px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line {
+    font-size: 11px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__third-screen .final-table .left-part .outer-wrapper .sm-line, .calculator-page__third-screen .final-table .right-part .outer-wrapper .sm-line {
+    font-size: 10px;
+  }
+}
+.calculator-page__third-screen .final-table .left-part {
+  padding-right: 30px;
+}
+@media (max-width: 992px) {
+  .calculator-page__third-screen .final-table .left-part {
+    padding: 0;
+  }
+}
+.calculator-page__third-screen .final-table .right-part {
+  border-left: 3px solid white;
+  padding-left: 30px;
+}
+@media (max-width: 992px) {
+  .calculator-page__third-screen .final-table .right-part {
+    padding: 0;
+    padding-top: 15px;
+    border-left: 0;
+  }
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .checkmark-block {
+  padding-bottom: 15px;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper:last-child {
+  border-top: 1px solid white;
+  padding-top: 20px;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper:last-child p {
+  font-size: 13px;
+}
+@media (min-width: 2000px) {
+  .calculator-page__third-screen .final-table .right-part .outer-wrapper:last-child p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__third-screen .final-table .right-part .outer-wrapper:last-child p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__third-screen .final-table .right-part .outer-wrapper:last-child p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__third-screen .final-table .right-part .outer-wrapper:last-child p {
+    font-size: 10px;
+  }
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .price-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: #f0f4f7;
+  z-index: 1;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .delivery__city-select {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  background-color: #f0f4f7;
+  padding-right: 5px;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .delivery__city-select .input-group {
+  width: auto;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .delivery__city-select .input-group input {
+  border-radius: 0;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .delivery__city-select .input-group .input-group-prepend .show {
+  display: block !important;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .delivery__city-select .input-group .input-group-prepend .show a {
+  cursor: pointer;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .delivery__city-select .input-group .input-group-prepend .show a:active {
+  background-color: #006f3e;
+  color: white;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .delivery__city-select .input-group .btn-outline-secondary {
+  border: 1px solid #dedede;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .delivery__city-select .input-group .dropdown-toggle {
+  background-color: #d0d0d0;
+  border: 0;
+  width: 46px;
+  height: 47px;
+}
+.calculator-page__third-screen .final-table .right-part .outer-wrapper .delivery__city-select .input-group .form-control {
+  height: 47px;
+}
+.calculator-page__third-screen .final-table .checkmark-block {
+  padding-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  /* Customize the label (the container) */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Show the checkmark when checked */
+}
+.calculator-page__third-screen .final-table .checkmark-block .label-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 23px;
+  -webkit-user-select: none;
+          user-select: none;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+}
+@media (min-width: 2000px) {
+  .calculator-page__third-screen .final-table .checkmark-block .label-container {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .calculator-page__third-screen .final-table .checkmark-block .label-container {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__third-screen .final-table .checkmark-block .label-container {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__third-screen .final-table .checkmark-block .label-container {
+    font-size: 11px;
+  }
+}
+.calculator-page__third-screen .final-table .checkmark-block .label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.calculator-page__third-screen .final-table .checkmark-block .label-container .custom-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: transparent;
+  border: 1px solid #d0d0d0;
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Style the checkmark/indicator */
+}
+.calculator-page__third-screen .final-table .checkmark-block .label-container .custom-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 7px;
+  height: 11px;
+  border: solid #006f3e;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.calculator-page__third-screen .final-table .checkmark-block .label-container:hover input ~ .custom-checkmark {
+  background-color: #ccc;
+}
+.calculator-page__third-screen .final-table .checkmark-block .label-container input:checked ~ .custom-checkmark {
+  background-color: transparent;
+}
+.calculator-page__third-screen .final-table .checkmark-block .label-container input:checked ~ .custom-checkmark:after {
+  display: block;
+}
+.calculator-page__third-screen .final-table .btns-wrapper {
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .calculator-page__third-screen .final-table .btns-wrapper {
+    padding: 0;
+  }
+}
+.calculator-page__third-screen .final-table .btns-wrapper button {
+  text-transform: uppercase;
+  margin: 0 15px;
+  padding: 15px 40px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .calculator-page__third-screen .final-table .btns-wrapper button {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__third-screen .final-table .btns-wrapper button {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 13px 14px;
+    width: 100%;
+    font-size: 11px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator-page__third-screen .final-table .btns-wrapper button {
+    margin-top: 15px;
+    font-size: 10px;
+  }
+}
+.calculator-page__third-screen .final-table .btns-wrapper button img {
+  margin-right: 10px;
+}
+@media (min-width: 2000px) {
+  .calculator-page__third-screen .final-table .btns-wrapper button {
+    font-size: 14px;
+  }
+}
+.calculator-page__third-screen .final-table .btns-wrapper .white-btn {
+  background-color: white;
+  color: black;
+  border: 0;
+}
+.calculator-page__third-screen .final-table .btns-wrapper .green-outline {
+  background-color: transparent;
+  border: 2px solid #879eb3;
+}
+.calculator-page__third-screen .final-table .btns-wrapper .green-outline:hover {
+  color: white;
+  border: 2px solid #006f3e;
+  background-color: #006f3e;
+}
+.calculator-page__third-screen .final-table .btns-wrapper .blue-button {
+  background-color: #0b2842;
+  color: white;
+  border: 0;
+  font-weight: 700;
+  float: right;
+  text-transform: uppercase;
+}
+.calculator-page__third-screen .final-table .btns-wrapper .blue-button:hover {
+  background-color: #0b375e;
 }

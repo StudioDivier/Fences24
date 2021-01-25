@@ -3,14 +3,14 @@
 @import "../../common/variables";
 @import "../../common/mixins";
 
-.item-card__second-screen, #account-page, .сart-page__page-content {
+.item-card__second-screen, #account-page, .сart-page__page-content, #calculator-page {
   background-color: $background-color;
   padding-bottom: 85px;
   @include md-max {
     padding-bottom: 45px;
   }
 
-  .tech-specs, .order-detail__info {
+  .tech-specs, .order-detail__info, .calculator-page__second-screen {
     background-color: white;
     padding: 50px 40px 40px;
 

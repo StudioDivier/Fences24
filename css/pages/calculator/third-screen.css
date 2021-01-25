@@ -1,0 +1,13 @@
+.calculator-page__third-screen {
+  padding: 40px;
+}
+@media (max-width: 992px) {
+  .calculator-page__third-screen {
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .calculator-page__third-screen {
+    padding: 20px;
+  }
+}
