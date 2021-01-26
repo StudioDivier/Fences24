@@ -596,22 +596,59 @@ if (document.getElementById('calculator-page')) {
     let installationCheck = document.getElementById('installation-check-hook')
     let deliveryCheck = document.getElementById('delivery-check-hook')
 
-    document.querySelectorAll('.label-container')[0].addEventListener('click', () => {
+    let fencePrice = document.getElementById('fence-price');
+    let fencePriceData = fencePrice.getAttribute('data-fencePrice');
+    let installationPrice = document.getElementById('installation-price');
+    let installationPriceData = installationPrice.getAttribute('data-installationPrice');
+    let deliveryPrice = document.getElementById('delivery-price');
+    let deliveryPriceData = deliveryPrice.getAttribute('data-deliveryPrice');
+    let finalPrice = document.getElementById('final-price');
+    let finalPriceData = finalPrice.getAttribute('data-finalPrice');
+    let currency = ' руб.'
+
+    document.getElementById('final-price').innerHTML = parseInt(fencePriceData).toLocaleString() + ' руб.'
+
+    document.querySelectorAll('.label-container')[0].addEventListener('click', (e) => {
+
         installationCheck.checked = !installationCheck.checked;
-        if (installationCheck.checked) {
-            document.getElementById('installation-hook').style.opacity = 1;
-        } else {
-            document.getElementById('installation-hook').style.opacity = 0.3;
+        if (e.target.id === 'installation-check-hook') {
+            if (installationCheck.checked) {
+                document.getElementById('installation-hook').style.opacity = 1;
+
+                finalPriceData = parseInt(finalPriceData) + parseInt(installationPriceData);
+                document.getElementById('final-price').innerHTML = parseInt(finalPriceData).toLocaleString() + currency;
+            } else {
+                document.getElementById('installation-hook').style.opacity = 0.3;
+
+                finalPriceData = parseInt(finalPriceData) - parseInt(installationPriceData);
+                document.getElementById('final-price').innerHTML = parseInt(finalPriceData).toLocaleString() + currency;
+            }
         }
     })
-    document.querySelectorAll('.label-container')[1].addEventListener('click', () => {
+
+    // console.log(document.querySelector('#final-price').getAttribute('data-finalPrice'))
+
+    document.querySelectorAll('.label-container')[1].addEventListener('click', (e) => {
         deliveryCheck.checked = !deliveryCheck.checked;
-        if (deliveryCheck.checked) {
-            document.getElementById('delivery-hook').style.opacity = 1;
-        } else {
-            document.getElementById('delivery-hook').style.opacity = 0.3;
+
+        if (e.target.id === 'delivery-check-hook') {
+            if (deliveryCheck.checked) {
+                document.getElementById('delivery-hook').style.opacity = 1;
+                document.querySelector('.dropdown-toggle-split').disabled = false;
+
+                finalPriceData = parseInt(finalPriceData) + parseInt(deliveryPriceData);
+                document.getElementById('final-price').innerHTML = parseInt(finalPriceData).toLocaleString() + currency;
+            } else {
+                document.getElementById('delivery-hook').style.opacity = 0.3;
+                document.querySelector('.dropdown-toggle-split').disabled = true;
+
+                finalPriceData = parseInt(finalPriceData) - parseInt(deliveryPriceData);
+                document.getElementById('final-price').innerHTML = parseInt(finalPriceData).toLocaleString() + currency;
+            }
         }
     })
+
+    installationCheck.checked ? console.log(totalPrice) : console.log('not checked')
 }
 
 

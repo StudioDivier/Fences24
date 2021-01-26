@@ -5,6 +5,9 @@
 
 .calculator-page__second-screen {
   padding: 40px;
+  @include xxl-max {
+    padding: 40px !important;
+  }
   @include lg-max {
     padding: 30px;
   }

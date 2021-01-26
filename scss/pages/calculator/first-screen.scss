@@ -6,6 +6,157 @@
 .calculator-page__page-content {
   @include pageHeader;
 
+  .checkmark-block {
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    @include sm-max {
+      justify-content: flex-start;
+    }
+    /* Customize the label (the container) */
+    .label-container {
+      display: inline-block;
+      position: relative;
+      padding-left: 35px;
+      cursor: pointer;
+      font-size: 14px;
+      @include adjustableText(11px, 12px, 13px, 16px);
+      line-height: 23px;
+      user-select: none;
+
+      /* Hide the browser's default checkbox */
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      /* Create a custom checkbox */
+      .custom-checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: transparent;
+        border: 1px solid #d0d0d0;
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        /* Style the checkmark/indicator */
+        &:after {
+          content: "";
+          position: absolute;
+          display: none;
+          left: 7px;
+          top: 3px;
+          width: 7px;
+          height: 11px;
+          border: solid $green-color;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    /* On mouse-over, add a grey background color */
+    .label-container:hover input ~ .custom-checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .label-container input:checked ~ .custom-checkmark {
+      background-color: transparent;
+    }
+
+    /* Show the checkmark when checked */
+    .label-container input:checked ~ .custom-checkmark:after {
+      display: block;
+    }
+  }
+
+  input[type=radio] {
+    @include sm-max {
+      transform: scale(1.2);
+    }
+    @include md-min {
+      transform: scale(1.5);
+    }
+
+    &:checked {
+      color: $green-color;
+    }
+  }
+
+  .green-radio {
+    margin-bottom: 0;
+
+    input[type=radio] {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    span {
+      position: relative;
+      padding-left: 45px;
+      cursor: pointer;
+      display: inline-block;
+      height: 25px;
+      line-height: 25px;
+      font-size: 1rem;
+      transition: .28s ease;
+      user-select: none;
+      font-size: 16px;
+      @include adjustableText(12px, 14px, 15px, 18px);
+
+      &:before {
+        border: 1px solid #5a5a5a;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -2px;
+        margin: 4px;
+        width: 19px;
+        height: 19px;
+        z-index: 0;
+        transition: .28s ease;
+        border-radius: 50%;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -2px;
+        margin: 4px;
+        width: 19px;
+        height: 19px;
+        z-index: 0;
+        transition: .28s ease;
+        border-radius: 50%;
+      }
+    }
+
+    input[type=radio].with-gap:checked + span:after {
+      transform: scale(0.65);
+    }
+
+    input[type="radio"]:checked + span:after {
+      background-color: $green-color;
+    }
+
+    input[type=radio]:checked + span:before {
+      border: 1px solid $green-color;
+    }
+
+  }
+
   .calculator-page__content-wrapper {
     background-color: white;
     width: 100%;
@@ -36,6 +187,15 @@
         @include xl-max {
           display: none !important;
         }
+
+        .tab-buttons {
+          .btn-wrapper {
+            @media screen and (min-width: 1200px) and (max-width: 1400px) {
+              padding: 25px 30px !important;
+              width: 250px;
+            }
+          }
+        }
       }
 
       #accordion {
@@ -43,8 +203,10 @@
         @include xl-max {
           display: block !important;
         }
+
         .tabs-wrapper {
           flex-direction: column !important;
+
           .mobile-tab-buttons {
             width: 100% !important;
           }
@@ -55,10 +217,6 @@
         background-color: white;
         display: flex;
         flex-direction: row;
-
-        @include md-max {
-          padding: 15px;
-        }
 
         .tab-buttons, .mobile-tab-buttons {
           display: flex;
@@ -100,92 +258,260 @@
 
         .info-tabcontent, .info-tabcontent1 {
           border: 3px solid $green-color;
-          padding: 35px 35px 40px;
-          flex-direction: row;
-          justify-content: space-between;
           width: 100%;
-          @include lg-min {
-            display: flex;
-          }
-          @include lg-max {
-            flex-wrap: wrap;
-          }
-
-          @include min-w(2000) {
-            font-size: 18px;
-          }
-
-          @include md-max {
-            font-size: 16px;
-            padding: 15px;
-          }
-
-          @include sm-max {
-            font-size: 14px;
-          }
 
           a {
             text-decoration: none;
             color: inherit;
           }
 
-          iframe {
-            @include min-w(2000) {
-              width: 1200px;
-              height: 360px;
-            }
-            @include xxl-max {
-              width: 600px;
-            }
-            @include xl-min {
-              padding-left: 25px;
-            }
-            @include lg-max {
-              width: 100%;
-              height: 250px;
-            }
-          }
+          .inner-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
 
-          .tab-inner-content {
-            padding-top: 30px;
-            @include lg-max {
-              width: 100%;
-              padding-top: 0;
-            }
+            .upper-part {
+              background-color: white;
+              height: 100%;
 
-            .custom-row {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              padding-bottom: 40px;
-
-              .img-wrapper {
-                margin-right: 25px;
+              .local-row {
+                @include py(30px, 30px);
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                @include md-max {
-                  img {
-                    width: 25px;
+                flex-direction: row;
+
+                &:not(:last-child) {
+                  border-bottom: 3px solid #f5f6f6;
+                }
+
+                .tab-section {
+                  @include px(30px, 30px);
+                  display: flex;
+                  flex-direction: column;
+
+                  &:not(:last-child) {
+                    border-right: 3px solid #f5f6f6;
+                  }
+
+                  .tab-section__header {
+                    font-size: 18px;
+                    font-weight: 700;
+                    padding-bottom: 20px;
+                    @include adjustableText(12px, 14px, 16px, 20px);
+                  }
+
+                  .tab-section__sub-header {
+                    font-size: 14px;
+                    position: relative;
+                    padding-bottom: 25px;
+                    @include adjustableText(11px, 12px, 13px, 16px);
+
+                    img {
+                      position: absolute;
+                      top: -5px;
+                      right: 60px;
+                    }
+                  }
+
+                  .color-palette {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    //justify-content: space-between;
+                    max-width: 230px;
+
+                    .color-circle {
+                      width: 31px;
+                      height: 31px;
+                      border-radius: 25px;
+                      margin-right: 15px;
+                      margin-bottom: 15px;
+
+                      &:hover {
+                        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+                      }
+                    }
                   }
                 }
               }
 
-              .text-wrapper {
-                display: flex;
-                flex-direction: column;
+            }
 
-                .row-header {
-                  font-weight: 600;
-                  display: block;
-                  padding-bottom: 7px;
+            .bottom-part {
+              padding: 30px 30px 40px;
+              @include md-max {
+                padding: 20px;
+              }
+              background-color: #f0f4f7;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              flex-wrap: wrap;
+              @include min-w(2000) {
+                //align-items: flex-start;
+              }
+
+              .bottom-part__header {
+                width: 100%;
+                font-size: 18px;
+                color: $green-color;
+                font-weight: 700;
+                padding-bottom: 25px;
+                @include adjustableText(12px, 14px, 16px, 20px);
+              }
+
+              .ul-wrapper {
+                width: calc(100% * (2 / 3));
+                @include xxl-max {
+                  width: 100%;
+                }
+
+                .ul-of-params {
+                  columns: 2;
+                  margin-bottom: 0;
+                  @include md-max {
+                    columns: 1;
+                  }
+                  list-style: none;
+                  padding: 0;
+                  margin-left: -15px;
+
+                  li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
+                    margin-top: 15px;
+
+                    &:first-child {
+                      margin-top: 0;
+                    }
+
+                    &:before {
+                      border-bottom: 2px dotted black;
+                      content: '';
+                      position: absolute;
+                      bottom: .4rem;
+                      width: 100%;
+                      height: 0;
+                      line-height: 0;
+                    }
+
+                    span {
+                      background-color: #f0f4f7;
+                      z-index: 1;
+                      font-size: 14px;
+                      @include adjustableText(11px, 12px, 13px, 16px);
+                      padding-right: 5px;
+                      line-height: 27px;
+                      padding-left: 15px;
+
+                      &:last-of-type {
+                        font-size: 21px;
+                        @include adjustableText(14px, 16px, 18px, 23px);
+                        font-weight: 700;
+                        padding-right: 0;
+                        padding-left: 5px;
+                      }
+                    }
+
+                    .color-wrapper {
+                      @include px(5px, 5px);
+                      background-color: #f0f4f7;
+                      z-index: 1;
+
+                      .params__picked-color {
+                        width: 27px;
+                        height: 27px;
+                        border-radius: 15px;
+                        background-color: #b900fe;
+                        z-index: 1;
+                      }
+                    }
+
+                  }
                 }
               }
+
+              .white-block {
+                padding: 30px;
+                background-color: white;
+                width: calc(100% * (1 / 3) - 30px);
+                margin-left: 30px;
+                @include xxl-max {
+                  margin-left: 0;
+                  margin-top: 10px;
+                  width: 100%;
+                }
+                @include md-max {
+                  margin-top: 20px;
+                }
+
+                div {
+                  width: 100%;
+                  position: relative;
+                  display: flex;
+                  justify-content: space-between;
+                  margin-bottom: 15px;
+
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+
+                  @media screen and (min-width: 1400px) and (max-width: 1600px) {
+                    flex-direction: column;
+                    align-items: center;
+                  }
+
+                  &:before {
+                    border-bottom: 2px dotted black;
+                    content: '';
+                    position: absolute;
+                    bottom: .4rem;
+                    width: 100%;
+                    height: 0;
+                    line-height: 0;
+                  }
+
+                  span {
+                    background-color: white;
+                    color: $green-color;
+                    z-index: 1;
+                    font-size: 21px;
+                    @include adjustableText(14px, 16px, 18px, 23px);
+                    padding-right: 5px;
+                    line-height: 24px;
+                    font-weight: 700;
+
+                    &:last-of-type {
+                      @media screen and (min-width: 1400px) and (max-width: 1600px) {
+                        padding-right: 5px;
+                      }
+                      color: black;
+                      padding-right: 0;
+                      padding-left: 5px;
+                    }
+                  }
+                }
+              }
+
             }
           }
         }
-      }
 
+        .first-tab {
+          .tab-section {
+
+          }
+        }
+
+        .second-tab {
+          .tab-section {
+
+          }
+        }
+      }
 
     }
   }
