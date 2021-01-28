@@ -163,6 +163,73 @@
 
     .calculator-page__first-screen {
       padding: 60px 40px;
+
+      .amount-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          border: 1px solid #d0d0d0;
+          text-align: center;
+          @include lg-min {
+            width: 43px;
+            height: 40px;
+          }
+          @include xl-min {
+            width: 53px;
+            height: 50px;
+          }
+          @include min-w(2000) {
+            width: 63px;
+            height: 60px;
+          }
+        }
+
+        .input-btns {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          padding-left: 4px;
+
+          .inc-btn, .dec-btn {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include lg-min {
+              width: 21px;
+              height: 19px;
+            }
+            @include xl-min {
+              width: 26px;
+              height: 24px;
+            }
+            @include min-w(2000) {
+              width: 31px;
+              height: 29px;
+            }
+            border: 1px solid $green-color;
+            background-color: transparent;
+            color: $green-color;
+
+            &:hover {
+              color: white;
+              background-color: $green-color;
+            }
+          }
+
+          .inc-btn {
+            margin-bottom: 1px;
+          }
+
+          .dec-btn {
+            margin-top: 1px;
+          }
+        }
+      }
+
       @include lg-max {
         padding: 30px;
       }
@@ -274,12 +341,15 @@
 
             .upper-part {
               background-color: white;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
               height: 100%;
 
               .local-row {
-                @include py(30px, 30px);
                 display: flex;
                 flex-direction: row;
+                flex-wrap: wrap;
 
                 &:not(:last-child) {
                   border-bottom: 3px solid #f5f6f6;
@@ -287,6 +357,7 @@
 
                 .tab-section {
                   @include px(30px, 30px);
+                  @include my(30px, 30px);
                   display: flex;
                   flex-direction: column;
 
@@ -299,21 +370,50 @@
                     font-weight: 700;
                     padding-bottom: 20px;
                     @include adjustableText(12px, 14px, 16px, 20px);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    input {
+                      display: inline-block;
+                      padding: 15px;
+                      border: 1px solid #d0d0d0;
+                      width: auto;
+                      max-width: 105px;
+                      height: 38px;
+                      background-color: transparent;
+                      font-size: 14px;
+                      margin-right: 10px;
+                      margin-left: 25px;
+                    }
+
+                    span {
+                      position: relative;
+                      img {
+                        position: absolute;
+                        top: -5px;
+                        right: -25px;
+                      }
+                    }
+
                   }
 
                   .tab-section__sub-header {
                     font-size: 14px;
                     position: relative;
+                    font-weight: 500;
                     padding-bottom: 25px;
                     @include adjustableText(11px, 12px, 13px, 16px);
 
-                    img {
+                    .sm-tooltip {
                       position: absolute;
                       top: -5px;
                       right: 60px;
                     }
                   }
+                }
 
+                .pick-a-color {
                   .color-palette {
                     display: flex;
                     flex-direction: row;
@@ -321,7 +421,7 @@
                     //justify-content: space-between;
                     max-width: 230px;
 
-                    .color-circle {
+                    .pick-a-color__color-circle {
                       width: 31px;
                       height: 31px;
                       border-radius: 25px;
@@ -334,6 +434,178 @@
                     }
                   }
                 }
+
+                .pick-a-length, .pick-a-cell-size {
+
+                  .custom-btn {
+                    font-size: 14px;
+                    color: black;
+                    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.22);
+                    border-radius: 0;
+
+                    &:hover {
+                      color: white;
+                      background-color: #00844a;
+                    }
+                  }
+
+                  .active {
+                    background-color: $green-color;
+                    color: white;
+                    box-shadow: 0 0 0 0;
+                  }
+
+                  .custom-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    img {
+                      margin-right: 20px;
+                    }
+                    .btn {
+                      min-width: 88px;
+                      @include px(15px, 15px);
+                    }
+                  }
+                }
+
+                .picked-color {
+                  .color-row {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .picked-color__circle {
+                      border: 3px solid #0b2842;
+                      border-radius: 15px;
+                      width: 31px;
+                      height: 31px;
+                      margin-right: 15px;
+                    }
+
+                    .picked-color__name {
+                      font-size: 18px;
+                      font-weight: 700;
+                    }
+                  }
+
+                  .text-tooltip {
+                    font-size: 13px;
+                    padding-top: 20px;
+                    letter-spacing: 0.58px;
+                    font-weight: 400;
+                  }
+                }
+
+                .pick-bends-amount, .pick-diameter1, .pick-tripletirs-amount, .pick-diameter2 {
+                  .bends-count-wrapper {
+                    display: flex;
+                    flex-direction: row;
+
+                    img {
+                      margin-right: 15px;
+                    }
+
+                    .show-diameter1 {
+                      position: relative;
+
+                      .diameter1NumValue-wrapper {
+                        width: 19px;
+                        display: flex;
+                        justify-content: center;
+                        position: absolute;
+                        top: 0;
+                        right: 18px;
+
+                        .diameter1NumValue {
+                          font-size: 14px;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .pick-a-type, .pick-a-wall-type {
+                  min-height: 185px;
+                  .btn-group {
+                    width: 410px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .custom-btn {
+                      @include bgImgCover;
+                      border: 3px solid white;
+                      border-radius: 100px;
+                      max-width: 113px;
+                      height: 113px;
+                      box-shadow: 0 0 0 0 !important;
+                      position: relative;
+                      padding: 0;
+                      color: #a1aab1;
+
+                      span {
+                        color: inherit;
+                        font-weight: 700;
+                        font-size: 14px;
+                        position: absolute;
+                        width: 100%;
+                        bottom: -35px;
+                        left: 0;
+                      }
+
+                      img {
+                        position: absolute;
+                        bottom: -20px;
+                        right: -5px;
+                      }
+                    }
+
+                    .active {
+                      border-color: #0b2842;
+                      color: black;
+                    }
+
+                  }
+                }
+
+                .pick-a-wall-type {
+                  .btn-group {
+                    width: 265px;
+                  }
+                }
+
+                .pick-a-section-size {
+                  .show-diameter1 {
+                    position: relative;
+
+                    .diameter1NumValue-wrapper {
+                      //width: 19px;
+                      display: flex;
+                      justify-content: center;
+                      position: absolute;
+                      top: 0;
+                      left: 87px;
+
+                      span {
+                        font-size: 14px;
+                      }
+                    }
+
+                    .diameter2NumValue-wrapper {
+                      display: flex;
+                      justify-content: center;
+                      position: absolute;
+                      bottom: 35px;
+                      left: 100px;
+
+                      span {
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                }
+
               }
 
             }

@@ -1,10 +1,10 @@
-// Enable tooltips
+// Enable tooltips ------------------------------------
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-// First screen hover effect ---------------------------------------------------
+// First screen hover effect ------------------------------------
 
 if (window.screen.width >= 1200) {
 
@@ -31,7 +31,7 @@ if (window.screen.width >= 1200) {
 
 }
 
-// Catalog accordion -----------------------------------------------------------
+// Catalog accordion ------------------------------------
 
 if (document.getElementById('catalog-accordion')) {
 
@@ -69,7 +69,7 @@ if (document.getElementById('catalog-accordion')) {
 
 }
 
-// Fetch local json for CATALOG
+// Fetch local json for CATALOG ------------------------------------
 
 if (document.getElementById('catalog-content')) {
 
@@ -145,7 +145,7 @@ if (document.getElementById('catalog-content')) {
 
 }
 
-// Fetch local json for NEWS
+// Fetch local json for NEWS ------------------------------------
 
 if (document.getElementById('news-content')) {
 
@@ -215,7 +215,7 @@ if (document.getElementById('news-content')) {
 
 }
 
-// Ready-to-use page
+// Ready-to-use page ------------------------------------
 
 if (document.getElementById('ready-to-use')) {
 
@@ -378,7 +378,7 @@ if (document.getElementById('ready-to-use')) {
 
 }
 
-// About page
+// About page ------------------------------------
 
 if (document.getElementById('about-page')) {
 
@@ -467,7 +467,7 @@ function openFullView(value) {
     // <img src="${value}" alt="Slider image" style="width: 100%">
 }
 
-// Contacts tabs
+// Contacts tabs ------------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
     if (document.getElementById('contacts-page') || document.getElementById('account-page') || document.getElementById('calculator-page')) {
@@ -512,7 +512,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
-// CUstom slider
+// CUstom slider ------------------------------------
 
 if (document.getElementById('item-card') || document.getElementById('ready-to-use__detail')) {
     let slideIndex = 1,
@@ -551,6 +551,8 @@ if (document.getElementById('item-card') || document.getElementById('ready-to-us
         plusSlides(1);
     });
 }
+
+// Default counter ------------------------------------
 
 if (document.getElementsByClassName('inc-and-dec-input')) {
     $(".input-btn").on("click", function () {
@@ -591,10 +593,12 @@ if (document.getElementById('customUploadInput')) {
     // }
 }
 
+// Calculator page ------------------------------------
+
 if (document.getElementById('calculator-page')) {
 
-    let installationCheck = document.getElementById('installation-check-hook')
-    let deliveryCheck = document.getElementById('delivery-check-hook')
+    let installationCheck = document.getElementById('installation-check-hook');
+    let deliveryCheck = document.getElementById('delivery-check-hook');
 
     let fencePrice = document.getElementById('fence-price');
     let fencePriceData = fencePrice.getAttribute('data-fencePrice');
@@ -606,11 +610,13 @@ if (document.getElementById('calculator-page')) {
     let finalPriceData = finalPrice.getAttribute('data-finalPrice');
     let currency = ' руб.'
 
+    // Set initial price
     document.getElementById('final-price').innerHTML = parseInt(fencePriceData).toLocaleString() + ' руб.'
 
+    // Check installation to be included in total price
     document.querySelectorAll('.label-container')[0].addEventListener('click', (e) => {
-
         installationCheck.checked = !installationCheck.checked;
+
         if (e.target.id === 'installation-check-hook') {
             if (installationCheck.checked) {
                 document.getElementById('installation-hook').style.opacity = 1;
@@ -626,8 +632,7 @@ if (document.getElementById('calculator-page')) {
         }
     })
 
-    // console.log(document.querySelector('#final-price').getAttribute('data-finalPrice'))
-
+    // Check delivery to be included in total price
     document.querySelectorAll('.label-container')[1].addEventListener('click', (e) => {
         deliveryCheck.checked = !deliveryCheck.checked;
 
@@ -648,7 +653,93 @@ if (document.getElementById('calculator-page')) {
         }
     })
 
-    installationCheck.checked ? console.log(totalPrice) : console.log('not checked')
+
+    document.querySelectorAll('.pick-a-color__color-circle').forEach(el =>
+        el.addEventListener('click', (e) => {
+            document.querySelector('.picked-color__circle').style.backgroundColor = e.target.style.backgroundColor;
+            document.querySelector('.picked-color__name').innerHTML = e.target.getAttribute('data-paletteColor');
+        })
+    )
+
+    // 3D tab - section size
+
+    $("#section-size__input1").inputmask({"mask": "9999x9999"});
+
+    // Init value
+
+    document.querySelector('.sectionSize1NumValue').innerHTML = document.getElementById('section-size__input1').value.slice(0, 4);
+    document.querySelector('.sectionSize2NumValue').innerHTML = document.getElementById('section-size__input1').value.slice(5, 9);
+
+    // On change value
+
+    document.getElementById('section-size__input1').addEventListener('keypress', (e) => {
+        let value = e.target.value;
+        console.log('event')
+        document.querySelector('.sectionSize1NumValue').innerHTML = value.slice(0, 4);
+        document.querySelector('.sectionSize2NumValue').innerHTML = value.slice(5, 9);
+    });
+
+    // Diameters counter ------------------------------------
+
+    if (document.getElementsByClassName('diameter3D-step')) {
+        document.querySelector('.diameter3DValue').innerHTML = document.querySelector('.diameter3D-input').value
+        $(".for-3Ddiameter").on("click", function () {
+            var $button = $(this);
+            var oldValue = $button.parents('.input-btns').prev().val();
+            let setValue = (value) => {
+                document.querySelector('.diameter3DValue').innerHTML = value
+            }
+
+            if ($button.text() == "+") {
+                var newVal = parseFloat(oldValue) + 0.5;
+                setValue(newVal)
+            } else {
+                // Don't allow decrementing below zero
+                if (oldValue > 0.5) {
+                    var newVal = parseFloat(oldValue) - 0.5;
+                    setValue(newVal)
+                } else {
+                    newVal = 0.5;
+                }
+            }
+
+            $button.parents('.input-btns').prev().val(newVal);
+
+        });
+    }
+
+    $(".diameter2D-input").inputmask({"mask": "9/9/9"});
+
+    if (document.getElementsByClassName('diameter2D-step')) {
+        document.querySelector('.diameter2DValue').innerHTML = document.querySelector('.diameter2D-input').value
+        $(".for-2Ddiameter").on("click", function () {
+            var $button = $(this);
+            var oldValue = $button.parents('.input-btns').prev().val().match(/[0-9]+/g);
+            let setValue = (value) => {
+                document.querySelector('.diameter2DValue').innerHTML = value.join('/')
+            }
+
+            if ($button.text() == "+") {
+                var newVal = oldValue.map(el => parseInt(el) + 1)
+                setValue(newVal)
+            } else {
+                // Don't allow decrementing below zero
+                if (!oldValue.includes('0')) {
+                    var newVal = oldValue.map(el => parseInt(el) - 1)
+                    setValue(newVal)
+                } else {
+                    newVal = [0, 0, 0];
+                }
+            }
+
+            $button.parents('.input-btns').prev().val(newVal);
+        });
+
+        document.querySelector('.diameter2D-input').addEventListener('keypress', e => {
+            document.querySelector('.diameter2DValue').innerHTML = e.target.value
+        })
+    }
+
 }
 
 

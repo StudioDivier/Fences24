@@ -13733,6 +13733,77 @@ footer .divier-footer .col span:last-child a:hover {
 .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen {
   padding: 60px 40px;
 }
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper input {
+  border: 1px solid #d0d0d0;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper input {
+    width: 43px;
+    height: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper input {
+    width: 53px;
+    height: 50px;
+  }
+}
+@media (min-width: 2000px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper input {
+    width: 63px;
+    height: 60px;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 4px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .inc-btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .dec-btn {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #006f3e;
+  background-color: transparent;
+  color: #006f3e;
+}
+@media (min-width: 992px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .inc-btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .dec-btn {
+    width: 21px;
+    height: 19px;
+  }
+}
+@media (min-width: 1200px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .inc-btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .dec-btn {
+    width: 26px;
+    height: 24px;
+  }
+}
+@media (min-width: 2000px) {
+  .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .inc-btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .dec-btn {
+    width: 31px;
+    height: 29px;
+  }
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .inc-btn:hover, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .dec-btn:hover {
+  color: white;
+  background-color: #006f3e;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .inc-btn {
+  margin-bottom: 1px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .amount-wrapper .input-btns .dec-btn {
+  margin-top: 1px;
+}
 @media (max-width: 992px) {
   .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen {
     padding: 30px;
@@ -13848,13 +13919,15 @@ footer .divier-footer .col span:last-child a:hover {
 }
 .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 100%;
 }
 .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row {
-  padding-top: 30px;
-  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row:not(:last-child), .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row:not(:last-child) {
   border-bottom: 3px solid #f5f6f6;
@@ -13862,6 +13935,8 @@ footer .divier-footer .col span:last-child a:hover {
 .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section {
   padding-left: 30px;
   padding-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
 }
@@ -13872,6 +13947,9 @@ footer .divier-footer .col span:last-child a:hover {
   font-size: 18px;
   font-weight: 700;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 @media (min-width: 2000px) {
   .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section .tab-section__header, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section .tab-section__header {
@@ -13893,9 +13971,30 @@ footer .divier-footer .col span:last-child a:hover {
     font-size: 12px;
   }
 }
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section .tab-section__header input, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section .tab-section__header input {
+  display: inline-block;
+  padding: 15px;
+  border: 1px solid #d0d0d0;
+  width: auto;
+  max-width: 105px;
+  height: 38px;
+  background-color: transparent;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section .tab-section__header span, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section .tab-section__header span {
+  position: relative;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section .tab-section__header span img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section .tab-section__header span img {
+  position: absolute;
+  top: -5px;
+  right: -25px;
+}
 .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section .tab-section__sub-header, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section .tab-section__sub-header {
   font-size: 14px;
   position: relative;
+  font-weight: 500;
   padding-bottom: 25px;
 }
 @media (min-width: 2000px) {
@@ -13918,26 +14017,163 @@ footer .divier-footer .col span:last-child a:hover {
     font-size: 11px;
   }
 }
-.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section .tab-section__sub-header img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section .tab-section__sub-header img {
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section .tab-section__sub-header .sm-tooltip, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section .tab-section__sub-header .sm-tooltip {
   position: absolute;
   top: -5px;
   right: 60px;
 }
-.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section .color-palette, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section .color-palette {
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-color .color-palette, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-color .color-palette {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 230px;
 }
-.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section .color-palette .color-circle, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section .color-palette .color-circle {
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-color .color-palette .pick-a-color__color-circle, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-color .color-palette .pick-a-color__color-circle {
   width: 31px;
   height: 31px;
   border-radius: 25px;
   margin-right: 15px;
   margin-bottom: 15px;
 }
-.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .tab-section .color-palette .color-circle:hover, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .tab-section .color-palette .color-circle:hover {
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-color .color-palette .pick-a-color__color-circle:hover, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-color .color-palette .pick-a-color__color-circle:hover {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-length .custom-btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-cell-size .custom-btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-length .custom-btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-cell-size .custom-btn {
+  font-size: 14px;
+  color: black;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.22);
+  border-radius: 0;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-length .custom-btn:hover, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-cell-size .custom-btn:hover, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-length .custom-btn:hover, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-cell-size .custom-btn:hover {
+  color: white;
+  background-color: #00844a;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-length .active, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-cell-size .active, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-length .active, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-cell-size .active {
+  background-color: #006f3e;
+  color: white;
+  box-shadow: 0 0 0 0;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-length .custom-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-cell-size .custom-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-length .custom-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-cell-size .custom-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-length .custom-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-cell-size .custom-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-length .custom-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-cell-size .custom-wrapper img {
+  margin-right: 20px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-length .custom-wrapper .btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-cell-size .custom-wrapper .btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-length .custom-wrapper .btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-cell-size .custom-wrapper .btn {
+  min-width: 88px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .picked-color .color-row, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .picked-color .color-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .picked-color .color-row .picked-color__circle, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .picked-color .color-row .picked-color__circle {
+  border: 3px solid #0b2842;
+  border-radius: 15px;
+  width: 31px;
+  height: 31px;
+  margin-right: 15px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .picked-color .color-row .picked-color__name, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .picked-color .color-row .picked-color__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .picked-color .text-tooltip, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .picked-color .text-tooltip {
+  font-size: 13px;
+  padding-top: 20px;
+  letter-spacing: 0.58px;
+  font-weight: 400;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-bends-amount .bends-count-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-diameter1 .bends-count-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-tripletirs-amount .bends-count-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-diameter2 .bends-count-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-bends-amount .bends-count-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-diameter1 .bends-count-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-tripletirs-amount .bends-count-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-diameter2 .bends-count-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-bends-amount .bends-count-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-diameter1 .bends-count-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-tripletirs-amount .bends-count-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-diameter2 .bends-count-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-bends-amount .bends-count-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-diameter1 .bends-count-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-tripletirs-amount .bends-count-wrapper img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-diameter2 .bends-count-wrapper img {
+  margin-right: 15px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-bends-amount .bends-count-wrapper .show-diameter1, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-diameter1 .bends-count-wrapper .show-diameter1, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-tripletirs-amount .bends-count-wrapper .show-diameter1, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-diameter2 .bends-count-wrapper .show-diameter1, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-bends-amount .bends-count-wrapper .show-diameter1, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-diameter1 .bends-count-wrapper .show-diameter1, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-tripletirs-amount .bends-count-wrapper .show-diameter1, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-diameter2 .bends-count-wrapper .show-diameter1 {
+  position: relative;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-bends-amount .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-diameter1 .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-tripletirs-amount .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-diameter2 .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-bends-amount .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-diameter1 .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-tripletirs-amount .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-diameter2 .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper {
+  width: 19px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 18px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-bends-amount .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper .diameter1NumValue, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-diameter1 .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper .diameter1NumValue, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-tripletirs-amount .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper .diameter1NumValue, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-diameter2 .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper .diameter1NumValue, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-bends-amount .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper .diameter1NumValue, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-diameter1 .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper .diameter1NumValue, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-tripletirs-amount .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper .diameter1NumValue, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-diameter2 .bends-count-wrapper .show-diameter1 .diameter1NumValue-wrapper .diameter1NumValue {
+  font-size: 14px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-type, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-wall-type, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-type, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-wall-type {
+  min-height: 185px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-type .btn-group, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-type .btn-group, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group {
+  width: 410px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-type .btn-group .custom-btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group .custom-btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-type .btn-group .custom-btn, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group .custom-btn {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 3px solid white;
+  border-radius: 100px;
+  max-width: 113px;
+  height: 113px;
+  box-shadow: 0 0 0 0 !important;
+  position: relative;
+  padding: 0;
+  color: #a1aab1;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-type .btn-group .custom-btn span, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group .custom-btn span, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-type .btn-group .custom-btn span, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group .custom-btn span {
+  color: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  width: 100%;
+  bottom: -35px;
+  left: 0;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-type .btn-group .custom-btn img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group .custom-btn img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-type .btn-group .custom-btn img, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group .custom-btn img {
+  position: absolute;
+  bottom: -20px;
+  right: -5px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-type .btn-group .active, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group .active, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-type .btn-group .active, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group .active {
+  border-color: #0b2842;
+  color: black;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-wall-type .btn-group {
+  width: 265px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-section-size .show-diameter1, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-section-size .show-diameter1 {
+  position: relative;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-section-size .show-diameter1 .diameter1NumValue-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-section-size .show-diameter1 .diameter1NumValue-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 87px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-section-size .show-diameter1 .diameter1NumValue-wrapper span, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-section-size .show-diameter1 .diameter1NumValue-wrapper span {
+  font-size: 14px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-section-size .show-diameter1 .diameter2NumValue-wrapper, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-section-size .show-diameter1 .diameter2NumValue-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 35px;
+  left: 100px;
+}
+.calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .upper-part .local-row .pick-a-section-size .show-diameter1 .diameter2NumValue-wrapper span, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .upper-part .local-row .pick-a-section-size .show-diameter1 .diameter2NumValue-wrapper span {
+  font-size: 14px;
 }
 .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent .inner-wrapper .bottom-part, .calculator-page__page-content .calculator-page__content-wrapper .calculator-page__first-screen .tabs-wrapper .info-tabcontent1 .inner-wrapper .bottom-part {
   padding: 30px 30px 40px;
