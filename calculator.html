@@ -231,14 +231,14 @@
                                         Общие параметры
                                     </div>
                                     <div class="btn-wrapper">
-                                        Размер панели 3Д
+                                        Размер панели
                                     </div>
-                                    <div class="btn-wrapper">
-                                        Размер панели 2Д
-                                    </div>
-                                    <div class="btn-wrapper">
-                                        Техограда
-                                    </div>
+                                    <!--                                    <div class="btn-wrapper">-->
+                                    <!--                                        Размер панели 2Д-->
+                                    <!--                                    </div>-->
+                                    <!--                                    <div class="btn-wrapper">-->
+                                    <!--                                        Техограда-->
+                                    <!--                                    </div>-->
                                     <div class="btn-wrapper">
                                         Вариант исполнения столба
                                     </div>
@@ -360,35 +360,38 @@
                                     <!-- Tab inner content wrapper -->
                                     <div class="inner-wrapper">
                                         <!-- Upper block -->
-                                        <div class="upper-part">
+                                        <div class="upper-part determine-type">
                                             <div class="local-row">
-                                                <div class="tab-section pick-a-type">
+                                                <div data-typeSwap="type-factor" class="tab-section pick-a-type">
                                                     <span class="tab-section__header">
                                                         <span>Тип забора</span>
                                                     </span>
                                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                        <label class="btn custom-btn"
+                                                        <label class="btn custom-btn fence-type-hook"
                                                                style="background-image: url('img/icons/calculator/type3.png')">
                                                             <input type="radio" name="type-options"
-                                                                   id="type-option1" checked>
+                                                                   id="type-option1" value="3D" class="fence-type-input"
+                                                                   checked>
                                                             <span>3Д забор</span>
                                                             <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
                                                                  data-toggle="tooltip" data-placement="right"
                                                                  title="example">
                                                         </label>
-                                                        <label class="btn custom-btn"
+                                                        <label class="btn custom-btn fence-type-hook"
                                                                style="background-image: url('img/icons/calculator/type2.png')">
                                                             <input type="radio" name="type-options"
-                                                                   id="type-option2">
+                                                                   id="type-option2" value="2D"
+                                                                   class="fence-type-input">
                                                             <span>2Д ограда</span>
                                                             <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
                                                                  data-toggle="tooltip" data-placement="right"
                                                                  title="example">
                                                         </label>
-                                                        <label class="btn custom-btn"
+                                                        <label class="btn custom-btn fence-type-hook"
                                                                style="background-image: url('img/icons/calculator/type3.png')">
                                                             <input type="radio" name="type-options"
-                                                                   id="type-option3">
+                                                                   id="type-option3" value="TechFence"
+                                                                   class="fence-type-input">
                                                             <span>Техограда</span>
                                                             <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
                                                                  data-toggle="tooltip" data-placement="right"
@@ -396,7 +399,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="tab-section pick-a-section-size">
+                                                <div data-typeSwap="3D" class="tab-section pick-a-section-size">
                                                     <span class="tab-section__header">
                                                         <span>Размер секции (мм.)</span>
                                                         <input type="text" value="2550x1750" id="section-size__input1">
@@ -411,196 +414,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="local-row">
-                                                <div class="tab-section pick-a-height">
-                                                    <span class="tab-section__header">
-                                                        <span>Высота (мм.)</span>
-                                                        <input type="text" value="2030">
-                                                    </span>
-                                                </div>
-                                                <div class="tab-section pick-a-length">
-                                                    <span class="tab-section__header">Длина секции (мм).</span>
-                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="length-options"
-                                                                   id="length-option1" checked>
-                                                            2500
-                                                        </label>
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="length-options"
-                                                                   id="length-option2"> 3000
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section pick-bends-amount">
-                                                    <span class="tab-section__header">Количество сгибов</span>
-                                                    <div class="bends-count-wrapper">
-                                                        <img src="img/icons/calculator/bends.png" alt="">
-                                                        <div class="amount-wrapper inc-and-dec-input">
-                                                            <input class="parent-input" value="1">
-                                                            <div class="input-btns">
-                                                                <button class="inc-btn input-btn">+</button>
-                                                                <button class="dec-btn input-btn">-</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="local-row">
-                                                <div class="tab-section pick-diameter1">
-                                                    <span class="tab-section__header">Диаметр прутка (мм).</span>
-                                                    <div class="bends-count-wrapper">
-                                                        <div class="show-diameter1">
-                                                            <img src="img/icons/calculator/diameter-1.png" alt="">
-                                                            <div class="diameter1NumValue-wrapper">
-                                                                <span class="diameter1NumValue diameter3DValue"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amount-wrapper inc-and-dec-input diameter3D-step">
-                                                            <input class="parent-input diameter3D-input" value="3.5">
-                                                            <div class="input-btns">
-                                                                <button class="inc-btn for-3Ddiameter">+</button>
-                                                                <button class="dec-btn for-3Ddiameter">-</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section pick-a-cell-size">
-                                                    <span class="tab-section__header">Размер ячейки (мм).</span>
-                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="size-options"
-                                                                   id="size-option1" checked>
-                                                            60x200
-                                                        </label>
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="size-options"
-                                                                   id="size-option2"> 55x200
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section picked-color">
-                                                    <span class="tab-section__header">Цвет ограждения</span>
-                                                    <span class="tab-section__sub-header">Текущий цвет</span>
-                                                    <div class="color-row">
-                                                        <div class="picked-color__circle"
-                                                             style="background-color: green"></div>
-                                                        <span class="picked-color__name">RAL 6037</span>
-                                                    </div>
-                                                    <span class="text-tooltip">По умолчанию выбран цвет забора</span>
-                                                </div>
-                                                <div class="tab-section pick-a-color">
-                                                    <span class="tab-section__header">Выбрать другой цвет</span>
-                                                    <span class="tab-section__sub-header">Стандартные цвета
-                                                        <img class="sm-tooltip" src="img/icons/tooltip.png"
-                                                             alt="Tooltip"
-                                                             data-toggle="tooltip" data-placement="right"
-                                                             title="example">
-                                                    </span>
-                                                    <div class="color-palette">
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6037"
-                                                             style="background-color: red"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6038"
-                                                             style="background-color: green"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6039"
-                                                             style="background-color: blue"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6040"
-                                                             style="background-color: #73140b"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6041"
-                                                             style="background-color: orange"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6042"
-                                                             style="background-color: yellow"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6043"
-                                                             style="background-color: blueviolet"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6044"
-                                                             style="background-color: aqua"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6045"
-                                                             style="background-color: palegoldenrod"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6046"
-                                                             style="background-color: darkslategrey"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Bottom block -->
-                                        <div class="bottom-part">
-                                            <span class="bottom-part__header">Стоимость</span>
-                                            <div class="ul-wrapper">
-                                                <ul class="ul-of-params">
-                                                    <li><span>Тип забора:</span><span>3Д забор</span></li>
-                                                    <li><span>Размер секции:</span><span>2550x1750</span></li>
-                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
-                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>
-                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
-                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>
-                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
-                                                    <li><span>Длина секции:</span><span></span>
-                                                        <div class="color-wrapper">
-                                                            <div class="params__picked-color"></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="white-block">
-                                                <div><span>Тип забора:</span><span>3Д забор</span></div>
-                                                <div><span>Тип забора:</span><span>3Д забор</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="third-tab info-tabcontent">
-                                    <!-- Tab inner content wrapper -->
-                                    <div class="inner-wrapper">
-                                        <!-- Upper block -->
-                                        <div class="upper-part">
-                                            <div class="local-row">
-                                                <div class="tab-section pick-a-type">
-                                                    <span class="tab-section__header">
-                                                        <span>Тип забора</span>
-                                                    </span>
-                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                        <label class="btn custom-btn"
-                                                               style="background-image: url('img/icons/calculator/type3.png')">
-                                                            <input type="radio" name="type-options"
-                                                                   id="type-option4" checked>
-                                                            <span>3Д забор</span>
-                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
-                                                                 data-toggle="tooltip" data-placement="right"
-                                                                 title="example">
-                                                        </label>
-                                                        <label class="btn custom-btn"
-                                                               style="background-image: url('img/icons/calculator/type2.png')">
-                                                            <input type="radio" name="type-options"
-                                                                   id="type-option5">
-                                                            <span>2Д ограда</span>
-                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
-                                                                 data-toggle="tooltip" data-placement="right"
-                                                                 title="example">
-                                                        </label>
-                                                        <label class="btn custom-btn"
-                                                               style="background-image: url('img/icons/calculator/type3.png')">
-                                                            <input type="radio" name="type-options"
-                                                                   id="type-option6">
-                                                            <span>Техограда</span>
-                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
-                                                                 data-toggle="tooltip" data-placement="right"
-                                                                 title="example">
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section pick-a-length">
+                                                <div data-typeSwap="2D" class="tab-section pick-a-length">
                                                     <span class="tab-section__header">Длина секции (мм).</span>
                                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                                         <label class="btn custom-btn">
@@ -614,15 +429,70 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="local-row">
-                                                <div class="tab-section pick-a-height">
+
+                                                <div data-typeSwap="Tech" class="tab-section pick-a-length">
+                                                    <span class="tab-section__header">Длина секции (мм).</span>
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn custom-btn">
+                                                            <input type="radio" name="length4-options"
+                                                                   id="length-option5" checked>
+                                                            2500
+                                                        </label>
+                                                        <label class="btn custom-btn">
+                                                            <input type="radio" name="length4-options"
+                                                                   id="length-option6"> 3000
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div data-typeSwap="Tech" class="tab-section pick-a-height">
                                                     <span class="tab-section__header">
                                                         <span>Высота (мм.)</span>
                                                         <input type="text" value="2030">
                                                     </span>
                                                 </div>
-                                                <div class="tab-section pick-tripletirs-amount">
+                                            </div>
+                                            <div class="local-row">
+                                                <div data-typeSwap="3D" class="tab-section pick-a-height">
+                                                    <span class="tab-section__header">
+                                                        <span>Высота (мм.)</span>
+                                                        <input type="text" value="2030">
+                                                    </span>
+                                                </div>
+                                                <div data-typeSwap="3D" class="tab-section pick-a-length">
+                                                    <span class="tab-section__header">Длина секции (мм).</span>
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn custom-btn">
+                                                            <input type="radio" name="length-options"
+                                                                   id="length-option1" checked>
+                                                            2500
+                                                        </label>
+                                                        <label class="btn custom-btn">
+                                                            <input type="radio" name="length-options"
+                                                                   id="length-option2"> 3000
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div data-typeSwap="3D" class="tab-section pick-bends-amount">
+                                                    <span class="tab-section__header">Количество сгибов</span>
+                                                    <div class="bends-count-wrapper">
+                                                        <img src="img/icons/calculator/bends.png" alt="">
+                                                        <div class="amount-wrapper inc-and-dec-input">
+                                                            <input class="parent-input" value="1">
+                                                            <div class="input-btns">
+                                                                <button class="inc-btn input-btn">+</button>
+                                                                <button class="dec-btn input-btn">-</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div data-typeSwap="2D" class="tab-section pick-a-height">
+                                                    <span class="tab-section__header">
+                                                        <span>Высота (мм.)</span>
+                                                        <input type="text" value="2030">
+                                                    </span>
+                                                </div>
+                                                <div data-typeSwap="2D" class="tab-section pick-tripletirs-amount">
                                                     <span class="tab-section__header">Количество триплетиров</span>
                                                     <div class="bends-count-wrapper">
                                                         <img src="img/icons/calculator/tripletir.png" alt="">
@@ -635,7 +505,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="tab-section pick-diameter2">
+                                                <div data-typeSwap="2D" class="tab-section pick-diameter2">
                                                     <span class="tab-section__header">Диаметр прутка (мм).</span>
                                                     <div class="bends-count-wrapper">
                                                         <div class="show-diameter1">
@@ -653,164 +523,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="local-row">
-                                                <div class="tab-section pick-a-cell-size">
-                                                    <span class="tab-section__header">Размер ячейки (мм).</span>
-                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="size-options"
-                                                                   id="size-option3" checked>
-                                                            60x200
-                                                        </label>
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="size-options"
-                                                                   id="size-option4"> 55x200
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section picked-color">
-                                                    <span class="tab-section__header">Цвет ограждения</span>
-                                                    <span class="tab-section__sub-header">Текущий цвет</span>
-                                                    <div class="color-row">
-                                                        <div class="picked-color__circle"
-                                                             style="background-color: green"></div>
-                                                        <span class="picked-color__name">RAL 6037</span>
-                                                    </div>
-                                                    <span class="text-tooltip">По умолчанию выбран цвет забора</span>
-                                                </div>
-                                                <div class="tab-section pick-a-color">
-                                                    <span class="tab-section__header">Выбрать другой цвет</span>
-                                                    <span class="tab-section__sub-header">Стандартные цвета
-                                                        <img class="sm-tooltip" src="img/icons/tooltip.png"
-                                                             alt="Tooltip"
-                                                             data-toggle="tooltip" data-placement="right"
-                                                             title="example">
-                                                    </span>
-                                                    <div class="color-palette">
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6037"
-                                                             style="background-color: red"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6038"
-                                                             style="background-color: green"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6039"
-                                                             style="background-color: blue"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6040"
-                                                             style="background-color: #73140b"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6041"
-                                                             style="background-color: orange"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6042"
-                                                             style="background-color: yellow"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6043"
-                                                             style="background-color: blueviolet"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6044"
-                                                             style="background-color: aqua"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6045"
-                                                             style="background-color: palegoldenrod"></div>
-                                                        <div class="pick-a-color__color-circle"
-                                                             data-paletteColor="RAL 6046"
-                                                             style="background-color: darkslategrey"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Bottom block -->
-                                        <div class="bottom-part">
-                                            <span class="bottom-part__header">Стоимость</span>
-                                            <div class="ul-wrapper">
-                                                <ul class="ul-of-params">
-                                                    <li><span>Тип забора:</span><span>3Д забор</span></li>
-                                                    <li><span>Размер секции:</span><span>2550x1750</span></li>
-                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
-                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>
-                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
-                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>
-                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
-                                                    <li><span>Длина секции:</span><span></span>
-                                                        <div class="color-wrapper">
-                                                            <div class="params__picked-color"></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="white-block">
-                                                <div><span>Тип забора:</span><span>3Д забор</span></div>
-                                                <div><span>Тип забора:</span><span>3Д забор</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="fourth-tab info-tabcontent">
-                                    <!-- Tab inner content wrapper -->
-                                    <div class="inner-wrapper">
-                                        <div class="upper-part">
-                                            <div class="local-row">
-                                                <div class="tab-section pick-a-type">
-                                                    <span class="tab-section__header">
-                                                        <span>Тип забора</span>
-                                                    </span>
-                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                        <label class="btn custom-btn"
-                                                               style="background-image: url('img/icons/calculator/type3.png')">
-                                                            <input type="radio" name="type-options4"
-                                                                   id="type-option7" checked>
-                                                            <span>3Д забор</span>
-                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
-                                                                 data-toggle="tooltip" data-placement="right"
-                                                                 title="example">
-                                                        </label>
-                                                        <label class="btn custom-btn"
-                                                               style="background-image: url('img/icons/calculator/type2.png')">
-                                                            <input type="radio" name="type-options4"
-                                                                   id="type-option8">
-                                                            <span>2Д ограда</span>
-                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
-                                                                 data-toggle="tooltip" data-placement="right"
-                                                                 title="example">
-                                                        </label>
-                                                        <label class="btn custom-btn"
-                                                               style="background-image: url('img/icons/calculator/type3.png')">
-                                                            <input type="radio" name="type-options4"
-                                                                   id="type-option9">
-                                                            <span>Техограда</span>
-                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
-                                                                 data-toggle="tooltip" data-placement="right"
-                                                                 title="example">
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section pick-a-length">
-                                                    <span class="tab-section__header">Длина секции (мм).</span>
-                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="length4-options"
-                                                                   id="length-option5" checked>
-                                                            2500
-                                                        </label>
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="length4-options"
-                                                                   id="length-option6"> 3000
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section pick-a-height">
-                                                    <span class="tab-section__header">
-                                                        <span>Высота (мм.)</span>
-                                                        <input type="text" value="2030">
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="local-row">
-                                                <div class="tab-section pick-a-wall-type">
+                                                <div data-typeSwap="Tech" class="tab-section pick-a-wall-type">
                                                     <span class="tab-section__header">
                                                         <span>Тип ограды <img src="img/icons/calculator/tooltip.png"
                                                                               alt="Tooltip"
@@ -833,7 +547,7 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <div class="tab-section pick-a-length">
+                                                <div data-typeSwap="Tech" class="tab-section pick-a-length">
                                                     <span class="tab-section__header">Расстояние вертикальными <br>рейками (мм.) (шаг заполнения)</span>
                                                     <div class="custom-wrapper">
                                                         <img src="img/icons/calculator/reyki.png" alt="">
@@ -850,22 +564,600 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="tab-section pick-a-length">
+                                                <div data-typeSwap="Tech" class="tab-section pick-a-length">
                                                     <span class="tab-section__header">Сечение горизонтального <br> профиля</span>
                                                     <div class="custom-wrapper">
-                                                        <img src="img/icons/calculator/secheniye.png" alt="">
+                                                        <div class="secheniye-value">
+                                                            <img src="img/icons/calculator/secheniye.png" alt="">
+                                                            <div class="span-wrapper">
+                                                                <span class="secheniye-value__span">40x40x1.2</span>
+                                                            </div>
+                                                        </div>
                                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                            <label class="btn custom-btn">
+                                                            <label class="btn custom-btn secheniye-option">
                                                                 <input type="radio" name="length6-options"
-                                                                       id="length-option9" checked>
+                                                                       id="length-option9" checked value="40x40x1.2">
                                                                 40x40x1.2
                                                             </label>
-                                                            <label class="btn custom-btn">
+                                                            <label class="btn custom-btn secheniye-option">
                                                                 <input type="radio" name="length6-options"
-                                                                       id="length-option10"> 60x200
+                                                                       id="length-option10" value="60x200"> 60x200
                                                             </label>
                                                         </div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="local-row">
+                                                <div data-typeSwap="3D" class="tab-section pick-diameter1">
+                                                    <span class="tab-section__header">Диаметр прутка (мм).</span>
+                                                    <div class="bends-count-wrapper">
+                                                        <div class="show-diameter1">
+                                                            <img src="img/icons/calculator/diameter-1.png" alt="">
+                                                            <div class="diameter1NumValue-wrapper">
+                                                                <span class="diameter1NumValue diameter3DValue"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="amount-wrapper inc-and-dec-input diameter3D-step">
+                                                            <input class="parent-input diameter3D-input" value="3.5">
+                                                            <div class="input-btns">
+                                                                <button class="inc-btn for-3Ddiameter">+</button>
+                                                                <button class="dec-btn for-3Ddiameter">-</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div data-typeSwap="3D" class="tab-section pick-a-cell-size">
+                                                    <span class="tab-section__header">Размер ячейки (мм).</span>
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn custom-btn">
+                                                            <input type="radio" name="size-options"
+                                                                   id="size-option1" checked>
+                                                            60x200
+                                                        </label>
+                                                        <label class="btn custom-btn">
+                                                            <input type="radio" name="size-options"
+                                                                   id="size-option2"> 55x200
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div data-typeSwap="2D" class="tab-section pick-a-cell-size">
+                                                    <span class="tab-section__header">Размер ячейки (мм).</span>
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn custom-btn">
+                                                            <input type="radio" name="size-options"
+                                                                   id="size-option3" checked>
+                                                            60x200
+                                                        </label>
+                                                        <label class="btn custom-btn">
+                                                            <input type="radio" name="size-options"
+                                                                   id="size-option4"> 55x200
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div data-typeSwap="color-block" class="tab-section picked-color">
+                                                    <span class="tab-section__header">Цвет ограждения</span>
+                                                    <span class="tab-section__sub-header">Текущий цвет</span>
+                                                    <div class="color-row">
+                                                        <div class="picked-color__circle"
+                                                             style="background-color: green"></div>
+                                                        <span class="picked-color__name">RAL 6037</span>
+                                                    </div>
+                                                    <span class="text-tooltip">По умолчанию выбран цвет забора</span>
+                                                </div>
+                                                <div data-typeSwap="color-block" class="tab-section pick-a-color">
+                                                    <span class="tab-section__header">Выбрать другой цвет</span>
+                                                    <span class="tab-section__sub-header">Стандартные цвета
+                                                        <img class="sm-tooltip" src="img/icons/tooltip.png"
+                                                             alt="Tooltip"
+                                                             data-toggle="tooltip" data-placement="right"
+                                                             title="example">
+                                                    </span>
+                                                    <div class="color-palette">
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6037"
+                                                             style="background-color: red"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6038"
+                                                             style="background-color: green"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6039"
+                                                             style="background-color: blue"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6040"
+                                                             style="background-color: #73140b"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6041"
+                                                             style="background-color: orange"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6042"
+                                                             style="background-color: yellow"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6043"
+                                                             style="background-color: blueviolet"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6044"
+                                                             style="background-color: aqua"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6045"
+                                                             style="background-color: palegoldenrod"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6046"
+                                                             style="background-color: darkslategrey"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Bottom block -->
+                                        <div class="bottom-part">
+                                            <span class="bottom-part__header">Стоимость</span>
+                                            <div class="ul-wrapper">
+                                                <ul class="ul-of-params">
+                                                    <li><span>Тип забора:</span><span>3Д забор</span></li>
+                                                    <li><span>Размер секции:</span><span>2550x1750</span></li>
+                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
+                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>
+                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
+                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>
+                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
+                                                    <li><span>Длина секции:</span><span></span>
+                                                        <div class="color-wrapper">
+                                                            <div class="params__picked-color"></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="white-block">
+                                                <div><span>Тип забора:</span><span>3Д забор</span></div>
+                                                <div><span>Тип забора:</span><span>3Д забор</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--                                <div class="third-tab info-tabcontent">-->
+                                <!--                                    &lt;!&ndash; Tab inner content wrapper &ndash;&gt;-->
+                                <!--                                    <div class="inner-wrapper">-->
+                                <!--                                        &lt;!&ndash; Upper block &ndash;&gt;-->
+                                <!--                                        <div class="upper-part">-->
+                                <!--                                            <div class="local-row">-->
+                                <!--                                                <div class="tab-section pick-a-type">-->
+                                <!--                                                    <span class="tab-section__header">-->
+                                <!--                                                        <span>Тип забора</span>-->
+                                <!--                                                    </span>-->
+                                <!--                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                                <!--                                                        <label class="btn custom-btn"-->
+                                <!--                                                               style="background-image: url('img/icons/calculator/type3.png')">-->
+                                <!--                                                            <input type="radio" name="type-options"-->
+                                <!--                                                                   id="type-option4" checked>-->
+                                <!--                                                            <span>3Д забор</span>-->
+                                <!--                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"-->
+                                <!--                                                                 data-toggle="tooltip" data-placement="right"-->
+                                <!--                                                                 title="example">-->
+                                <!--                                                        </label>-->
+                                <!--                                                        <label class="btn custom-btn"-->
+                                <!--                                                               style="background-image: url('img/icons/calculator/type2.png')">-->
+                                <!--                                                            <input type="radio" name="type-options"-->
+                                <!--                                                                   id="type-option5">-->
+                                <!--                                                            <span>2Д ограда</span>-->
+                                <!--                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"-->
+                                <!--                                                                 data-toggle="tooltip" data-placement="right"-->
+                                <!--                                                                 title="example">-->
+                                <!--                                                        </label>-->
+                                <!--                                                        <label class="btn custom-btn"-->
+                                <!--                                                               style="background-image: url('img/icons/calculator/type3.png')">-->
+                                <!--                                                            <input type="radio" name="type-options"-->
+                                <!--                                                                   id="type-option6">-->
+                                <!--                                                            <span>Техограда</span>-->
+                                <!--                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"-->
+                                <!--                                                                 data-toggle="tooltip" data-placement="right"-->
+                                <!--                                                                 title="example">-->
+                                <!--                                                        </label>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div data-typeSwap="2D" class="tab-section pick-a-length">-->
+                                <!--                                                    <span class="tab-section__header">Длина секции (мм).</span>-->
+                                <!--                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                                <!--                                                        <label class="btn custom-btn">-->
+                                <!--                                                            <input type="radio" name="length2-options"-->
+                                <!--                                                                   id="length-option3" checked>-->
+                                <!--                                                            2500-->
+                                <!--                                                        </label>-->
+                                <!--                                                        <label class="btn custom-btn">-->
+                                <!--                                                            <input type="radio" name="length2-options"-->
+                                <!--                                                                   id="length-option4"> 3000-->
+                                <!--                                                        </label>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                            <div class="local-row">-->
+                                <!--                                                <div data-typeSwap="2D" class="tab-section pick-a-height">-->
+                                <!--                                                    <span class="tab-section__header">-->
+                                <!--                                                        <span>Высота (мм.)</span>-->
+                                <!--                                                        <input type="text" value="2030">-->
+                                <!--                                                    </span>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div data-typeSwap="2D" class="tab-section pick-tripletirs-amount">-->
+                                <!--                                                    <span class="tab-section__header">Количество триплетиров</span>-->
+                                <!--                                                    <div class="bends-count-wrapper">-->
+                                <!--                                                        <img src="img/icons/calculator/tripletir.png" alt="">-->
+                                <!--                                                        <div class="amount-wrapper inc-and-dec-input">-->
+                                <!--                                                            <input class="parent-input" value="1">-->
+                                <!--                                                            <div class="input-btns">-->
+                                <!--                                                                <button class="inc-btn input-btn">+</button>-->
+                                <!--                                                                <button class="dec-btn input-btn">-</button>-->
+                                <!--                                                            </div>-->
+                                <!--                                                        </div>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div data-typeSwap="2D" class="tab-section pick-diameter2">-->
+                                <!--                                                    <span class="tab-section__header">Диаметр прутка (мм).</span>-->
+                                <!--                                                    <div class="bends-count-wrapper">-->
+                                <!--                                                        <div class="show-diameter1">-->
+                                <!--                                                            <img src="img/icons/calculator/diameter-1.png" alt="">-->
+                                <!--                                                            <div class="diameter1NumValue-wrapper">-->
+                                <!--                                                                <span class="diameter1NumValue diameter2DValue"></span>-->
+                                <!--                                                            </div>-->
+                                <!--                                                        </div>-->
+                                <!--                                                        <div class="amount-wrapper inc-and-dec-input diameter2D-step">-->
+                                <!--                                                            <input class="parent-input diameter2D-input" value="7/6/8">-->
+                                <!--                                                            <div class="input-btns">-->
+                                <!--                                                                <button class="inc-btn for-2Ddiameter">+</button>-->
+                                <!--                                                                <button class="dec-btn for-2Ddiameter">-</button>-->
+                                <!--                                                            </div>-->
+                                <!--                                                        </div>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                            <div class="local-row">-->
+                                <!--                                                <div data-typeSwap="2D" class="tab-section pick-a-cell-size">-->
+                                <!--                                                    <span class="tab-section__header">Размер ячейки (мм).</span>-->
+                                <!--                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                                <!--                                                        <label class="btn custom-btn">-->
+                                <!--                                                            <input type="radio" name="size-options"-->
+                                <!--                                                                   id="size-option3" checked>-->
+                                <!--                                                            60x200-->
+                                <!--                                                        </label>-->
+                                <!--                                                        <label class="btn custom-btn">-->
+                                <!--                                                            <input type="radio" name="size-options"-->
+                                <!--                                                                   id="size-option4"> 55x200-->
+                                <!--                                                        </label>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div data-typeSwap="2D" class="tab-section picked-color">-->
+                                <!--                                                    <span class="tab-section__header">Цвет ограждения</span>-->
+                                <!--                                                    <span class="tab-section__sub-header">Текущий цвет</span>-->
+                                <!--                                                    <div class="color-row">-->
+                                <!--                                                        <div class="picked-color__circle"-->
+                                <!--                                                             style="background-color: green"></div>-->
+                                <!--                                                        <span class="picked-color__name">RAL 6037</span>-->
+                                <!--                                                    </div>-->
+                                <!--                                                    <span class="text-tooltip">По умолчанию выбран цвет забора</span>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div data-typeSwap="2D" class="tab-section pick-a-color">-->
+                                <!--                                                    <span class="tab-section__header">Выбрать другой цвет</span>-->
+                                <!--                                                    <span class="tab-section__sub-header">Стандартные цвета-->
+                                <!--                                                        <img class="sm-tooltip" src="img/icons/tooltip.png"-->
+                                <!--                                                             alt="Tooltip"-->
+                                <!--                                                             data-toggle="tooltip" data-placement="right"-->
+                                <!--                                                             title="example">-->
+                                <!--                                                    </span>-->
+                                <!--                                                    <div class="color-palette">-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6037"-->
+                                <!--                                                             style="background-color: red"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6038"-->
+                                <!--                                                             style="background-color: green"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6039"-->
+                                <!--                                                             style="background-color: blue"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6040"-->
+                                <!--                                                             style="background-color: #73140b"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6041"-->
+                                <!--                                                             style="background-color: orange"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6042"-->
+                                <!--                                                             style="background-color: yellow"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6043"-->
+                                <!--                                                             style="background-color: blueviolet"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6044"-->
+                                <!--                                                             style="background-color: aqua"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6045"-->
+                                <!--                                                             style="background-color: palegoldenrod"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6046"-->
+                                <!--                                                             style="background-color: darkslategrey"></div>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                        &lt;!&ndash; Bottom block &ndash;&gt;-->
+                                <!--                                        <div class="bottom-part">-->
+                                <!--                                            <span class="bottom-part__header">Стоимость</span>-->
+                                <!--                                            <div class="ul-wrapper">-->
+                                <!--                                                <ul class="ul-of-params">-->
+                                <!--                                                    <li><span>Тип забора:</span><span>3Д забор</span></li>-->
+                                <!--                                                    <li><span>Размер секции:</span><span>2550x1750</span></li>-->
+                                <!--                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>-->
+                                <!--                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>-->
+                                <!--                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>-->
+                                <!--                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>-->
+                                <!--                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>-->
+                                <!--                                                    <li><span>Длина секции:</span><span></span>-->
+                                <!--                                                        <div class="color-wrapper">-->
+                                <!--                                                            <div class="params__picked-color"></div>-->
+                                <!--                                                        </div>-->
+                                <!--                                                    </li>-->
+                                <!--                                                </ul>-->
+                                <!--                                            </div>-->
+                                <!--                                            <div class="white-block">-->
+                                <!--                                                <div><span>Тип забора:</span><span>3Д забор</span></div>-->
+                                <!--                                                <div><span>Тип забора:</span><span>3Д забор</span></div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+
+                                <!--                                <div class="fourth-tab info-tabcontent">-->
+                                <!--                                    &lt;!&ndash; Tab inner content wrapper &ndash;&gt;-->
+                                <!--                                    <div class="inner-wrapper">-->
+                                <!--                                        <div class="upper-part">-->
+                                <!--                                            <div class="local-row">-->
+                                <!--                                                <div class="tab-section pick-a-type">-->
+                                <!--                                                    <span class="tab-section__header">-->
+                                <!--                                                        <span>Тип забора</span>-->
+                                <!--                                                    </span>-->
+                                <!--                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                                <!--                                                        <label class="btn custom-btn"-->
+                                <!--                                                               style="background-image: url('img/icons/calculator/type3.png')">-->
+                                <!--                                                            <input type="radio" name="type-options4"-->
+                                <!--                                                                   id="type-option7" checked>-->
+                                <!--                                                            <span>3Д забор</span>-->
+                                <!--                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"-->
+                                <!--                                                                 data-toggle="tooltip" data-placement="right"-->
+                                <!--                                                                 title="example">-->
+                                <!--                                                        </label>-->
+                                <!--                                                        <label class="btn custom-btn"-->
+                                <!--                                                               style="background-image: url('img/icons/calculator/type2.png')">-->
+                                <!--                                                            <input type="radio" name="type-options4"-->
+                                <!--                                                                   id="type-option8">-->
+                                <!--                                                            <span>2Д ограда</span>-->
+                                <!--                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"-->
+                                <!--                                                                 data-toggle="tooltip" data-placement="right"-->
+                                <!--                                                                 title="example">-->
+                                <!--                                                        </label>-->
+                                <!--                                                        <label class="btn custom-btn"-->
+                                <!--                                                               style="background-image: url('img/icons/calculator/type3.png')">-->
+                                <!--                                                            <input type="radio" name="type-options4"-->
+                                <!--                                                                   id="type-option9">-->
+                                <!--                                                            <span>Техограда</span>-->
+                                <!--                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"-->
+                                <!--                                                                 data-toggle="tooltip" data-placement="right"-->
+                                <!--                                                                 title="example">-->
+                                <!--                                                        </label>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div data-typeSwap="Tech" class="tab-section pick-a-length">-->
+                                <!--                                                    <span class="tab-section__header">Длина секции (мм).</span>-->
+                                <!--                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                                <!--                                                        <label class="btn custom-btn">-->
+                                <!--                                                            <input type="radio" name="length4-options"-->
+                                <!--                                                                   id="length-option5" checked>-->
+                                <!--                                                            2500-->
+                                <!--                                                        </label>-->
+                                <!--                                                        <label class="btn custom-btn">-->
+                                <!--                                                            <input type="radio" name="length4-options"-->
+                                <!--                                                                   id="length-option6"> 3000-->
+                                <!--                                                        </label>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div data-typeSwap="Tech" class="tab-section pick-a-height">-->
+                                <!--                                                    <span class="tab-section__header">-->
+                                <!--                                                        <span>Высота (мм.)</span>-->
+                                <!--                                                        <input type="text" value="2030">-->
+                                <!--                                                    </span>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                            <div class="local-row">-->
+                                <!--                                                <div data-typeSwap="Tech" class="tab-section pick-a-wall-type">-->
+                                <!--                                                    <span class="tab-section__header">-->
+                                <!--                                                        <span>Тип ограды <img src="img/icons/calculator/tooltip.png"-->
+                                <!--                                                                              alt="Tooltip"-->
+                                <!--                                                                              data-toggle="tooltip"-->
+                                <!--                                                                              data-placement="right"-->
+                                <!--                                                                              title="example"></span>-->
+                                <!--                                                    </span>-->
+                                <!--                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                                <!--                                                        <label class="btn custom-btn"-->
+                                <!--                                                               style="background-image: url('img/icons/calculator/type123.png')">-->
+                                <!--                                                            <input type="radio" name="2type-options4"-->
+                                <!--                                                                   id="type-option10" checked>-->
+                                <!--                                                            <span>С выпуском</span>-->
+                                <!--                                                        </label>-->
+                                <!--                                                        <label class="btn custom-btn"-->
+                                <!--                                                               style="background-image: url('img/icons/calculator/type123.png')">-->
+                                <!--                                                            <input type="radio" name="2type-options4"-->
+                                <!--                                                                   id="type-option11">-->
+                                <!--                                                            <span>Безопасная</span>-->
+                                <!--                                                        </label>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div data-typeSwap="Tech" class="tab-section pick-a-length">-->
+                                <!--                                                    <span class="tab-section__header">Расстояние вертикальными <br>рейками (мм.) (шаг заполнения)</span>-->
+                                <!--                                                    <div class="custom-wrapper">-->
+                                <!--                                                        <img src="img/icons/calculator/reyki.png" alt="">-->
+                                <!--                                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                                <!--                                                            <label class="btn custom-btn">-->
+                                <!--                                                                <input type="radio" name="length5-options"-->
+                                <!--                                                                       id="length-option7" checked>-->
+                                <!--                                                                120-->
+                                <!--                                                            </label>-->
+                                <!--                                                            <label class="btn custom-btn">-->
+                                <!--                                                                <input type="radio" name="length5-options"-->
+                                <!--                                                                       id="length-option8"> 100-->
+                                <!--                                                            </label>-->
+                                <!--                                                        </div>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div data-typeSwap="Tech" class="tab-section pick-a-length">-->
+                                <!--                                                    <span class="tab-section__header">Сечение горизонтального <br> профиля</span>-->
+                                <!--                                                    <div class="custom-wrapper">-->
+                                <!--                                                        <div class="secheniye-value">-->
+                                <!--                                                            <img src="img/icons/calculator/secheniye.png" alt="">-->
+                                <!--                                                            <div class="span-wrapper">-->
+                                <!--                                                                <span class="secheniye-value__span">40x40x1.2</span>-->
+                                <!--                                                            </div>-->
+                                <!--                                                        </div>-->
+                                <!--                                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">-->
+                                <!--                                                            <label class="btn custom-btn secheniye-option">-->
+                                <!--                                                                <input type="radio" name="length6-options"-->
+                                <!--                                                                       id="length-option9" checked value="40x40x1.2">-->
+                                <!--                                                                40x40x1.2-->
+                                <!--                                                            </label>-->
+                                <!--                                                            <label class="btn custom-btn secheniye-option">-->
+                                <!--                                                                <input type="radio" name="length6-options"-->
+                                <!--                                                                       id="length-option10" value="60x200"> 60x200-->
+                                <!--                                                            </label>-->
+                                <!--                                                        </div>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                            <div class="local-row">-->
+                                <!--                                                <div class="tab-section picked-color">-->
+                                <!--                                                    <span class="tab-section__header">Цвет ограждения</span>-->
+                                <!--                                                    <span class="tab-section__sub-header">Текущий цвет</span>-->
+                                <!--                                                    <div class="color-row">-->
+                                <!--                                                        <div class="picked-color__circle"-->
+                                <!--                                                             style="background-color: green"></div>-->
+                                <!--                                                        <span class="picked-color__name">RAL 6037</span>-->
+                                <!--                                                    </div>-->
+                                <!--                                                    <span class="text-tooltip">По умолчанию выбран цвет забора</span>-->
+                                <!--                                                </div>-->
+                                <!--                                                <div class="tab-section pick-a-color">-->
+                                <!--                                                    <span class="tab-section__header">Выбрать другой цвет</span>-->
+                                <!--                                                    <span class="tab-section__sub-header">Стандартные цвета-->
+                                <!--                                                        <img class="sm-tooltip" src="img/icons/tooltip.png"-->
+                                <!--                                                             alt="Tooltip"-->
+                                <!--                                                             data-toggle="tooltip" data-placement="right"-->
+                                <!--                                                             title="example">-->
+                                <!--                                                    </span>-->
+                                <!--                                                    <div class="color-palette">-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6037"-->
+                                <!--                                                             style="background-color: red"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6038"-->
+                                <!--                                                             style="background-color: green"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6039"-->
+                                <!--                                                             style="background-color: blue"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6040"-->
+                                <!--                                                             style="background-color: #73140b"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6041"-->
+                                <!--                                                             style="background-color: orange"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6042"-->
+                                <!--                                                             style="background-color: yellow"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6043"-->
+                                <!--                                                             style="background-color: blueviolet"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6044"-->
+                                <!--                                                             style="background-color: aqua"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6045"-->
+                                <!--                                                             style="background-color: palegoldenrod"></div>-->
+                                <!--                                                        <div class="pick-a-color__color-circle"-->
+                                <!--                                                             data-paletteColor="RAL 6046"-->
+                                <!--                                                             style="background-color: darkslategrey"></div>-->
+                                <!--                                                    </div>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+
+                                <!--                                        &lt;!&ndash; Bottom block &ndash;&gt;-->
+                                <!--                                        <div class="bottom-part">-->
+                                <!--                                            <span class="bottom-part__header">Стоимость</span>-->
+                                <!--                                            <div class="ul-wrapper">-->
+                                <!--                                                <ul class="ul-of-params">-->
+                                <!--                                                    <li><span>Тип забора:</span><span>3Д забор</span></li>-->
+                                <!--                                                    <li><span>Размер секции:</span><span>2550x1750</span></li>-->
+                                <!--                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>-->
+                                <!--                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>-->
+                                <!--                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>-->
+                                <!--                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>-->
+                                <!--                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>-->
+                                <!--                                                    <li><span>Длина секции:</span><span></span>-->
+                                <!--                                                        <div class="color-wrapper">-->
+                                <!--                                                            <div class="params__picked-color"></div>-->
+                                <!--                                                        </div>-->
+                                <!--                                                    </li>-->
+                                <!--                                                </ul>-->
+                                <!--                                            </div>-->
+                                <!--                                            <div class="white-block">-->
+                                <!--                                                <div><span>Тип забора:</span><span>3Д забор</span></div>-->
+                                <!--                                                <div><span>Тип забора:</span><span>3Д забор</span></div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+
+                                <div class="fifth-tab info-tabcontent">
+                                    <!-- Tab inner content wrapper -->
+                                    <div class="inner-wrapper">
+                                        <div class="upper-part">
+                                            <div class="local-row">
+                                                <div class="tab-section pick-a-type">
+                                                    <span class="tab-section__header">
+                                                        <span>Тип крепления столба <img
+                                                                src="img/icons/calculator/tooltip.png"
+                                                                alt="Tooltip"
+                                                                data-toggle="tooltip"
+                                                                data-placement="right"
+                                                                title="example"></span>
+                                                    </span>
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/pillar-type1.png')">
+                                                            <input type="radio" name="type-options5"
+                                                                   id="type-option13">
+                                                            <span>Крепление на ростверк</span>
+                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
+                                                                 data-toggle="tooltip" data-placement="right"
+                                                                 title="example">
+                                                        </label>
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/pillar-type2.png')">
+                                                            <input type="radio" name="type-options5"
+                                                                   id="type-option14">
+                                                            <span>Под бетонирование</span>
+                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
+                                                                 data-toggle="tooltip" data-placement="right"
+                                                                 title="example">
+                                                        </label>
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/pillar-type1.png')">
+                                                            <input type="radio" name="type-options5"
+                                                                   id="type-option15">
+                                                            <span>Для свай</span>
+                                                            <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
+                                                                 data-toggle="tooltip" data-placement="right"
+                                                                 title="example">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-section pick-a-height">
+                                                    <span class="tab-section__header">
+                                                        <span>Высота (мм.)</span>
+                                                        <input type="text" value="2030">
+                                                    </span>
                                                 </div>
                                             </div>
                                             <div class="local-row">
@@ -920,42 +1212,93 @@
                                                              style="background-color: darkslategrey"></div>
                                                     </div>
                                                 </div>
+                                                <div class="tab-section pick-pillar-secheniye radio-options">
+                                                    <span class="tab-section__header">
+                                                        <span>Сечение столба <img src="img/icons/calculator/tooltip.png"
+                                                                                  alt="Tooltip"
+                                                                                  data-toggle="tooltip"
+                                                                                  data-placement="right"
+                                                                                  title="example"></span>
+                                                    </span>
+                                                    <span class="tab-section__sub-header">Размер фронтальной части (мм.)</span>
+                                                    <div class="radio-custom-group">
+                                                        <label class="green-radio">
+                                                            <input class="with-gap" name="exampleRadios1" type="radio">
+                                                            <span>1520</span>
+                                                        </label>
+                                                        <label class="green-radio">
+                                                            <input class="with-gap" name="exampleRadios1" type="radio"
+                                                                   disabled>
+                                                            <span>1410</span>
+                                                        </label>
+                                                        <label class="green-radio">
+                                                            <input class="with-gap" name="exampleRadios1" type="radio">
+                                                            <span>1350</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <!-- Bottom block -->
-                                        <div class="bottom-part">
-                                            <span class="bottom-part__header">Стоимость</span>
-                                            <div class="ul-wrapper">
-                                                <ul class="ul-of-params">
-                                                    <li><span>Тип забора:</span><span>3Д забор</span></li>
-                                                    <li><span>Размер секции:</span><span>2550x1750</span></li>
-                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
-                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>
-                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
-                                                    <li><span>Длина секции:</span><span>2500 мм.</span></li>
-                                                    <li><span>Высота секции:</span><span>2030 м.</span></li>
-                                                    <li><span>Длина секции:</span><span></span>
-                                                        <div class="color-wrapper">
-                                                            <div class="params__picked-color"></div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="white-block">
-                                                <div><span>Тип забора:</span><span>3Д забор</span></div>
-                                                <div><span>Тип забора:</span><span>3Д забор</span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="fifth-tab info-tabcontent">
-                                    <!-- Tab inner content wrapper -->
-                                    <div class="inner-wrapper">
-                                        <div class="upper-part">
                                             <div class="local-row">
-
+                                                <div class="tab-section pick-a-depth radio-options">
+                                                    <span class="tab-section__header">
+                                                        <span>Размер глубины (мм.)</span>
+                                                    </span>
+                                                    <div class="radio-custom-group">
+                                                        <label class="green-radio">
+                                                            <input class="with-gap" name="exampleRadios1" type="radio">
+                                                            <span>125</span>
+                                                        </label>
+                                                        <label class="green-radio">
+                                                            <input class="with-gap" name="exampleRadios1" type="radio"
+                                                                   disabled>
+                                                            <span>112</span>
+                                                        </label>
+                                                        <label class="green-radio">
+                                                            <input class="with-gap" name="exampleRadios1" type="radio">
+                                                            <span>94</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-section pick-a-pillars-width radio-options">
+                                                    <span class="tab-section__header">
+                                                        <span>Толщина стенки столба (мм.)</span>
+                                                    </span>
+                                                    <div class="radio-custom-group">
+                                                        <label class="green-radio">
+                                                            <input class="with-gap" name="exampleRadios1" type="radio">
+                                                            <span>85</span>
+                                                        </label>
+                                                        <label class="green-radio">
+                                                            <input class="with-gap" name="exampleRadios1" type="radio"
+                                                                   disabled>
+                                                            <span>75</span>
+                                                        </label>
+                                                        <label class="green-radio">
+                                                            <input class="with-gap" name="exampleRadios1" type="radio">
+                                                            <span>70</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-section cap-for-pillar">
+                                                    <span class="tab-section__header">
+                                                        <span>Крышка для столба <img
+                                                                src="img/icons/calculator/tooltip.png"
+                                                                alt="Tooltip"
+                                                                data-toggle="tooltip"
+                                                                data-placement="right"
+                                                                title="example"></span>
+                                                    </span>
+                                                    <div class="cap-for-pillar__content">
+                                                        <img src="img/icons/calculator/cap.png" alt="">
+                                                        <div class="checkmark-block">
+                                                            <label class="label-container">Крышка для столба
+                                                                <input class="boldTextOnClick" type="checkbox"
+                                                                       id="cap-hook">
+                                                                <span class="custom-checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -991,6 +1334,133 @@
                                     <div class="inner-wrapper">
                                         <div class="upper-part">
                                             <div class="local-row">
+                                                <div class="tab-section pick-a-holder-type">
+                                                    <span class="tab-section__header">
+                                                        <span>Тип крепления <img
+                                                                src="img/icons/calculator/tooltip.png"
+                                                                alt="Tooltip"
+                                                                data-toggle="tooltip"
+                                                                data-placement="right"
+                                                                title="example"></span>
+                                                    </span>
+                                                    <div class="first-btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/holder1.png')">
+                                                            <input type="radio" name="type-options5"
+                                                                   id="type-option13">
+                                                            <span>Хомут</span>
+                                                        </label>
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/holder2.png')">
+                                                            <input type="radio" name="type-options5"
+                                                                   id="type-option13">
+                                                            <span>Скоба F24</span>
+                                                        </label>
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/holder3.png')">
+                                                            <input type="radio" name="type-options5"
+                                                                   id="type-option14">
+                                                            <span>Скоба усиленная</span>
+                                                        </label>
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/holder4.png')">
+                                                            <input type="radio" name="type-options5"
+                                                                   id="type-option15">
+                                                            <span>Скоба F50</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="second-btn-group">
+                                                        <span class="tab-section__header">Размеры (мм).</span>
+                                                        <div class="btn-group btn-group-toggle"
+                                                             data-toggle="buttons">
+                                                            <label class="btn custom-btn">
+                                                                <input type="radio" name="length5-options"
+                                                                       id="length-option7" checked>
+                                                                80x50
+                                                            </label>
+                                                            <label class="btn custom-btn">
+                                                                <input type="radio" name="length5-options"
+                                                                       id="length-option8"> 40x40
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-section pick-a-lashing">
+                                                    <span class="tab-section__header">Крепление панели к столбу</span>
+                                                    <div class="option-wrapper">
+                                                        <img src="img/icons/calculator/holder1.png" alt="">
+                                                        <div class="radio-and-text-wrapper">
+                                                            <span class="radio-and-text-wrapper__header">Крепление для хомута</span>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="exampleRadios1"
+                                                                       type="radio">
+                                                                <span>Болты мебельные с гайкой</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option-wrapper">
+                                                        <img src="img/icons/calculator/sm-holder2.png" alt="">
+                                                        <div class="radio-and-text-wrapper">
+                                                            <span class="radio-and-text-wrapper__header">Крепление скобы усиленной</span>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="exampleRadios1"
+                                                                       type="radio">
+                                                                <span>Винт М8 (полукруглая)</span>
+                                                            </label>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="exampleRadios1"
+                                                                       type="radio" disabled>
+                                                                <span>Винт М8 мебельный и гайка</span>
+                                                            </label>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="exampleRadios1"
+                                                                       type="radio">
+                                                                <span>Винт М8 мебельный с антиванда</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="local-row">
+                                                <div class="tab-section pick-a-lashing">
+                                                    <div class="option-wrapper">
+                                                        <img src="img/icons/calculator/sm-holder3.png" alt="">
+                                                        <div class="radio-and-text-wrapper">
+                                                            <span class="radio-and-text-wrapper__header">Крепление для F24</span>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="exampleRadios1"
+                                                                       type="radio">
+                                                                <span>Саморез кровельный 5.5x25</span>
+                                                            </label>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="exampleRadios1"
+                                                                       type="radio">
+                                                                <span>Винт М6 полукруглый</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="option-wrapper">
+                                                        <img src="img/icons/calculator/sm-holder4.png" alt="">
+                                                        <div class="radio-and-text-wrapper">
+                                                            <span class="radio-and-text-wrapper__header">Крепление для F50</span>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="exampleRadios1"
+                                                                       type="radio">
+                                                                <span>Винт М8 (полукруглая)</span>
+                                                            </label>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="exampleRadios1"
+                                                                       type="radio">
+                                                                <span>Винт М8 мебельный и гайка</span>
+                                                            </label>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="exampleRadios1"
+                                                                       type="radio" disabled>
+                                                                <span>Винт М8 мебельный с антиванда</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="tab-section picked-color">
                                                     <span class="tab-section__header">Цвет ограждения</span>
                                                     <span class="tab-section__sub-header">Текущий цвет</span>
@@ -1077,6 +1547,48 @@
                                     <div class="inner-wrapper">
                                         <div class="upper-part">
                                             <div class="local-row">
+                                                <div class="tab-section pick-a-filling-type">
+                                                    <span class="tab-section__header">Тип заполнения</span>
+                                                </div>
+                                                <div class="tab-section pick-a-nozzle-type">
+                                                    <span class="tab-section__header">Типы насадок</span>
+                                                </div>
+                                            </div>
+                                            <div class="local-row">
+                                                <div class="tab-section double-long-type2">
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <span class="tab-section__header">Размер (мм).</span>
+                                                            <div class="amount-wrapper inc-and-dec-input type2__amount-wrapper">
+                                                                <input class="parent-input" value="1">
+                                                                <div class="input-btns">
+                                                                    <button class="inc-btn input-btn"><img
+                                                                            src="img/icons/calculator/alt-calc-up.png"
+                                                                            alt=""><span>+</span></button>
+                                                                    <button class="dec-btn input-btn"><img
+                                                                            src="img/icons/calculator/alt-calc-down.png"
+                                                                            alt=""><span>-</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <span class="tab-section__header">Крепление (мм).</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <div class="checkmark-block">
+                                                                <label class="label-container">Струна
+                                                                    <input class="boldTextOnClick" type="checkbox"
+                                                                           id="cap-hook">
+                                                                    <span class="custom-checkmark"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="tab-section picked-color">
                                                     <span class="tab-section__header">Цвет ограждения</span>
                                                     <span class="tab-section__sub-header">Текущий цвет</span>
@@ -1162,6 +1674,116 @@
                                     <!-- Tab inner content wrapper -->
                                     <div class="inner-wrapper">
                                         <div class="upper-part">
+                                            <div class="local-row">
+                                                <div class="tab-section pick-a-type">
+                                                        <span class="tab-section__header">
+                                                            <span>Типы калиток</span>
+                                                        </span>
+                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/kalitka1.png')">
+                                                            <input type="radio" name="type-options5"
+                                                                   id="type-option13">
+                                                            <span>SMART</span>
+                                                            <img src="img/icons/calculator/tooltip.png"
+                                                                 alt="Tooltip"
+                                                                 data-toggle="tooltip" data-placement="right"
+                                                                 title="example">
+                                                        </label>
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/kalitka1.png')">
+                                                            <input type="radio" name="type-options5"
+                                                                   id="type-option14">
+                                                            <span>PROM</span>
+                                                            <img src="img/icons/calculator/tooltip.png"
+                                                                 alt="Tooltip"
+                                                                 data-toggle="tooltip" data-placement="right"
+                                                                 title="example">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-section pick-a-pillars-width radio-options double-long">
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <div class="tab-section__header">
+                                                                <span>Ширина проема (мм)</span>
+                                                            </div>
+                                                            <div class="amount-wrapper inc-and-dec-input type2__amount-wrapper">
+                                                                <input class="parent-input" value="1">
+                                                                <div class="input-btns">
+                                                                    <button class="inc-btn input-btn"><img
+                                                                            src="img/icons/calculator/alt-calc-up.png"
+                                                                            alt=""><span>+</span></button>
+                                                                    <button class="dec-btn input-btn"><img
+                                                                            src="img/icons/calculator/alt-calc-down.png"
+                                                                            alt=""><span>-</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <div class="tab-section__header">
+                                                            <span>Тип механизма <img
+                                                                    src="img/icons/calculator/tooltip.png"
+                                                                    alt="Tooltip"
+                                                                    data-toggle="tooltip"
+                                                                    data-placement="right"
+                                                                    title="example"></span>
+                                                            </div>
+                                                            <div class="cap-for-pillar__content">
+                                                                <img src="img/icons/calculator/with-lock.png" alt="">
+                                                                <div class="checkmark-block">
+                                                                    <label class="label-container">Комплект с замком
+                                                                        <input class="boldTextOnClick" type="checkbox"
+                                                                               id="cap-hook">
+                                                                        <span class="custom-checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cap-for-pillar__content">
+                                                                <img src="img/icons/calculator/with-lock.png" alt="">
+                                                                <div class="checkmark-block">
+                                                                    <label class="label-container">Комплект без замка
+                                                                        <input class="boldTextOnClick" type="checkbox"
+                                                                               id="cap-hook" disabled>
+                                                                        <span class="custom-checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tab-section pick-a-height double-long">
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <span class="tab-section__header">
+                                                                <span>Высота (мм.)</span>
+                                                                <input type="text" value="2030">
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <div class="tab-section__header">
+                                                                <span>Количество ворот</span>
+                                                            </div>
+                                                            <div class="amount-wrapper inc-and-dec-input type2__amount-wrapper">
+                                                                <input class="parent-input" value="1">
+                                                                <div class="input-btns">
+                                                                    <button class="inc-btn input-btn"><img
+                                                                            src="img/icons/calculator/alt-calc-up.png"
+                                                                            alt=""><span>+</span></button>
+                                                                    <button class="dec-btn input-btn"><img
+                                                                            src="img/icons/calculator/alt-calc-down.png"
+                                                                            alt=""><span>-</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="local-row">
                                                 <div class="tab-section picked-color">
                                                     <span class="tab-section__header">Цвет ограждения</span>
@@ -1250,6 +1872,165 @@
                                         <!-- Upper block -->
                                         <div class="upper-part">
                                             <div class="local-row">
+                                                <div class="tab-section pick-a-type">
+                                                    <div class="first-local-wrapper">
+                                                        <span class="tab-section__header">
+                                                            <span>Распашные ворота</span>
+                                                        </span>
+                                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                            <label class="btn custom-btn"
+                                                                   style="background-image: url('img/icons/calculator/gate1.png')">
+                                                                <input type="radio" name="type-options5"
+                                                                       id="type-option13">
+                                                                <span>SMART</span>
+                                                                <img src="img/icons/calculator/tooltip.png"
+                                                                     alt="Tooltip"
+                                                                     data-toggle="tooltip" data-placement="right"
+                                                                     title="example">
+                                                            </label>
+                                                            <label class="btn custom-btn"
+                                                                   style="background-image: url('img/icons/calculator/gate2.png')">
+                                                                <input type="radio" name="type-options5"
+                                                                       id="type-option14">
+                                                                <span>PROM</span>
+                                                                <img src="img/icons/calculator/tooltip.png"
+                                                                     alt="Tooltip"
+                                                                     data-toggle="tooltip" data-placement="right"
+                                                                     title="example">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="second-local-wrapper">
+                                                        <span class="tab-section__header">
+                                                        <span>Откатные ворота</span>
+                                                    </span>
+                                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                            <label class="btn custom-btn"
+                                                                   style="background-image: url('img/icons/calculator/gate3.png')">
+                                                                <input type="radio" name="type-options5"
+                                                                       id="type-option13">
+                                                                <span>SMART</span>
+                                                                <img src="img/icons/calculator/tooltip.png"
+                                                                     alt="Tooltip"
+                                                                     data-toggle="tooltip" data-placement="right"
+                                                                     title="example">
+                                                            </label>
+                                                            <label class="btn custom-btn"
+                                                                   style="background-image: url('img/icons/calculator/gate4.png')">
+                                                                <input type="radio" name="type-options5"
+                                                                       id="type-option14">
+                                                                <span>PROM</span>
+                                                                <img src="img/icons/calculator/tooltip.png"
+                                                                     alt="Tooltip"
+                                                                     data-toggle="tooltip" data-placement="right"
+                                                                     title="example">
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-section pick-a-pillars-width radio-options double-long">
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <div class="tab-section__header">
+                                                                <span>Ширина проема (мм)</span>
+                                                            </div>
+                                                            <div class="radio-custom-group">
+                                                                <label class="green-radio">
+                                                                    <input class="with-gap" name="exampleRadios1"
+                                                                           type="radio">
+                                                                    <span>3500</span>
+                                                                </label>
+                                                                <label class="green-radio">
+                                                                    <input class="with-gap" name="exampleRadios1"
+                                                                           type="radio" disabled>
+                                                                    <span>4000</span>
+                                                                </label>
+                                                                <label class="green-radio">
+                                                                    <input class="with-gap" name="exampleRadios1"
+                                                                           type="radio">
+                                                                    <span>5000</span>
+                                                                </label>
+                                                                <label class="green-radio">
+                                                                    <input class="with-gap" name="exampleRadios1"
+                                                                           type="radio">
+                                                                    <span>6000</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <div class="tab-section__header">
+                                                            <span>Тип механизма <img
+                                                                    src="img/icons/calculator/tooltip.png"
+                                                                    alt="Tooltip"
+                                                                    data-toggle="tooltip"
+                                                                    data-placement="right"
+                                                                    title="example"></span>
+                                                            </div>
+                                                            <div class="cap-for-pillar__content">
+                                                                <img src="img/icons/calculator/mech-type1.png" alt="">
+                                                                <div class="checkmark-block">
+                                                                    <label class="label-container">С засовом
+                                                                        <input class="boldTextOnClick" type="checkbox"
+                                                                               id="cap-hook">
+                                                                        <span class="custom-checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="cap-for-pillar__content">
+                                                                <img src="img/icons/calculator/mech-type2.png" alt="">
+                                                                <div class="checkmark-block">
+                                                                    <label class="label-container">Без замка
+                                                                        <input class="boldTextOnClick" type="checkbox"
+                                                                               id="cap-hook" disabled>
+                                                                        <span class="custom-checkmark"></span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-section pick-a-height double-long">
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <span class="tab-section__header">
+                                                                <span>Высота (мм.)</span>
+                                                                <input type="text" value="2030">
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="local-inner-wrapper">
+                                                        <div class="another-wrapper">
+                                                            <div class="tab-section__header">
+                                                                <span>Количество ворот</span>
+                                                            </div>
+                                                            <div class="amount-wrapper inc-and-dec-input type2__amount-wrapper">
+                                                                <input class="parent-input" value="1">
+                                                                <div class="input-btns">
+                                                                    <button class="inc-btn input-btn"><img
+                                                                            src="img/icons/calculator/alt-calc-up.png"
+                                                                            alt=""><span>+</span></button>
+                                                                    <button class="dec-btn input-btn"><img
+                                                                            src="img/icons/calculator/alt-calc-down.png"
+                                                                            alt=""><span>-</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="local-row">
+                                                <div class="tab-section picked-color">
+                                                    <span class="tab-section__header">Цвет ограждения</span>
+                                                    <span class="tab-section__sub-header">Текущий цвет</span>
+                                                    <div class="color-row">
+                                                        <div class="picked-color__circle"
+                                                             style="background-color: green"></div>
+                                                        <span class="picked-color__name">RAL 6037</span>
+                                                    </div>
+                                                    <span class="text-tooltip">По умолчанию выбран цвет забора</span>
+                                                </div>
                                                 <div class="tab-section pick-a-color">
                                                     <span class="tab-section__header">Выбрать другой цвет</span>
                                                     <span class="tab-section__sub-header">Стандартные цвета
@@ -1289,90 +2070,6 @@
                                                         <div class="pick-a-color__color-circle"
                                                              data-paletteColor="RAL 6046"
                                                              style="background-color: darkslategrey"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section pick-a-length">
-                                                    <span class="tab-section__header">Длина секции (мм).</span>
-                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="length-options"
-                                                                   id="length-option1" checked>
-                                                            2500
-                                                        </label>
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="length-options"
-                                                                   id="length-option2"> 3000
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section picked-color">
-                                                    <span class="tab-section__header">Цвет ограждения</span>
-                                                    <span class="tab-section__sub-header">Текущий цвет</span>
-                                                    <div class="color-row">
-                                                        <div class="picked-color__circle"
-                                                             style="background-color: green"></div>
-                                                        <span class="picked-color__name">RAL 6037</span>
-                                                    </div>
-                                                    <span class="text-tooltip">По умолчанию выбран цвет забора</span>
-                                                </div>
-                                                <div class="tab-section pick-bends-amount">
-                                                    <span class="tab-section__header">Количество сгибов</span>
-                                                    <div class="bends-count-wrapper">
-                                                        <img src="img/icons/calculator/bends.png" alt="">
-                                                        <div class="amount-wrapper inc-and-dec-input">
-                                                            <input class="parent-input" value="1">
-                                                            <div class="input-btns">
-                                                                <button class="inc-btn input-btn">+</button>
-                                                                <button class="dec-btn input-btn">-</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="local-row">
-                                                <div class="tab-section pick-diameter1">
-                                                    <span class="tab-section__header">Диаметр прутка (мм).</span>
-                                                    <div class="bends-count-wrapper">
-                                                        <div class="show-diameter1">
-                                                            <img src="img/icons/calculator/diameter-1.png" alt="">
-                                                            <div class="diameter1NumValue-wrapper">
-                                                                <span class="diameter1NumValue"></span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="amount-wrapper inc-and-dec-input diameter1-step">
-                                                            <input class="parent-input diameter1-input" value="3.5">
-                                                            <div class="input-btns">
-                                                                <button class="inc-btn for-diameter1">+</button>
-                                                                <button class="dec-btn for-diameter1">-</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section pick-a-cell-size">
-                                                    <span class="tab-section__header">Размер ячейки (мм).</span>
-                                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="size-options"
-                                                                   id="size-option1" checked>
-                                                            60x200
-                                                        </label>
-                                                        <label class="btn custom-btn">
-                                                            <input type="radio" name="size-options"
-                                                                   id="size-option2"> 55x200
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-section pick-tripletirs-amount">
-                                                    <span class="tab-section__header">Количество триплетиров</span>
-                                                    <div class="bends-count-wrapper">
-                                                        <img src="img/icons/calculator/tripletir.png" alt="">
-                                                        <div class="amount-wrapper inc-and-dec-input">
-                                                            <input class="parent-input" value="1">
-                                                            <div class="input-btns">
-                                                                <button class="inc-btn input-btn">+</button>
-                                                                <button class="dec-btn input-btn">-</button>
-                                                            </div>
-                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1431,7 +2128,8 @@
                                                     <div class="ul-wrapper">
                                                         <ul class="ul-of-params">
                                                             <li><span>Тип забора:</span><span>3Д забор</span></li>
-                                                            <li><span>Размер секции:</span><span>2550x1750</span></li>
+                                                            <li><span>Размер секции:</span><span>2550x1750</span>
+                                                            </li>
                                                             <li><span>Высота секции:</span><span>2030 м.</span></li>
                                                             <li><span>Длина секции:</span><span>2500 мм.</span></li>
                                                             <li><span>Высота секции:</span><span>2030 м.</span></li>
@@ -1617,8 +2315,10 @@
                                 </tr>
                                 <!-- Table content -->
                                 <tr>
-                                    <td>Наша компания предлагает на выгодных условиях заказать панельные 3D-ограждения
-                                        для обустройства различных территорий. Продукция отличается высоким качеством и
+                                    <td>Наша компания предлагает на выгодных условиях заказать панельные
+                                        3D-ограждения
+                                        для обустройства различных территорий. Продукция отличается высоким
+                                        качеством и
                                         предлагается по привлекательным ценам. Данные конструкции используются для
                                         ограждения территорий торгово-складских комплексов, коттеджных поселков,
                                         промышленных предприятий, логистических парков.
@@ -1638,8 +2338,10 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Наша компания предлагает на выгодных условиях заказать панельные 3D-ограждения
-                                        для обустройства различных территорий. Продукция отличается высоким качеством и
+                                    <td>Наша компания предлагает на выгодных условиях заказать панельные
+                                        3D-ограждения
+                                        для обустройства различных территорий. Продукция отличается высоким
+                                        качеством и
                                         предлагается по привлекательным ценам. Данные конструкции используются для
                                         ограждения территорий торгово-складских комплексов, коттеджных поселков,
                                         промышленных предприятий, логистических парков.
@@ -1659,8 +2361,10 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Наша компания предлагает на выгодных условиях заказать панельные 3D-ограждения
-                                        для обустройства различных территорий. Продукция отличается высоким качеством и
+                                    <td>Наша компания предлагает на выгодных условиях заказать панельные
+                                        3D-ограждения
+                                        для обустройства различных территорий. Продукция отличается высоким
+                                        качеством и
                                         предлагается по привлекательным ценам. Данные конструкции используются для
                                         ограждения территорий торгово-складских комплексов, коттеджных поселков,
                                         промышленных предприятий, логистических парков.
@@ -1745,7 +2449,8 @@
                                         ограждения территорий торгово-складских комплексов, коттеджных поселков,
                                         промышленных предприятий, логистических парков.</span></div>
                                 <div class="spec-line"><span>Цена, руб (шт.)</span><span>1230</span></div>
-                                <div class="spec-line"><span>Кол-во (шт.)</span><input type="number" value="255"></div>
+                                <div class="spec-line"><span>Кол-во (шт.)</span><input type="number" value="255">
+                                </div>
                                 <div class="spec-line"><span>Cумма, руб.</span><span>1230</span></div>
                                 <div class="bottom-part">
                                     <span class="local-header">Параметры забора</span>
@@ -1859,16 +2564,19 @@
                                                         </button>
                                                         <div class="dropdown-menu">
                                                             <a class="dropdown-item dropdown-hook">Action</a>
-                                                            <a class="dropdown-item dropdown-hook">Another action</a>
+                                                            <a class="dropdown-item dropdown-hook">Another
+                                                                action</a>
                                                             <a class="dropdown-item dropdown-hook">Something else
                                                                 here</a>
-                                                            <a class="dropdown-item dropdown-hook">Separated link</a>
+                                                            <a class="dropdown-item dropdown-hook">Separated
+                                                                link</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="price-wrapper">
-                                                <span id="delivery-price" data-deliveryPrice="7500">7 500 руб.</span>
+                                                    <span id="delivery-price"
+                                                          data-deliveryPrice="7500">7 500 руб.</span>
                                             </div>
                                         </div>
                                         <div class="single-line sm-line">

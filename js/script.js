@@ -653,11 +653,42 @@ if (document.getElementById('calculator-page')) {
         }
     })
 
+    // On fence type change swap layout
+    // On page load
+
+    let setDefaultType = (value) => {
+
+        document.querySelector('.determine-type').querySelectorAll('.tab-section').forEach(el => {
+            el.style.display = 'none';
+        });
+
+        [...document.querySelector('.determine-type').querySelectorAll('.tab-section')].filter(el =>
+            el.getAttribute('data-typeSwap') === value || el.getAttribute('data-typeSwap') === 'type-factor' || el.getAttribute('data-typeSwap') === 'color-block'
+        ).map(el => {
+            el.style.display = 'flex'
+        })
+    }
+
+    setDefaultType('3D');
+
+    document.querySelectorAll('.fence-type-hook').forEach(el => {
+        el.addEventListener('change', e => {
+            if (e.target.value === '3D') {
+                setDefaultType('3D')
+            } else if (e.target.value === '2D') {
+                setDefaultType('2D')
+            } else {
+                setDefaultType('Tech')
+            }
+        })
+    })
+
+    // Color picker logic
 
     document.querySelectorAll('.pick-a-color__color-circle').forEach(el =>
         el.addEventListener('click', (e) => {
-            document.querySelector('.picked-color__circle').style.backgroundColor = e.target.style.backgroundColor;
-            document.querySelector('.picked-color__name').innerHTML = e.target.getAttribute('data-paletteColor');
+            el.parentElement.parentElement.parentElement.querySelector('.picked-color__circle').style.backgroundColor = e.target.style.backgroundColor;
+            el.parentElement.parentElement.parentElement.querySelector('.picked-color__name').innerHTML = e.target.getAttribute('data-paletteColor');
         })
     )
 
@@ -739,6 +770,30 @@ if (document.getElementById('calculator-page')) {
             document.querySelector('.diameter2DValue').innerHTML = e.target.value
         })
     }
+
+    document.querySelectorAll('.secheniye-option').forEach(el => {
+        el.addEventListener('change', e => {
+            document.querySelector('.secheniye-value__span').innerHTML = e.target.value;
+        })
+    })
+
+    document.querySelector('.tabs-wrapper').querySelectorAll('.label-container').forEach(el => {
+        let bold = 1;
+        el.addEventListener('click', e => {
+
+            if (e.target.classList.contains('boldTextOnClick')) {
+                bold = !bold;
+            }
+            if (!e.target.querySelector('.boldTextOnClick').disabled) {
+                if (bold) {
+                    e.target.style.fontWeight = '700'
+
+                } else {
+                    e.target.style.fontWeight = '400'
+                }
+            }
+        })
+    })
 
 }
 
