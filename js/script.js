@@ -658,15 +658,27 @@ if (document.getElementById('calculator-page')) {
 
     let setDefaultType = (value) => {
 
-        document.querySelector('.determine-type').querySelectorAll('.tab-section').forEach(el => {
-            el.style.display = 'none';
+        // document.querySelector('.determine-type').querySelectorAll('.tab-section').forEach(el => {
+        //     el.style.display = 'none';
+        // });
+
+        document.querySelectorAll('.determine-type').forEach(el => {
+            el.querySelectorAll('.tab-section').forEach(el => {
+                el.style.display = 'none'
+            })
         });
 
         [...document.querySelector('.determine-type').querySelectorAll('.tab-section')].filter(el =>
             el.getAttribute('data-typeSwap') === value || el.getAttribute('data-typeSwap') === 'type-factor' || el.getAttribute('data-typeSwap') === 'color-block'
         ).map(el => {
             el.style.display = 'flex'
-        })
+        });
+
+        [...document.querySelector('.determine-type-accordion').querySelectorAll('.tab-section')].filter(el =>
+            el.getAttribute('data-typeSwap') === value || el.getAttribute('data-typeSwap') === 'type-factor' || el.getAttribute('data-typeSwap') === 'color-block'
+        ).map(el => {
+            el.style.display = 'flex'
+        });
     }
 
     setDefaultType('3D');
@@ -794,6 +806,27 @@ if (document.getElementById('calculator-page')) {
             }
         })
     })
+
+    document.querySelector('.pick-a-filling-type').querySelectorAll('.inner-wrapper-type2').forEach(el => {
+            if (el.classList.contains('disabled')) {
+                el.style.pointerEvents = 'none';
+            }
+
+            el.querySelectorAll('.filling-type-selector').forEach(el => {
+                el.addEventListener('click', e => {
+                    if (e.target.classList.contains('boldTextOnClick')) {
+                        console.log(e.target.checked)
+                        if (e.target.checked) {
+                            e.target.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.left-col').querySelector('.img-wrapper').style.borderColor = 'black';
+                        } else {
+                            e.target.parentElement.parentElement.parentElement.parentElement.parentElement.querySelector('.left-col').querySelector('.img-wrapper').style.borderColor = 'transparent';
+                        }
+                    }
+                })
+            })
+
+        }
+    )
 
 }
 
