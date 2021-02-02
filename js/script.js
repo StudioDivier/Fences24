@@ -674,11 +674,11 @@ if (document.getElementById('calculator-page')) {
             el.style.display = 'flex'
         });
 
-        [...document.querySelector('.determine-type-accordion').querySelectorAll('.tab-section')].filter(el =>
-            el.getAttribute('data-typeSwap') === value || el.getAttribute('data-typeSwap') === 'type-factor' || el.getAttribute('data-typeSwap') === 'color-block'
-        ).map(el => {
-            el.style.display = 'flex'
-        });
+        // [...document.querySelector('.determine-type-accordion').querySelectorAll('.tab-section')].filter(el =>
+        //     el.getAttribute('data-typeSwap') === value || el.getAttribute('data-typeSwap') === 'type-factor' || el.getAttribute('data-typeSwap') === 'color-block'
+        // ).map(el => {
+        //     el.style.display = 'flex'
+        // });
     }
 
     setDefaultType('3D');
@@ -701,6 +701,8 @@ if (document.getElementById('calculator-page')) {
         el.addEventListener('click', (e) => {
             el.parentElement.parentElement.parentElement.querySelector('.picked-color__circle').style.backgroundColor = e.target.style.backgroundColor;
             el.parentElement.parentElement.parentElement.querySelector('.picked-color__name').innerHTML = e.target.getAttribute('data-paletteColor');
+            // e.target.closest('.bottom-part').document.querySelector('.params__picked-color').style.backgroundColor = e.target.style.backgroundColor;
+            e.target.closest('.inner-wrapper').querySelector('.params__picked-color').style.backgroundColor = e.target.style.backgroundColor;
         })
     )
 
@@ -824,9 +826,40 @@ if (document.getElementById('calculator-page')) {
                     }
                 })
             })
-
         }
     )
+
+    // Tabs footer updates logic
+
+    let updateTabFooter = (name, value) => {
+        let matchInput = Array.from(document.querySelectorAll('input')).filter(elem => elem.name === name)
+        console.log(matchInput)
+
+        let matchValue = Array.from(document.querySelectorAll('.single-param__num')).filter(elem => elem.getAttribute('data-inputHook') === name)
+        console.log(matchValue)
+
+        matchValue[0].innerHTML = value
+    }
+
+    document.querySelectorAll('.info-tabcontent').forEach(element => {
+
+        element.querySelectorAll('input').forEach(el => {
+            let eventListener;
+
+            if (el.type === 'checkbox' || el.type === 'radio') {
+                eventListener = 'change'
+            } else {
+                eventListener = 'input'
+            }
+
+            el.addEventListener(eventListener, () => {
+                // console.log(el.name)
+                // console.log(el.value)
+                updateTabFooter(el.name, el.value)
+            })
+        })
+
+    })
 
 }
 
