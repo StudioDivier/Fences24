@@ -1,3 +1,23 @@
+let manipulateIndexAdvFeatures = () => {
+    let firstSelect = document.querySelectorAll('.adv-features');
+    firstSelect.forEach(element => {
+        element.querySelectorAll('.inner-wrapper').forEach(elem => {
+        elem.querySelectorAll('.feature-header').forEach(el => {
+            el.addEventListener('click', (e) => {
+                let secondSelect = el.closest('.inner-wrapper').querySelector('.inner-wrapper-content');
+                if (!secondSelect.classList.contains('index__custom-transform')) {
+                    secondSelect.classList.add('index__custom-transform')
+                } else {
+                    secondSelect.classList.remove('index__custom-transform')
+                }
+            })
+        })
+    });
+    })
+}
+
+manipulateIndexAdvFeatures()
+
 // Enable tooltips ------------------------------------
 
 $(function () {
@@ -592,6 +612,5 @@ if (document.getElementById('customUploadInput')) {
     //     console.log('not loaded')
     // }
 }
-
 
 

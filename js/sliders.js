@@ -386,243 +386,258 @@ $('.schemes-and-drawings__slider-wrapper').slick({
 //     animate: 300
 // });
 
-$(".flat-slider")
-    .slider({
-        range: "min",
-        min: 0,
-        max: 500
-    })
-    .slider("pips", {
-        rest: "label",
-        step: 25,
-        suffix: ' м.',
-    })
-    .slider("float", {});
+if (document.querySelector('#calculator-page')) {
 
-$(".flat-slider-vertical-3")
-    .slider({
-        max: 2790,
-        min: 0,
-        step: 465,
-        range: "min",
-        value: 0,
-        orientation: "vertical"
-    })
-    .slider("pips", {
-        rest: "label",
-        // step: 465,
-    })
-    .slider("float", {});
+    $(".flat-slider")
+        .slider({
+            range: "min",
+            min: 0,
+            max: 500
+        })
+        .slider("pips", {
+            rest: "label",
+            step: 25,
+            suffix: ' м.',
+        })
+        .slider("float", {});
 
-$(".flat-slider-vertical-4")
-    .slider({
-        max: 2790,
-        min: 0,
-        step: 465,
-        range: "min",
-        value: 0,
-        orientation: "vertical"
-    })
-    .slider("pips", {
-        rest: "label",
-        // step: 465,
-    })
-    .slider("float", {});
+    $(".flat-slider-vertical-3")
+        .slider({
+            max: 2790,
+            min: 530,
+            step: 465,
+            range: "min",
+            value: 1860,
+            orientation: "vertical"
+        })
+        .slider("pips", {
+            rest: "label",
+            // step: 465,
+        })
+        .slider("float", {});
 
-$(".flat-slider-vertical-5")
-    .slider({
-        max: 5050,
-        min: 0,
-        step: 1010,
-        range: "min",
-        value: 0,
-        orientation: "vertical"
-    })
-    .slider("pips", {
-        rest: "label",
-        // step: 465,
-    })
-    .slider("float", {});
+    $(".flat-slider-vertical-4")
+        .slider({
+            max: 2790,
+            min: 0,
+            step: 465,
+            range: "min",
+            value: 0,
+            orientation: "vertical"
+        })
+        .slider("pips", {
+            rest: "label",
+            // step: 465,
+        })
+        .slider("float", {});
 
-$(".flat-slider-vertical-6")
-    .slider({
-        max: 6000,
-        min: 0,
-        step: 1000,
-        range: "min",
-        value: 0,
-        orientation: "vertical"
-    })
-    .slider("pips", {
-        rest: "label",
-        // step: 465,
-    })
-    .slider("float", {});
+    $(".flat-slider-vertical-5")
+        .slider({
+            max: 5050,
+            min: 0,
+            step: 1010,
+            range: "min",
+            value: 0,
+            orientation: "vertical"
+        })
+        .slider("pips", {
+            rest: "label",
+            // step: 465,
+        })
+        .slider("float", {});
 
-$(".flat-slider-vertical-7")
-    .slider({
-        max: 2000,
-        min: 0,
-        step: 400,
-        range: "min",
-        value: 0,
-        orientation: "vertical"
-    })
-    .slider("pips", {
-        rest: "label",
-        // step: 465,
-    })
-    .slider("float", {});
+    $(".flat-slider-vertical-6")
+        .slider({
+            max: 6000,
+            min: 0,
+            step: 1000,
+            range: "min",
+            value: 0,
+            orientation: "vertical"
+        })
+        .slider("pips", {
+            rest: "label",
+            // step: 465,
+        })
+        .slider("float", {});
 
-$(".flat-slider-vertical-8")
-    .slider({
-        max: 2000,
-        min: 0,
-        step: 400,
-        range: "min",
-        value: 0,
-        orientation: "vertical"
-    })
-    .slider("pips", {
-        rest: "label",
-        // step: 465,
-    })
-    .slider("float", {});
+    $(".flat-slider-vertical-7")
+        .slider({
+            max: 2000,
+            min: 0,
+            step: 400,
+            range: "min",
+            value: 0,
+            orientation: "vertical"
+        })
+        .slider("pips", {
+            rest: "label",
+            // step: 465,
+        })
+        .slider("float", {});
 
-$(".flat-slider-vertical-9")
-    .slider({
-        max: 2000,
-        min: 0,
-        step: 400,
-        range: "min",
-        value: 0,
-        orientation: "vertical"
-    })
-    .slider("pips", {
-        rest: "label",
-        // step: 465,
-    })
-    .slider("float", {});
+    $(".flat-slider-vertical-8")
+        .slider({
+            max: 2000,
+            min: 0,
+            step: 400,
+            range: "min",
+            value: 0,
+            orientation: "vertical"
+        })
+        .slider("pips", {
+            rest: "label",
+            // step: 465,
+        })
+        .slider("float", {});
 
-$(function () {
-    var sliderLength = $(".flat-slider"),
-        inputLength = document.querySelectorAll('.tab1__length-input'),
-        endValue = document.querySelectorAll('.tab1__lengthEndValue'),
+    $(".flat-slider-vertical-9")
+        .slider({
+            max: 2000,
+            min: 0,
+            step: 400,
+            range: "min",
+            value: 0,
+            orientation: "vertical"
+        })
+        .slider("pips", {
+            rest: "label",
+            // step: 465,
+        })
+        .slider("float", {});
 
-        sliderHeight1 = $(".flat-slider-vertical-3"),
-        inputHeight1 = document.querySelectorAll('.tab1__height-input'),
-        endValue1 = document.querySelectorAll('.tab1__heightEndValue'),
+    $(function () {
+        var sliderLength = $(".flat-slider"),
+            inputLength = document.querySelectorAll('.tab1__length-input'),
+            endValue = document.querySelectorAll('.tab1__lengthEndValue'),
 
-        sliderHeight4 = $(".flat-slider-vertical-4"),
-        inputHeight4 = document.querySelectorAll('.tab4__height-input'),
-        endValue4 = document.querySelectorAll('.tab4__heightEndValue'),
+            sliderHeight1 = $(".flat-slider-vertical-3"),
+            inputHeight1 = document.querySelectorAll('.tab2__height-input'),
+            endValue1 = document.querySelectorAll('.jesusChristPlsWork'),
 
-        sliderHeight5 = $(".flat-slider-vertical-5"),
-        inputHeight5 = document.querySelectorAll('.tab5__height-input'),
-        endValue5 = document.querySelectorAll('.tab5__heightEndValue'),
+            sliderHeight4 = $(".flat-slider-vertical-4"),
+            inputHeight4 = document.querySelectorAll('.tab4__height-input'),
+            endValue4 = document.querySelectorAll('.tab4__heightEndValue'),
 
-        sliderHeight6 = $(".flat-slider-vertical-6"),
-        inputHeight6 = document.querySelectorAll('.tab6__height-input'),
-        endValue6 = document.querySelectorAll('.tab6__heightEndValue'),
+            sliderHeight5 = $(".flat-slider-vertical-5"),
+            inputHeight5 = document.querySelectorAll('.tab5__height-input'),
+            endValue5 = document.querySelectorAll('.tab5__heightEndValue'),
 
-        sliderHeight7 = $(".flat-slider-vertical-7"),
-        inputHeight7 = document.querySelectorAll('.tab7__height-input'),
-        endValue7 = document.querySelectorAll('.tab7__heightEndValue'),
+            sliderHeight6 = $(".flat-slider-vertical-6"),
+            inputHeight6 = document.querySelectorAll('.tab6__height-input'),
+            endValue6 = document.querySelectorAll('.tab6__heightEndValue'),
 
-        sliderHeight8 = $(".flat-slider-vertical-8"),
-        inputHeight8 = document.querySelectorAll('.tab8__height-input'),
-        endValue8 = document.querySelectorAll('.tab8__heightEndValue'),
+            sliderHeight7 = $(".flat-slider-vertical-7"),
+            inputHeight7 = document.querySelectorAll('.tab7__height-input'),
+            endValue7 = document.querySelectorAll('.tab7__heightEndValue'),
 
-        sliderHeight9 = $(".flat-slider-vertical-9"),
-        inputHeight9 = document.querySelectorAll('.tab9__height-input'),
-        endValue9 = document.querySelectorAll('.tab9__heightEndValue'),
+            sliderHeight8 = $(".flat-slider-vertical-8"),
+            inputHeight8 = document.querySelectorAll('.tab8__height-input'),
+            endValue8 = document.querySelectorAll('.tab8__heightEndValue'),
 
-        min,
-        max;
+            sliderHeight9 = $(".flat-slider-vertical-9"),
+            inputHeight9 = document.querySelectorAll('.tab9__height-input'),
+            endValue9 = document.querySelectorAll('.tab9__heightEndValue'),
 
-    let autoLink = (a, b, c, min, max) => {
+            min,
+            max;
 
-        $.map(a, function () {
-            $(this).on("slide", function (e, ui) {
-                b.forEach(el => {
-                    console.log(el)
-                    el.value = ui.value
-                })
-                c.forEach(el => {
-                    el.innerHTML = ui.value;
+        let autoLink = (a, b, c, min, max) => {
+
+            $.map(a, (elem) => {
+                // console.log(elem)
+                $(elem).on("slide", function (e, ui) {
+
+                    b.forEach(el => {
+                        // console.log(el)
+                        el.value = ui.value
+                    })
+                    c.forEach(el => {
+                        el.innerHTML = ui.value;
+                    })
+                });
+            })
+
+            b.forEach(el => {
+                el.addEventListener("input", function (e) {
+                    // console.log(e.target);
+                    var num = parseFloat(el.value),
+                        isProblem = false;
+
+                    if (num === num) {
+
+                        if (num < min) {
+                            num = min;
+                        } else if (num > max) {
+                            num = max;
+                        }
+
+                        // for (let i = 0; i < a.length; i++) {
+                        //     $(a[i]).slider("value", num)
+                        // }
+                        a.slider("value", num);
+
+                        b.forEach(el => {
+                            el.value = num
+                        })
+
+                    } else {
+                        alert("Введите число");
+                    }
                 })
             });
+        }
+
+        autoLink(sliderLength, inputLength, endValue, 0, 5000);
+        autoLink(sliderHeight1, inputHeight1, endValue1, 0, 2790);
+        autoLink(sliderHeight4, inputHeight4, endValue4, 0, 2000);
+        autoLink(sliderHeight5, inputHeight5, endValue5, 0, 5050);
+        autoLink(sliderHeight6, inputHeight6, endValue6, 0, 6000);
+        autoLink(sliderHeight7, inputHeight7, endValue7, 0, 2000);
+        autoLink(sliderHeight8, inputHeight8, endValue8, 0, 2000);
+        autoLink(sliderHeight9, inputHeight9, endValue9, 0, 2000);
+
+        document.querySelectorAll('.ui-slider-pip').forEach(el => {
+            el.addEventListener('click', (e) => {
+                // Change closest input value
+                // let targetValue = e.target.innerHTML;
+                let targetValue = el.querySelector('.ui-slider-label').innerHTML;
+                let neededInput = el.closest('.input-outer-wrapper').parentElement.querySelector('.tab-section__header').querySelector('input')
+                neededInput.value = targetValue;
+
+                // Change associated span in tab footer
+                let targetInputName = neededInput.name + 'EndValue';
+                // console.log(document.querySelector(`.${targetInputName}`))
+                document.querySelectorAll(`.${targetInputName}`).forEach(el => {
+                    el.innerHTML = targetValue;
+                })
+            })
         })
 
-        b.forEach(el => {
-            el.addEventListener("input", function (e) {
-                console.log(e.target);
-                var num = parseFloat(el.value),
-                    isProblem = false;
+        document.querySelectorAll('#flat-slider').forEach(elem => {
+            elem.querySelectorAll('.ui-slider-pip').forEach(el => {
+                el.addEventListener('click', (e) => {
 
-                if (num === num) {
+                    // Change closest input value
+                    // let targetValue = e.target.innerHTML;
+                    let targetValue = el.querySelector('.ui-slider-label').innerHTML;
+                    let neededInput = el.closest('.tab-section').querySelector('.tab-section__header').querySelector('input')
+                    neededInput.value = targetValue;
 
-                    if (num < min) {
-                        num = min;
-                    } else if (num > max) {
-                        num = max;
-                    }
-
-                    // for (let i = 0; i < a.length; i++) {
-                    //     $(a[i]).slider("value", num)
-                    // }
-                    a.slider("value", num);
-                    b.forEach(el => {
-                        el.value = num
+                    // Change associated span in tab footer
+                    let targetInputName = neededInput.name + 'EndValue';
+                    // console.log(document.querySelector(`.${targetInputName}`))
+                    document.querySelectorAll(`.${targetInputName}`).forEach(el => {
+                        el.innerHTML = targetValue;
                     })
-
-                } else {
-                    alert("Введите число");
-                }
-            })
-        });
-    }
-
-    autoLink(sliderLength, inputLength, endValue, 0, 500);
-    // autoLink(sliderHeight1, inputHeight1, endValue1, 0, 2400);
-    autoLink(sliderHeight4, inputHeight4, endValue4, 0, 2000);
-    autoLink(sliderHeight5, inputHeight5, endValue5, 0, 2000);
-    autoLink(sliderHeight6, inputHeight6, endValue6, 0, 2000);
-    autoLink(sliderHeight7, inputHeight7, endValue7, 0, 2000);
-    autoLink(sliderHeight8, inputHeight8, endValue8, 0, 2000);
-    autoLink(sliderHeight9, inputHeight9, endValue9, 0, 2000);
-
-    document.querySelectorAll('.ui-slider-pip').forEach(el => {
-        el.addEventListener('click', (e) => {
-            // Change closest input value
-            let targetValue = e.target.innerHTML;
-            let neededInput = el.closest('.input-outer-wrapper').parentElement.querySelector('.tab-section__header').querySelector('input')
-            neededInput.value = targetValue;
-
-            // Change associated span in tab footer
-            let targetInputName = neededInput.name + 'EndValue';
-            console.log(document.querySelector(`.${targetInputName}`))
-            document.querySelectorAll(`.${targetInputName}`).forEach(el => {
-                el.innerHTML = targetValue;
+                })
             })
         })
+
     })
 
-    document.querySelector('#flat-slider').querySelectorAll('.ui-slider-pip').forEach(el => {
-        el.addEventListener('click', (e) => {
-
-            // Change closest input value
-            let targetValue = e.target.innerHTML;
-            let neededInput = el.closest('.tab-section').querySelector('.tab-section__header').querySelector('input')
-            neededInput.value = targetValue;
-
-            // Change associated span in tab footer
-            let targetInputName = neededInput.name + 'EndValue';
-            console.log(document.querySelector(`.${targetInputName}`))
-            document.querySelectorAll(`.${targetInputName}`).forEach(el => {
-                el.innerHTML = targetValue;
-            })
-        })
+    document.querySelector('.tab2__height-input').addEventListener('input', e => {
+        console.log(e.target.value)
     })
 
-})
+}

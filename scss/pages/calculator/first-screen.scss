@@ -331,6 +331,7 @@
 
             @include sm-max {
               font-size: 14px;
+              //padding: 23px;
             }
 
             &:hover {
@@ -774,12 +775,16 @@
 
                     .picked-color__circle {
                       border: 3px solid #0b2842;
-                      border-radius: 15px;
-                      width: 31px;
-                      height: 31px;
+                      border-radius: 50px;
+                      width: 62px;
+                      height: 62px;
+                      @include lg-max {
+                        width: 45px;
+                        height: 45px;
+                      }
                       @include md-max {
-                        width: 25px;
-                        height: 25px;
+                        width: 35px;
+                        height: 35px;
                       }
                       margin-right: 15px;
                     }
@@ -1425,7 +1430,8 @@
                     align-items: flex-end;
                     @include sm-max {
                       margin-bottom: 25px;
-                    };
+                    }
+                  ;
 
                     img {
                       margin-left: 55px;
@@ -1445,7 +1451,7 @@
               background-color: #f0f4f7;
               display: flex;
               flex-direction: row;
-              align-items: center;
+              align-items: flex-start;
               flex-wrap: wrap;
               @include min-w(2000) {
                 //align-items: flex-start;
@@ -1453,10 +1459,11 @@
 
               .bottom-part__header {
                 width: 100%;
+                display: block;
                 font-size: 18px;
                 color: $green-color;
                 font-weight: 700;
-                padding-bottom: 25px;
+                margin-bottom: 25px;
                 @include adjustableText(12px, 14px, 16px, 20px);
               }
 
@@ -1534,18 +1541,26 @@
                 }
               }
 
-              .white-block {
-                padding: 25px;
-                background-color: white;
+              .white-block-wrapper {
+                display: flex;
+                flex-direction: column;
                 width: calc(100% * (1 / 3) - 30px);
                 margin-left: 30px;
                 @include xxl-max {
                   margin-left: 0;
-                  margin-top: 10px;
                   width: 100%;
                 }
                 @include md-max {
                   margin-top: 20px;
+                }
+              }
+
+              .white-block {
+                padding: 25px;
+                background-color: white;
+                width: 100%;
+                @include sm-max {
+                  padding: 15px;
                 }
 
                 div {

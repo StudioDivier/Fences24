@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <!-- jQuery -->
     <!--    <script src="https://code.jquery.com/jquery-3.5.1.min.js"-->
     <!--            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="-->
@@ -12,6 +12,8 @@
             crossorigin="anonymous"></script>
     <!-- jQuery UI -->
     <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <script type="text/javascript"
+            src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <!-- Input mask -->
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
     <!-- Bootstrap -->
@@ -275,8 +277,8 @@
                                                 <div class="tab-section pick-a-height">
                                                     <span class="tab-section__header">
                                                         <span>Высота (мм.)</span>
-                                                        <input type="text" value="0" name="tab1__height"
-                                                               class="tab1__height-input">
+                                                        <input type="text" value="1860" name="tab2__height"
+                                                               class="tab2__height-input">
                                                     </span>
                                                     <div class="input-outer-wrapper">
                                                         <div id="flat-slider-vertical-3"
@@ -341,15 +343,15 @@
                                         </div>
                                         <!-- Bottom block -->
                                         <div class="bottom-part ">
-                                            <span class="bottom-part__header">Стоимость</span>
                                             <div class="ul-wrapper">
+                                                <span class="bottom-part__header">Параметры</span>
                                                 <ul class="ul-of-params">
                                                     <li><span>Длина периметра:</span><span class="params__single-param"><span
                                                             class="single-param__num tab1__lengthEndValue"
                                                             data-inputHook="tab1__length">250</span> метров</span></li>
                                                     <li><span>Высота:</span><span class="params__single-param"><span
-                                                            class="single-param__num tab1__heightEndValue"
-                                                            data-inputHook="tab1__height">2030</span> метров</span></li>
+                                                            class="single-param__num jesusChristPlsWork"
+                                                            data-inputHook="tab2__height">2030</span> метров</span></li>
                                                     <li><span>Цвет ограждения:</span><span></span>
                                                         <div class="color-wrapper">
                                                             <div class="params__picked-color"></div>
@@ -357,9 +359,12 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="white-block">
-                                                <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                            <div class="white-block-wrapper">
+                                                <span class="bottom-part__header">Стоимость</span>
+                                                <div class="white-block">
+                                                    <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                    <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -496,10 +501,11 @@
                                                     <div class="bends-count-wrapper">
                                                         <img src="img/icons/calculator/bends.png" alt="">
                                                         <div class="amount-wrapper inc-and-dec-input">
-                                                            <input class="parent-input" value="1">
+                                                            <input class="parent-input bendsPreventTyping" value="1"
+                                                                   disabled>
                                                             <div class="input-btns">
-                                                                <button class="inc-btn input-btn">+</button>
-                                                                <button class="dec-btn input-btn">-</button>
+                                                                <!--                                                                <button class="inc-btn input-btn">+</button>-->
+                                                                <!--                                                                <button class="dec-btn input-btn">-</button>-->
                                                             </div>
                                                         </div>
                                                     </div>
@@ -713,8 +719,8 @@
                                         </div>
                                         <!-- Bottom block -->
                                         <div class="bottom-part">
-                                            <span class="bottom-part__header">Стоимость</span>
                                             <div class="ul-wrapper">
+                                                <span class="bottom-part__header">Параметры</span>
                                                 <ul class="ul-of-params">
                                                     <li><span>Тип забора:</span><span>3Д забор</span></li>
                                                     <li><span>Размер секции:</span><span><span class="single-param__num"
@@ -743,9 +749,12 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="white-block">
-                                                <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                            <div class="white-block-wrapper">
+                                                <span class="bottom-part__header">Стоимость</span>
+                                                <div class="white-block">
+                                                    <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                    <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -963,8 +972,8 @@
 
                                         <!-- Bottom block -->
                                         <div class="bottom-part">
-                                            <span class="bottom-part__header">Стоимость</span>
                                             <div class="ul-wrapper">
+                                                <span class="bottom-part__header">Параметры</span>
                                                 <ul class="ul-of-params">
                                                     <li><span>Тип крепления:</span><span><span class="single-param__num"
                                                                                                data-inputHook="tab5__holderType">под бетонирование</span></span>
@@ -992,9 +1001,12 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="white-block">
-                                                <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                            <div class="white-block-wrapper">
+                                                <span class="bottom-part__header">Стоимость</span>
+                                                <div class="white-block">
+                                                    <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                    <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1191,8 +1203,8 @@
 
                                         <!-- Bottom block -->
                                         <div class="bottom-part">
-                                            <span class="bottom-part__header">Стоимость</span>
                                             <div class="ul-wrapper">
+                                                <span class="bottom-part__header">Параметры</span>
                                                 <ul class="ul-of-params">
                                                     <li><span>Тип крепления:</span><span><span class="single-param__num"
                                                                                                data-inputHook="tab6__holderType">хомут</span></span>
@@ -1219,9 +1231,12 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="white-block">
-                                                <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                            <div class="white-block-wrapper">
+                                                <span class="bottom-part__header">Стоимость</span>
+                                                <div class="white-block">
+                                                    <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                    <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1522,8 +1537,8 @@
 
                                         <!-- Bottom block -->
                                         <div class="bottom-part">
-                                            <span class="bottom-part__header">Стоимость</span>
                                             <div class="ul-wrapper">
+                                                <span class="bottom-part__header">Параметры</span>
                                                 <ul class="ul-of-params">
                                                     <li><span>Тип заполнения:</span><span><span
                                                             class="single-param__num"
@@ -1550,9 +1565,12 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="white-block">
-                                                <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                            <div class="white-block-wrapper">
+                                                <span class="bottom-part__header">Стоимость</span>
+                                                <div class="white-block">
+                                                    <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                    <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1744,8 +1762,8 @@
 
                                         <!-- Bottom block -->
                                         <div class="bottom-part">
-                                            <span class="bottom-part__header">Стоимость</span>
                                             <div class="ul-wrapper">
+                                                <span class="bottom-part__header">Параметры</span>
                                                 <ul class="ul-of-params">
                                                     <li><span>Типы калиток:</span><span><span class="single-param__num"
                                                                                               data-inputHook="tab8__smGate-type">PROM</span></span>
@@ -1771,9 +1789,12 @@
 
                                                 </ul>
                                             </div>
-                                            <div class="white-block">
-                                                <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                            <div class="white-block-wrapper">
+                                                <span class="bottom-part__header">Стоимость</span>
+                                                <div class="white-block">
+                                                    <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                    <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2007,8 +2028,8 @@
                                         </div>
                                         <!-- Bottom block -->
                                         <div class="bottom-part">
-                                            <span class="bottom-part__header">Стоимость</span>
                                             <div class="ul-wrapper">
+                                                <span class="bottom-part__header">Параметры</span>
                                                 <ul class="ul-of-params">
                                                     <li><span>Распашные ворота:</span><span class="single-param__num"
                                                                                             data-inputHook="tab9__gateType">PROM</span>
@@ -2036,9 +2057,12 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="white-block">
-                                                <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                            <div class="white-block-wrapper">
+                                                <span class="bottom-part__header">Стоимость</span>
+                                                <div class="white-block">
+                                                    <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                    <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2062,88 +2086,87 @@
                                             <div class="inner-wrapper">
                                                 <!-- Upper block -->
                                                 <div class="upper-part">
-                                                    <div class="local-row">
-                                                        <div class="tab-section pick-a-length">
-                                                            <div class="tab-section__header">
-                                                                <span>Длина периметра (м).</span>
-                                                                <input type="text" value="0" name="tab1__length"
-                                                                       class="tab1__length-input">
-                                                            </div>
-                                                            <div id="flat-slider"
-                                                                 class="input-range width-input-range flat-slider"></div>
-                                                        </div>
-                                                        <div class="tab-section pick-a-height">
+                                            <div class="local-row">
+                                                <div class="tab-section pick-a-length">
+                                                    <div class="tab-section__header">
+                                                        <span>Длина периметра (м).</span>
+                                                        <input type="text" value="0" name="tab1__length"
+                                                               class="tab1__length-input">
+                                                    </div>
+                                                    <div id="flat-slider"
+                                                         class="input-range width-input-range flat-slider"></div>
+                                                </div>
+                                                <div class="tab-section pick-a-height">
                                                     <span class="tab-section__header">
                                                         <span>Высота (мм.)</span>
-                                                        <input type="text" value="0" name="tab1__height"
-                                                               class="tab1__height-input">
+                                                        <input type="text" value="1860" name="tab2__height"
+                                                               class="tab2__height-input">
                                                     </span>
-                                                            <div class="input-outer-wrapper">
-                                                                <div id="flat-slider-vertical-3"
-                                                                     class="input-range flat-slider-vertical-3"></div>
-                                                                <img src="img/icons/calculator/measurement-pic.png"
-                                                                     alt="">
-                                                            </div>
-                                                        </div>
+                                                    <div class="input-outer-wrapper">
+                                                        <div id="flat-slider-vertical-3"
+                                                             class="input-range flat-slider-vertical-3"></div>
+                                                        <img src="img/icons/calculator/measurement-pic.png" alt="">
                                                     </div>
-                                                    <div class="local-row">
-                                                        <div class="tab-section pick-a-color">
-                                                            <span class="tab-section__header">Выбрать другой цвет</span>
-                                                            <span class="tab-section__sub-header">Стандартные цвета
+                                                </div>
+                                            </div>
+                                            <div class="local-row">
+                                                <div class="tab-section pick-a-color">
+                                                    <span class="tab-section__header">Выбрать другой цвет</span>
+                                                    <span class="tab-section__sub-header">Стандартные цвета
                                                         <img class="sm-tooltip" src="img/icons/tooltip.png"
                                                              alt="Tooltip"
                                                              data-toggle="tooltip" data-placement="right"
                                                              title="example">
                                                     </span>
-                                                            <div class="color-palette">
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6037"
-                                                                     style="background-color: red"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6038"
-                                                                     style="background-color: green"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6039"
-                                                                     style="background-color: blue"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6040"
-                                                                     style="background-color: #73140b"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6041"
-                                                                     style="background-color: orange"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6042"
-                                                                     style="background-color: yellow"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6043"
-                                                                     style="background-color: blueviolet"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6044"
-                                                                     style="background-color: aqua"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6045"
-                                                                     style="background-color: palegoldenrod"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6046"
-                                                                     style="background-color: darkslategrey"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-section picked-color">
-                                                            <span class="tab-section__header">Цвет ограждения</span>
-                                                            <span class="tab-section__sub-header">Текущий цвет</span>
-                                                            <div class="color-row">
-                                                                <div class="picked-color__circle"
-                                                                     style="background-color: green"></div>
-                                                                <span class="picked-color__name">RAL 6037</span>
-                                                            </div>
-                                                            <span class="text-tooltip">По умолчанию выбран цвет забора</span>
-                                                        </div>
+                                                    <div class="color-palette">
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6037"
+                                                             style="background-color: red"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6038"
+                                                             style="background-color: green"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6039"
+                                                             style="background-color: blue"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6040"
+                                                             style="background-color: #73140b"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6041"
+                                                             style="background-color: orange"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6042"
+                                                             style="background-color: yellow"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6043"
+                                                             style="background-color: blueviolet"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6044"
+                                                             style="background-color: aqua"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6045"
+                                                             style="background-color: palegoldenrod"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6046"
+                                                             style="background-color: darkslategrey"></div>
                                                     </div>
                                                 </div>
+                                                <div class="tab-section picked-color">
+                                                    <span class="tab-section__header">Цвет ограждения</span>
+                                                    <span class="tab-section__sub-header">Текущий цвет</span>
+                                                    <div class="color-row">
+                                                        <div class="picked-color__circle"
+                                                             style="background-color: green"></div>
+                                                        <span class="picked-color__name">RAL 6037</span>
+                                                    </div>
+                                                    <span class="text-tooltip">По умолчанию выбран цвет забора</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                                 <!-- Bottom block -->
                                                 <div class="bottom-part ">
-                                                    <span class="bottom-part__header">Стоимость</span>
                                                     <div class="ul-wrapper">
+                                                        <span class="bottom-part__header">Параметры</span>
                                                         <ul class="ul-of-params">
                                                             <li><span>Длина периметра:</span><span
                                                                     class="params__single-param"><span
@@ -2162,9 +2185,13 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="white-block">
-                                                        <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                        <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                    <div class="white-block-wrapper">
+                                                        <span class="bottom-part__header">Стоимость</span>
+                                                        <div class="white-block">
+                                                            <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                            <div><span>Цена изделия:</span><span>1 234 877 р.</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2561,8 +2588,8 @@
                                                 </div>
                                                 <!-- Bottom block -->
                                                 <div class="bottom-part">
-                                                    <span class="bottom-part__header">Стоимость</span>
                                                     <div class="ul-wrapper">
+                                                        <span class="bottom-part__header">Параметры</span>
                                                         <ul class="ul-of-params">
                                                             <li><span>Тип забора:</span><span>3Д забор</span></li>
                                                             <li><span>Размер секции:</span><span><span
@@ -2595,9 +2622,13 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="white-block">
-                                                        <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                        <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                    <div class="white-block-wrapper">
+                                                        <span class="bottom-part__header">Стоимость</span>
+                                                        <div class="white-block">
+                                                            <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                            <div><span>Цена изделия:</span><span>1 234 877 р.</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2839,8 +2870,8 @@
 
                                                 <!-- Bottom block -->
                                                 <div class="bottom-part">
-                                                    <span class="bottom-part__header">Стоимость</span>
                                                     <div class="ul-wrapper">
+                                                        <span class="bottom-part__header">Параметры</span>
                                                         <ul class="ul-of-params">
                                                             <li><span>Тип крепления:</span><span><span
                                                                     class="single-param__num"
@@ -2873,9 +2904,13 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="white-block">
-                                                        <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                        <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                    <div class="white-block-wrapper">
+                                                        <span class="bottom-part__header">Стоимость</span>
+                                                        <div class="white-block">
+                                                            <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                            <div><span>Цена изделия:</span><span>1 234 877 р.</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3090,8 +3125,8 @@
 
                                                 <!-- Bottom block -->
                                                 <div class="bottom-part">
-                                                    <span class="bottom-part__header">Стоимость</span>
                                                     <div class="ul-wrapper">
+                                                        <span class="bottom-part__header">Параметры</span>
                                                         <ul class="ul-of-params">
                                                             <li><span>Тип крепления:</span><span><span
                                                                     class="single-param__num"
@@ -3124,9 +3159,13 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="white-block">
-                                                        <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                        <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                    <div class="white-block-wrapper">
+                                                        <span class="bottom-part__header">Стоимость</span>
+                                                        <div class="white-block">
+                                                            <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                            <div><span>Цена изделия:</span><span>1 234 877 р.</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3463,8 +3502,8 @@
 
                                                 <!-- Bottom block -->
                                                 <div class="bottom-part">
-                                                    <span class="bottom-part__header">Стоимость</span>
                                                     <div class="ul-wrapper">
+                                                        <span class="bottom-part__header">Параметры</span>
                                                         <ul class="ul-of-params">
                                                             <li><span>Тип заполнения:</span><span><span
                                                                     class="single-param__num"
@@ -3497,9 +3536,13 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="white-block">
-                                                        <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                        <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                    <div class="white-block-wrapper">
+                                                        <span class="bottom-part__header">Стоимость</span>
+                                                        <div class="white-block">
+                                                            <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                            <div><span>Цена изделия:</span><span>1 234 877 р.</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3706,8 +3749,8 @@
 
                                                 <!-- Bottom block -->
                                                 <div class="bottom-part">
-                                                    <span class="bottom-part__header">Стоимость</span>
                                                     <div class="ul-wrapper">
+                                                        <span class="bottom-part__header">Параметры</span>
                                                         <ul class="ul-of-params">
                                                             <li><span>Типы калиток:</span><span><span
                                                                     class="single-param__num"
@@ -3737,9 +3780,13 @@
 
                                                         </ul>
                                                     </div>
-                                                    <div class="white-block">
-                                                        <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                        <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                    <div class="white-block-wrapper">
+                                                        <span class="bottom-part__header">Стоимость</span>
+                                                        <div class="white-block">
+                                                            <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                            <div><span>Цена изделия:</span><span>1 234 877 р.</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -3995,8 +4042,9 @@
                                                 </div>
                                                 <!-- Bottom block -->
                                                 <div class="bottom-part">
-                                                    <span class="bottom-part__header">Стоимость</span>
+                                                    <span class="bottom-part__header">Параметры</span>
                                                     <div class="ul-wrapper">
+                                                        <span class="bottom-part__header">Параметры</span>
                                                         <ul class="ul-of-params">
                                                             <li><span>Распашные ворота:</span><span
                                                                     class="single-param__num"
@@ -4029,9 +4077,13 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="white-block">
-                                                        <div><span>Вес изделия:</span><span>12 кг.</span></div>
-                                                        <div><span>Цена изделия:</span><span>1 234 877 р.</span></div>
+                                                    <div class="white-block-wrapper">
+                                                        <span class="bottom-part__header">Стоимость</span>
+                                                        <div class="white-block">
+                                                            <div><span>Вес изделия:</span><span>12 кг.</span></div>
+                                                            <div><span>Цена изделия:</span><span>1 234 877 р.</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -4271,7 +4323,7 @@
                         </div>
 
                         <div class="calculator-page__third-screen">
-                            <h1>Стоимость периметра</h1>
+                            <h1>Параметры периметра</h1>
                             <div class="final-table">
                                 <div class="left-part">
                                     <div class="outer-wrapper">

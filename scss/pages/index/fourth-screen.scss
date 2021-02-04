@@ -112,6 +112,7 @@
             cursor: pointer;
             display: block;
             margin-bottom: 10px;
+            user-select: none;
           }
 
           span {
@@ -119,11 +120,12 @@
             text-decoration: underline;
             text-decoration-style: dotted;
             text-underline-position: under;
-            -webkit-text-underline-position: under;
-            -ms-text-underline-position: below;
             //border-bottom: 2px dotted $green-color;
             @include min-w(2000) {
               font-size: 18px;
+            }
+            &:hover {
+              text-decoration: none;
             }
           }
         }
@@ -134,9 +136,9 @@
       .adv-features:hover {
         .inner-wrapper:hover {
           .inner-wrapper-content {
-            height: auto;
-            margin-bottom: 15px;
-            transition: height 1s;
+            //height: auto;
+            //margin-bottom: 15px;
+            //transition: height 1s;
           }
         }
       }
@@ -152,6 +154,12 @@
             @include min-w(2000) {
               font-size: 19px;
             }
+          }
+
+          .index__custom-transform {
+            height: auto;
+            margin-bottom: 15px;
+            transition: height 1s;
           }
         }
       }

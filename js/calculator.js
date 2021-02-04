@@ -244,10 +244,10 @@ if (document.getElementById('calculator-page')) {
 
     let updateTabFooter = (name, value) => {
         let matchInput = Array.from(document.querySelectorAll('input')).filter(elem => elem.name === name)
-        console.log(matchInput)
+        // console.log(matchInput)
 
         let matchValue = Array.from(document.querySelectorAll('.single-param__num')).filter(elem => elem.getAttribute('data-inputHook') === name)
-        console.log(matchValue)
+        // console.log(matchValue)
 
         matchValue[0].innerHTML = value
     }
