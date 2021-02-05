@@ -263,7 +263,19 @@
 
       .main-banner-wrapper {
         width: 100%;
-        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        //height: 100%;
+        padding: 25px;
+        @include bgImgCover;
+        background-image: url("../img/calculator/main-banner.png");
+        height: 500px;
+        @include md-max {
+          height: 250px;
+        }
+        @include sm-max {
+          height: 175px;
+        }
 
         img {
           width: 100%;
@@ -711,6 +723,19 @@
 
                 .pick-a-length, .pick-a-cell-size {
 
+                  align-items: flex-start;
+
+                  .btn-group {
+                    width: 100%;
+                  }
+
+                  .cell-size-img {
+                    margin-top: 25px;
+                    @include sm-max {
+                      margin-top: 15px;
+                    }
+                  }
+
                   .custom-btn {
                     font-size: 14px;
                     @include responsiveText;
@@ -840,6 +865,58 @@
                     min-height: initial;
                   }
 
+                  .first-local-wrapper, .second-local-wrapper {
+                    .someNameless-wrapper {
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      @include px(10px, 10px);
+                      padding-top: 50px;
+
+                      .type2__amount-wrapper {
+                        position: relative;
+                        justify-content: flex-start;
+
+                        .parent-input {
+                          display: inline-block;
+                          padding: 15px;
+                          width: 98px;
+                          height: 38px;
+                          border: 1px solid #d0d0d0;
+                          text-align: left;
+                        }
+
+                        .input-btns {
+                          position: absolute;
+                          left: 65px;
+
+                          .input-btn {
+                            border: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &:first-child {
+                              align-items: flex-end;
+                            }
+
+                            &:last-child {
+                              align-items: flex-start;
+                            }
+
+                            span {
+                              display: none;
+                            }
+
+                            &:hover {
+                              background-color: transparent;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
                   .first-local-wrapper {
                     width: 310px;
                     margin-bottom: 60px;
@@ -886,6 +963,7 @@
                       box-shadow: 0 0 0 0 !important;
                       position: relative;
                       padding: 0;
+                      opacity: 0.3;
                       @include responsiveText;
                       color: #a1aab1;
                       @include sm-max {
@@ -919,8 +997,59 @@
                     .active {
                       border-color: #0b2842;
                       color: black;
+                      opacity: 1;
                     }
 
+                  }
+
+                  .someNameless-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    @include px(10px, 10px);
+                    padding-top: 50px;
+
+                    .type2__amount-wrapper {
+                      position: relative;
+                      justify-content: flex-start;
+
+                      .parent-input {
+                        display: inline-block;
+                        padding: 15px;
+                        width: 98px;
+                        height: 38px;
+                        border: 1px solid #d0d0d0;
+                        text-align: left;
+                      }
+
+                      .input-btns {
+                        position: absolute;
+                        left: 65px;
+
+                        .input-btn {
+                          border: 0;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+
+                          &:first-child {
+                            align-items: flex-end;
+                          }
+
+                          &:last-child {
+                            align-items: flex-start;
+                          }
+
+                          span {
+                            display: none;
+                          }
+
+                          &:hover {
+                            background-color: transparent;
+                          }
+                        }
+                      }
+                    }
                   }
                 }
 
@@ -1015,6 +1144,7 @@
                       border-radius: 100px;
                       width: 113px;
                       height: 113px;
+                      opacity: 0.3;
                       @include responsiveText;
                       @include sm-max {
                         max-width: 95px;
@@ -1059,6 +1189,7 @@
                     .active {
                       border-color: #0b2842;
                       color: black;
+                      opacity: 1;
                     }
 
                   }
@@ -1071,6 +1202,7 @@
                       box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.22);
                       border-radius: 0;
                       padding: 7px 30px;
+                      opacity: 0.3;
 
                       &:hover {
                         color: white;
@@ -1082,6 +1214,7 @@
                       background-color: $green-color;
                       color: white;
                       box-shadow: 0 0 0 0;
+                      opacity: 1;
                     }
                   }
                 }
@@ -1439,6 +1572,29 @@
                   }
                 }
 
+                .pick-a-pillars-width {
+                  .btn-group {
+                    .custom-btn {
+                      font-size: 14px;
+                      @include responsiveText;
+                      color: black;
+                      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.22);
+                      border-radius: 0;
+
+                      &:hover {
+                        color: white;
+                        background-color: #00844a;
+                      }
+                    }
+
+                    .active {
+                      background-color: $green-color;
+                      color: white;
+                      box-shadow: 0 0 0 0;
+                    }
+                  }
+                }
+
               }
 
             }
@@ -1593,7 +1749,7 @@
                     background-color: white;
                     color: $green-color;
                     z-index: 1;
-                    font-size: 20px;
+                    font-size: 19px;
                     @include adjustableText(14px, 16px, 18px, 22px);
                     padding-right: 5px;
                     line-height: 24px;
@@ -1628,6 +1784,15 @@
         .eighth-tab {
           .btn-group {
             width: 260px !important;
+          }
+        }
+
+        .tenth-tab {
+          .inner-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include px(25px, 25px);
           }
         }
       }

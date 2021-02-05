@@ -123,17 +123,17 @@ if (document.getElementById('calculator-page')) {
 
     // Init value
 
-    document.querySelector('.sectionSize1NumValue').innerHTML = document.getElementById('section-size__input1').value.slice(0, 4);
-    document.querySelector('.sectionSize2NumValue').innerHTML = document.getElementById('section-size__input1').value.slice(5, 9);
+    // document.querySelector('.sectionSize1NumValue').innerHTML = document.getElementById('section-size__input1').value.slice(0, 4);
+    // document.querySelector('.sectionSize2NumValue').innerHTML = document.getElementById('section-size__input1').value.slice(5, 9);
 
     // On change value
 
-    document.getElementById('section-size__input1').addEventListener('keypress', (e) => {
-        let value = e.target.value;
-        console.log('event')
-        document.querySelector('.sectionSize1NumValue').innerHTML = value.slice(0, 4);
-        document.querySelector('.sectionSize2NumValue').innerHTML = value.slice(5, 9);
-    });
+    // document.getElementById('section-size__input1').addEventListener('keypress', (e) => {
+    //     let value = e.target.value;
+    //     console.log('event')
+    //     document.querySelector('.sectionSize1NumValue').innerHTML = value.slice(0, 4);
+    //     document.querySelector('.sectionSize2NumValue').innerHTML = value.slice(5, 9);
+    // });
 
     // Diameters counter ------------------------------------
 
@@ -167,7 +167,9 @@ if (document.getElementById('calculator-page')) {
     $(".diameter2D-input").inputmask({"mask": "9/9/9"});
 
     if (document.getElementsByClassName('diameter2D-step')) {
-        document.querySelector('.diameter2DValue').innerHTML = document.querySelector('.diameter2D-input').value
+        document.querySelectorAll('.diameter2DValue').forEach(el => {
+            el.innerHTML = document.querySelectorAll('.diameter2D-input')[0].value
+        })
         $(".for-2Ddiameter").on("click", function () {
             var $button = $(this);
             var oldValue = $button.parents('.input-btns').prev().val().match(/[0-9]+/g);

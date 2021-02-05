@@ -588,7 +588,7 @@ if (document.querySelector('#calculator-page')) {
             });
         }
 
-        autoLink(sliderLength, inputLength, endValue, 0, 5000);
+        autoLink(sliderLength, inputLength, endValue, 0, 999999);
         autoLink(sliderHeight1, inputHeight1, endValue1, 0, 2790);
         autoLink(sliderHeight4, inputHeight4, endValue4, 0, 2000);
         autoLink(sliderHeight5, inputHeight5, endValue5, 0, 5050);
