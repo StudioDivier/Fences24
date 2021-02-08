@@ -130,3 +130,19 @@
     font-size: $smScreen;
   }
 }
+
+@mixin childrenMargin ($val) {
+  margin: $val;
+  &:nth-child(odd) {
+    margin-left: 0;
+  }
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+  &:nth-child(5) {
+    margin-bottom: 0;
+  }
+  &:nth-child(6) {
+    margin-bottom: 0;
+  }
+}

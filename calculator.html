@@ -783,7 +783,7 @@
                                                         <label class="btn custom-btn"
                                                                style="background-image: url('img/icons/calculator/pillar-type1.png')">
                                                             <input type="radio" name="tab5__holderType"
-                                                                   value="Крепление на ростверк">
+                                                                   value="Крепление на ростверк" checked>
                                                             <span>Крепление на ростверк</span>
                                                             <img src="img/icons/calculator/tooltip.png" alt="Tooltip"
                                                                  data-toggle="tooltip" data-placement="right"
@@ -1019,10 +1019,10 @@
 
                                 <div class="sixth-tab info-tabcontent">
                                     <!-- Tab inner content wrapper -->
-                                    <div class="inner-wrapper">
+                                    <div class="inner-wrapper determine-type2">
                                         <div class="upper-part">
                                             <div class="local-row">
-                                                <div class="tab-section pick-a-holder-type">
+                                                <div data-typeSwap="type-factor" class="tab-section pick-a-holder-type">
                                                     <span class="tab-section__header">
                                                         <span>Тип крепления <img
                                                                 src="img/icons/calculator/tooltip.png"
@@ -1040,19 +1040,19 @@
                                                         <label class="btn custom-btn"
                                                                style="background-image: url('img/icons/calculator/holder2.png')">
                                                             <input type="radio" name="tab6__holderType"
-                                                                   value="Скоба F24">
+                                                                   value="Скоба F24" class="holder-type-hook" checked>
                                                             <span>Скоба F24</span>
                                                         </label>
                                                         <label class="btn custom-btn"
                                                                style="background-image: url('img/icons/calculator/holder3.png')">
                                                             <input type="radio" name="tab6__holderType"
-                                                                   value="Скоба усиленная">
+                                                                   value="Скоба усиленная" class="holder-type-hook">
                                                             <span>Скоба усиленная</span>
                                                         </label>
                                                         <label class="btn custom-btn"
                                                                style="background-image: url('img/icons/calculator/holder4.png')">
                                                             <input type="radio" name="tab6__holderType"
-                                                                   value="Скоба F50">
+                                                                   value="Скоба F50" class="holder-type-hook">
                                                             <span>Скоба F50</span>
                                                         </label>
                                                     </div>
@@ -1074,77 +1074,73 @@
                                                 </div>
                                                 <div class="tab-section pick-a-lashing">
                                                     <span class="tab-section__header">Крепление панели к столбу</span>
-                                                    <div class="option-wrapper">
-                                                        <img src="img/icons/calculator/holder1.png" alt="">
-                                                        <div class="radio-and-text-wrapper">
-                                                            <span class="radio-and-text-wrapper__header">Крепление для хомута</span>
-                                                            <label class="green-radio">
-                                                                <input class="with-gap" name="tab6__holder1"
-                                                                       type="radio" value="Болты мебельные с гайкой">
-                                                                <span>Болты мебельные с гайкой</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="option-wrapper">
+                                                    <!--                                                    <div class="option-wrapper">-->
+                                                    <!--                                                        <img src="img/icons/calculator/holder1.png" alt="">-->
+                                                    <!--                                                        <div class="radio-and-text-wrapper">-->
+                                                    <!--                                                            <span class="radio-and-text-wrapper__header">Крепление для хомута</span>-->
+                                                    <!--                                                            <label class="green-radio">-->
+                                                    <!--                                                                <input class="with-gap" name="tab6__holder1"-->
+                                                    <!--                                                                       type="radio" value="Болты мебельные с гайкой">-->
+                                                    <!--                                                                <span>Болты мебельные с гайкой</span>-->
+                                                    <!--                                                            </label>-->
+                                                    <!--                                                        </div>-->
+                                                    <!--                                                    </div>-->
+                                                    <div data-typeSwap="fortified" class="option-wrapper">
                                                         <img src="img/icons/calculator/sm-holder2.png" alt="">
                                                         <div class="radio-and-text-wrapper">
                                                             <span class="radio-and-text-wrapper__header">Крепление скобы усиленной</span>
                                                             <label class="green-radio">
-                                                                <input class="with-gap" name="tab6__holder2"
+                                                                <input class="with-gap" name="tab6__holder1"
                                                                        value="Винт М8 (полукруглая)"
                                                                        type="radio">
                                                                 <span>Винт М8 (полукруглая)</span>
                                                             </label>
                                                             <label class="green-radio">
-                                                                <input class="with-gap" name="tab6__holder2"
+                                                                <input class="with-gap" name="tab6__holder1"
                                                                        value="Винт М8 мебельный и гайка"
                                                                        type="radio" disabled>
                                                                 <span>Винт М8 мебельный и гайка</span>
                                                             </label>
                                                             <label class="green-radio">
-                                                                <input class="with-gap" name="tab6__holder2"
+                                                                <input class="with-gap" name="tab6__holder1"
                                                                        value="Винт М8 мебельный с антиванда"
                                                                        type="radio">
                                                                 <span>Винт М8 мебельный с антиванда</span>
                                                             </label>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="local-row">
-                                                <div class="tab-section pick-a-lashing">
-                                                    <div class="option-wrapper">
+                                                    <div data-typeSwap="F24" class="option-wrapper">
                                                         <img src="img/icons/calculator/sm-holder3.png" alt="">
                                                         <div class="radio-and-text-wrapper">
                                                             <span class="radio-and-text-wrapper__header">Крепление для F24</span>
                                                             <label class="green-radio">
-                                                                <input class="with-gap" name="tab6__holder3"
+                                                                <input class="with-gap" name="tab6__holder1"
                                                                        type="radio" value="Саморез кровельный 5.5x25">
                                                                 <span>Саморез кровельный 5.5x25</span>
                                                             </label>
                                                             <label class="green-radio">
-                                                                <input class="with-gap" name="tab6__holder3"
+                                                                <input class="with-gap" name="tab6__holder1"
                                                                        type="radio" value="Винт М6 полукруглый">
                                                                 <span>Винт М6 полукруглый</span>
                                                             </label>
                                                         </div>
                                                     </div>
-                                                    <div class="option-wrapper">
+                                                    <div data-typeSwap="F50" class="option-wrapper">
                                                         <img src="img/icons/calculator/sm-holder4.png" alt="">
                                                         <div class="radio-and-text-wrapper">
                                                             <span class="radio-and-text-wrapper__header">Крепление для F50</span>
                                                             <label class="green-radio">
-                                                                <input class="with-gap" name="tab6__holder4"
+                                                                <input class="with-gap" name="tab6__holder1"
                                                                        type="radio" value="Винт М8 (полукруглая)">
                                                                 <span>Винт М8 (полукруглая)</span>
                                                             </label>
                                                             <label class="green-radio">
-                                                                <input class="with-gap" name="tab6__holder4"
+                                                                <input class="with-gap" name="tab6__holder1"
                                                                        type="radio" value="Винт М8 мебельный и гайка">
                                                                 <span>Винт М8 мебельный и гайка</span>
                                                             </label>
                                                             <label class="green-radio">
-                                                                <input class="with-gap" name="tab6__holder4"
+                                                                <input class="with-gap" name="tab6__holder1"
                                                                        type="radio" disabled
                                                                        value="Винт М8 мебельный с антиванда">
                                                                 <span>Винт М8 мебельный с антиванда</span>
@@ -1152,7 +1148,49 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="tab-section picked-color">
+                                            </div>
+                                            <div class="local-row">
+                                                <!--                                                <div data-typeSwap="F50" class="tab-section pick-a-lashing">-->
+                                                <!--                                                    <div data-typeSwap="F24" class="option-wrapper">-->
+                                                <!--                                                        <img src="img/icons/calculator/sm-holder3.png" alt="">-->
+                                                <!--                                                        <div class="radio-and-text-wrapper">-->
+                                                <!--                                                            <span class="radio-and-text-wrapper__header">Крепление для F24</span>-->
+                                                <!--                                                            <label class="green-radio">-->
+                                                <!--                                                                <input class="with-gap" name="tab6__holder3"-->
+                                                <!--                                                                       type="radio" value="Саморез кровельный 5.5x25">-->
+                                                <!--                                                                <span>Саморез кровельный 5.5x25</span>-->
+                                                <!--                                                            </label>-->
+                                                <!--                                                            <label class="green-radio">-->
+                                                <!--                                                                <input class="with-gap" name="tab6__holder3"-->
+                                                <!--                                                                       type="radio" value="Винт М6 полукруглый">-->
+                                                <!--                                                                <span>Винт М6 полукруглый</span>-->
+                                                <!--                                                            </label>-->
+                                                <!--                                                        </div>-->
+                                                <!--                                                    </div>-->
+                                                <!--                                                    <div data-typeSwap="F50" class="option-wrapper">-->
+                                                <!--                                                        <img src="img/icons/calculator/sm-holder4.png" alt="">-->
+                                                <!--                                                        <div class="radio-and-text-wrapper">-->
+                                                <!--                                                            <span class="radio-and-text-wrapper__header">Крепление для F50</span>-->
+                                                <!--                                                            <label class="green-radio">-->
+                                                <!--                                                                <input class="with-gap" name="tab6__holder4"-->
+                                                <!--                                                                       type="radio" value="Винт М8 (полукруглая)">-->
+                                                <!--                                                                <span>Винт М8 (полукруглая)</span>-->
+                                                <!--                                                            </label>-->
+                                                <!--                                                            <label class="green-radio">-->
+                                                <!--                                                                <input class="with-gap" name="tab6__holder4"-->
+                                                <!--                                                                       type="radio" value="Винт М8 мебельный и гайка">-->
+                                                <!--                                                                <span>Винт М8 мебельный и гайка</span>-->
+                                                <!--                                                            </label>-->
+                                                <!--                                                            <label class="green-radio">-->
+                                                <!--                                                                <input class="with-gap" name="tab6__holder4"-->
+                                                <!--                                                                       type="radio" disabled-->
+                                                <!--                                                                       value="Винт М8 мебельный с антиванда">-->
+                                                <!--                                                                <span>Винт М8 мебельный с антиванда</span>-->
+                                                <!--                                                            </label>-->
+                                                <!--                                                        </div>-->
+                                                <!--                                                    </div>-->
+                                                <!--                                                </div>-->
+                                                <div data-typeSwap="color-block" class="tab-section picked-color">
                                                     <span class="tab-section__header">Цвет ограждения</span>
                                                     <span class="tab-section__sub-header">Текущий цвет</span>
                                                     <div class="color-row">
@@ -1162,7 +1200,7 @@
                                                     </div>
                                                     <!--                                                    <span class="text-tooltip">По умолчанию выбран цвет забора</span>-->
                                                 </div>
-                                                <div class="tab-section pick-a-color">
+                                                <div data-typeSwap="color-block" class="tab-section pick-a-color">
                                                     <span class="tab-section__header">Выбрать другой цвет</span>
                                                     <span class="tab-section__sub-header">Стандартные цвета
                                                         <img class="sm-tooltip" src="img/icons/tooltip.png"
@@ -1211,24 +1249,33 @@
                                             <div class="ul-wrapper">
                                                 <span class="bottom-part__header">Параметры</span>
                                                 <ul class="ul-of-params">
-                                                    <li><span>Тип крепления:</span><span><span class="single-param__num"
-                                                                                               data-inputHook="tab6__holderType">хомут</span></span>
+                                                    <li>
+                                                        <span>Тип крепления:</span>
+                                                        <span>
+                                                            <span class="single-param__num" data-inputHook="tab6__holderType">хомут</span>
+                                                        </span>
                                                     </li>
                                                     <!--                                                    <li><span>Размеры:</span><span><span class="single-param__num"-->
                                                     <!--                                                                                         data-inputHook="tab7__handlerSize">80x50</span> мм.</span>-->
                                                     <!--                                                    </li>-->
-                                                    <li><span>Крепление для хомута:</span><span><span
-                                                            class="single-param__num" data-inputHook="tab6__holder1">болты мебельные с гайкой</span></span>
+                                                    <!--                                                    <li><span>Крепление для хомута:</span><span><span-->
+                                                    <!--                                                            class="single-param__num" data-inputHook="tab6__holder1">болты мебельные с гайкой</span></span>-->
+                                                    <!--                                                    </li>-->
+                                                    <li>
+                                                        <span>Крепление к столбу:</span>
+                                                        <span>
+                                                            <span class="single-param__num" data-inputHook="tab6__holder1">хомут</span>
+                                                        </span>
                                                     </li>
-                                                    <li><span>Крепление скобы усиленной:</span><span><span
-                                                            class="single-param__num" data-inputHook="tab6__holder2">винт М8 (полукруглая)</span></span>
-                                                    </li>
-                                                    <li><span>Крепление для F24:</span><span><span
-                                                            class="single-param__num" data-inputHook="tab6__holder3">Саморез кровельный 5.5x25</span></span>
-                                                    </li>
-                                                    <li><span>Крепление для F50:</span><span><span
-                                                            class="single-param__num" data-inputHook="tab6__holder4">винт М8 (полукруглая)</span></span>
-                                                    </li>
+                                                    <!--                                                    <li><span>Крепление скобы усиленной:</span><span><span-->
+                                                    <!--                                                            class="single-param__num" data-inputHook="tab6__holder2">винт М8 (полукруглая)</span></span>-->
+                                                    <!--                                                    </li>-->
+                                                    <!--                                                    <li><span>Крепление для F24:</span><span><span-->
+                                                    <!--                                                            class="single-param__num" data-inputHook="tab6__holder3">Саморез кровельный 5.5x25</span></span>-->
+                                                    <!--                                                    </li>-->
+                                                    <!--                                                    <li><span>Крепление для F50:</span><span><span-->
+                                                    <!--                                                            class="single-param__num" data-inputHook="tab6__holder4">винт М8 (полукруглая)</span></span>-->
+                                                    <!--                                                    </li>-->
                                                     <li><span>Цвет крепежа:</span><span></span>
                                                         <div class="color-wrapper">
                                                             <div class="params__picked-color"></div>
@@ -3038,245 +3085,279 @@
                                          data-parent="#accordion">
                                         <div class="first-tab info-tabcontent1">
                                             <!-- Tab inner content wrapper -->
-                                            <div class="inner-wrapper">
-                                                <div class="upper-part">
-                                                    <div class="local-row">
-                                                        <div class="tab-section pick-a-holder-type">
-                                                        <span class="tab-section__header">
-                                                            <span>Тип крепления <img
-                                                                    src="img/icons/calculator/tooltip.png"
-                                                                    alt="Tooltip"
-                                                                    data-toggle="tooltip"
-                                                                    data-placement="right"
-                                                                    title="example"></span>
-                                                        </span>
-                                                            <div class="first-btn-group btn-group-toggle"
-                                                                 data-toggle="buttons">
-                                                                <!--                                                                <label class="btn custom-btn"-->
-                                                                <!--                                                                       style="background-image: url('img/icons/calculator/holder1.png')">-->
-                                                                <!--                                                                    <input type="radio" name="tab6__holderType"-->
-                                                                <!--                                                                           value="Хомут">-->
-                                                                <!--                                                                    <span>Хомут</span>-->
-                                                                <!--                                                                </label>-->
-                                                                <label class="btn custom-btn"
-                                                                       style="background-image: url('img/icons/calculator/holder2.png')">
-                                                                    <input type="radio" name="tab6__holderType"
-                                                                           value="Скоба F24">
-                                                                    <span>Скоба F24</span>
-                                                                </label>
-                                                                <label class="btn custom-btn"
-                                                                       style="background-image: url('img/icons/calculator/holder3.png')">
-                                                                    <input type="radio" name="tab6__holderType"
-                                                                           value="Скоба усиленная">
-                                                                    <span>Скоба усиленная</span>
-                                                                </label>
-                                                                <label class="btn custom-btn"
-                                                                       style="background-image: url('img/icons/calculator/holder4.png')">
-                                                                    <input type="radio" name="tab6__holderType"
-                                                                           value="Скоба F50">
-                                                                    <span>Скоба F50</span>
-                                                                </label>
-                                                            </div>
-                                                            <!--                                                            <div class="second-btn-group">-->
-                                                            <!--                                                                <span class="tab-section__header">Размеры (мм).</span>-->
-                                                            <!--                                                                <div class="btn-group btn-group-toggle"-->
-                                                            <!--                                                                     data-toggle="buttons">-->
-                                                            <!--                                                                    <label class="btn custom-btn">-->
-                                                            <!--                                                                        <input type="radio" name="tab7__handlerSize"-->
-                                                            <!--                                                                               value="80x50" checked>-->
-                                                            <!--                                                                        80x50-->
-                                                            <!--                                                                    </label>-->
-                                                            <!--                                                                    <label class="btn custom-btn">-->
-                                                            <!--                                                                        <input type="radio" name="tab7__handlerSize"-->
-                                                            <!--                                                                               value="40x40"> 40x40-->
-                                                            <!--                                                                    </label>-->
-                                                            <!--                                                                </div>-->
-                                                            <!--                                                            </div>-->
-                                                        </div>
-                                                        <div class="tab-section pick-a-lashing">
-                                                            <span class="tab-section__header">Крепление панели к столбу</span>
-                                                            <div class="option-wrapper">
-                                                                <img src="img/icons/calculator/holder1.png" alt="">
-                                                                <div class="radio-and-text-wrapper">
-                                                                    <span class="radio-and-text-wrapper__header">Крепление для хомута</span>
-                                                                    <label class="green-radio">
-                                                                        <input class="with-gap" name="tab6__holder1"
-                                                                               type="radio"
-                                                                               value="Болты мебельные с гайкой">
-                                                                        <span>Болты мебельные с гайкой</span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="option-wrapper">
-                                                                <img src="img/icons/calculator/sm-holder2.png" alt="">
-                                                                <div class="radio-and-text-wrapper">
-                                                                    <span class="radio-and-text-wrapper__header">Крепление скобы усиленной</span>
-                                                                    <label class="green-radio">
-                                                                        <input class="with-gap" name="tab6__holder2"
-                                                                               value="Винт М8 (полукруглая)"
-                                                                               type="radio">
-                                                                        <span>Винт М8 (полукруглая)</span>
-                                                                    </label>
-                                                                    <label class="green-radio">
-                                                                        <input class="with-gap" name="tab6__holder2"
-                                                                               value="Винт М8 мебельный и гайка"
-                                                                               type="radio" disabled>
-                                                                        <span>Винт М8 мебельный и гайка</span>
-                                                                    </label>
-                                                                    <label class="green-radio">
-                                                                        <input class="with-gap" name="tab6__holder2"
-                                                                               value="Винт М8 мебельный с антиванда"
-                                                                               type="radio">
-                                                                        <span>Винт М8 мебельный с антиванда</span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
+                                            <div class="inner-wrapper determine-type2-accordion">
+                                        <div class="upper-part">
+                                            <div class="local-row">
+                                                <div data-typeSwap="type-factor" class="tab-section pick-a-holder-type">
+                                                    <span class="tab-section__header">
+                                                        <span>Тип крепления <img
+                                                                src="img/icons/calculator/tooltip.png"
+                                                                alt="Tooltip"
+                                                                data-toggle="tooltip"
+                                                                data-placement="right"
+                                                                title="example"></span>
+                                                    </span>
+                                                    <div class="first-btn-group btn-group-toggle" data-toggle="buttons">
+                                                        <!--                                                        <label class="btn custom-btn"-->
+                                                        <!--                                                               style="background-image: url('img/icons/calculator/holder1.png')">-->
+                                                        <!--                                                            <input type="radio" name="tab6__holderType" value="Хомут">-->
+                                                        <!--                                                            <span>Хомут</span>-->
+                                                        <!--                                                        </label>-->
+                                                        <label class="btn custom-btn active"
+                                                               style="background-image: url('img/icons/calculator/holder2.png')">
+                                                            <input type="radio" name="tab6__holderType"
+                                                                   value="Скоба F24" class="holder-type-hook">
+                                                            <span>Скоба F24</span>
+                                                        </label>
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/holder3.png')">
+                                                            <input type="radio" name="tab6__holderType"
+                                                                   value="Скоба усиленная" class="holder-type-hook">
+                                                            <span>Скоба усиленная</span>
+                                                        </label>
+                                                        <label class="btn custom-btn"
+                                                               style="background-image: url('img/icons/calculator/holder4.png')">
+                                                            <input type="radio" name="tab6__holderType"
+                                                                   value="Скоба F50" class="holder-type-hook">
+                                                            <span>Скоба F50</span>
+                                                        </label>
+                                                    </div>
+                                                    <!--                                                    <div class="second-btn-group">-->
+                                                    <!--                                                        <span class="tab-section__header">Размеры (мм).</span>-->
+                                                    <!--                                                        <div class="btn-group btn-group-toggle"-->
+                                                    <!--                                                             data-toggle="buttons">-->
+                                                    <!--                                                            <label class="btn custom-btn">-->
+                                                    <!--                                                                <input type="radio" name="tab7__handlerSize"-->
+                                                    <!--                                                                       value="80x50" checked>-->
+                                                    <!--                                                                80x50-->
+                                                    <!--                                                            </label>-->
+                                                    <!--                                                            <label class="btn custom-btn">-->
+                                                    <!--                                                                <input type="radio" name="tab7__handlerSize"-->
+                                                    <!--                                                                       value="40x40"> 40x40-->
+                                                    <!--                                                            </label>-->
+                                                    <!--                                                        </div>-->
+                                                    <!--                                                    </div>-->
+                                                </div>
+                                                <div class="tab-section pick-a-lashing">
+                                                    <span class="tab-section__header">Крепление панели к столбу</span>
+                                                    <!--                                                    <div class="option-wrapper">-->
+                                                    <!--                                                        <img src="img/icons/calculator/holder1.png" alt="">-->
+                                                    <!--                                                        <div class="radio-and-text-wrapper">-->
+                                                    <!--                                                            <span class="radio-and-text-wrapper__header">Крепление для хомута</span>-->
+                                                    <!--                                                            <label class="green-radio">-->
+                                                    <!--                                                                <input class="with-gap" name="tab6__holder1"-->
+                                                    <!--                                                                       type="radio" value="Болты мебельные с гайкой">-->
+                                                    <!--                                                                <span>Болты мебельные с гайкой</span>-->
+                                                    <!--                                                            </label>-->
+                                                    <!--                                                        </div>-->
+                                                    <!--                                                    </div>-->
+                                                    <div data-typeSwap="fortified" class="option-wrapper">
+                                                        <img src="img/icons/calculator/sm-holder2.png" alt="">
+                                                        <div class="radio-and-text-wrapper">
+                                                            <span class="radio-and-text-wrapper__header">Крепление скобы усиленной</span>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="tab6__holder1"
+                                                                       value="Винт М8 (полукруглая)"
+                                                                       type="radio">
+                                                                <span>Винт М8 (полукруглая)</span>
+                                                            </label>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="tab6__holder1"
+                                                                       value="Винт М8 мебельный и гайка"
+                                                                       type="radio" disabled>
+                                                                <span>Винт М8 мебельный и гайка</span>
+                                                            </label>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="tab6__holder1"
+                                                                       value="Винт М8 мебельный с антиванда"
+                                                                       type="radio">
+                                                                <span>Винт М8 мебельный с антиванда</span>
+                                                            </label>
                                                         </div>
                                                     </div>
-                                                    <div class="local-row">
-                                                        <div class="tab-section pick-a-lashing">
-                                                            <div class="option-wrapper">
-                                                                <img src="img/icons/calculator/sm-holder3.png" alt="">
-                                                                <div class="radio-and-text-wrapper">
-                                                                    <span class="radio-and-text-wrapper__header">Крепление для F24</span>
-                                                                    <label class="green-radio">
-                                                                        <input class="with-gap" name="tab6__holder3"
-                                                                               type="radio"
-                                                                               value="Саморез кровельный 5.5x25">
-                                                                        <span>Саморез кровельный 5.5x25</span>
-                                                                    </label>
-                                                                    <label class="green-radio">
-                                                                        <input class="with-gap" name="tab6__holder3"
-                                                                               type="radio" value="Винт М6 полукруглый">
-                                                                        <span>Винт М6 полукруглый</span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <div class="option-wrapper">
-                                                                <img src="img/icons/calculator/sm-holder4.png" alt="">
-                                                                <div class="radio-and-text-wrapper">
-                                                                    <span class="radio-and-text-wrapper__header">Крепление для F50</span>
-                                                                    <label class="green-radio">
-                                                                        <input class="with-gap" name="tab6__holder4"
-                                                                               type="radio"
-                                                                               value="Винт М8 (полукруглая)">
-                                                                        <span>Винт М8 (полукруглая)</span>
-                                                                    </label>
-                                                                    <label class="green-radio">
-                                                                        <input class="with-gap" name="tab6__holder4"
-                                                                               type="radio"
-                                                                               value="Винт М8 мебельный и гайка">
-                                                                        <span>Винт М8 мебельный и гайка</span>
-                                                                    </label>
-                                                                    <label class="green-radio">
-                                                                        <input class="with-gap" name="tab6__holder4"
-                                                                               type="radio" disabled
-                                                                               value="Винт М8 мебельный с антиванда">
-                                                                        <span>Винт М8 мебельный с антиванда</span>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
+                                                    <div data-typeSwap="F24" class="option-wrapper">
+                                                        <img src="img/icons/calculator/sm-holder3.png" alt="">
+                                                        <div class="radio-and-text-wrapper">
+                                                            <span class="radio-and-text-wrapper__header">Крепление для F24</span>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="tab6__holder1"
+                                                                       type="radio" value="Саморез кровельный 5.5x25">
+                                                                <span>Саморез кровельный 5.5x25</span>
+                                                            </label>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="tab6__holder1"
+                                                                       type="radio" value="Винт М6 полукруглый">
+                                                                <span>Винт М6 полукруглый</span>
+                                                            </label>
                                                         </div>
-                                                        <div class="tab-section picked-color">
-                                                            <span class="tab-section__header">Цвет ограждения</span>
-                                                            <span class="tab-section__sub-header">Текущий цвет</span>
-                                                            <div class="color-row">
-                                                                <div class="picked-color__circle"
-                                                                     style="background-color: green"></div>
-                                                                <span class="picked-color__name">RAL 6037</span>
-                                                            </div>
-                                                            <!--                                                            <span class="text-tooltip">По умолчанию выбран цвет забора</span>-->
+                                                    </div>
+                                                    <div data-typeSwap="F50" class="option-wrapper">
+                                                        <img src="img/icons/calculator/sm-holder4.png" alt="">
+                                                        <div class="radio-and-text-wrapper">
+                                                            <span class="radio-and-text-wrapper__header">Крепление для F50</span>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="tab6__holder1"
+                                                                       type="radio" value="Винт М8 (полукруглая)">
+                                                                <span>Винт М8 (полукруглая)</span>
+                                                            </label>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="tab6__holder1"
+                                                                       type="radio" value="Винт М8 мебельный и гайка">
+                                                                <span>Винт М8 мебельный и гайка</span>
+                                                            </label>
+                                                            <label class="green-radio">
+                                                                <input class="with-gap" name="tab6__holder1"
+                                                                       type="radio" disabled
+                                                                       value="Винт М8 мебельный с антиванда">
+                                                                <span>Винт М8 мебельный с антиванда</span>
+                                                            </label>
                                                         </div>
-                                                        <div class="tab-section pick-a-color">
-                                                            <span class="tab-section__header">Выбрать другой цвет</span>
-                                                            <span class="tab-section__sub-header">Стандартные цвета
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="local-row">
+                                                <!--                                                <div data-typeSwap="F50" class="tab-section pick-a-lashing">-->
+                                                <!--                                                    <div data-typeSwap="F24" class="option-wrapper">-->
+                                                <!--                                                        <img src="img/icons/calculator/sm-holder3.png" alt="">-->
+                                                <!--                                                        <div class="radio-and-text-wrapper">-->
+                                                <!--                                                            <span class="radio-and-text-wrapper__header">Крепление для F24</span>-->
+                                                <!--                                                            <label class="green-radio">-->
+                                                <!--                                                                <input class="with-gap" name="tab6__holder3"-->
+                                                <!--                                                                       type="radio" value="Саморез кровельный 5.5x25">-->
+                                                <!--                                                                <span>Саморез кровельный 5.5x25</span>-->
+                                                <!--                                                            </label>-->
+                                                <!--                                                            <label class="green-radio">-->
+                                                <!--                                                                <input class="with-gap" name="tab6__holder3"-->
+                                                <!--                                                                       type="radio" value="Винт М6 полукруглый">-->
+                                                <!--                                                                <span>Винт М6 полукруглый</span>-->
+                                                <!--                                                            </label>-->
+                                                <!--                                                        </div>-->
+                                                <!--                                                    </div>-->
+                                                <!--                                                    <div data-typeSwap="F50" class="option-wrapper">-->
+                                                <!--                                                        <img src="img/icons/calculator/sm-holder4.png" alt="">-->
+                                                <!--                                                        <div class="radio-and-text-wrapper">-->
+                                                <!--                                                            <span class="radio-and-text-wrapper__header">Крепление для F50</span>-->
+                                                <!--                                                            <label class="green-radio">-->
+                                                <!--                                                                <input class="with-gap" name="tab6__holder4"-->
+                                                <!--                                                                       type="radio" value="Винт М8 (полукруглая)">-->
+                                                <!--                                                                <span>Винт М8 (полукруглая)</span>-->
+                                                <!--                                                            </label>-->
+                                                <!--                                                            <label class="green-radio">-->
+                                                <!--                                                                <input class="with-gap" name="tab6__holder4"-->
+                                                <!--                                                                       type="radio" value="Винт М8 мебельный и гайка">-->
+                                                <!--                                                                <span>Винт М8 мебельный и гайка</span>-->
+                                                <!--                                                            </label>-->
+                                                <!--                                                            <label class="green-radio">-->
+                                                <!--                                                                <input class="with-gap" name="tab6__holder4"-->
+                                                <!--                                                                       type="radio" disabled-->
+                                                <!--                                                                       value="Винт М8 мебельный с антиванда">-->
+                                                <!--                                                                <span>Винт М8 мебельный с антиванда</span>-->
+                                                <!--                                                            </label>-->
+                                                <!--                                                        </div>-->
+                                                <!--                                                    </div>-->
+                                                <!--                                                </div>-->
+                                                <div data-typeSwap="color-block" class="tab-section picked-color">
+                                                    <span class="tab-section__header">Цвет ограждения</span>
+                                                    <span class="tab-section__sub-header">Текущий цвет</span>
+                                                    <div class="color-row">
+                                                        <div class="picked-color__circle"
+                                                             style="background-color: green"></div>
+                                                        <span class="picked-color__name">RAL 6037</span>
+                                                    </div>
+                                                    <!--                                                    <span class="text-tooltip">По умолчанию выбран цвет забора</span>-->
+                                                </div>
+                                                <div data-typeSwap="color-block" class="tab-section pick-a-color">
+                                                    <span class="tab-section__header">Выбрать другой цвет</span>
+                                                    <span class="tab-section__sub-header">Стандартные цвета
                                                         <img class="sm-tooltip" src="img/icons/tooltip.png"
                                                              alt="Tooltip"
                                                              data-toggle="tooltip" data-placement="right"
                                                              title="example">
                                                     </span>
-                                                            <div class="color-palette">
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6037"
-                                                                     style="background-color: red"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6038"
-                                                                     style="background-color: green"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6039"
-                                                                     style="background-color: blue"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6040"
-                                                                     style="background-color: #73140b"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6041"
-                                                                     style="background-color: orange"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6042"
-                                                                     style="background-color: yellow"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6043"
-                                                                     style="background-color: blueviolet"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6044"
-                                                                     style="background-color: aqua"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6045"
-                                                                     style="background-color: palegoldenrod"></div>
-                                                                <div class="pick-a-color__color-circle"
-                                                                     data-paletteColor="RAL 6046"
-                                                                     style="background-color: darkslategrey"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Bottom block -->
-                                                <div class="bottom-part">
-                                                    <div class="ul-wrapper">
-                                                        <span class="bottom-part__header">Параметры</span>
-                                                        <ul class="ul-of-params">
-                                                            <li><span>Тип крепления:</span><span><span
-                                                                    class="single-param__num"
-                                                                    data-inputHook="tab6__holderType">хомут</span></span>
-                                                            </li>
-                                                            <!--                                                            <li><span>Размеры:</span><span><span-->
-                                                            <!--                                                                    class="single-param__num"-->
-                                                            <!--                                                                    data-inputHook="tab7__handlerSize">80x50</span> мм.</span>-->
-                                                            <!--                                                            </li>-->
-                                                            <li><span>Крепление для хомута:</span><span><span
-                                                                    class="single-param__num"
-                                                                    data-inputHook="tab6__holder1">болты мебельные с гайкой</span></span>
-                                                            </li>
-                                                            <li><span>Крепление скобы усиленной:</span><span><span
-                                                                    class="single-param__num"
-                                                                    data-inputHook="tab6__holder2">винт М8 (полукруглая)</span></span>
-                                                            </li>
-                                                            <li><span>Крепление для F24:</span><span><span
-                                                                    class="single-param__num"
-                                                                    data-inputHook="tab6__holder3">Саморез кровельный 5.5x25</span></span>
-                                                            </li>
-                                                            <li><span>Крепление для F50:</span><span><span
-                                                                    class="single-param__num"
-                                                                    data-inputHook="tab6__holder4">винт М8 (полукруглая)</span></span>
-                                                            </li>
-                                                            <li><span>Цвет крепежа:</span><span></span>
-                                                                <div class="color-wrapper">
-                                                                    <div class="params__picked-color"></div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="white-block-wrapper">
-                                                        <span class="bottom-part__header">Стоимость</span>
-                                                        <div class="white-block">
-                                                            <div><span>Вес изделия:</span><span>от 12 кг.</span></div>
-                                                            <div><span>Цена изделия:</span><span>от 1 234 877 р.</span>
-                                                            </div>
-                                                        </div>
+                                                    <div class="color-palette">
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6037"
+                                                             style="background-color: red"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6038"
+                                                             style="background-color: green"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6039"
+                                                             style="background-color: blue"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6040"
+                                                             style="background-color: #73140b"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6041"
+                                                             style="background-color: orange"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6042"
+                                                             style="background-color: yellow"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6043"
+                                                             style="background-color: blueviolet"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6044"
+                                                             style="background-color: aqua"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6045"
+                                                             style="background-color: palegoldenrod"></div>
+                                                        <div class="pick-a-color__color-circle"
+                                                             data-paletteColor="RAL 6046"
+                                                             style="background-color: darkslategrey"></div>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+
+                                        <!-- Bottom block -->
+                                        <div class="bottom-part">
+                                            <div class="ul-wrapper">
+                                                <span class="bottom-part__header">Параметры</span>
+                                                <ul class="ul-of-params">
+                                                    <li>
+                                                        <span>Тип крепления:</span>
+                                                        <span>
+                                                            <span class="single-param__num" data-inputHook="tab6__holderType">хомут</span>
+                                                        </span>
+                                                    </li>
+                                                    <!--                                                    <li><span>Размеры:</span><span><span class="single-param__num"-->
+                                                    <!--                                                                                         data-inputHook="tab7__handlerSize">80x50</span> мм.</span>-->
+                                                    <!--                                                    </li>-->
+                                                    <!--                                                    <li><span>Крепление для хомута:</span><span><span-->
+                                                    <!--                                                            class="single-param__num" data-inputHook="tab6__holder1">болты мебельные с гайкой</span></span>-->
+                                                    <!--                                                    </li>-->
+                                                    <li>
+                                                        <span>Крепление к столбу:</span>
+                                                        <span>
+                                                            <span class="single-param__num" data-inputHook="tab6__holder1">хомут</span>
+                                                        </span>
+                                                    </li>
+                                                    <!--                                                    <li><span>Крепление скобы усиленной:</span><span><span-->
+                                                    <!--                                                            class="single-param__num" data-inputHook="tab6__holder2">винт М8 (полукруглая)</span></span>-->
+                                                    <!--                                                    </li>-->
+                                                    <!--                                                    <li><span>Крепление для F24:</span><span><span-->
+                                                    <!--                                                            class="single-param__num" data-inputHook="tab6__holder3">Саморез кровельный 5.5x25</span></span>-->
+                                                    <!--                                                    </li>-->
+                                                    <!--                                                    <li><span>Крепление для F50:</span><span><span-->
+                                                    <!--                                                            class="single-param__num" data-inputHook="tab6__holder4">винт М8 (полукруглая)</span></span>-->
+                                                    <!--                                                    </li>-->
+                                                    <li><span>Цвет крепежа:</span><span></span>
+                                                        <div class="color-wrapper">
+                                                            <div class="params__picked-color"></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="white-block-wrapper">
+                                                <span class="bottom-part__header">Стоимость</span>
+                                                <div class="white-block">
+                                                    <div><span>Вес изделия:</span><span>от 12 кг.</span></div>
+                                                    <div><span>Цена изделия:</span><span>от 1 234 877 р.</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                         </div>
                                     </div>
                                 </div>

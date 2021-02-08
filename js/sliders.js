@@ -386,6 +386,34 @@ $('.schemes-and-drawings__slider-wrapper').slick({
 //     animate: 300
 // });
 
+$(".flat-slider")
+    .slider({
+        range: "min",
+        min: 0,
+        max: 500
+    })
+    .slider("pips", {
+        rest: "label",
+        step: 25,
+        suffix: ' м.',
+    })
+    .slider("float", {});
+
+$(".flat-slider-vertical-3")
+    .slider({
+        max: 2790,
+        min: 530,
+        step: 465,
+        range: "min",
+        value: 1860,
+        orientation: "vertical"
+    })
+    .slider("pips", {
+        rest: "label",
+        // step: 465,
+    })
+    .slider("float", {});
+
 if (document.querySelector('#calculator-page')) {
 
     $(".flat-slider")

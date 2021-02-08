@@ -106,6 +106,48 @@ if (document.getElementById('calculator-page')) {
         })
     })
 
+    let setFourthTabType = (value) => {
+
+        document.querySelectorAll('.determine-type2').forEach(el => {
+            el.querySelector('.pick-a-lashing').querySelectorAll('.option-wrapper').forEach(el => {
+                el.style.display = 'none'
+            })
+        });
+
+        document.querySelectorAll('.determine-type2-accordion').forEach(el => {
+            el.querySelector('.pick-a-lashing').querySelectorAll('.option-wrapper').forEach(el => {
+                el.style.display = 'none'
+            })
+        });
+
+        [...document.querySelector('.determine-type2').querySelector('.pick-a-lashing').querySelectorAll('.option-wrapper')].filter(el =>
+            el.getAttribute('data-typeSwap') === value || el.getAttribute('data-typeSwap') === 'type-factor' || el.getAttribute('data-typeSwap') === 'color-block'
+        ).map(el => {
+            el.style.display = 'flex'
+        });
+
+        [...document.querySelector('.determine-type2-accordion').querySelector('.pick-a-lashing').querySelectorAll('.option-wrapper')].filter(el =>
+            el.getAttribute('data-typeSwap') === value || el.getAttribute('data-typeSwap') === 'type-factor' || el.getAttribute('data-typeSwap') === 'color-block'
+        ).map(el => {
+            el.style.display = 'flex'
+        });
+
+    }
+
+    setFourthTabType('F24')
+
+    document.querySelectorAll('.holder-type-hook').forEach(el => {
+        el.addEventListener('change', e => {
+            if (e.target.value === 'Скоба усиленная') {
+                setFourthTabType('fortified')
+            } else if (e.target.value === 'Скоба F24') {
+                setFourthTabType('F24')
+            } else {
+                setFourthTabType('F50')
+            }
+        })
+    })
+
     // Color picker logic
 
     document.querySelectorAll('.pick-a-color__color-circle').forEach(el =>

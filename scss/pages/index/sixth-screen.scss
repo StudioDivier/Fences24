@@ -5,9 +5,9 @@
 
 .sixth-screen {
   background-color: #e7e8e8;
-  padding-bottom: 90px;
+  @include py(65px, 65px);
   @include md-max {
-    padding-bottom: 45px;
+    @include py(25px, 25px)
   }
 
   .col-lg-4 {
@@ -33,6 +33,7 @@
     @include md-max {
       margin-bottom: 10px;
     }
+
     span {
       color: #cdcdcd;
       letter-spacing: 4px;

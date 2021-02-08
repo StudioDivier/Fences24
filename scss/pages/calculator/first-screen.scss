@@ -1135,6 +1135,7 @@
                       width: 100%;
                       flex-direction: row;
                       justify-content: space-evenly;
+                      margin-bottom: 20px;
                       flex-wrap: wrap;
                     }
 
@@ -1147,8 +1148,8 @@
                       opacity: 0.3;
                       @include responsiveText;
                       @include sm-max {
-                        max-width: 95px;
-                        height: 95px;
+                        max-width: 75px;
+                        height: 75px;
                         &:nth-child(1) {
                           margin-bottom: 45px;
                         }
@@ -1781,6 +1782,12 @@
           }
         }
 
+        .sixth-tab {
+          .ul-of-params {
+            columns: 1 !important;
+          }
+        }
+
         .eighth-tab {
           .btn-group {
             width: 260px !important;
@@ -1795,7 +1802,16 @@
             @include px(25px, 25px);
           }
         }
+
       }
+        #collapseFive{
+          .custom-btn {
+            @include sm-max {
+              max-width: 110px;
+              height: 110px;
+            }
+          }
+        }
 
     }
   }
